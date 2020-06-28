@@ -1,0 +1,48 @@
+/***************************************************
+  Overlay menu social media
+****************************************************/
+
+.menu-social-media {
+  position: absolute;
+  right: 0;
+  bottom: $overlay-menu-social-media-bottom-sm;
+  width: 100%;
+  padding: $overlay-menu-social-media-padding-sm;
+  font-size: 0;
+  text-align: right;
+
+  a {
+    position: relative;
+    display: inline-block;
+    width: $overlay-menu-social-media-width;
+    height: $overlay-menu-social-media-width;
+    margin: $overlay-menu-social-media-margin;
+    border: $overlay-menu-social-media-border-width solid $overlay-menu-social-media-border-color;
+    border-radius: 50%;
+    @include transition-prefix("opacity", $transition-duration-base, $transition-timing-base);
+
+    &:hover {
+      opacity: $overlay-menu-social-media-hover-opacity;
+    }
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: auto;
+      height: $overlay-menu-social-media-img-height;
+      @include transform-prefix("translate", $overlay-menu-social-media-img-translate);
+    }
+  }
+}
+
+.overlay-center-menu {
+  .menu-social-media {
+    padding: $overlay-menu-social-media-center-padding-sm;
+    text-align: center;
+
+    a {
+      margin: $overlay-menu-social-media-center-margin;
+    }
+  }
+}

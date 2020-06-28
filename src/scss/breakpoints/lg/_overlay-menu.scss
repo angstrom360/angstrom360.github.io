@@ -1,0 +1,74 @@
+/********** Overlay menu **********/
+
+.navik-header-overlay {
+
+  .navik-header-container {
+    height: auto;
+  }
+
+  .logo {
+    top: $overlay-menu-logo-top-lg;
+    left: $overlay-menu-logo-left-lg;
+  }
+
+  .burger-menu {
+    top: $overlay-burger-menu-top-lg;
+    right: $overlay-burger-menu-right-lg;
+  }
+}
+
+.navik-menu-overlay {
+  > ul {
+    > li {
+      padding: $overlay-menu-parent-padding-lg;
+    }
+  }
+}
+
+.overlay-center-menu {
+  .navik-menu-overlay {
+    > ul {
+      > li {
+        padding: $overlay-menu-center-list-padding-lg;
+      }
+    }
+  }
+}
+
+.submenu-vertical {
+  > ul {
+    > li {
+
+      ul {
+        right: -($overlay-submenu-vertical-right-space-lg);
+        padding-right: $overlay-submenu-vertical-right-space-lg !important;
+      }
+
+      > ul {
+        li {
+          .overlay-dropdown-plus {
+            right: $overlay-submenu-vertical-dropdown-plus-right-lg;
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu-slide {
+  .navik-menu-overlay {
+    > ul {
+      > li {
+        ul {
+          .overlay-dropdown-plus {
+            right: $overlay-slide-menu-dropdown-plus-right-lg;
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu-social-media {
+  padding: $overlay-menu-social-media-padding-lg;
+}

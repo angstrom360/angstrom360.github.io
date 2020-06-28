@@ -1,0 +1,54 @@
+/***************************************************
+  Fixed sidebar menu dark
+****************************************************/
+
+.navik-fixed-sidebar {
+  &.sidebar-dark {
+    background-color: $fixed-sidebar-dark-bg-color;
+
+    .menu-social-media {
+      a {
+        border-color: $fixed-sidebar-dark-social-media-border-color;
+        opacity: $fixed-sidebar-dark-social-media-opacity;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.sidebar-dark {
+
+  ~ .navik-side-content {
+    > .logo {
+      background-color: $fixed-sidebar-dark-bg-color;
+    }
+  }
+
+  .navik-menu-fixed {
+    > ul {
+
+      > li {
+        > a {
+          color: $fixed-sidebar-dark-parent-link-color;
+        }
+      }
+
+      ul {
+        a {
+          color: $fixed-sidebar-dark-submenu-color;
+
+          &::before {
+            background-color: $fixed-sidebar-dark-submenu-separator;
+          }
+        }
+      }
+    }
+  }
+
+  .overlay-dropdown-plus::before {
+    background-color: $fixed-sidebar-dark-dropdown-plus-bg-color;
+  }
+}

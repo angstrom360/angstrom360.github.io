@@ -1,0 +1,66 @@
+/***************************************************
+  Fixed sidebar menu background color
+****************************************************/
+
+.navik-fixed-sidebar {
+  &.sidebar-color-bg {
+    background-color: $fixed-sidebar-bg-color-menu-bg;
+
+    .menu-social-media {
+      a {
+        border-color: $fixed-sidebar-bg-color-social-media-border-color;
+      }
+    }
+  }
+}
+
+.sidebar-color-bg {
+
+  ~ .navik-side-content {
+    > .logo {
+      background-color: $fixed-sidebar-bg-color-menu-bg;
+    }
+  }
+
+  .navik-menu-fixed {
+
+    > ul {
+
+      > li {
+        > a {
+          @extend %submenu-color;
+        }
+      }
+
+      ul {
+        a {
+          @extend %submenu-color;
+
+          &::before {
+            @extend %separator-color;
+          }
+        }
+      }
+    }
+
+    ul {
+      li {
+        a:hover {
+          color: $fixed-sidebar-bg-color-hover-color !important;
+        }
+      }
+    }
+  }
+
+  .overlay-dropdown-plus::before {
+    @extend %separator-color;
+  }
+}
+
+%submenu-color {
+  color: $fixed-sidebar-bg-color-submenu-color !important;
+}
+
+%separator-color {
+  background-color: $fixed-sidebar-bg-color-submenu-separator;
+}

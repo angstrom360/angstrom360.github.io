@@ -1,0 +1,113 @@
+/***************************************************
+  Menu icons
+****************************************************/
+
+.navik-menu {
+
+  .navik-menu-icon {
+    margin-right: $menu-icon-margin-right;
+    color: $menu-icon-color;
+  }
+
+  ul {
+    li {
+
+      > a {
+        .navik-menu-icon {
+          @extend %menu-icon-transition;
+        }
+      }
+
+      &.current-menu {
+        > a {
+          .navik-menu-icon {
+            @extend %menu-icon-active-color;
+          }
+        }
+      }
+
+      &:hover {
+        > a {
+          .navik-menu-icon {
+            @extend %menu-icon-active-color;
+          }
+        }
+      }
+    }
+  }
+
+  .mega-menu-heading {
+    a {
+
+      .navik-menu-icon {
+        @extend %menu-icon-transition;
+      }
+
+      &:hover {
+        .navik-menu-icon {
+          @extend %menu-icon-active-color;
+        }
+      }
+    }
+  }
+}
+
+%menu-icon-transition {
+  @include transition-prefix("color", $transition-duration-base, $transition-timing-base);
+}
+
+%menu-icon-active-color {
+  color: $menu-icon-active-color !important;
+}
+
+.header-dark {
+  .navik-menu {
+    .navik-menu-icon {
+      color: $menu-icon-color-dark;
+    }
+  }
+}
+
+.navik-menu-overlay {
+
+  .navik-menu-icon {
+    position: relative;
+    top: $menu-icon-overlay-menu-top;
+    margin-right: $menu-icon-overlay-menu-mr-sm;
+  }
+
+  > ul {
+    ul {
+      li {
+        a {
+          .navik-menu-icon {
+            top: $menu-icon-overlay-submenu-top;
+            margin-right: $menu-icon-overlay-submenu-mr-sm;
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu-slide {
+  .navik-menu-overlay {
+    > ul {
+      ul {
+        li {
+          a {
+            .navik-menu-icon {
+              margin-right: $menu-icon-slide-menu-mr-sm;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.navik-menu-fixed {
+  .navik-menu-icon {
+    margin-right: $menu-icon-fixed-menu-mr;
+  }
+}

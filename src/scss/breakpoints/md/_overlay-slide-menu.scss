@@ -1,0 +1,60 @@
+/********** Overlay slide menu **********/
+
+.menu-slide {
+
+  .nav-menu-wrapper {
+    width: $overlay-slide-menu-width-md;
+  }
+
+  .navik-menu-overlay {
+
+    > ul {
+      padding: $overlay-slide-menu-parent-padding-md;
+
+      > li {
+        padding: $overlay-slide-menu-parent-list-padding-md;
+        margin-bottom: $overlay-slide-menu-parent-list-mb-md;
+
+        > ul {
+          padding: $overlay-slide-menu-submenu-list-padding-md;
+
+          li {
+            margin-bottom: $overlay-slide-menu-submenu-list-mb-md;
+          }
+
+          ul {
+            padding-top: $overlay-slide-menu-sub-submenu-pt-md;
+            padding-left: $overlay-slide-menu-sub-submenu-pl-md;
+          }
+        }
+
+        ul {
+          .overlay-dropdown-plus {
+            top: $overlay-slide-menu-dropdown-plus-top-md;
+            right: $overlay-slide-menu-dropdown-plus-right-md;
+          }
+        }
+      }
+
+      ul {
+        li {
+          a {
+            padding-left: $overlay-slide-menu-submenu-pl-md;
+
+            &:hover {
+              padding-left: $overlay-slide-menu-link-hover-pl-md;
+            }
+
+            &::before {
+              height: $overlay-menu-submenu-separator-height-md - 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .menu-social-media {
+    padding: $overlay-slide-menu-social-media-padding-md;
+  }
+}

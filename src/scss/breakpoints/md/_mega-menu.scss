@@ -1,0 +1,30 @@
+/********** Mega menu **********/
+
+.navik-menu {
+
+  .mega-menu-media {
+    display: table;
+    width: 100%;
+  }
+
+  .mega-menu-media-img {
+    display: table-cell;
+    width: $mega-menu-media-img-width-md;
+    vertical-align: top;
+
+    .mega-menu-thumbnail {
+      margin-bottom: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .mega-menu-media-info {
+    display: table-cell;
+    padding-left: $mega-menu-media-info-pl-md;
+    vertical-align: top;
+  }
+}

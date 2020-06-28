@@ -1,0 +1,43 @@
+/***************************************************
+  Dark version menu
+****************************************************/
+
+.navik-header {
+  &.header-dark {
+    background-color: $dark-menu-bg-color;
+
+    .line-menu,
+    .dropdown-plus::before {
+      background-color: $header-dark-burger-line-color;
+    }
+  }
+}
+
+.header-dark {
+  .navik-menu {
+    ul {
+
+      li {
+
+        > a {
+          color: $header-dark-link-color;
+        }
+
+        &.current-menu > a,
+        &:hover > a {
+          color: $header-dark-active-color;
+          background-color: $header-dark-active-bg-color;
+        }
+      }
+
+      ul {
+        li {
+          > a {
+            color: $header-dark-submenu-link-color;
+            background-color: $header-dark-submenu-bg-color;
+          }
+        }
+      }
+    }
+  }
+}

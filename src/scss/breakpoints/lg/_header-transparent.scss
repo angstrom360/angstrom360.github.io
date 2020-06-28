@@ -1,0 +1,105 @@
+/********** Header transparent **********/
+
+%header-transparent-position {
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+}
+
+.navik-header {
+
+  &.header-transparent-on {
+    @extend %header-transparent-position;
+  }
+
+  &.header-opacity-on {
+    background-color: $menu-opacity-bg-color;
+    @extend %header-transparent-position;
+  }
+}
+
+.header-transparent-on,
+.header-opacity-on {
+
+  .header-shadow-wrapper {
+    display: none;
+  }
+
+  .navik-menu {
+    > ul {
+      > li {
+
+        > a {
+          color: $menu-transparent-color;
+
+          .navik-menu-icon {
+            color: $menu-transparent-icon-menu-color;
+          }
+        }
+
+        &:hover,
+        &.current-menu {
+          > a {
+            color: $menu-transparent-active-color;
+          }
+        }
+
+        &.dropdown_menu {
+          > a {
+            > span {
+              &::before {
+                border-color: $menu-transparent-dropdown-arrow-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.header-transparent-on {
+
+  &.center-menu-2 {
+    .navik-menu {
+      border-color: $menu-transparent-border-color;
+    }
+  }
+
+  .navik-menu {
+    &.separate-line {
+      > ul {
+        > li {
+          > a {
+            &::before {
+              background-color: $menu-transparent-separate-line-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.header-opacity-on {
+
+  &.center-menu-2 {
+    .navik-menu {
+      border-color: $menu-opacity-border-color;
+    }
+  }
+
+  .navik-menu {
+    &.separate-line {
+      > ul {
+        > li {
+          > a {
+            &::before {
+              background-color: $menu-opacity-separate-line-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

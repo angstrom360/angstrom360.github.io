@@ -1,0 +1,55 @@
+/***************************************************
+  Burger menu
+****************************************************/
+
+.burger-menu {
+  position: absolute;
+  top: $burger-menu-top;
+  right: $burger-menu-right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: $burger-menu-width;
+  height: $burger-menu-height;
+  cursor: pointer;
+  @include transition-prefix("transform", $burger-menu-transition-duration, $burger-menu-transition-timing-base);
+
+  &.menu-open {
+    @include transform-prefix("rotate", $burger-menu-open-transform-rotate);
+  }
+}
+
+.line-menu {
+  width: $burger-menu-line-width;
+  height: $burger-menu-line-height;
+  background-color: $burger-menu-line-bg-color;
+  border-radius: $burger-menu-line-border-radius;
+
+  &.line-half {
+    width: $burger-menu-line-width-half;
+  }
+
+  &.first-line {
+    transform-origin: right;
+    @include transition-prefix("transform", $burger-menu-transition-duration, $burger-line-transition-timing-base);
+  }
+
+  &.last-line {
+    align-self: flex-end;
+    transform-origin: left;
+    @include transition-prefix("transform", $burger-menu-transition-duration, $burger-line-transition-timing-base);
+  }
+}
+
+.menu-open {
+  .line-menu {
+
+    &.first-line {
+      @include transform-multiple-prefix("rotate", $burger-line-open-rotate, "translateX", $burger-line-open-translate-first);
+    }
+
+    &.last-line {
+      @include transform-multiple-prefix("rotate", $burger-line-open-rotate, "translateX", $burger-line-open-translate-last);
+    }
+  }
+}

@@ -1,0 +1,28 @@
+/***************************************************
+  Media queries for responsive design
+****************************************************/
+
+@import "breakpoint-max";
+
+@media (min-width: $media-breakpoint-md) {
+  @import "breakpoints/md/default-menu";
+  @import "breakpoints/md/overlay-dropdown-plus";
+  @import "breakpoints/md/overlay-menu";
+  @import "breakpoints/md/overlay-slide-menu";
+  @import "breakpoints/md/mega-menu";
+  @import "breakpoints/md/menu-icons";
+}
+
+@media (min-width: $media-breakpoint-lg) {
+  @import "breakpoints/lg/default-menu";
+  @import "breakpoints/lg/header-sticky";
+  @import "breakpoints/lg/center-menu";
+  @import "breakpoints/lg/header-transparent";
+  @import "breakpoints/lg/hover-transitions";
+  @import "breakpoints/lg/submenu";
+  @import "breakpoints/lg/submenu-transitions";
+  @import "breakpoints/lg/overlay-dropdown-plus";
+  @import "breakpoints/lg/overlay-menu";
+  @import "breakpoints/lg/mega-menu";
+  @import "breakpoints/lg/fixed-sidebar-menu";
+}

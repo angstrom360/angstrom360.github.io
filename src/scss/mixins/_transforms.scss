@@ -1,0 +1,7 @@
+@mixin transform-prefix($name, $value) {
+  transform: #{$name}(#{$value});
+}
+
+@mixin transform-multiple-prefix($name1, $value1, $name2, $value2) {
+  transform: #{$name1}(#{$value1}) #{$name2}(#{$value2});
+}

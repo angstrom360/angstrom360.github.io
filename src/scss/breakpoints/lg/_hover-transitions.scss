@@ -1,0 +1,266 @@
+/********** Hover transitions **********/
+
+.navik-menu {
+
+  &.menu-hover-2 {
+    > ul {
+      > li {
+        &.current-menu,
+        &:hover {
+          > a {
+            color: $hover2-menu-active-color;
+            background-color: $hover2-menu-active-bg-color;
+
+            &::after {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.menu-hover-2,
+  &.menu-hover-3 {
+    > ul {
+      > li {
+        > a {
+          &::after {
+            position: absolute;
+            bottom: $hover2-border-bottom;
+            left: 0;
+            z-index: 0;
+            width: 100%;
+            height: $hover2-border-height;
+            content: "";
+            background-color: $hover2-border-color;
+            opacity: 0;
+            @include transition-prefix("all", $transition-duration-base, $transition-timing-base);
+          }
+        }
+      }
+    }
+  }
+
+  &.menu-hover-3 {
+    > ul {
+      > li {
+        &.current-menu,
+        &:hover {
+          > a {
+            color: $hover3-menu-active-color;
+
+            &::after {
+              width: 100%;
+              opacity: 1;
+            }
+          }
+        }
+
+        > a {
+          &::after {
+            left: 50%;
+            width: 0;
+            @include transition-prefix("all", ($transition-duration-base + .1), $transition-timing-base);
+            @include transform-prefix ("translateX", $hover3-border-translatex);
+          }
+        }
+      }
+    }
+  }
+
+  &.menu-hover-4 {
+    > ul {
+      > li {
+
+        > a {
+          > .hover-transition {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            &::after {
+              position: relative;
+              top: 50%;
+              left: 50%;
+              display: block;
+              width: $hover4-menu-active-width;
+              height: 0;
+              content: "";
+              background-color: $hover4-menu-active-bg-color;
+              opacity: 0;
+              @include transition-prefix("all", $transition-duration-base, $transition-timing-base);
+              @include transform-prefix ("translate", $hover4-menu-active-translate);
+            }
+          }
+        }
+
+        &.current-menu,
+        &:hover {
+          > a {
+            color: $hover4-menu-active-color;
+
+            > .hover-transition {
+              &::after {
+                height: 100%;
+                opacity: 1;
+                @include transform-prefix ("translate", $hover4-menu-active-translate);
+              }
+            }
+
+            .navik-menu-icon {
+              color: $hover4-menu-icon-color !important;
+            }
+          }
+        }
+
+        > ul {
+          @include transition-delay-prefix("0s");
+        }
+
+        &:hover {
+          > ul {
+            @include transition-delay-prefix($hover4-transition-delay);
+          }
+        }
+
+        &.dropdown_menu {
+          &.current-menu,
+          &:hover {
+            > a {
+              > span {
+                &::before {
+                  border-color: $hover4-menu-active-arrow-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.header-dark {
+  .navik-menu {
+
+    &.menu-hover-2 {
+      > ul {
+        > li {
+          &.current-menu,
+          &:hover {
+            > a {
+              color: $hover2-menu-active-color-dark;
+              background-color: $hover2-menu-active-bg-color-dark;
+            }
+          }
+        }
+      }
+    }
+
+    &.menu-hover-3 {
+      > ul {
+        > li {
+          &.current-menu,
+          &:hover {
+            > a {
+              color: $hover3-menu-active-color-dark;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.header-transparent-on {
+  .navik-menu {
+
+    &.menu-hover-2 {
+      > ul {
+        > li {
+          &.current-menu,
+          &:hover {
+            > a {
+              color: $hover2-menu-transparent-color;
+              background-color: $hover2-menu-transparent-bg-color;
+
+              .navik-menu-icon {
+                @extend %hover2-menu-transparent-icon-color;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.menu-hover-3 {
+      > ul {
+        > li {
+          &.current-menu,
+          &:hover {
+            > a {
+              @extend %hover3-menu-transparent-color;
+
+              .navik-menu-icon {
+                @extend %hover2-menu-transparent-icon-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.header-opacity-on {
+  .navik-menu {
+
+    &.menu-hover-2 {
+      > ul {
+        > li {
+          &.current-menu,
+          &:hover {
+            > a {
+              color: $hover2-menu-opacity-color;
+              background-color: $hover2-menu-opacity-bg-color;
+
+              .navik-menu-icon {
+                @extend %hover2-menu-transparent-icon-color;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.menu-hover-3 {
+      > ul {
+        > li {
+          &.current-menu,
+          &:hover {
+            > a {
+              @extend %hover3-menu-transparent-color;
+
+              .navik-menu-icon {
+                @extend %hover2-menu-transparent-icon-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+%hover3-menu-transparent-color {
+  color: $hover3-menu-transparent-color;
+}
+
+%hover2-menu-transparent-icon-color {
+  color: $menu-transparent-icon-menu-color !important;
+}

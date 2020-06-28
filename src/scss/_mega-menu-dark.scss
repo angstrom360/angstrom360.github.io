@@ -1,0 +1,28 @@
+/***************************************************
+  Mega menu dark
+****************************************************/
+
+.header-dark {
+  .navik-menu {
+
+    .mega-menu-container {
+      ul {
+        li {
+          a {
+            background-color: inherit;
+          }
+        }
+      }
+    }
+
+    .mega-menu-heading {
+      a {
+        color: $mega-menu-dark-heading-color;
+
+        &:hover {
+          color: $mega-menu-dark-heading-hover-color;
+        }
+      }
+    }
+  }
+}

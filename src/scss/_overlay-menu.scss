@@ -1,0 +1,396 @@
+/***************************************************
+  Overlay menu
+****************************************************/
+
+.navik-header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: $overlay-menu-font-size;
+  text-size-adjust: 100%;
+
+  .navik-header-container {
+    position: inherit;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+
+  a {
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none;
+      outline: none;
+    }
+  }
+
+  .logo {
+    position: absolute;
+    top: $overlay-menu-logo-top-sm;
+    left: $overlay-menu-logo-left-sm;
+    z-index: 2;
+  }
+
+  .burger-menu {
+    @include overlay-fixed-burger($overlay-burger-menu-z-index);
+
+    &:hover {
+      box-shadow: $overlay-burger-menu-hover-shadow-size $overlay-burger-menu-hover-shadow-color;
+    }
+
+    > span {
+      @include overlay-fixed-burger-wrap();
+    }
+
+    &.menu-open {
+      @include overlay-fixed-burger-open();
+
+      > span {
+        @include overlay-fixed-burger-wrap-open();
+      }
+    }
+  }
+
+  .line-menu {
+    @include overlay-fixed-burger-line-color();
+  }
+}
+
+.nav-menu-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $overlay-menu-nav-wrap-z-index;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  visibility: hidden;
+  background-color: $overlay-menu-nav-wrap-bg-default;
+  opacity: 0;
+  @include transition-prefix("all", ($transition-duration-base + .1), $transition-timing-base);
+
+  &.overlay-menu-open {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.navik-menu-overlay {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100%;
+
+  > ul {
+    display: table-cell;
+    padding: $overlay-menu-parent-ul-padding;
+    text-align: right;
+    vertical-align: middle;
+
+    > li {
+      position: relative;
+      padding: $overlay-menu-parent-padding-sm;
+      margin-bottom: $overlay-menu-parent-mb-sm;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      > .menu-overlay-link {
+        a {
+          display: inline-block;
+          font-size: $overlay-menu-parent-link-font-size-sm;
+          font-weight: $overlay-menu-parent-link-font-weight;
+          line-height: $overlay-menu-parent-link-line-height;
+          color: $overlay-menu-parent-link-color;
+          text-transform: uppercase;
+          @include transition-prefix("color", $transition-duration-base, $transition-timing-base);
+
+          &:hover {
+            @extend %overlay-menu-active-color;
+          }
+        }
+      }
+
+      &.current-menu {
+        > .menu-overlay-link {
+          a {
+            @extend %overlay-menu-active-color;
+          }
+        }
+      }
+
+      > ul {
+        display: none;
+        padding: $overlay-menu-submenu-padding-sm;
+
+        > li {
+          position: relative;
+
+          &::after {
+            position: absolute;
+            top: $overlay-menu-submenu-separator-top-sm;
+            left: $overlay-menu-submenu-separator-left-sm;
+            width: $overlay-menu-submenu-separator-width;
+            height: $overlay-menu-submenu-separator-height-sm;
+            content: "";
+            background-color: $overlay-menu-submenu-separator-color;
+            @include transform-prefix("rotate", $overlay-menu-submenu-separator-rotate);
+          }
+
+          &:first-child {
+            margin-left: 0;
+
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+
+      &.menuFade {
+
+        > .menu-overlay-link {
+          a,
+          .overlay-dropdown-plus {
+            opacity: 0;
+          }
+        }
+
+        > ul {
+          opacity: 0;
+        }
+      }
+
+      li {
+        display: inline;
+      }
+
+      &.menuSlideIn {
+
+        > .menu-overlay-link {
+          a {
+            @extend %overlay-menuslidein-animated;
+          }
+        }
+
+        > ul {
+          @extend %overlay-menuslidein-animated;
+        }
+
+        .menu-overlay-link {
+          .overlay-dropdown-plus {
+            animation-name: menuFadeIn;
+            animation-duration: $overlay-dropdown-plus-duration;
+            animation-delay: $overlay-dropdown-plus-delay;
+            animation-fill-mode: both;
+          }
+        }
+      }
+
+      &.menuSlideOut {
+        .menu-overlay-link {
+          .overlay-dropdown-plus {
+            animation-name: subMenuFadeOut;
+            animation-duration: $overlay-dropdown-plus-duration;
+            animation-fill-mode: both;
+          }
+        }
+      }
+    }
+
+    ul {
+      display: inline;
+
+      li {
+        margin-left: $overlay-menu-submenu-ml-sm;
+
+        a {
+          font-size: $overlay-menu-submenu-font-size-sm;
+          font-style: italic;
+          color: $overlay-menu-submenu-link-color;
+          white-space: nowrap;
+          @include transition-prefix("color", $transition-duration-base, $transition-timing-base);
+
+          &:hover {
+            color: $overlay-menu-submenu-hover-color !important;
+          }
+        }
+      }
+    }
+  }
+
+  ul {
+    li {
+      a {
+        font-family: $navik-menu-font-base;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &.submenu-no-separate {
+    > ul {
+
+      > li {
+        > ul {
+          li {
+            &::after {
+              display: none !important;
+            }
+          }
+        }
+      }
+
+      ul {
+        li {
+          margin-left: $overlay-menu-submenu-noseparator-ml-sm;
+        }
+      }
+    }
+  }
+}
+
+.overlay-menu-hover {
+  > .menu-overlay-link {
+    a {
+      @extend %overlay-menu-active-color;
+    }
+  }
+}
+
+%overlay-menu-active-color {
+  color: $overlay-menu-active-color !important;
+}
+
+.overlay-dropdown-plus {
+  &:hover {
+    + a {
+      @extend %overlay-menu-active-color;
+    }
+  }
+}
+
+@keyframes menuFadeInLeft {
+  from {
+    opacity: 0;
+    @include transform-prefix("translate3d", $overlay-menu-fadeinleft-translate3d);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes menuFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes subMenuFadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+%overlay-menuslidein-animated {
+  animation-name: menuFadeInLeft;
+  animation-duration: $overlay-menu-slidein-duration;
+  animation-fill-mode: both;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .navik-menu-overlay {
+    > ul {
+      > li {
+        &.menuSlideIn {
+          > ul {
+            opacity: 1;
+            animation-name: menuFadeIn;
+          }
+        }
+      }
+    }
+  }
+}
+
+@supports (-ms-accelerator:true) {
+  .navik-menu-overlay {
+    > ul {
+      > li {
+        &.menuSlideIn {
+          > ul {
+            opacity: 1;
+            animation-name: menuFadeIn;
+          }
+        }
+      }
+    }
+  }
+}
+
+.overlay-center-menu {
+
+  .navik-menu-overlay {
+    > ul {
+      text-align: center;
+
+      > li {
+        padding: $overlay-menu-center-list-padding-sm;
+
+        &.menuSlideIn {
+
+          .menu-overlay-link {
+            .overlay-dropdown-plus {
+              animation-delay: 0s;
+            }
+          }
+
+          > .menu-overlay-link {
+            a {
+              animation-name: menuFadeIn;
+            }
+          }
+
+          > ul {
+            animation-name: menuFadeIn;
+          }
+        }
+
+        > ul {
+          padding: $overlay-menu-center-submenu-padding-sm;
+        }
+      }
+    }
+  }
+
+  .menu-overlay-link {
+    position: relative;
+    display: inline-block;
+  }
+
+  .overlay-dropdown-plus {
+    right: -($overlay-dropdown-plus-wrap-right-sm);
+  }
+}
+
+.overlay-submenu-close {
+  > li {
+    animation-name: subMenuFadeOut;
+    animation-duration: $overlay-submenu-close-duration;
+    animation-fill-mode: both;
+  }
+}

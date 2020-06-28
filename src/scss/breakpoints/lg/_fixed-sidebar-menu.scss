@@ -1,0 +1,70 @@
+/********** Fixed sidebar menu **********/
+
+.navik-fixed-sidebar {
+  @include transition-duration-prefix("0s");
+
+  + .burger-menu {
+    @extend %fixed-sidebar-element-hide;
+  }
+
+  .logo {
+    display: block;
+  }
+}
+
+.navik-side-content {
+  width: calc(100% - #{$fixed-sidebar-content-offset});
+
+  > .logo {
+    @extend %fixed-sidebar-element-hide;
+  }
+}
+
+.fixedsidebar-bg-overlay {
+  @extend %fixed-sidebar-element-hide;
+}
+
+%fixed-sidebar-element-hide {
+  display: none;
+}
+
+%fixed-sidebar-disable-transform {
+  @include transform-prefix("translateX", "(0)");
+  @include transition-duration-prefix("0s");
+}
+
+.navik-sidebar-left {
+  @extend %fixed-sidebar-disable-transform;
+
+  &.fixed-sidebar-open {
+    ~ .navik-side-content {
+      @extend %fixed-sidebar-disable-transform;
+    }
+  }
+
+  ~ .fixedsidebar-bg-overlay {
+    + .navik-side-content {
+      margin-left: auto;
+    }
+  }
+}
+
+.navik-sidebar-right {
+  @extend %fixed-sidebar-disable-transform;
+
+  &.fixed-sidebar-open {
+    ~ .navik-side-content {
+      @extend %fixed-sidebar-disable-transform;
+    }
+  }
+
+  ~ .fixedsidebar-bg-overlay {
+    + .navik-side-content {
+      margin-right: auto;
+    }
+  }
+}
+
+.navik-menu-fixed {
+  padding-top: 0;
+}

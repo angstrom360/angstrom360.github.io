@@ -1,0 +1,14 @@
+/********** Overlay dropdown plus **********/
+
+.overlay-dropdown-plus {
+  top: $overlay-dropdown-plus-wrap-top-md;
+  right: $overlay-dropdown-plus-wrap-right-md;
+  width: $overlay-dropdown-plus-wrap-width-md;
+  height: $overlay-dropdown-plus-wrap-width-md;
+  line-height: $overlay-dropdown-plus-wrap-width-md;
+
+  &::before {
+    top: $overlay-dropdown-plus-top-md;
+    right: $overlay-dropdown-plus-right-md;
+  }
+}

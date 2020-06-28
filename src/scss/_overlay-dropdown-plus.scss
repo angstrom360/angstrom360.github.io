@@ -1,0 +1,33 @@
+/***************************************************
+  Overlay dropdown plus
+****************************************************/
+
+.overlay-dropdown-plus {
+  position: absolute;
+  top: $overlay-dropdown-plus-wrap-top-sm;
+  right: $overlay-dropdown-plus-wrap-right-sm;
+  width: $overlay-dropdown-plus-wrap-width-sm;
+  height: $overlay-dropdown-plus-wrap-width-sm;
+  line-height: $overlay-dropdown-plus-wrap-width-sm;
+  cursor: pointer;
+  opacity: 0;
+
+  &::before {
+    position: absolute;
+    top: $overlay-dropdown-plus-top-sm;
+    right: $overlay-dropdown-plus-right-sm;
+    width: $overlay-dropdown-plus-width;
+    height: $overlay-dropdown-plus-height;
+    content: "";
+    background-color: $overlay-dropdown-plus-color;
+  }
+
+  &::after {
+    @extend .overlay-dropdown-plus::before;
+    @include transform-prefix("rotate", $overlay-dropdown-plus-rotate);
+  }
+
+  &.overlay-dropdown-open::after {
+    display: none;
+  }
+}

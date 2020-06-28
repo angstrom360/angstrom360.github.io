@@ -1,0 +1,536 @@
+//
+// Color
+//
+$main-color:                                                    #26c6da !default;
+$white:                                                         #fff !default;
+$black:                                                         #000 !default;
+$parent-menu-color:                                             #212121 !default;
+$dark-menu-bg-color:                                            #111 !default;
+$burger-menu-line-bg-color:                                     #111 !default;
+$navik-menu-link-bg-color:                                      #f6f6f6 !default;
+$navik-submenu-link-color:                                      #818181 !default;
+$navik-submenu-link-bg-color:                                   #efefef !default;
+$navik-submenu-dark-link-color:                                 #a1a1a1 !default;
+$header-dark-active-bg-color:                                   #313131 !default;
+$header-dark-submenu-link-color:                                #c1c1c1 !default;
+$header-dark-submenu-bg-color:                                  #212121 !default;
+$overlay-burger-menu-bg-color:                                  #111 !default;
+$overlay-dropdown-plus-color:                                   #616161 !default;
+$overlay-menu-submenu-separator-color:                          #d1d1d1 !default;
+$overlay-menu-dark-dropdown-plus-bg-color:                      #717171 !default;
+$overlay-menu-dark-submenu-color:                               #a1a1a1 !default;
+$overlay-menu-dark-submenu-separator-color:                     #515151 !default;
+$background-color-menu-bg:                                      #006aa1 !default;
+$mega-menu-desc-color:                                          #818181 !default;
+$menu-icon-color:                                               #a1a1a1 !default;
+$menu-icon-color-dark:                                          #717171 !default;
+$horizontal-menu-arrow-color:                                   #c1c1c1 !default;
+$horizontal-menu-arrow-color-dark:                              #a1a1a1 !default;
+$horizontal-submenu-link-line-bg-color:                         #a1a1a1 !default;
+$horizontal-menu-separate-line-bg-color:                        #eee !default;
+$horizontal-menu-separate-line-bg-color-dark:                   #333 !default;
+$center-menu2-border-color:                                     #e9e9e9 !default;
+$center-menu2-border-color-dark:                                #333 !default;
+$menu-transparent-color:                                        #f7f7f7 !default;
+$hover2-menu-active-bg-color:                                   #f8f8f8 !default;
+$hover2-menu-active-bg-color-dark:                              #222 !default;
+
+//
+// Media breakpoints
+//
+$media-breakpoint-md:                                           768px !default;
+$media-breakpoint-lg:                                           1200px !default;
+
+//
+// Components
+//
+$transition-duration-base:                                      .2s !default;
+$transition-timing-base:                                        ease-in-out !default;
+
+//
+// Font
+//
+$navik-menu-font-base:                                          "Fira Sans", sans-serif !default;
+$navik-menu-line-height-base:                                   1.428572 !default;
+
+//
+// Default menu
+//
+$navik-header-font-size:                                        16px !default;
+$navik-header-line-height:                                      $navik-menu-line-height-base !default;
+$navik-header-bg-color:                                         $white !default;
+$navik-header-z-index:                                          99999 !default;
+
+$header-container-height-lg:                                    90px !default;
+
+$default-logo-padding-sm:                                       30px 40px !default;
+$default-logo-padding-md:                                       30px 40px 30px 0 !default;
+
+$default-logo-max-height-lg:                                    90px !default;
+
+$navik-menu-ul-padding-sm:                                      0 0 20px !default;
+$navik-menu-link-padding-sm:                                    14px 15px !default;
+$navik-menu-link-font-size:                                     15px !default;
+$navik-menu-link-color:                                         $parent-menu-color !default;
+$navik-menu-active-color:                                       $main-color;
+$navik-submenu-link-padding-sm:                                 14px 15px 14px 30px !default;
+$navik-submenu-link-font-size:                                  14px !default;
+$navik-sub-submenu-link-padding:                                14px 15px 14px 45px !default;
+
+$dropdown-plus-wrapper-width:                                   49px !default;
+$dropdown-plus-rotate:                                          "(90deg)" !default;
+$dropdown-plus-top:                                             24px !default;
+$dropdown-plus-right:                                           18px !default;
+$dropdown-plus-width:                                           13px !default;
+$dropdown-plus-height:                                          1px !default;
+$dropdown-plus-bg-color:                                        $burger-menu-line-bg-color !default;
+
+$header-menu-shadow-height:                                     30px !default;
+$header-menu-shadow-box-shadow-size-sm:                         0 10px $header-menu-shadow-height -5px !default;
+$header-menu-shadow-box-shadow-size-md:                         0 10px ($header-menu-shadow-height + 10) -5px !default;
+$header-menu-shadow-box-shadow-color:                           rgba($black, .1) !default;
+$header-menu-shadow-inside-height:                              $header-menu-shadow-height * 2 !default;
+
+$horizontal-menu-parent-height:                                 $header-container-height-lg !default;
+$horizontal-menu-parent-px:                                     20px !default;
+$horizontal-menu-arrow-width:                                   4px !default;
+$horizontal-menu-arrow-top:                                     -3px !default;
+$horizontal-menu-arrow-ml:                                      8px !default;
+$horizontal-menu-arrow-rotate:                                  "(135deg)" !default;
+$horizontal-menu-arrow-border-w:                                2px 2px 0 0 !default;
+$horizontal-menu-separate-line-width:                           1px !default;
+$horizontal-menu-separate-line-height:                          20px !default;
+$horizontal-menu-separate-line-px:                              28px !default;
+
+$horizontal-submenu-width:                                      250px !default;
+$horizontal-submenu-py:                                         27px !default;
+$horizontal-submenu-bg-color:                                   $white !default;
+$horizontal-submenu-bg-color-dark:                              $dark-menu-bg-color !default;
+$horizontal-submenu-box-shadow-size:                            0 12px 30px -2px !default;
+$horizontal-submenu-box-shadow-color:                           rgba($black, .1) !default;
+$horizontal-submenu-link-padding:                               9px 35px 7px !default;
+$horizontal-submenu-link-hover-pl:                              55px !default;
+$horizontal-submenu-link-line-top:                              17px !default;
+$horizontal-submenu-link-line-left:                             35px !default;
+$horizontal-submenu-link-line-width:                            10px !default;
+$horizontal-submenu-link-line-height:                           1px !default;
+$horizontal-submenu-next-level-top:                             -$horizontal-submenu-py !default;
+$horizontal-submenu-next-level-arrow-top:                       7px !default;
+$horizontal-submenu-next-level-arrow-right:                     -10px !default;
+$horizontal-submenu-next-level-arrow-ratate:                    "(45deg)" !default;
+
+$horizontal-submenu-dark-link-hover-color:                      $white !default;
+
+$sticky-menu-animation-duration:                                .5s !default;
+$sticky-menu-height:                                            70px !default;
+$sticky-menu-logo-padding:                                      0 40px 0 0 !default;
+$sticky-menu-translate:                                         "(0, -100%, 0)" !default;
+
+//
+// Center menu
+//
+$center-menu1-ul-px:                                            40px !default;
+
+$center-menu2-logo-padding:                                     36px 30px !default;
+$center-menu2-border-width:                                     1px !default;
+$center-menu2-menu-height:                                      62px !default;
+
+//
+// Header menu transparent
+//
+$menu-transparent-active-color:                                 $main-color !default;
+$menu-transparent-dropdown-arrow-color:                         $menu-transparent-color !default;
+$menu-transparent-border-color:                                 rgba($white, .25) !default;
+$menu-transparent-separate-line-color:                          $menu-transparent-border-color !default;
+$menu-transparent-icon-menu-color:                              rgba($white, .85) !default;
+
+$menu-opacity-bg-color:                                         rgba($black, .3) !default;
+$menu-opacity-border-color:                                     rgba($white, .2) !default;
+$menu-opacity-separate-line-color:                              $menu-opacity-border-color !default;
+
+//
+// Hover transitions
+//
+$hover2-menu-active-color:                                      $parent-menu-color !default;
+$hover2-menu-active-color-dark:                                 $white !default;
+$hover2-border-height:                                          3px !default;
+$hover2-border-bottom:                                          -$hover2-border-height !default;
+$hover2-border-color:                                           $main-color !default;
+$hover2-menu-transparent-color:                                 $menu-transparent-color !default;
+$hover2-menu-transparent-bg-color:                              $menu-transparent-border-color !default;
+$hover2-menu-opacity-color:                                     $menu-transparent-color !default;
+$hover2-menu-opacity-bg-color:                                  $menu-opacity-border-color !default;
+
+$hover3-menu-active-color:                                      $hover2-menu-active-color !default;
+$hover3-menu-active-color-dark:                                 $hover2-menu-active-color-dark !default;
+$hover3-menu-transparent-color:                                 $menu-transparent-color !default;
+$hover3-border-translatex:                                      "(-50%)" !default;
+
+$hover4-menu-active-width:                                      calc(100% + 2px) !default;
+$hover4-menu-active-color:                                      $white !default;
+$hover4-menu-active-bg-color:                                   $main-color !default;
+$hover4-menu-active-arrow-color:                                $hover4-menu-active-color !default;
+$hover4-menu-active-translate:                                  "(-50%, -50%)" !default;
+$hover4-transition-delay:                                       .13s !default;
+$hover4-menu-icon-color:                                        $white !default;
+
+//
+// Submenu
+//
+$submenu-top-border-width:                                      3px !default;
+$submenu-top-border-color:                                      $main-color !default;
+$submenu-top-border-next-ul-top:                                -30px !default;
+$submenu-top-list-border-next-ul-top:                           -23px !default;
+
+$submenu-list-border-next-ul-top:                               -20px !default;
+$submenu-list-border-link-padding:                              15px 35px 14px !default;
+$submenu-list-border-firstchild-padding:                        8px 35px 14px 35px !default;
+$submenu-list-border-lastchild-padding:                         15px 35px 8px 35px !default;
+$submenu-list-border-offsetx:                                   35px;
+$submenu-list-border-height:                                    1px;
+$submenu-list-border-bg-color:                                  $horizontal-menu-separate-line-bg-color !default;
+$submenu-list-border-bg-color-dark:                             $horizontal-menu-separate-line-bg-color-dark !default;
+$submenu-list-border-hover-line-top:                            24px !default;
+
+//
+// Submenu Transitions
+//
+$submenu-flip-transform-ratate-x:                               "(-90deg)" !default;
+$submenu-flip-perspective:                                      200px !default;
+$submenu-scale-transition-timing:                               ease !default;
+
+//
+// Burger menu
+//
+$burger-menu-transition-duration:                               330ms !default;
+$burger-menu-transition-timing-base:                            ease-out !default;
+$burger-menu-open-transform-rotate:                             "(-45deg)" !default;
+$burger-menu-top:                                               35px !default;
+$burger-menu-right:                                             14px !default;
+$burger-menu-width:                                             20px !default;
+$burger-menu-height:                                            17px !default;
+$burger-menu-line-border-radius:                                2px !default;
+$burger-menu-line-height:                                       3px !default;
+$burger-menu-line-width:                                        100% !default;
+$burger-menu-line-width-half:                                   $burger-menu-line-width / 2 !default;
+$burger-line-transition-timing-base:                            cubic-bezier(.54, -.81, .57, .57) !default;
+$burger-line-open-rotate:                                       "(-90deg)" !default;
+$burger-line-open-translate-first:                              "(3px)" !default;
+$burger-line-open-translate-last:                               "(-3px)" !default;
+
+//
+// Dark version menu
+//
+$header-dark-burger-line-color:                                 $white !default;
+$header-dark-link-color:                                        $white !default;
+$header-dark-active-color:                                      $main-color !default;
+
+//
+// Overlay menu
+//
+$overlay-menu-font-size:                                        16px !default;
+$overlay-menu-logo-top-sm:                                      30px !default;
+$overlay-menu-logo-top-lg:                                      50px !default;
+$overlay-menu-logo-left-sm:                                     15px !default;
+$overlay-menu-logo-left-md:                                     30px !default;
+$overlay-menu-logo-left-lg:                                     40px !default;
+
+$overlay-burger-menu-top:                                       30px !default;
+$overlay-burger-menu-top-lg:                                    40px !default;
+$overlay-burger-menu-right-sm:                                  15px !default;
+$overlay-burger-menu-right-md:                                  30px !default;
+$overlay-burger-menu-right-lg:                                  40px !default;
+$overlay-burger-menu-z-index:                                   99999 !default;
+$overlay-burger-menu-width:                                     50px !default;
+$overlay-burger-menu-height:                                    47px !default;
+$overlay-burger-menu-padding:                                   15px !default;
+$overlay-burger-menu-hover-shadow-size:                         0 0 25px -1px !default;
+$overlay-burger-menu-hover-shadow-color:                        rgba($black, .4) !default;
+$overlay-burger-menu-wrap-height:                               17px !default;
+$overlay-burger-menu-line-color:                                $white !default;
+
+$overlay-menu-nav-wrap-z-index:                                 9999 !default;
+$overlay-menu-nav-wrap-bg-default:                              $white !default;
+$overlay-menu-nav-wrap-bg-dark:                                 $dark-menu-bg-color !default;
+$overlay-menu-parent-ul-padding:                                80px 0 100px !default;
+$overlay-menu-parent-padding-sm:                                0 65px 0 15px !default;
+$overlay-menu-parent-mb-sm:                                     12px !default;
+$overlay-menu-parent-padding-md:                                0 110px 0 30px !default;
+$overlay-menu-parent-padding-lg:                                0 130px 0 40px !default;
+$overlay-menu-parent-mb-md:                                     16px !default;
+$overlay-menu-parent-link-color:                                $parent-menu-color !default;
+$overlay-menu-parent-link-font-size-sm:                         28px !default;
+$overlay-menu-parent-link-font-size-md:                         34px !default;
+$overlay-menu-parent-link-font-weight:                          800 !default;
+$overlay-menu-parent-link-line-height:                          1.2em !default;
+$overlay-menu-active-color:                                     $main-color !default;
+
+$overlay-menu-center-list-padding-sm:                           0 15px !default;
+$overlay-menu-center-list-padding-md:                           0 30px !default;
+$overlay-menu-center-list-padding-lg:                           0 40px !default;
+$overlay-menu-center-submenu-padding-sm:                        15px 0 21px !default;
+$overlay-menu-center-submenu-padding-md:                        18px 0 21px !default;
+
+$overlay-menu-submenu-padding-sm:                               10px 0 20px !default;
+$overlay-menu-submenu-padding-md:                               13px 0 16px !default;
+$overlay-menu-submenu-ml-sm:                                    32px !default;
+$overlay-menu-submenu-font-size-sm:                             14px !default;
+$overlay-menu-submenu-ml-md:                                    42px !default;
+$overlay-menu-submenu-font-size-md:                             16px !default;
+$overlay-menu-submenu-link-color:                               $navik-submenu-link-color !default;
+$overlay-menu-submenu-hover-color:                              $main-color !default;
+$overlay-menu-submenu-separator-top-sm:                         3px !default;
+$overlay-menu-submenu-separator-left-sm:                        -18px !default;
+$overlay-menu-submenu-separator-width:                          1px !default;
+$overlay-menu-submenu-separator-height-sm:                      13px !default;
+$overlay-menu-submenu-separator-top-md:                         1px !default;
+$overlay-menu-submenu-separator-left-md:                        -23px !default;
+$overlay-menu-submenu-separator-height-md:                      16px !default;
+$overlay-menu-submenu-separator-rotate:                         "(30deg)" !default;
+$overlay-menu-submenu-noseparator-ml-sm:                        20px !default;
+$overlay-menu-submenu-noseparator-ml-md:                        25px !default;
+
+$overlay-dropdown-plus-wrap-top-sm:                             6px !default;
+$overlay-dropdown-plus-wrap-right-sm:                           30px !default;
+$overlay-dropdown-plus-wrap-width-sm:                           20px !default;
+$overlay-dropdown-plus-wrap-top-md:                             7px !default;
+$overlay-dropdown-plus-wrap-right-md:                           43px !default;
+$overlay-dropdown-plus-wrap-width-md:                           24px !default;
+$overlay-dropdown-plus-wrap-right-lg:                           53px !default;
+$overlay-dropdown-plus-top-sm:                                  9px !default;
+$overlay-dropdown-plus-right-sm:                                5px !default;
+$overlay-dropdown-plus-top-md:                                  11px !default;
+$overlay-dropdown-plus-right-md:                                7px !default;
+$overlay-dropdown-plus-width:                                   10px !default;
+$overlay-dropdown-plus-height:                                  2px !default;
+$overlay-dropdown-plus-rotate:                                  $dropdown-plus-rotate !default;
+$overlay-dropdown-plus-duration:                                .5s !default;
+$overlay-dropdown-plus-delay:                                   .2s !default;
+
+$overlay-menu-fadeinleft-translate3d:                           "(-80px, 0, 0)" !default;
+$overlay-menu-slidein-duration:                                 .5s !default;
+$overlay-submenu-close-duration:                                $overlay-menu-slidein-duration !default;
+$overlay-submenu-vertical-list-space-sm:                        5px !default;
+$overlay-submenu-vertical-list-space-md:                        7px !default;
+$overlay-submenu-vertical-right-space-sm:                       30px !default;
+$overlay-submenu-vertical-right-space-md:                       60px !default;
+$overlay-submenu-vertical-right-space-lg:                       70px !default;
+$overlay-submenu-vertical-dropdown-plus-top-sm:                 1px !default;
+$overlay-submenu-vertical-dropdown-plus-right-sm:               -35px !default;
+$overlay-submenu-vertical-dropdown-plus-top-md:                 -2px !default;
+$overlay-submenu-vertical-dropdown-plus-right-md:               -67px !default;
+$overlay-submenu-vertical-dropdown-plus-right-lg:               -77px !default;
+
+$overlay-menu-social-media-bottom-sm:                           24px !default;
+$overlay-menu-social-media-padding-sm:                          0 65px !default;
+$overlay-menu-social-media-bottom-md:                           34px !default;
+$overlay-menu-social-media-padding-md:                          0 110px !default;
+$overlay-menu-social-media-padding-lg:                          0 130px !default;
+$overlay-menu-social-media-width:                               30px !default;
+$overlay-menu-social-media-margin:                              0 0 6px 6px !default;
+$overlay-menu-social-media-border-width:                        3px !default;
+$overlay-menu-social-media-border-color:                        $parent-menu-color !default;
+$overlay-menu-social-media-hover-opacity:                       .8 !default;
+$overlay-menu-social-media-img-height:                          14px !default;
+$overlay-menu-social-media-img-translate:                       "(-50%, -50%)" !default;
+$overlay-menu-social-media-center-padding-sm:                   0 15px !default;
+$overlay-menu-social-media-center-padding-md:                   0 40px !default;
+$overlay-menu-social-media-center-margin:                       0 3px 6px !default;
+
+//
+// Overlay slide menu
+//
+$overlay-slide-menu-width-sm:                                   320px !default;
+$overlay-slide-menu-width-md:                                   400px !default;
+$overlay-slide-menu-transition-duration:                        .4s !default;
+$overlay-slide-menu-box-shadow-size:                            -15px 0 60px -5px !default;
+$overlay-slide-menu-box-shadow-color:                           rgba($black, .3) !default;
+$overlay-slide-menu-bg-overlay-z-index:                         999 !default;
+$overlay-slide-menu-bg-overlay-color:                           rgba($black, .6) !default;
+$overlay-slide-menu-bg-overlay-delay:                           .1s !default;
+$overlay-slide-menu-submenu-pt:                                 25px !default;
+$overlay-slide-menu-submenu-pl-sm:                              20px !default;
+$overlay-slide-menu-submenu-pl-md:                              23px !default;
+$overlay-slide-menu-submenu-separator-top:                      2px !default;
+$overlay-slide-menu-submenu-separator-left:                     5px !default;
+$overlay-slide-menu-submenu-no-separate-pl:                     15px !default;
+$overlay-slide-menu-submenu-list-mb-sm:                         5px !default;
+$overlay-slide-menu-submenu-list-mb-md:                         7px !default;
+$overlay-slide-menu-submenu-list-padding-md:                    28px 0 16px !default;
+$overlay-slide-menu-submenu-close-delay:                        .2s !default;
+$overlay-slide-menu-sub-submenu-pt-sm:                          5px !default;
+$overlay-slide-menu-sub-submenu-pl-sm:                          20px !default;
+$overlay-slide-menu-sub-submenu-pt-md:                          7px !default;
+$overlay-slide-menu-sub-submenu-pl-md:                          23px !default;
+$overlay-slide-menu-parent-padding-sm:                          120px 0 100px !default;
+$overlay-slide-menu-parent-padding-md:                          140px 0 100px !default;
+$overlay-slide-menu-parent-list-padding-sm:                     0 35px 0 30px !default;
+$overlay-slide-menu-parent-list-padding-md:                     0 60px 0 45px !default;
+$overlay-slide-menu-parent-list-mb-md:                          14px !default;
+$overlay-slide-menu-dropdown-plus-top-sm:                       -1px !default;
+$overlay-slide-menu-dropdown-plus-right-sm:                     -5px !default;
+$overlay-slide-menu-dropdown-plus-top-md:                       -2px !default;
+$overlay-slide-menu-dropdown-plus-right-md:                     -17px !default;
+$overlay-slide-menu-dropdown-plus-right-lg:                     -7px !default;
+$overlay-slide-menu-dropdown-plus-duration:                     .6s !default;
+$overlay-slide-menu-link-pr:                                    30px !default;
+$overlay-slide-menu-link-hover-pl-sm:                           30px !default;
+$overlay-slide-menu-link-hover-pl-md:                           33px !default;
+$overlay-slide-menu-noseparate-link-hover-pl:                   25px !default;
+$overlay-slide-menu-social-media-padding-sm:                    0 30px !default;
+$overlay-slide-menu-social-media-padding-md:                    0 45px !default;
+$overlay-slide-menu-social-media-link-margin:                   0 6px 6px 0 !default;
+$overlay-slide-menu-fadeinright-translate3d:                    "(40px, 0, 0)" !default;
+$overlay-slide-menu-slidein-duration:                           .8s !default;
+
+//
+// Overlay menu color schemes
+//
+$overlay-menu-dark-link-color:                                  $white !default;
+$overlay-menu-dark-social-media-border-color:                   $overlay-menu-dark-link-color !default;
+$overlay-menu-dark-social-media-opacity:                        .2 !default;
+
+$overlay-menu-bg-color-link-color:                              $white !default;
+$overlay-menu-bg-color-plus-separator:                          $overlay-menu-bg-color-link-color !default;
+$overlay-menu-bg-color-submenu-link:                            $overlay-menu-bg-color-link-color !default;
+$overlay-menu-bg-color-social-media-border-color:               $overlay-menu-bg-color-link-color !default;
+$overlay-menu-bg-color-active-link:                             $overlay-menu-bg-color-link-color !default;
+$overlay-menu-bg-color-link-hover:                              rgba($overlay-menu-bg-color-link-color, .8) !default;
+
+$overlay-menu-bg-image-src:                                     url("../../../examples/demo/images/overlay-menu-bg.jpg") !default;
+$overlay-menu-bg-image-link-color:                              $white !default;
+$overlay-menu-bg-image-plus-color:                              $overlay-menu-bg-image-link-color !default;
+$overlay-menu-bg-image-submenu-link:                            rgba($overlay-menu-bg-image-link-color, .6) !default;
+$overlay-menu-bg-image-separator-color:                         rgba($overlay-menu-bg-image-link-color, .25) !default;
+$overlay-menu-bg-image-social-media-border-color:               $overlay-menu-bg-image-link-color !default;
+$overlay-menu-bg-image-social-media-hover-opacity:              .6 !default;
+
+//
+// Fixed sidebar menu
+//
+$fixed-sidebar-menu-z-index:                                    9999999 !default;
+$fixed-sidebar-menu-width:                                      250px !default;
+$fixed-sidebar-menu-bg-color:                                   $white !default;
+$fixed-sidebar-box-shadow-color:                                rgba($black, .15) !default;
+$fixed-sidebar-box-shadow-size-left:                            2px 0 12px -2px !default;
+$fixed-sidebar-box-shadow-size-right:                           -2px 0 12px -2px !default;
+$fixed-sidebar-header-container-padding:                        0 28px !default;
+$fixed-sidebar-social-media-padding:                            0 0 30px !default;
+$fixed-sidebar-social-media-margin:                             0 6px 6px 0 !default;
+$fixed-sidebar-burger-menu-z-index:                             $fixed-sidebar-menu-z-index !default;
+$fixed-sidebar-bg-overlay-color:                                rgba($black, .6) !default;
+$fixed-sidebar-bg-overlay-z-index:                              999999 !default;
+$fixed-sidebar-left-content-translatex:                         "(125px)" !default;
+$fixed-sidebar-right-content-translatex:                        "(-125px)" !default;
+$fixed-sidebar-logo-padding:                                    70px 0 !default;
+$fixed-sidebar-content-logo-z-index:                            99999 !default;
+$fixed-sidebar-content-logo-height:                             47px !default;
+$fixed-sidebar-content-logo-padding:                            0 50px !default;
+$fixed-sidebar-content-logo-bg-color:                           $white !default;
+$fixed-sidebar-content-logo-shadow-size:                        0 2px 12px -2px !default;
+$fixed-sidebar-content-logo-shadow-color:                       rgba($black, .15) !default;
+
+$fixed-sidebar-pt:                                              90px !default;
+$fixed-sidebar-link-pr:                                         17px !default;
+$fixed-sidebar-link-font-family:                                $navik-menu-font-base !default;
+$fixed-sidebar-link-font-size:                                  18px !default;
+$fixed-sidebar-link-font-weight:                                700 !default;
+$fixed-sidebar-link-color:                                      $parent-menu-color !default;
+$fixed-sidebar-active-color:                                    $main-color !default;
+$fixed-sidebar-parent-wrap-mb:                                  40px !default;
+$fixed-sidebar-parent-list-mb:                                  14px !default;
+
+$fixed-sidebar-submenu-list-mb:                                 6px !default;
+$fixed-sidebar-submenu-link-pl:                                 18px !default;
+$fixed-sidebar-submenu-link-font-size:                          14px !default;
+$fixed-sidebar-submenu-link-color:                              $navik-submenu-link-color !default;
+
+$fixed-sidebar-separator-top:                                   3px !default;
+$fixed-sidebar-separator-left:                                  4px !default;
+$fixed-sidebar-separator-width:                                 1px !default;
+$fixed-sidebar-separator-height:                                12px !default;
+$fixed-sidebar-separator-bg-color:                              $overlay-menu-submenu-separator-color !default;
+$fixed-sidebar-separator-rotate:                                "(30deg)" !default;
+
+$fixed-sidebar-hover-pl:                                        24px !default;
+
+$fixed-sidebar-second-level-padding:                            27px 0 15px !default;
+$fixed-sidebar-other-level-pt:                                  6px !default;
+$fixed-sidebar-other-level-pl:                                  18px !default;
+$fixed-sidebar-other-level-submenu-pl:                          12px !default;
+$fixed-sidebar-other-level-submenu-pl-hover:                    18px !default;
+
+$fixed-sidebar-dropdown-plus-top:                               -1px !default;
+$fixed-sidebar-dropdown-plus-right:                             -7px !default;
+$fixed-sidebar-dropdown-plus-top-submenu:                       -3px !default;
+
+$fixed-sidebar-dark-bg-color:                                   $dark-menu-bg-color !default;
+$fixed-sidebar-dark-social-media-border-color:                  $white !default;
+$fixed-sidebar-dark-social-media-opacity:                       .2 !default;
+$fixed-sidebar-dark-parent-link-color:                          $white !default;
+$fixed-sidebar-dark-submenu-color:                              $overlay-menu-dark-submenu-color !default;
+$fixed-sidebar-dark-submenu-separator:                          $overlay-menu-dark-submenu-separator-color !default;
+$fixed-sidebar-dark-dropdown-plus-bg-color:                     $overlay-menu-dark-dropdown-plus-bg-color !default;
+$fixed-sidebar-bg-color-menu-bg:                                $background-color-menu-bg !default;
+$fixed-sidebar-bg-color-social-media-border-color:              $white !default;
+$fixed-sidebar-bg-color-submenu-color:                          $fixed-sidebar-bg-color-social-media-border-color !default;
+$fixed-sidebar-bg-color-submenu-separator:                      $fixed-sidebar-bg-color-social-media-border-color !default;
+$fixed-sidebar-bg-color-hover-color:                            rgba($white, .8) !default;
+
+$fixed-sidebar-content-offset:                                  $fixed-sidebar-menu-width !default;
+
+//
+// Mega menu
+//
+$mega-menu-container-padding-sm:                                15px 30px 0 !default;
+$mega-menu-container-padding-lg:                                15px 15px 0 !default;
+$mega-menu-ul-padding-lg:                                       25px 20px 15px !default;
+$mega-menu-box-mb:                                              30px !default;
+$mega-menu-heading-mb:                                          12px !default;
+$mega-menu-heading-font-family:                                 $navik-menu-font-base !default;
+$mega-menu-heading-font-size:                                   15px !default;
+$mega-menu-heading-color:                                       $parent-menu-color !default;
+
+$mega-menu-dark-heading-color:                                  $white !default;
+$mega-menu-dark-heading-hover-color:                            $main-color !default;
+
+$mega-menu-desc-font-family:                                    $navik-menu-font-base !default;
+$mega-menu-desc-font-size:                                      14px !default;
+$mega-menu-desc-line-height:                                    $navik-menu-line-height-base !default;
+
+$mega-menu-link-padding:                                        5px 0 !default;
+$mega-menu-link-font-size:                                      $mega-menu-desc-font-size !default;
+$mega-menu-link-color:                                          $mega-menu-desc-color !default;
+$mega-menu-link-hover-color:                                    $main-color !default;
+
+$mega-menu-list-top-lg:                                         13px !default;
+$mega-menu-list-ul-pl:                                          15px !default;
+$mega-menu-list-padding-lg:                                     5px 0 !default;
+$mega-menu-list-color-lg:                                       $navik-submenu-link-color !default;
+$mega-menu-list-color-dark:                                     $navik-submenu-dark-link-color !default;
+$mega-menu-list-color-dark-hover:                               $white !default;
+$mega-menu-list-hover-pl-lg:                                    20px !default;
+
+$mega-menu-thumbnail-mb:                                        20px !default;
+$mega-menu-thumbnail-hover-overlay:                             rgba($black, .2) !default;
+
+$mega-menu-media-img-width-md:                                  120px !default;
+$mega-menu-media-info-pl-md:                                    20px !default;
+
+$mega-menu-perspective-lg:                                      $submenu-flip-perspective !default;
+
+//
+// Menu icons
+//
+$menu-icon-margin-right:                                        5px !default;
+$menu-icon-active-color:                                        $main-color !default;
+
+$menu-icon-overlay-menu-top:                                    -2px !default;
+$menu-icon-overlay-menu-mr-sm:                                  10px !default;
+$menu-icon-overlay-menu-mr-md:                                  12px !default;
+$menu-icon-overlay-submenu-top:                                 -1px !default;
+$menu-icon-overlay-submenu-mr-sm:                               7px !default;
+$menu-icon-overlay-submenu-mr-md:                               8px !default;
+$menu-icon-slide-menu-mr-sm:                                    5px !default;
+$menu-icon-slide-menu-mr-md:                                    10px !default;
+$menu-icon-fixed-menu-mr:                                       5px !default;

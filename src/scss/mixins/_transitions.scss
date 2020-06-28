@@ -1,0 +1,11 @@
+@mixin transition-prefix($property, $duration, $timing) {
+  transition: #{$property} #{$duration} #{$timing};
+}
+
+@mixin transition-duration-prefix($duration) {
+  transition-duration: #{$duration};
+}
+
+@mixin transition-delay-prefix($delay) {
+  transition-delay: #{$delay};
+}

@@ -1,0 +1,88 @@
+/***************************************************
+  Overlay menu dark
+****************************************************/
+
+.header-dark {
+
+  .nav-menu-wrapper {
+    background-color: $overlay-menu-nav-wrap-bg-dark;
+  }
+
+  .navik-menu-overlay {
+    > ul {
+
+      > li {
+
+        > .menu-overlay-link {
+          a {
+            color: $overlay-menu-dark-link-color;
+          }
+        }
+
+        > ul {
+          > li {
+            &::after {
+              @extend %submenu-separator-color;
+            }
+          }
+        }
+      }
+
+      ul {
+        li {
+          a {
+            color: $overlay-menu-dark-submenu-color;
+          }
+        }
+      }
+    }
+  }
+
+  .overlay-dropdown-plus {
+
+    &::before {
+      background-color: $overlay-menu-dark-dropdown-plus-bg-color;
+    }
+  }
+
+  .menu-social-media {
+    a {
+      border-color: $overlay-menu-dark-social-media-border-color;
+      opacity: $overlay-menu-dark-social-media-opacity;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.navik-header-overlay {
+  &.header-dark {
+    .burger-menu {
+      &.menu-open {
+        background-color: $black;
+      }
+    }
+  }
+}
+
+.menu-slide {
+  &.header-dark {
+    .navik-menu-overlay {
+      > ul {
+        ul {
+          li {
+            a::before {
+              @extend %submenu-separator-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+%submenu-separator-color {
+  background-color: $overlay-menu-dark-submenu-separator-color !important;
+}

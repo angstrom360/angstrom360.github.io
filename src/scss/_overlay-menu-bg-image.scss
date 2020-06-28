@@ -1,0 +1,58 @@
+/***************************************************
+  Overlay menu background image
+****************************************************/
+
+.header-bg-image {
+
+  .nav-menu-wrapper {
+    background-color: inherit;
+    background-image: $overlay-menu-bg-image-src;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .navik-menu-overlay {
+    > ul {
+
+      > li {
+
+        > .menu-overlay-link {
+          a {
+            color: $overlay-menu-bg-image-link-color;
+          }
+        }
+
+        > ul {
+          > li::after {
+            background-color: $overlay-menu-bg-image-separator-color !important;
+          }
+        }
+      }
+
+      ul {
+        li {
+          a {
+            color: $overlay-menu-bg-image-submenu-link;
+          }
+        }
+      }
+    }
+  }
+
+  .overlay-dropdown-plus {
+    &::before {
+      background-color: $overlay-menu-bg-image-plus-color;
+    }
+  }
+
+  .menu-social-media {
+    a {
+      border-color: $overlay-menu-bg-image-social-media-border-color;
+
+      &:hover {
+        opacity: $overlay-menu-bg-image-social-media-hover-opacity;
+      }
+    }
+  }
+}

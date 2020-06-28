@@ -1,0 +1,55 @@
+/********** Submenu transitions **********/
+
+.navik-menu {
+
+  &.submenu-flip {
+
+    li {
+
+      > ul {
+        transform-origin: 0% 0%;
+        backface-visibility: hidden;
+        @include transition-prefix("all", ($transition-duration-base + .15), $transition-timing-base);
+        @include transform-prefix("rotateX", $submenu-flip-transform-ratate-x);
+      }
+
+      &:hover {
+        > ul {
+          @include transform-prefix("rotateX", "(0deg)");
+        }
+      }
+    }
+
+    ul {
+      transform-style: preserve-3d;
+      perspective: $submenu-flip-perspective;
+
+      li {
+        transform-style: preserve-3d;
+        perspective: $submenu-flip-perspective;
+      }
+    }
+  }
+
+  &.submenu-scale {
+    li {
+      > ul {
+        transform-origin: 0 0;
+        @include transition-prefix("all", ($transition-duration-base + .1), $submenu-scale-transition-timing);
+        @include transform-prefix("scale", "(0)");
+      }
+
+      &.submenu-right {
+        ul {
+          transform-origin: 100% 0;
+        }
+      }
+
+      &:hover {
+        > ul {
+          @include transform-prefix("scale", "(1)");
+        }
+      }
+    }
+  }
+}

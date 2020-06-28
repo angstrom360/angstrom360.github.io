@@ -1,0 +1,641 @@
+/**
+	Navik - HTML header navigation menu - v1.4.2
+ 	Copyright (c) 2020, Pophonic
+
+	Author: Pophonic
+	Profile: https://codecanyon.net/user/pophonic
+
+**/
+/***************************************************
+  Burger menu
+****************************************************/
+.burger-menu {
+  position: absolute;
+  top: 35px;
+  right: 14px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 20px;
+  height: 17px;
+  cursor: pointer;
+  transition: -webkit-transform 330ms ease-out;
+  transition: transform 330ms ease-out;
+  transition: transform 330ms ease-out, -webkit-transform 330ms ease-out;
+}
+
+.burger-menu.menu-open {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.line-menu {
+  width: 100%;
+  height: 3px;
+  background-color: #111;
+  border-radius: 2px;
+}
+
+.line-menu.line-half {
+  width: 50%;
+}
+
+.line-menu.first-line {
+  -webkit-transform-origin: right;
+  transform-origin: right;
+  transition: -webkit-transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57), -webkit-transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+
+.line-menu.last-line {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  transition: -webkit-transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57), -webkit-transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+
+.menu-open .line-menu.first-line {
+  -webkit-transform: rotate(-90deg) translateX(3px);
+  transform: rotate(-90deg) translateX(3px);
+}
+
+.menu-open .line-menu.last-line {
+  -webkit-transform: rotate(-90deg) translateX(-3px);
+  transform: rotate(-90deg) translateX(-3px);
+}
+
+/***************************************************
+  Overlay dropdown plus
+****************************************************/
+.overlay-dropdown-plus {
+  position: absolute;
+  top: 6px;
+  right: 30px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.overlay-dropdown-plus::before, .overlay-dropdown-plus::after {
+  position: absolute;
+  top: 9px;
+  right: 5px;
+  width: 10px;
+  height: 2px;
+  content: "";
+  background-color: #616161;
+}
+
+.overlay-dropdown-plus::after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.overlay-dropdown-plus.overlay-dropdown-open::after {
+  display: none;
+}
+
+/***************************************************
+  Overlay menu social media
+****************************************************/
+.menu-social-media {
+  position: absolute;
+  right: 0;
+  bottom: 24px;
+  width: 100%;
+  padding: 0 65px;
+  font-size: 0;
+  text-align: right;
+}
+
+.menu-social-media a {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 0 0 6px 6px;
+  border: 3px solid #212121;
+  border-radius: 50%;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.menu-social-media a:hover {
+  opacity: 0.8;
+}
+
+.menu-social-media a img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: 14px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.overlay-center-menu .menu-social-media {
+  padding: 0 15px;
+  text-align: center;
+}
+
+.overlay-center-menu .menu-social-media a {
+  margin: 0 3px 6px;
+}
+
+/***************************************************
+  Fixed sidebar menu
+****************************************************/
+.navik-fixed-sidebar {
+  position: fixed;
+  top: 0;
+  z-index: 9999999;
+  width: 250px;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+
+.navik-fixed-sidebar + .burger-menu {
+  position: fixed;
+  top: 30px;
+  right: 15px;
+  z-index: 9999999;
+  display: block;
+  -ms-flex-direction: inherit;
+  flex-direction: inherit;
+  -ms-flex-pack: inherit;
+  justify-content: inherit;
+  width: 50px;
+  height: 47px;
+  padding: 15px;
+  background: #111;
+  transition: all 0.2s ease-in-out;
+}
+
+.navik-fixed-sidebar + .burger-menu > span {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  height: 17px;
+  transition: -webkit-transform 330ms ease-out;
+  transition: transform 330ms ease-out;
+  transition: transform 330ms ease-out, -webkit-transform 330ms ease-out;
+}
+
+.navik-fixed-sidebar + .burger-menu .line-menu {
+  background-color: #fff;
+}
+
+.navik-fixed-sidebar + .burger-menu.menu-open {
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+}
+
+.navik-fixed-sidebar + .burger-menu.menu-open > span {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.navik-fixed-sidebar .navik-header-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 0 28px;
+}
+
+.navik-fixed-sidebar .menu-social-media {
+  position: inherit;
+  bottom: inherit;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  padding: 0 0 30px !important;
+  text-align: left;
+}
+
+.navik-fixed-sidebar .menu-social-media a {
+  margin: 0 6px 6px 0;
+}
+
+.navik-fixed-sidebar .menu-social-media a:last-child {
+  margin-right: 0;
+}
+
+.navik-fixed-sidebar .logo {
+  display: none;
+  padding: 70px 0;
+}
+
+.body-fixed-sidebar {
+  overflow-x: hidden;
+}
+
+.navik-sidebar-left {
+  left: 0;
+  box-shadow: 2px 0 12px -2px rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.navik-sidebar-left.fixed-sidebar-open {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+.navik-sidebar-left.fixed-sidebar-open ~ .navik-side-content {
+  -webkit-transform: translateX(125px);
+  transform: translateX(125px);
+}
+
+.navik-sidebar-left + .burger-menu {
+  top: 0;
+  right: inherit;
+  left: 0;
+}
+
+.navik-sidebar-right {
+  right: 0;
+  box-shadow: -2px 0 12px -2px rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.navik-sidebar-right.fixed-sidebar-open {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+.navik-sidebar-right.fixed-sidebar-open ~ .navik-side-content {
+  -webkit-transform: translateX(-125px);
+  transform: translateX(-125px);
+}
+
+.navik-sidebar-right + .burger-menu {
+  top: 0;
+  right: 0;
+}
+
+.fixedsidebar-bg-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.navik-side-content {
+  transition: all 0.4s ease-in-out;
+}
+
+.navik-side-content > .logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 47px;
+  padding: 0 50px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 12px -2px rgba(0, 0, 0, 0.15);
+}
+
+.navik-side-content > .logo img {
+  width: auto;
+  max-width: inherit;
+  max-height: 47px;
+}
+
+.fixed-sidebar-open ~ .fixedsidebar-bg-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.fixed-menu-wrap {
+  width: 100%;
+}
+
+.navik-menu-fixed {
+  padding-top: 90px;
+}
+
+.navik-menu-fixed ul li {
+  position: relative;
+}
+
+.navik-menu-fixed ul li a {
+  display: block;
+  padding-right: 17px;
+  font-family: "Fira Sans", sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+
+.navik-menu-fixed > ul {
+  margin-bottom: 40px;
+}
+
+.navik-menu-fixed > ul > li {
+  margin-bottom: 14px;
+}
+
+.navik-menu-fixed > ul > li:last-child {
+  margin-bottom: 0;
+}
+
+.navik-menu-fixed > ul > li > a {
+  font-size: 18px;
+  font-weight: 700;
+  color: #212121;
+  text-transform: uppercase;
+}
+
+.navik-menu-fixed > ul > li > ul {
+  padding: 27px 0 15px;
+}
+
+.navik-menu-fixed > ul > li > ul ul {
+  padding-top: 6px;
+}
+
+.navik-menu-fixed > ul > li > ul > li ul {
+  padding-left: 18px;
+}
+
+.navik-menu-fixed > ul ul {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.navik-menu-fixed > ul ul.submenu-collapse {
+  opacity: 1;
+}
+
+.navik-menu-fixed > ul ul li {
+  margin-bottom: 6px;
+}
+
+.navik-menu-fixed > ul ul li:last-child {
+  margin-bottom: 0;
+}
+
+.navik-menu-fixed > ul ul a {
+  position: relative;
+  padding-left: 18px;
+  font-size: 14px;
+  font-style: italic;
+  color: #818181;
+}
+
+.navik-menu-fixed > ul ul a::before {
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 1px;
+  height: 12px;
+  content: "";
+  background-color: #d1d1d1;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.navik-menu-fixed > ul ul a:hover {
+  padding-left: 24px;
+}
+
+.navik-menu-fixed > ul ul .overlay-dropdown-plus {
+  top: -3px;
+}
+
+.navik-menu-fixed .overlay-dropdown-plus {
+  top: -1px;
+  right: -7px;
+  opacity: 1;
+}
+
+.navik-menu-fixed.submenu-no-separate > ul ul a {
+  padding-left: 12px;
+}
+
+.navik-menu-fixed.submenu-no-separate > ul ul a::before {
+  display: none !important;
+}
+
+.navik-menu-fixed.submenu-no-separate > ul ul a:hover {
+  padding-left: 18px;
+}
+
+.navik-menu-fixed.submenu-no-separate > ul > li > ul > li ul {
+  padding-left: 12px;
+}
+
+.navik-menu-fixed ul li:hover > a, .navik-menu-fixed > ul > li.current-menu > a {
+  color: #26c6da !important;
+}
+
+/***************************************************
+  Fixed sidebar menu dark
+****************************************************/
+.navik-fixed-sidebar.sidebar-dark {
+  background-color: #111;
+}
+
+.navik-fixed-sidebar.sidebar-dark .menu-social-media a {
+  border-color: #fff;
+  opacity: 0.2;
+}
+
+.navik-fixed-sidebar.sidebar-dark .menu-social-media a:hover {
+  opacity: 1;
+}
+
+.sidebar-dark ~ .navik-side-content > .logo {
+  background-color: #111;
+}
+
+.sidebar-dark .navik-menu-fixed > ul > li > a {
+  color: #fff;
+}
+
+.sidebar-dark .navik-menu-fixed > ul ul a {
+  color: #a1a1a1;
+}
+
+.sidebar-dark .navik-menu-fixed > ul ul a::before {
+  background-color: #515151;
+}
+
+.sidebar-dark .overlay-dropdown-plus::before, .sidebar-dark .overlay-dropdown-plus::after {
+  background-color: #717171;
+}
+
+/***************************************************
+  Fixed sidebar menu background color
+****************************************************/
+.navik-fixed-sidebar.sidebar-color-bg {
+  background-color: #006aa1;
+}
+
+.navik-fixed-sidebar.sidebar-color-bg .menu-social-media a {
+  border-color: #fff;
+}
+
+.sidebar-color-bg ~ .navik-side-content > .logo {
+  background-color: #006aa1;
+}
+
+.sidebar-color-bg .navik-menu-fixed ul li a:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.sidebar-color-bg .navik-menu-fixed > ul > li > a, .sidebar-color-bg .navik-menu-fixed > ul ul a {
+  color: #fff !important;
+}
+
+.sidebar-color-bg .navik-menu-fixed > ul ul a::before, .sidebar-color-bg .overlay-dropdown-plus::before, .sidebar-color-bg .overlay-dropdown-plus::after {
+  background-color: #fff;
+}
+
+/***************************************************
+  Menu icons
+****************************************************/
+.navik-menu .navik-menu-icon {
+  margin-right: 5px;
+  color: #a1a1a1;
+}
+
+.navik-menu ul li > a .navik-menu-icon, .navik-menu .mega-menu-heading a .navik-menu-icon {
+  transition: color 0.2s ease-in-out;
+}
+
+.navik-menu ul li.current-menu > a .navik-menu-icon, .navik-menu ul li:hover > a .navik-menu-icon, .navik-menu .mega-menu-heading a:hover .navik-menu-icon {
+  color: #26c6da !important;
+}
+
+.header-dark .navik-menu .navik-menu-icon {
+  color: #717171;
+}
+
+.navik-menu-overlay .navik-menu-icon {
+  position: relative;
+  top: -2px;
+  margin-right: 10px;
+}
+
+.navik-menu-overlay > ul ul li a .navik-menu-icon {
+  top: -1px;
+  margin-right: 7px;
+}
+
+.menu-slide .navik-menu-overlay > ul ul li a .navik-menu-icon {
+  margin-right: 5px;
+}
+
+.navik-menu-fixed .navik-menu-icon {
+  margin-right: 5px;
+}
+
+/***************************************************
+  Media queries for responsive design
+****************************************************/
+@media (max-width: 767.98px) {
+  .navik-header,
+  .navik-header-overlay,
+  .body-fixed-sidebar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .navik-header,
+  .navik-header-overlay,
+  .body-fixed-sidebar {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  /********** Overlay dropdown plus **********/
+  .overlay-dropdown-plus {
+    top: 7px;
+    right: 43px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+  }
+  .overlay-dropdown-plus::before, .overlay-dropdown-plus::after {
+    top: 11px;
+    right: 7px;
+  }
+  /********** Menu icons **********/
+  .navik-menu-overlay .navik-menu-icon {
+    margin-right: 12px;
+  }
+  .navik-menu-overlay > ul ul li a .navik-menu-icon {
+    margin-right: 8px;
+  }
+  .menu-slide .navik-menu-overlay .navik-menu-icon {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /********** Overlay dropdown plus **********/
+  .overlay-dropdown-plus {
+    right: 53px;
+  }
+  /********** Fixed sidebar menu **********/
+  .navik-fixed-sidebar {
+    transition-duration: 0s;
+  }
+  .navik-fixed-sidebar .logo {
+    display: block;
+  }
+  .navik-side-content {
+    width: calc(100% - 250px);
+  }
+  .navik-fixed-sidebar + .burger-menu, .navik-side-content > .logo, .fixedsidebar-bg-overlay {
+    display: none;
+  }
+  .navik-sidebar-left, .navik-sidebar-left.fixed-sidebar-open ~ .navik-side-content, .navik-sidebar-right, .navik-sidebar-right.fixed-sidebar-open ~ .navik-side-content {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    transition-duration: 0s;
+  }
+  .navik-sidebar-left ~ .fixedsidebar-bg-overlay + .navik-side-content {
+    margin-left: auto;
+  }
+  .navik-sidebar-right ~ .fixedsidebar-bg-overlay + .navik-side-content {
+    margin-right: auto;
+  }
+  .navik-menu-fixed {
+    padding-top: 0;
+  }
+}
+/*# sourceMappingURL=navik-fixed-sidebar-menu.css.map */

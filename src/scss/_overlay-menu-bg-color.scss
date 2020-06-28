@@ -1,0 +1,112 @@
+/***************************************************
+  Overlay menu background color
+****************************************************/
+
+.header-color-bg {
+
+  .nav-menu-wrapper {
+    background-color: $background-color-menu-bg;
+  }
+
+  .navik-menu-overlay {
+    > ul {
+
+      > li {
+
+        > .menu-overlay-link {
+          a {
+            color: $overlay-menu-bg-color-link-color;
+
+            &:hover {
+              @extend %bg-color-link-hover;
+            }
+          }
+        }
+
+        > ul {
+          li {
+            &::after {
+              @extend %bg-color-dropdown-plus-separator;
+            }
+          }
+        }
+
+        &.current-menu {
+          > .menu-overlay-link {
+            a {
+              @extend %bg-color-active-link;
+            }
+          }
+        }
+      }
+
+      ul {
+
+        li {
+          a {
+            color: $overlay-menu-bg-color-submenu-link;
+
+            &:hover {
+              @extend %bg-color-link-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .overlay-dropdown-plus {
+
+    &::before {
+      @extend %bg-color-dropdown-plus-separator;
+    }
+
+    &:hover {
+      + a {
+        @extend %bg-color-active-link;
+      }
+    }
+  }
+
+  .menu-social-media {
+    a {
+      border-color: $overlay-menu-bg-color-social-media-border-color;
+    }
+  }
+
+  .overlay-menu-hover {
+    > .menu-overlay-link {
+      a {
+        @extend %bg-color-active-link;
+      }
+    }
+  }
+}
+
+%bg-color-dropdown-plus-separator {
+  background-color: $overlay-menu-bg-color-plus-separator !important;
+}
+
+.menu-slide {
+  &.header-color-bg {
+    .navik-menu-overlay {
+      > ul {
+        ul {
+          li {
+            a::before {
+              @extend %bg-color-dropdown-plus-separator;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+%bg-color-active-link {
+  color: $overlay-menu-bg-color-active-link !important;
+}
+
+%bg-color-link-hover {
+  color: $overlay-menu-bg-color-link-hover !important;
+}

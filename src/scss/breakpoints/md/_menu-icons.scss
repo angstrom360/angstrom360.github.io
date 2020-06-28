@@ -1,0 +1,28 @@
+/********** Menu icons **********/
+
+.navik-menu-overlay {
+
+  .navik-menu-icon {
+    margin-right: $menu-icon-overlay-menu-mr-md;
+  }
+
+  > ul {
+    ul {
+      li {
+        a {
+          .navik-menu-icon {
+            margin-right: $menu-icon-overlay-submenu-mr-md;
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu-slide {
+  .navik-menu-overlay {
+    .navik-menu-icon {
+      margin-right: $menu-icon-slide-menu-mr-md;
+    }
+  }
+}

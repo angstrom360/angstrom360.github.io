@@ -1,0 +1,122 @@
+/***************************************************
+  Overlay menu submenu vertical
+****************************************************/
+
+.submenu-vertical {
+  > ul {
+
+    ul {
+      li {
+        margin-left: 0 !important;
+      }
+    }
+
+    > li {
+
+      > ul {
+
+        li {
+          position: relative;
+          display: block;
+          margin-bottom: $overlay-submenu-vertical-list-space-sm;
+
+          &:last-child {
+            margin-bottom: 0 !important;
+          }
+
+          .overlay-dropdown-plus {
+            top: $overlay-submenu-vertical-dropdown-plus-top-sm;
+            right: $overlay-submenu-vertical-dropdown-plus-right-sm;
+          }
+        }
+
+        ul {
+          display: none;
+          padding-top: $overlay-submenu-vertical-list-space-sm;
+        }
+
+        > li::after {
+          display: none;
+        }
+      }
+
+      &.menuFade {
+        > ul {
+          opacity: 1;
+        }
+      }
+
+      &.menuSlideIn {
+
+        > ul {
+          animation-name: none;
+        }
+
+        ul {
+          &:not(.overlay-submenu-close) {
+            a {
+              display: inline-block;
+              animation-name: menuFadeInLeft;
+              animation-duration: $overlay-menu-slidein-duration;
+              animation-fill-mode: both;
+            }
+          }
+        }
+      }
+
+      ul {
+        position: relative;
+        right: -($overlay-submenu-vertical-right-space-sm);
+        padding-right: $overlay-submenu-vertical-right-space-sm !important;
+
+        &:not(.overlay-submenu-close) {
+          a {
+            opacity: 0;
+          }
+        }
+      }
+
+      &.menuSlideOut {
+        li {
+          a {
+            animation-name: subMenuFadeOut;
+            animation-duration: $overlay-submenu-close-duration;
+            animation-fill-mode: both;
+          }
+        }
+      }
+    }
+  }
+}
+
+.overlay-center-menu {
+  .submenu-vertical {
+    > ul {
+      > li {
+
+        > ul {
+          li {
+            .overlay-dropdown-plus {
+              right: -($overlay-submenu-vertical-right-space-sm);
+            }
+          }
+        }
+
+        ul {
+          right: 0 !important;
+          padding-right: 0 !important;
+        }
+
+        &.menuSlideIn {
+          ul {
+            &:not(.overlay-submenu-close) {
+              a {
+                animation-name: menuFadeIn;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

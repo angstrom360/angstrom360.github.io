@@ -1,0 +1,125 @@
+/********** Center menu **********/
+
+.navik-header {
+
+  &.center-menu-1 {
+    position: relative;
+
+    &.sticky {
+      position: fixed;
+
+      .logo {
+        padding: 0;
+      }
+    }
+
+    .navik-header-container {
+      > .logo {
+        display: none;
+      }
+    }
+
+    .logoCenter {
+      .logo {
+        top: 0;
+        float: none;
+        width: inherit;
+        @include transform-prefix ("translateY", "(0)");
+      }
+    }
+  }
+
+  &.center-menu-2 {
+
+    .navik-header-container {
+      height: auto;
+    }
+
+    .logo {
+      top: 0;
+      float: none;
+      padding: $center-menu2-logo-padding;
+      @include transform-prefix ("translateY", "(0)");
+
+      img {
+        max-width: 100%;
+        height: auto;
+        max-height: inherit;
+      }
+    }
+
+    &.sticky {
+
+      .logo {
+        display: none;
+      }
+
+      .navik-menu {
+        border: none;
+      }
+    }
+  }
+}
+
+.logoCenter {
+  display: table-cell !important;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.center-menu-1 {
+  .navik-menu {
+    display: table !important;
+    float: none;
+    width: 100%;
+
+    > ul {
+      display: table-cell !important;
+      vertical-align: top;
+
+      &:first-child {
+        padding: 0 $center-menu1-ul-px;
+        text-align: right;
+
+        ul {
+          text-align: left;
+        }
+      }
+
+      &:last-child {
+        padding: 0 $center-menu1-ul-px;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.center-menu-2 {
+
+  .navik-menu {
+    float: none;
+    text-align: center;
+    border-top: $center-menu2-border-width solid $center-menu2-border-color;
+
+    li {
+      > ul {
+        text-align: left;
+      }
+    }
+
+    > ul {
+      > li {
+        > a {
+          height: $center-menu2-menu-height;
+          line-height: $center-menu2-menu-height;
+        }
+      }
+    }
+  }
+
+  &.header-dark {
+    .navik-menu {
+      border-color: $center-menu2-border-color-dark;
+    }
+  }
+}

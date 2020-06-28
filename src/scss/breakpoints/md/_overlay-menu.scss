@@ -1,0 +1,135 @@
+/********** Overlay menu **********/
+
+.navik-header-overlay {
+
+  .logo {
+    left: $overlay-menu-logo-left-md;
+  }
+
+  .burger-menu {
+    right: $overlay-burger-menu-right-md;
+  }
+}
+
+.navik-menu-overlay {
+
+  > ul {
+
+    > li {
+      padding: $overlay-menu-parent-padding-md;
+      margin-bottom: $overlay-menu-parent-mb-md;
+
+      > .menu-overlay-link {
+        a {
+          font-size: $overlay-menu-parent-link-font-size-md;
+        }
+      }
+
+      > ul {
+        padding: $overlay-menu-submenu-padding-md;
+
+        > li {
+          &::after {
+            top: $overlay-menu-submenu-separator-top-md;
+            left: $overlay-menu-submenu-separator-left-md;
+            height: $overlay-menu-submenu-separator-height-md;
+          }
+        }
+      }
+    }
+
+    ul {
+      li {
+        margin-left: $overlay-menu-submenu-ml-md;
+
+        a {
+          font-size: $overlay-menu-submenu-font-size-md;
+        }
+      }
+    }
+  }
+
+  &.submenu-no-separate {
+    > ul {
+      ul {
+        li {
+          margin-left: $overlay-menu-submenu-noseparator-ml-md;
+        }
+      }
+    }
+  }
+}
+
+.overlay-center-menu {
+
+  .navik-menu-overlay {
+    > ul {
+      > li {
+        padding: $overlay-menu-center-list-padding-md;
+
+        > ul {
+          padding: $overlay-menu-center-submenu-padding-md;
+        }
+      }
+    }
+  }
+
+  .overlay-dropdown-plus {
+    @extend %dropdown-plus-wrap-right;
+  }
+
+  .submenu-vertical {
+    > ul {
+      > li {
+        > ul {
+          li {
+            .overlay-dropdown-plus {
+              @extend %dropdown-plus-wrap-right;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .menu-social-media {
+    padding: $overlay-menu-social-media-center-padding-md;
+  }
+}
+
+%dropdown-plus-wrap-right {
+  right: -($overlay-dropdown-plus-wrap-right-md - 1);
+}
+
+.submenu-vertical {
+  > ul {
+    > li {
+
+      ul {
+        right: -($overlay-submenu-vertical-right-space-md);
+        padding-right: $overlay-submenu-vertical-right-space-md !important;
+      }
+
+      > ul {
+
+        li {
+          margin-bottom: $overlay-submenu-vertical-list-space-md;
+
+          .overlay-dropdown-plus {
+            top: $overlay-submenu-vertical-dropdown-plus-top-md;
+            right: $overlay-submenu-vertical-dropdown-plus-right-md;
+          }
+        }
+
+        ul {
+          padding-top: $overlay-submenu-vertical-list-space-md;
+        }
+      }
+    }
+  }
+}
+
+.menu-social-media {
+  bottom: $overlay-menu-social-media-bottom-md;
+  padding: $overlay-menu-social-media-padding-md;
+}

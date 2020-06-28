@@ -1,0 +1,128 @@
+/***************************************************
+  Mega menu
+****************************************************/
+
+.navik-menu {
+
+  .mega-menu-container {
+    padding: $mega-menu-container-padding-sm;
+
+    ul {
+      li {
+        position: relative;
+
+        a {
+          padding: inherit;
+          font-style: inherit;
+          color: inherit;
+          background-color: inherit;
+        }
+
+        &:hover {
+          a {
+            background-color: inherit;
+          }
+        }
+      }
+    }
+
+    li {
+      > ul {
+        display: block;
+      }
+    }
+  }
+
+  .mega-menu {
+    > ul {
+      .dropdown-plus {
+        display: none;
+      }
+    }
+  }
+
+  .mega-menu-box {
+    margin-bottom: $mega-menu-box-mb;
+  }
+
+  .mega-menu-heading {
+    margin-bottom: $mega-menu-heading-mb;
+    font-family: $mega-menu-heading-font-family;
+    font-size: $mega-menu-heading-font-size;
+    color: $mega-menu-heading-color;
+    text-transform: uppercase;
+
+    a {
+      color: $mega-menu-heading-color;
+      text-decoration: none;
+      @include transition-prefix("color", $transition-duration-base, $transition-timing-base);
+
+      &:hover {
+        color: $mega-menu-link-hover-color;
+      }
+    }
+  }
+
+  .mega-menu-desc {
+    font-family: $mega-menu-desc-font-family;
+    font-size: $mega-menu-desc-font-size;
+    font-style: italic;
+    line-height: $mega-menu-desc-line-height;
+    color: $mega-menu-desc-color;
+  }
+
+  ul {
+    &.mega-menu-list {
+
+      li {
+        a {
+          padding: $mega-menu-link-padding;
+          font-size: $mega-menu-link-font-size;
+          font-style: italic;
+          color: $mega-menu-link-color;
+
+          &:hover {
+            color: $mega-menu-link-hover-color;
+          }
+        }
+      }
+
+      ul {
+        padding-left: $mega-menu-list-ul-pl !important;
+      }
+    }
+  }
+
+  .mega-menu-thumbnail {
+    margin-bottom: $mega-menu-thumbnail-mb;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    > a {
+      position: relative;
+      display: block;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-color: rgba(0, 0, 0, 0);
+        @include transition-prefix("background-color", $transition-duration-base, $transition-timing-base);
+      }
+    }
+
+    &:hover {
+      > a {
+        &::before {
+          background-color: $mega-menu-thumbnail-hover-overlay;
+        }
+      }
+    }
+  }
+}

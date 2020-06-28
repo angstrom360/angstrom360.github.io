@@ -1,0 +1,17 @@
+// Media breakpoint down
+
+@media (max-width: ($media-breakpoint-md - .02)) {
+  .navik-header,
+  .navik-header-overlay,
+  .body-fixed-sidebar {
+    width: 100%;
+  }
+}
+
+@media (max-width: ($media-breakpoint-lg - .02)) {
+  .navik-header,
+  .navik-header-overlay,
+  .body-fixed-sidebar {
+    width: 100%;
+  }
+}

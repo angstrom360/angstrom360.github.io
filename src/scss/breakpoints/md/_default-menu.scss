@@ -1,0 +1,18 @@
+/********** Default menu **********/
+
+.navik-header {
+  .logo {
+    float: left;
+    padding: $default-logo-padding-md;
+  }
+}
+
+.navik-menu {
+  clear: both;
+}
+
+.header-shadow-wrapper {
+  &::after {
+    box-shadow: $header-menu-shadow-box-shadow-size-md $header-menu-shadow-box-shadow-color;
+  }
+}

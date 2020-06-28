@@ -1,0 +1,1330 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Navik - HTML header navigation menu</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> <!-- CSS Bootstrap -->
+	<link rel="stylesheet" href="css/style.css"> <!-- CSS main -->
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet"> <!-- Google fonts -->
+</head>
+<body>
+
+	<!-- Page loading -->
+	<div class="pageload">
+		<div class="spinner">
+			<div class="bounce1"></div>
+			<div class="bounce2"></div>
+			<div class="bounce3"></div>
+		</div>
+	</div>
+
+	<!-- Sidebar navigation -->
+	<div id="sidebar-nav">
+
+			<!-- Logo -->
+			<div class="logo-wrapper">
+				<a href="index.html">
+					<img src="images/logo.png" alt="logo" />
+				</a>
+			</div>
+
+			<!-- Main menu -->
+			<div class="main-menu">
+				<ul>
+					<li><a href="#introduction">Introduction</a></li>
+					<li><a href="#files">Files</a></li>
+					<li><a href="#installation">Installation</a></li>
+					<li><a href="#bootstrap">Bootstrap</a></li>
+					<li><a href="#structure">HTML structure</a></li>
+					<li><a href="#cssSelectors">CSS .class selectors</a></li>
+					<li><a href="#megamenu">Mega menu</a></li>
+					<li><a href="#menuicons">Menu icons</a></li>
+					<li><a href="#scss">SCSS</a></li>
+					<li><a href="#upgrading">Upgrading to version 1.4.2</a></li>
+					<li><a href="#releaselog">Release log</a></li>
+					<li><a href="#credits">Credits</a></li>
+				</ul>
+			</div>
+
+	</div>
+
+	<!-- Burger menu -->
+	<div class="burger-menu">
+		<i class="fa fa-bars"></i>
+	</div>
+
+	<!-- Content section -->
+	<div id="content">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					
+					<!-- Introduction -->
+					<div id="introduction" class="section">
+
+						<h2 class="page-title font-uppercase font-regular">Introduction</h2>
+
+						<p>Navik - HTML header navigation menu<br>
+							version: 1.4.2<br>
+							Created: 18 April 2018<br>
+							Last Update: 15 May 2020<br>
+							By: Pophonic<br>
+							Email: poppong22@hotmail.com<br>
+							<a href="http://codecanyon.net/user/pophonic" target="_blank">codecanyon.net/user/pophonic</a></p>
+							
+						<p>Thank you for purchasing my product. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://codecanyon.net/user/pophonic" target="_blank">codecanyon.net/user/pophonic</a> Thanks so much!</p>
+							
+						<p>Navik responsive navigation menu comes with various styles of menu including standard menu, center logo menu, sidebar slide menu and fullscreen overlay navigation menu, also created with clean and simple CSS, javascript which you can easily adapt the navigation menu to suit your needs.</p>
+
+						<p>Navik is compatible with mobile devices and modern web browsers, also including well documented which makes easy to understand and helps you to place it on your website.</p>
+						
+						<div data-height="1"></div>
+
+						<h4>Features</h4>
+					
+						<ul>
+							<li>Fully Responsive</li>
+							<li>Compatible with Bootstrap Grid System</li>
+							<li>Compatible with Font Awesome 5</li>
+							<li>Standard navigation menu</li>
+							<li>Center logo navigation menu</li>
+							<li>Sidebar slide navigation menu</li>
+							<li>Fullscreen overlay navigation menu</li>
+							<li>Fixed sidebar navigation menu</li>
+							<li>Mega menu</li>
+							<li>Light & Dark versions</li>
+							<li>Various hover transitions</li>
+							<li>Flexible layouts</li>
+							<li>All SCSS files included</li>
+							<li>Easy to customize</li>
+							<li>Code quality</li>
+							<li>Well documented</li>
+							<li>Support help</li>
+						</ul>
+
+						<div data-height="30"></div>
+
+						<p>Note: All images in the demo use for sample preview only.</p>
+
+						<div data-height="20"></div>
+
+					</div>
+
+					<!-- Files -->
+					<div id="files" class="section">
+
+						<h2 class="page-title font-uppercase font-regular">Files</h2>
+
+						<p>When you extract zip file from download package, you will see the folder tree structure below.</p>
+
+						<pre>Download package/
+
+├── <strong>document</strong>
+
+├── <strong>examples</strong> [all menu examples]
+
+├── <strong>src</strong>
+	└── <strong>assets</strong> [contain svg icons that using in overlay navigation menu]
+	└── <strong>build</strong> [contain stylelintrc and postcss config files which using for compile Sass]
+	└── <strong>dist</strong> [contain all required CSS and javascript files which you need to include into your HTML]
+	└── <strong>modules</strong> [contain required files for Bootstrap 4 and Font Awesome]
+	└── <strong>scss</strong> [contain all SCSS files]
+	└── <strong>vender</strong> [contain jquery-3.5.1.min.js and reset.css]</pre>
+
+						<div data-height="30"></div>
+
+					</div>
+
+					<!-- Installation -->
+					<div id="installation" class="section">
+
+						<h2 class="page-title font-uppercase font-regular">Installation</h2>
+
+						<h5>Include CSS</h5>
+
+						<p>First, include <code>bootstrap.min.css</code> (Bootstrap) , <code>all.min.css</code> (Font Awesome) and <code>navik-all.min.css</code> files into your HTML head.</p>
+
+						<pre>&lt;link rel="stylesheet" href="modules/bootstrap/dist/css/bootstrap.min.css"&gt;
+&lt;link rel="stylesheet" href="modules/fontawesome/css/all.min.css"&gt;
+&lt;link rel="stylesheet" href="dist/css/navik-all.min.css"&gt;</pre>
+
+						<p>You can choose a specific CSS file from folder <code>dist/css</code> for including some or all of menu styles as below.</p>
+
+						<table class="table table-border">
+							<thead>
+								<tr>
+									<th data-bg-color="#00acc1">CSS files</th>
+									<th data-bg-color="#00acc1">Including</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>navik-all.min.css<br>navik-all.css</td>
+									<td>all of menu styles</td>
+								</tr>
+								<tr>
+									<td>navik-horizontal-default-menu.min.css<br>navik-horizontal-default-menu.css</td>
+									<td>horizontal default menu</td>
+								</tr>
+								<tr>
+									<td>navik-horizontal-center-menu.min.css<br>navik-horizontal-center-menu.css</td>
+									<td>horizontal center menu</td>
+								</tr>
+								<tr>
+									<td>navik-overlay-menu.min.css<br>navik-overlay-menu.css</td>
+									<td>fullscreen overlay menu</td>
+								</tr>
+								<tr>
+									<td>navik-overlay-slide-menu.min.css<br>navik-overlay-slide-menu.css</td>
+									<td>overlay slide menu</td>
+								</tr>
+								<tr>
+									<td>navik-fixed-sidebar-menu.min.css<br>navik-fixed-sidebar-menu.css</td>
+									<td>fixed sidebar menu</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="info">
+							You can change Bootstrap and Font Awesome to your specific path if you have already installed Bootstrap framework and Font Awesome 5 to your template.
+						</div>
+
+						<div data-height="30"></div>
+
+						<p>You can include <code>reset.css</code> file to reset CSS for your template.</p>
+
+						<pre>&lt;link rel="stylesheet" href="vendor/css/reset.css"&gt;
+....
+....
+&lt;link rel="stylesheet" href="dist/css/navik-all.min.css"&gt;</pre>
+
+						<div class="info">
+							reset.css file should be included before any *.css files..
+						</div>
+
+						<div data-height="15"></div>
+
+						<div class="info">
+							You can ignore this step if you have already installed Bootstrap framework to your template.
+						</div>
+
+						<div data-height="15"></div>
+
+						<h5>Include JS</h5>
+
+						<p>include jQuery and <code>navik.menu.js</code> into the footer before &lt;/body&gt; tag.</p>
+
+						<pre>&lt;script src="vendor/js/jquery-3.5.1.min.js"&gt;&lt;/script&gt;
+&lt;script src="dist/js/navik.menu.js"&gt;&lt;/script&gt;</pre>
+
+						<div data-height="30"></div>
+
+					</div>
+
+					<!-- Bootstrap -->
+					<div id="bootstrap" class="section">
+						<h2 class="page-title font-uppercase font-regular">Bootstrap</h2>
+
+						<p>Navik compatible with Bootstrap 4 grid system the newest version of Bootstrap; including new components, faster stylesheet and more responsiveness.</p>
+
+						<p>Also compatible with Bootstrap 3.x grid system in case you have alerady installed the lower version of Bootstrap to your template.</p>
+
+						<div class="info">
+							Please read more informations about Bootstrap from this link <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>.
+						</div>
+
+						<div data-height="50"></div>
+
+					</div>
+
+					<!-- HTML structure -->
+					<div id="structure" class="section">
+
+						<h2 class="page-title font-uppercase font-regular">HTML structure</h2>
+
+						<h5>Horizontal menu markup</h5>
+
+						<p>Insert HTML markup below into your &lt;body&gt; tag as header section, this HTML markup should be included before any elements.</p>
+
+						<pre>&lt;!-- Header --&gt;
+&lt;div class="navik-header"&gt;
+  &lt;div class="container"&gt;
+
+    &lt;!-- Navik header --&gt;
+    &lt;div class="navik-header-container"&gt;
+					
+      &lt;!--Logo--&gt;
+      &lt;div class="logo" data-mobile-logo="images/logo.png" data-sticky-logo="images/logo.png"&gt;
+        &lt;a href="#"&gt;&lt;img src="images/logo.png" alt="logo"/&gt;&lt;/a&gt;
+      &lt;/div&gt;
+						
+      &lt;!-- Burger menu --&gt;
+      &lt;div class="burger-menu"&gt;
+        &lt;div class="line-menu line-half first-line"&gt;&lt;/div&gt;
+        &lt;div class="line-menu"&gt;&lt;/div&gt;
+        &lt;div class="line-menu line-half last-line"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;!--Navigation menu--&gt;
+      &lt;nav class="navik-menu"&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Menu&lt;/a&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href="#"&gt;Dropdown menu&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="#"&gt;Dropdown menu&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="#"&gt;Dropdown menu&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Menu&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Menu&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+						<div data-height="30"></div>
+						
+						<h5>Fullscreen overlay menu markup</h5>
+
+						<p>Insert HTML markup below into your &lt;body&gt; tag as header section, this HTML markup should be included before any elements.</p>
+
+						<pre>&lt;!-- Header --&gt;
+&lt;div class="navik-header-overlay"&gt;
+  &lt;div class="container"&gt;
+
+    &lt;!-- Navik header --&gt;
+    &lt;div class="navik-header-container"&gt;
+					
+      &lt;!--Logo--&gt;
+      &lt;div class="logo" data-overlay-logo="images/logo.png"&gt;
+        &lt;a href="#"&gt;&lt;img src="images/logo.png" alt="logo"/&gt;&lt;/a&gt;
+      &lt;/div&gt;
+					
+      &lt;!-- Burger menu --&gt;
+      &lt;div class="burger-menu"&gt;
+        &lt;div class="line-menu line-half first-line"&gt;&lt;/div&gt;
+        &lt;div class="line-menu"&gt;&lt;/div&gt;
+        &lt;div class="line-menu line-half last-line"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;!--Navigation menu--&gt;
+      &lt;nav class="navik-menu-overlay"&gt;
+		
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Menu&lt;/a&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href="#"&gt;Dropdown menu&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="#"&gt;Dropdown menu&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="#"&gt;Dropdown menu&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Menu&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Menu&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+			
+        &lt;!-- Menu social media --&gt;
+        &lt;div class="menu-social-media"&gt;
+          &lt;a href="#" target="_blank"&gt;&lt;img src="src/assets/svg/facebook-f-dark.svg" alt="Facebook"/&gt;&lt;/a&gt;
+          &lt;a href="#" target="_blank"&gt;&lt;img src="src/assets/svg/twitter-dark.svg" alt="Twitter"/&gt;&lt;/a&gt;
+          &lt;a href="#" target="_blank"&gt;&lt;img src="src/assets/svg/pinterest-p-dark.svg" alt="Pinterest"/&gt;&lt;/a&gt;
+          &lt;a href="#" target="_blank"&gt;&lt;img src="src/assets/svg/instagram-dark.svg" alt="Instagram"/&gt;&lt;/a&gt;
+          &lt;a href="#" target="_blank"&gt;&lt;img src="src/assets/svg/linkedin-in-dark.svg" alt="Linkedin"/&gt;&lt;/a&gt;
+        &lt;/div&gt;
+
+      &lt;/nav&gt;
+
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+						<div data-height="30"></div>
+						
+						<h5>Fixed sidebar menu markup</h5>
+
+						<p>Insert HTML markup below into your &lt;body&gt; tag, all your content should be placed in &lt;div class="navik-side-content"&gt;.</p>
+
+						<pre>&lt;!-- Header --&gt;
+&lt;div class="navik-fixed-sidebar navik-sidebar-left"&gt;
+
+  &lt;!-- Navik header --&gt;
+  &lt;div class="navik-header-container"&gt;
+
+    &lt;!--Logo--&gt;
+    &lt;div class="logo"&gt;
+      &lt;a href="#"&gt;&lt;img src="demo/images/logo.png" alt="logo"/&gt;&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Burger menu --&gt;
+    &lt;div class="burger-menu"&gt;
+      &lt;div class="line-menu line-half first-line"&gt;&lt;/div&gt;
+      &lt;div class="line-menu"&gt;&lt;/div&gt;
+      &lt;div class="line-menu line-half last-line"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!--Navigation menu--&gt;
+    &lt;nav class="navik-menu-fixed"&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Menu&lt;/a&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Dropdown menu&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Dropdown menu&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Menu&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Menu&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+
+    &lt;!-- Menu social media --&gt;
+    &lt;div class="menu-social-media"&gt;
+      &lt;a href="#" target="_blank"&gt;&lt;img src="../src/assets/svg/facebook-f-dark.svg" alt="Facebook"/&gt;&lt;/a&gt;
+      &lt;a href="#" target="_blank"&gt;&lt;img src="../src/assets/svg/twitter-dark.svg" alt="Twitter"/&gt;&lt;/a&gt;
+      &lt;a href="#" target="_blank"&gt;&lt;img src="../src/assets/svg/pinterest-p-dark.svg" alt="Pinterest"/&gt;&lt;/a&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- Entire content wrapper --&gt;
+&lt;div class="navik-side-content"&gt;
+
+  YOUR CONTENT
+
+&lt;/div&gt;</pre>
+
+						<div data-height="30"></div>
+
+						<p>You can change social media svg icon to light version as below for fullscreen overlay menu and fixed sidebar menu (Dark).</p>
+
+						<pre>&lt;!-- Menu social media --&gt;
+&lt;div class="menu-social-media"&gt;
+  &lt;a href="#" target="_blank"&gt;&lt;img src="src/assets/svg/facebook-f-light.svg" alt="Facebook"/&gt;&lt;/a&gt;
+  &lt;a href="#" target="_blank"&gt;&lt;img src="src/assets/svg/twitter-light.svg" alt="Twitter"/&gt;&lt;/a&gt;
+  &lt;a href="#" target="_blank"&gt;&lt;img src="src/assets/svg/pinterest-p-light.svg" alt="Pinterest"/&gt;&lt;/a&gt;
+  &lt;a href="#" target="_blank"&gt;&lt;img src="src/assets/svg/instagram-light.svg" alt="Instagram"/&gt;&lt;/a&gt;
+  &lt;a href="#" target="_blank"&gt;&lt;img src="src/assets/svg/linkedin-in-light.svg" alt="Linkedin"/&gt;&lt;/a&gt;
+&lt;/div&gt;</pre>
+
+						<div data-height="30"></div>
+
+					</div>
+
+					<!-- CSS .class selectors -->
+					<div id="cssSelectors" class="section">
+
+						<h2 class="page-title font-uppercase font-regular">CSS .class selectors</h2>
+
+							<p>There are CSS class selectors which you can insert them into your menu markup to define style of navigation menu.</p>
+
+							<table class="table table-border">
+								<thead>
+									<tr>
+										<th data-bg-color="#00acc1">Selector</th>
+										<th data-bg-color="#00acc1">Insert position</th>
+										<th data-bg-color="#00acc1">Description</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>center-menu-1</td>
+										<td>&lt;div class="navik-header <code>center-menu-1</code>"&gt;</td>
+										<td>Display center logo in navigation menu. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/07-center-1-light.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>center-menu-2</td>
+										<td>&lt;div class="navik-header <code>center-menu-2</code>"&gt;</td>
+										<td>Display center logo with underneath navigation menu. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/13-center-2-light.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>header-shadow</td>
+										<td>&lt;div class="navik-header <code>header-shadow</code>"&gt;</td>
+										<td>Add bottom shadow to header navigation menu. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/01-default-light.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>no-sticky</td>
+										<td>&lt;div class="navik-header <code>no-sticky</code>"&gt;</td>
+										<td>Disable menu sticky. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/02-default-dark.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>header-dark</td>
+										<td>&lt;div class="navik-header <code>header-dark</code>"&gt;</td>
+										<td>Display dark version of horizontal navigation menu. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/04-default-with-separate-line-dark.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>header-transparent</td>
+										<td>&lt;div class="navik-header <code>header-transparent</code>"&gt;</td>
+										<td>Display navigation menu with transparent background. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/05-default-transparent.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>header-opacity</td>
+										<td>&lt;div class="navik-header <code>header-opacity</code>"&gt;</td>
+										<td>Display navigation menu with background opacity overlay. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/06-default-overlay-header.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>navik-mega-menu</td>
+										<td>&lt;div class="navik-header <code>navik-mega-menu</code>"&gt;</td>
+										<td>Add mega menu to your navigation menu. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/43-mega-menu-light.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>mega-menu-fullwidth</td>
+										<td>&lt;div class="navik-header <code>navik-mega-menu</code> <code>mega-menu-fullwidth</code>"&gt;</td>
+										<td>Display mega menu fullwidth. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/45-mega-menu-fullwidth-light.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>mega-menu</td>
+										<td>&lt;li class="<code>mega-menu</code>"&gt;</td>
+										<td>Add this class to parent &lt;li&gt; tag that you would like to display mega menu. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/43-mega-menu-light.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>menu-caret</td>
+										<td>&lt;nav class="navik-menu <code>menu-caret</code>"&gt;</td>
+										<td>Add caret to dropdown menu. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/01-default-light.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>separate-line</td>
+										<td>&lt;nav class="navik-menu <code>separate-line</code>"&gt;</td>
+										<td>Display navigation menu with separate line. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/03-default-with-separate-line-light.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>menu-hover-2</td>
+										<td>&lt;nav class="navik-menu <code>menu-hover-2</code>"&gt;</td>
+										<td>Parent menu hover transition style 2. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/31-navigation-menu-hover-transition-2.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>menu-hover-3</td>
+										<td>&lt;nav class="navik-menu <code>menu-hover-3</code>"&gt;</td>
+										<td>Parent menu hover transition style 3. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/32-navigation-menu-hover-transition-3.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>menu-hover-4</td>
+										<td>&lt;nav class="navik-menu <code>menu-hover-4</code>"&gt;</td>
+										<td>Parent menu hover transition style 4. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/33-navigation-menu-hover-transition-4.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>submenu-top-border</td>
+										<td>&lt;nav class="navik-menu <code>submenu-top-border</code>"&gt;</td>
+										<td>Display dropdown menu with top border. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/36-dropdown-with-top-border-light.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>submenu-list-border</td>
+										<td>&lt;nav class="navik-menu <code>submenu-list-border</code>"&gt;</td>
+										<td>Display dropdown menu with separate line. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/38-dropdown-with-separate-line-light.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>submenu-scale</td>
+										<td>&lt;nav class="navik-menu <code>submenu-scale</code>"&gt;</td>
+										<td>Dropdown menu transition scale. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/41-dropdown-menu-transition-scale.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>submenu-flip</td>
+										<td>&lt;nav class="navik-menu <code>submenu-flip</code>"&gt;</td>
+										<td>Dropdown menu transition flip. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/42-dropdown-menu-transition-flip.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>current-menu</td>
+										<td>&lt;li class="<code>current-menu</code>"&gt;</td>
+										<td>Add class selector to &lt;li&gt; parent tag to define current menu item. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/01-default-light.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>submenu-right</td>
+										<td>&lt;li class="<code>submenu-right</code>"&gt;</td>
+										<td>Add class selector to &lt;li&gt; parent tag to display dropdown menu with submenu aligning to the right edge of it's parent. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/01-default-light.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>overlay-center-menu</td>
+										<td>&lt;div class="navik-header-overlay <code>overlay-center-menu</code>"&gt;</td>
+										<td>Display fullscreen navigation menu with item aligning center. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/26-fullscreen-overlay-center-background-image.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>menu-slide</td>
+										<td>&lt;div class="navik-header-overlay <code>menu-slide</code>"&gt;</td>
+										<td>Display sidebar slide navigation menu. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/28-sidebar-slide-menu-dark.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>header-dark</td>
+										<td>&lt;div class="navik-header-overlay <code>header-dark</code>"&gt;</td>
+										<td>Display dark version of fullscreen overlay navigation menu. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/24-fullscreen-overlay-center-dark.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>header-color-bg</td>
+										<td>&lt;div class="navik-header-overlay <code>header-color-bg</code>"&gt;</td>
+										<td>Display fullscreen overlay navigation menu with background color. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/25-fullscreen-overlay-center-background-color.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>header-bg-image</td>
+										<td>&lt;div class="navik-header-overlay <code>header-bg-image</code>"&gt;</td>
+										<td>Display fullscreen overlay navigation menu with background image. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/26-fullscreen-overlay-center-background-image.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>submenu-no-separate</td>
+										<td>&lt;div class="navik-menu-overlay <code>submenu-no-separate</code>"&gt;<br>or,<br>&lt;div class="navik-menu-fixed <code>submenu-no-separate</code>"&gt;</td>
+										<td>Disable submenu separate line (work with fullscreen overlay menu and fixed sidebar menu). <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/50-sidebar-slide-menu-icons.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>navik-sidebar-left</td>
+										<td>&lt;div class="navik-fixed-sidebar <code>navik-sidebar-left</code>"&gt;</td>
+										<td>Display fixed sidebar menu on the left position. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/59-fixed-sidebar-menu-light.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>navik-sidebar-right</td>
+										<td>&lt;div class="navik-fixed-sidebar <code>navik-sidebar-right</code>"&gt;</td>
+										<td>Display fixed sidebar menu on the right position. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/62-fixed-sidebar-menu-right-light.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>sidebar-dark</td>
+										<td>&lt;div class="navik-fixed-sidebar <code>sidebar-dark</code>"&gt;</td>
+										<td>Display dark version of fixed sidebar navigation menu. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/60-fixed-sidebar-menu-dark.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+									<tr>
+										<td>sidebar-color-bg</td>
+										<td>&lt;div class="navik-fixed-sidebar <code>sidebar-color-bg</code>"&gt;</td>
+										<td>Display fixed sidebar navigation menu with background color. <a class="demo-link" href="http://www.zuperstores.com/code/navik/examples/61-fixed-sidebar-menu-background-color.html" target="_blank"><strong>view demo</strong></a></td>
+									</tr>
+								</tbody>
+							</table>
+
+						<div data-height="15"></div>
+
+						<h5>How to change logo</h5>
+
+						<p>You can change logo by edit path url in logo markup.</p>
+
+						<div data-height="20"></div>
+
+						<strong data-color="#212121">Logo markup for horizontal navigation menu:</strong>
+
+						<div data-height="10"></div>
+
+						<pre>&lt;!--Logo--&gt;
+&lt;div class="logo" data-mobile-logo="demo/images/logo-mobile.png" data-sticky-logo="demo/images/logo-sticky.png"&gt;
+  &lt;a href="#"&gt;&lt;img src="demo/images/logo-desktop.png" alt="logo"/&gt;&lt;/a&gt;
+&lt;/div&gt;</pre>
+
+						<p><code>src=""</code> is logo that display on desktop.</p>
+
+						<p><code>data-mobile-logo=""</code> is logo that display on mobile.</p>
+
+						<p><code>data-sticky-logo=""</code> is logo that display on sticky menu when you scroll down.</p>
+
+						<div data-height="20"></div>
+
+						<strong data-color="#212121">Logo markup for fullscreen navigation menu:</strong>
+
+						<div data-height="10"></div>
+
+						<pre>&lt;!--Logo--&gt;
+&lt;div class="logo" data-overlay-logo="demo/images/logo-overlay.png"&gt;
+  &lt;a href="#"&gt;&lt;img src="demo/images/logo.png" alt="logo"/&gt;&lt;/a&gt;
+&lt;/div&gt;</pre>
+
+						<p><code>src=""</code> is logo that display on header.</p>
+
+						<p><code>data-overlay-logo=""</code> is logo that display when fullscreen menu opened.</p>
+
+						<div data-height="15"></div>
+
+						<h5>How to change background color of fullscreen overlay menu and fixed sidebar menu</h5>
+
+						<p>You can add CSS below to your custom stylesheet to change background color of fullscreen overlay menu and fixed sidebar menu (background color version).</p>
+
+						<pre>.header-color-bg .nav-menu-wrapper {
+  background-color: <strong data-color="blue">#006aa1</strong>;
+}</pre>
+
+						<pre>.navik-fixed-sidebar.sidebar-color-bg,
+.sidebar-color-bg ~ .navik-side-content > .logo {
+  background-color: <strong data-color="blue">#006aa1</strong>;
+}</pre>
+
+						<div data-height="20"></div>
+
+						<h5>How to change background image of fullscreen overlay menu</h5>
+
+						<p>You can change background image by change CSS value below in <code>navik.menu.css</code> at the code line number 839.</p>
+
+						<pre>.header-bg-image .nav-menu-wrapper {
+  background-color: inherit;
+  background-image: url('<strong data-color="blue">../examples/demo/images/header-bg-image-2.jpg</strong>');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}</pre>
+
+						<div data-height="30"></div>
+
+					</div>
+
+					<!-- Mega menu -->
+					<div id="megamenu" class="section">
+
+						<h2 class="page-title font-uppercase font-regular">Mega menu</h2>
+
+						<p>Follow the steps below to add mega menu to your navigation menu.</p>
+
+						<div data-height="15"></div>
+
+						<p>1. Add class <code>"navik-mega-menu"</code> to &lt;div class="navik-header"&gt;</p>
+
+						<pre>&lt;div class="navik-header navik-mega-menu"&gt;</pre>
+
+						<p>You can add class <code>"mega-menu-fullwidth"</code> to display mega menu fullwidth.</p>
+
+						<pre>&lt;div class="navik-header navik-mega-menu mega-menu-fullwidth"&gt;</pre>
+
+						<div data-height="30"></div>
+
+						<p>2. Add class <code>"mega-menu"</code> to parent &lt;li&gt; tag that you would like to display mega menu.</p>
+
+						<pre>&lt;!--Navigation menu--&gt;
+&lt;nav class="navik-menu"&gt;
+  &lt;ul&gt;
+    &lt;li class="mega-menu"&gt;&lt;a href="#"&gt;Menu&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+
+						<div data-height="30"></div>
+
+						<p>3. Then, create the mega menu markup as below.</p>
+
+						<pre>&lt;!--Navigation menu--&gt;
+&lt;nav class="navik-menu"&gt;
+  &lt;ul&gt;
+    &lt;li class="mega-menu"&gt;&lt;a href="#"&gt;Menu&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;
+											
+          &lt;!-- Mega menu container --&gt;
+          &lt;div class="mega-menu-container"&gt;
+							
+            ADD YOUR MEGA MENU ROW, COLUMNS, AND COMPONENTS HERE
+
+          &lt;/div&gt;
+											
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+
+						<p>Navik compatible with Bootstrap 4 which you can add Bootstrap grid to create layout to suit your needs, the example below is markup of mega menu with four columns.</p>
+
+						<pre>&lt;!--Navigation menu--&gt;
+&lt;nav class="navik-menu"&gt;
+  &lt;ul&gt;
+    &lt;li class="mega-menu"&gt;&lt;a href="#"&gt;Menu&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;
+
+          &lt;!-- Mega menu container --&gt;
+          &lt;div class="mega-menu-container"&gt;
+            &lt;div class="row"&gt;
+
+              &lt;div class="col-md-3"&gt;
+                ADD YOUR COMPONENTS HERE
+              &lt;/div&gt;
+
+              &lt;div class="col-md-3"&gt;
+                ADD YOUR COMPONENTS HERE
+              &lt;/div&gt;
+								
+              &lt;div class="col-md-3"&gt;
+                ADD YOUR COMPONENTS HERE
+              &lt;/div&gt;
+								
+              &lt;div class="col-md-3"&gt;
+                ADD YOUR COMPONENTS HERE
+              &lt;/div&gt;
+
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+
+						<div class="info">
+							Please read more informations about Bootstrap from this link <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>.
+						</div>
+
+						<div data-height="40"></div>
+
+						<h5>Mega menu components</h5>
+
+						<p>There are predefined mega menu components that you can use it.</p>
+						
+						<p>1. <strong data-color="#212121">Mega menu box:</strong> container box that wrap all elements.</p>
+
+						<pre>&lt;div class="mega-menu-box"&gt;
+  ALL ELEMENTS
+&lt;/div&gt;</pre>
+
+						<div data-height="15"></div>
+
+						<p>2. <strong data-color="#212121">Mega menu thumbnail:</strong></p>
+
+						<img src="images/mega-menu-thumbnail.jpg" alt="thumbnail"/>
+
+						<pre>&lt;div class="mega-menu-thumbnail"&gt;
+  &lt;a href="#"&gt;
+    &lt;img src="YOUR IMAGE PATH" alt=""/&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h4 class="mega-menu-heading"&gt;&lt;a href="#"&gt;TITLE&lt;/a&gt;&lt;/h4&gt;
+
+&lt;div class="mega-menu-desc"&gt;
+  DESCRIPTION
+&lt;/div&gt;</pre>
+
+						<div data-height="15"></div>
+
+						<p>3. <strong data-color="#212121">Mega menu media:</strong></p>
+
+						<img src="images/mega-menu-media.jpg" alt="media"/>
+
+						<pre>&lt;div class="mega-menu-media"&gt;
+  &lt;div class="mega-menu-media-img"&gt;
+    &lt;div class="mega-menu-thumbnail"&gt;
+      &lt;a href="#"&gt;
+        &lt;img src="YOUR IMAGE PATH" alt=""/&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="mega-menu-media-info"&gt;
+    &lt;h4 class="mega-menu-heading"&gt;&lt;a href="#"&gt;TITLE&lt;/a&gt;&lt;/h4&gt;
+    &lt;div class="mega-menu-desc"&gt;
+      DESCRIPTION
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+						<div data-height="15"></div>
+
+						<p>4. <strong data-color="#212121">Mega menu unordered list:</strong></p>
+
+						<img src="images/mega-menu-list.jpg" alt="media"/>
+
+						<pre>&lt;h4 class="mega-menu-heading"&gt;&lt;a href="#"&gt;TITLE&lt;/a&gt;&lt;/h4&gt;
+&lt;ul class="mega-menu-list"&gt;
+  &lt;li&gt;&lt;a href="#"&gt;LIST&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;LIST&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;LIST&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;LIST&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+						<div data-height="30"></div>
+
+					</div>
+
+					<!-- Menu icons -->
+					<div id="menuicons" class="section">
+
+						<h2 class="page-title font-uppercase font-regular">Menu icons</h2>
+
+						<p>Navik compatible with Font Awesome 5 which you can easily add icons to main menu, dropdown menu, mega menu or any position to suit your needs.</p>
+
+						<p>You can add Font Awesome icon markup below to any position of your menu, don't forget add <code>navik-menu-icon</code> class to &lt;i&gt; tag.</p>
+						
+						<pre>&lt;i class="fas fa-home navik-menu-icon"&gt;&lt;/i&gt;</pre>
+
+						<p>You can use <code>fa-xs</code> <code>fa-sm</code> <code>fa-lg</code> <code>fa-1x</code> <code>fa-2x</code> <code>fa-3x</code> <code>fa-4x</code> <code>fa-5x</code> <code>fa-6x</code> <code>fa-7x</code> <code>fa-8x</code> <code>fa-9x</code> <code>fa-10x</code> classes to increase icon sizes</p>
+
+						<pre>&lt;i class="fas fa-home fa-sm navik-menu-icon"&gt;&lt;/i&gt;</pre>
+						
+						<p>Also, you can use <code>fa-fw</code> to set icons at a fixed width. Great to use when different icon widths throw off alignment. Especially useful in things like nav lists & list groups.</p>
+
+						<pre>&lt;i class="fas fa-home fa-fw navik-menu-icon"&gt;&lt;/i&gt;</pre>
+
+						<div class="info">
+							For more icons and other classes, please read more informations about Font Awesome from this link <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.
+						</div>
+
+						<div data-height="30"></div>
+
+						<h5>Example 1: Add icons to main navigation menu</h5>
+
+						<p>Add icon markup to main navigation menu as below.</p>
+
+						<pre>&lt;nav class="navik-menu"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;a href="#"&gt;
+        &lt;i class="fas fa-home fa-fw fa-sm navik-menu-icon"&gt;&lt;/i&gt;Menu
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+
+						<div data-height="15"></div>
+
+						<h5>Example 2: Add icons to dropdown menu</h5>
+
+						<p>Add icon markup to dropdown menu as below.</p>
+
+						<pre>&lt;nav class="navik-menu"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Menu&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;
+          &lt;a href="#"&gt;
+            &lt;i class="fas fa-user fa-fw fa-sm navik-menu-icon"&gt;&lt;/i&gt;Dropdown menu
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+
+						<div data-height="15"></div>
+
+						<h5>Example 3: Add icons to fullscreen overlay menu</h5>
+
+						<p>Add icon markup to fullscreen overlay menu as below.</p>
+
+						<pre>&lt;nav class="navik-menu-overlay"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;i class="fas fa-home fa-fw fa-xs navik-menu-icon"&gt;&lt;/i&gt;Menu&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;&lt;i class="far fa-user fa-fw fa-sm navik-menu-icon"&gt;&lt;/i&gt;Submenu&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+
+						<div data-height="15"></div>
+
+						<h5>Example 4: Add icons to fixed sidebar menu</h5>
+
+						<p>Add icon markup to fixed sidebar menu as below.</p>
+
+						<pre>&lt;nav class="navik-menu-fixed"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;i class="fas fa-home fa-fw navik-menu-icon"&gt;&lt;/i&gt;Menu&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;&lt;i class="far fa-user fa-fw navik-menu-icon"&gt;&lt;/i&gt;Submenu&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+
+						<div data-height="15"></div>
+
+						<p>You can add <code>submenu-no-separate</code> class to disable submenu separate.</p>
+
+						<pre>&lt;nav class="navik-menu-overlay <strong data-color="blue">submenu-no-separate</strong>"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;i class="fas fa-home fa-fw fa-xs navik-menu-icon"&gt;&lt;/i&gt;Menu&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;&lt;i class="far fa-user fa-fw fa-sm navik-menu-icon"&gt;&lt;/i&gt;Submenu&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+
+						<div data-height="10"></div>
+
+						<img src="images/slide-menu-dropdown-separate.jpg" alt="image"/>
+
+						<div data-height="24"></div>
+
+						<p>Dropdown menu will change to,</p>
+
+						<div data-height="2"></div>
+
+						<img src="images/slide-menu-disable-dropdown-separate.jpg" alt="image"/>
+
+						<div data-height="60"></div>
+
+						<pre>&lt;nav class="navik-menu-fixed <strong data-color="blue">submenu-no-separate</strong>"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;i class="fas fa-home fa-fw navik-menu-icon"&gt;&lt;/i&gt;Menu&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;&lt;i class="far fa-user fa-fw navik-menu-icon"&gt;&lt;/i&gt;Submenu&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+
+						<div data-height="10"></div>
+
+						<img src="images/slide-menu-dropdown-separate_02.jpg" alt="image"/>
+
+						<div data-height="24"></div>
+
+						<p>Dropdown menu will change to,</p>
+
+						<div data-height="2"></div>
+
+						<img src="images/slide-menu-disable-dropdown-separate_02.jpg" alt="image"/>
+
+						<div data-height="53"></div>
+
+					</div>
+
+					<!-- SCSS -->
+					<div id="scss" class="section">
+
+						<h2 class="page-title font-uppercase font-regular">SCSS</h2>
+
+						<p>Navik navigation menu provided source Sass files in folder SCSS which you can customize them to restyle the menu to suit your needs, in case you need to customize SCSS files, you can recompile by follow the step below when you have already changed SCSS configuration.</p>
+
+						<p>Run these commands to install additional packages like node-sass, autoprefixer, postcss, stylelint, clean-css.</p>
+
+						<pre>npm install node-sass clean-css-cli autoprefixer postcss-cli stylelint stylelint-scss stylelint-order stylelint-config-standard stylelint-config-recommended-scss watch -D</pre>
+
+						<p>Now you have all the packages you need and you can recompile SCSS by run command below.</p>
+
+						<pre>npm run css</pre>
+
+						<div data-height="5"></div>
+
+						<h5>SCSS configuration</h5>
+
+						<p>You can config <code>@import</code> rule in <code>main.scss</code> and <code>_breakpoints.scss</code> as below to recompile SCSS for each style of menu.</p>
+
+						<div data-height="5"></div>
+
+						<div>
+
+							<h5>Horizontal default menu</h5>
+
+							<p>Enable<code>@import</code> rule in <code>main.scss</code></p>
+
+							<pre>@import "theming";
+@import "mixins";
+@import "default-menu";
+@import "burger-menu";
+@import "dark-version";
+@import "mega-menu";
+@import "mega-menu-dark";
+@import "menu-icons";
+@import "breakpoints";</pre>
+
+							<div data-height="2"></div>
+
+							<p>Enable<code>@import</code> rule in <code>_breakpoints.scss</code></p>
+
+							<pre>@import "breakpoint-max";
+
+@media (min-width: $media-breakpoint-md) {
+  @import "breakpoints/md/default-menu";
+  @import "breakpoints/md/mega-menu";
+  @import "breakpoints/md/menu-icons";
+}
+
+@media (min-width: $media-breakpoint-lg) {
+  @import "breakpoints/lg/default-menu";
+  @import "breakpoints/lg/header-sticky";
+  @import "breakpoints/lg/header-transparent";
+  @import "breakpoints/lg/hover-transitions";
+  @import "breakpoints/lg/submenu";
+  @import "breakpoints/lg/submenu-transitions";
+  @import "breakpoints/lg/mega-menu";
+}</pre>
+
+							<div data-height="5"></div>
+
+						</div>
+
+						<div>
+
+							<h5>Horizontal center menu</h5>
+
+							<p>Enable<code>@import</code> rule in <code>main.scss</code></p>
+
+							<pre>@import "theming";
+@import "mixins";
+@import "default-menu";
+@import "burger-menu";
+@import "center-menu";
+@import "dark-version";
+@import "mega-menu";
+@import "mega-menu-dark";
+@import "menu-icons";
+@import "breakpoints";</pre>
+
+							<div data-height="2"></div>
+
+							<p>Enable<code>@import</code> rule in <code>_breakpoints.scss</code></p>
+
+							<pre>@import "breakpoint-max";
+
+@media (min-width: $media-breakpoint-md) {
+  @import "breakpoints/md/default-menu";
+  @import "breakpoints/md/mega-menu";
+  @import "breakpoints/md/menu-icons";
+}
+
+@media (min-width: $media-breakpoint-lg) {
+  @import "breakpoints/lg/default-menu";
+  @import "breakpoints/lg/header-sticky";
+  @import "breakpoints/lg/center-menu";
+  @import "breakpoints/lg/header-transparent";
+  @import "breakpoints/lg/hover-transitions";
+  @import "breakpoints/lg/submenu";
+  @import "breakpoints/lg/submenu-transitions";
+  @import "breakpoints/lg/mega-menu";
+}</pre>
+
+							<div data-height="5"></div>
+
+						</div>
+
+						<div>
+
+							<h5>Fullscreen overlay menu</h5>
+
+							<p>Enable<code>@import</code> rule in <code>main.scss</code></p>
+
+							<pre>@import "theming";
+@import "mixins";
+@import "burger-menu";
+@import "overlay-dropdown-plus";
+@import "overlay-menu";
+@import "overlay-menu-submenu-vertical";
+@import "overlay-menu-social-media";
+@import "overlay-menu-dark";
+@import "overlay-menu-bg-color";
+@import "overlay-menu-bg-image";
+@import "menu-icons";
+@import "breakpoints";</pre>
+
+							<div data-height="2"></div>
+
+							<p>Enable<code>@import</code> rule in <code>_breakpoints.scss</code></p>
+
+							<pre>@import "breakpoint-max";
+
+@media (min-width: $media-breakpoint-md) {
+  @import "breakpoints/md/overlay-dropdown-plus";
+  @import "breakpoints/md/overlay-menu";
+  @import "breakpoints/md/menu-icons";
+}
+
+@media (min-width: $media-breakpoint-lg) {
+  @import "breakpoints/lg/overlay-dropdown-plus";
+  @import "breakpoints/lg/overlay-menu";
+}</pre>
+
+							<div data-height="5"></div>
+
+						</div>
+
+						<div>
+
+							<h5>Overlay slide menu</h5>
+
+							<p>Enable<code>@import</code> rule in <code>main.scss</code></p>
+
+							<pre>@import "theming";
+@import "mixins";
+@import "burger-menu";
+@import "overlay-dropdown-plus";
+@import "overlay-menu";
+@import "overlay-menu-submenu-vertical";
+@import "overlay-menu-social-media";
+@import "overlay-slide-menu";
+@import "overlay-menu-dark";
+@import "overlay-menu-bg-color";
+@import "overlay-menu-bg-image";
+@import "menu-icons";
+@import "breakpoints";</pre>
+
+							<div data-height="2"></div>
+
+							<p>Enable<code>@import</code> rule in <code>_breakpoints.scss</code></p>
+
+							<pre>@import "breakpoint-max";
+
+@media (min-width: $media-breakpoint-md) {
+  @import "breakpoints/md/overlay-dropdown-plus";
+  @import "breakpoints/md/overlay-menu";
+  @import "breakpoints/md/overlay-slide-menu";
+  @import "breakpoints/md/menu-icons";
+}
+
+@media (min-width: $media-breakpoint-lg) {
+  @import "breakpoints/lg/overlay-dropdown-plus";
+  @import "breakpoints/lg/overlay-menu";
+}</pre>
+
+							<div data-height="5"></div>
+
+						</div>
+
+						<div>
+
+							<h5>Fixed sidebar menu</h5>
+
+							<p>Enable<code>@import</code> rule in <code>main.scss</code></p>
+
+							<pre>@import "theming";
+@import "mixins";
+@import "burger-menu";
+@import "overlay-dropdown-plus";
+@import "overlay-menu-social-media";
+@import "fixed-sidebar-menu";
+@import "fixed-sidebar-menu-dark";
+@import "fixed-sidebar-menu-bg-color";
+@import "menu-icons";
+@import "breakpoints";</pre>
+
+							<div data-height="2"></div>
+
+							<p>Enable<code>@import</code> rule in <code>_breakpoints.scss</code></p>
+
+							<pre>@import "breakpoint-max";
+
+@media (min-width: $media-breakpoint-md) {
+  @import "breakpoints/md/overlay-dropdown-plus";
+  @import "breakpoints/md/menu-icons";
+}
+
+@media (min-width: $media-breakpoint-lg) {
+  @import "breakpoints/lg/overlay-dropdown-plus";
+  @import "breakpoints/lg/fixed-sidebar-menu";
+}</pre>
+
+							<div data-height="5"></div>
+
+						</div>
+
+						<div data-height="30"></div>
+
+					</div>
+
+					<!-- Upgrading -->
+					<div id="upgrading" class="section">
+
+						<h2 class="page-title font-uppercase font-regular">Upgrading to version 1.4.2</h2>
+
+						<p><strong data-color="#212121">This is the step that you must follow to get your existing navigation menu work with Navik v1.4.2</strong></p>
+
+						<ol>
+
+							<li>Copy folder <code>src / dist</code> from download package and paste overwrite to the old one in your root path.</li>
+
+							<li>If you are using SCSS, please copy folder <code>src / scss</code> from download package and paste overwrite to the old one, then follow the menu SCSS from this document to recompile.</li>
+
+							<li>Copy folder <code>src / modules</code> and <code>src / vendor</code> from download package and paste overwrite to the old one in your root path to update Bootstrap, Fontawesome and jQuery to latest version ( You can ignore this step if you have already installed these frameworks to your template ).</li>
+
+						</ol>
+
+						<div data-height="30"></div>
+
+					</div>
+
+					<!-- Release log -->
+					<div id="releaselog" class="section">
+
+						<h2 class="page-title font-uppercase font-regular">Release log</h2>
+
+						<h5>Changes in version 1.4.2</h5>
+
+						<ul class="list-content">
+							<li>Fixed media query bug on Safari</li>
+							<li>Updated jQuery, Bootstrap and Font Awesome to latest version</li>
+						</ul>
+
+						<h5>Changes in version 1.4.1</h5>
+
+						<ul class="list-content">
+							<li>Improved fixed sidebar menu CSS</li>
+						</ul>
+
+						<h5>Changes in version 1.4</h5>
+
+						<ul class="list-content">
+							<li>SCSS files included</li>
+							<li>Updated Font Awesome to latest version</li>
+						</ul>
+
+						<div data-height="5"></div>
+
+						<h5>Changes in version 1.3.1</h5>
+
+						<ul class="list-content">
+							<li>Improved horizontal sticky menu</li>
+						</ul>
+
+						<div data-height="5"></div>
+
+						<h5>Changes in version 1.3</h5>
+
+						<ul class="list-content">
+							<li>Updated Bootstrap to latest version</li>
+							<li>Updated Font Awesome to latest version</li>
+							<li>Added fixed sidebar menu</li>
+							<li>Added vertical dropdown version to fullscreen overlay menu</li>
+							<li>Minor fixes</li>
+						</ul>
+
+						<div data-height="5"></div>
+
+						<h5>Changes in version 1.2</h5>
+
+						<ul class="list-content">
+							<li>Compatible with Font Awesome 5</li>
+							<li>Minor fixes</li>
+						</ul>
+
+						<div data-height="5"></div>
+
+						<h5>Changes in version 1.1</h5>
+
+						<ul class="list-content">
+							<li>Compatible with Bootstrap 4</li>
+							<li>Added mega menu</li>
+							<li>Minor fixes</li>
+						</ul>
+
+						<div data-height="30"></div>
+
+					</div>
+
+					<!-- Credits -->
+					<div id="credits" class="section">
+
+						<h2 class="page-title font-uppercase font-regular">Credits</h2>
+
+						<ul class="list-content">
+							<li><a href="https://jquery.com/" target="_blank">jQuery</a></li>
+							<li><a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank">CSS Tools: Reset CSS</a></li>
+							<li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+							<li><a href="https://fontawesome.com/" target="_blank">Font Awesome</a></li>
+						</ul>
+
+						<div data-height="60"></div>
+					
+						<p>Once again, thank you so much for purchasing this item. If you need any help, please feel free to contact me through 
+	<a href="http://codecanyon.net/user/pophonic" target="_blank">codecanyon.net/user/pophonic</a> or email <span data-color="blue">poppong22@hotmail.com</span>. Thank you :)</p>
+
+						<p><strong>Pophonic.</strong></p>
+
+						<div data-height="1"></div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="js/vendor/jquery-3.5.1.min.js"></script> <!-- jQuery -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> <!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> <!-- Bootstrap -->
+<script src="https://kit.fontawesome.com/00fb8df6c8.js" crossorigin="anonymous"></script> <!-- Font Awesome Kit's Code -->
+<script src="js/custom.js"></script> <!-- Custom jQuery -->
+
+</body>
+</html>

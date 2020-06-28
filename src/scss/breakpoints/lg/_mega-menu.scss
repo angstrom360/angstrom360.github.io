@@ -1,0 +1,317 @@
+/********** Mega menu **********/
+
+.navik-mega-menu {
+
+  &.mega-menu-fullwidth {
+    @extend %mega-menu-transform-style;
+
+    .navik-header-container {
+      position: inherit;
+      @extend %mega-submenu-flip-transform-style;
+    }
+  }
+
+  .navik-header-container {
+    @extend %mega-menu-transform-style;
+  }
+
+  .navik-menu {
+    &.submenu-flip {
+
+      > ul {
+        @extend %mega-submenu-flip-transform-style;
+      }
+
+      ul {
+        li {
+          &.mega-menu {
+            @extend %mega-submenu-flip-transform-style;
+          }
+        }
+      }
+    }
+  }
+}
+
+%mega-menu-transform-style {
+  transform-style: preserve-3d;
+  perspective: $mega-menu-perspective-lg;
+}
+
+.navik-menu {
+
+  .mega-menu-container {
+    padding: $mega-menu-container-padding-lg;
+
+    li {
+      ul {
+        @extend %mega-menu-container-style;
+      }
+    }
+
+    ul {
+
+      li {
+
+        > a {
+          &::before {
+            @extend %mega-menu-element-hide;
+          }
+        }
+
+        a {
+          @extend %mega-menu-element-padding-inherit;
+        }
+
+        &:hover {
+          a {
+            @extend %mega-menu-element-padding-inherit;
+          }
+        }
+      }
+
+      &.mega-menu-list {
+        li {
+
+          a {
+            @extend %mega-menu-list-style;
+
+            &:hover {
+              @extend %mega-menu-list-hover-pl;
+            }
+          }
+
+          &:hover {
+            a {
+              @extend %mega-menu-list-style;
+            }
+          }
+
+          > a {
+            &::before {
+              top: $mega-menu-list-top-lg !important;
+              left: 0;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.submenu-flip {
+
+    .mega-menu {
+      > ul {
+        perspective: inherit;
+      }
+    }
+
+    .mega-menu-container {
+      li {
+        > ul {
+          @include transform-prefix("rotateX", "(0deg)");
+        }
+      }
+    }
+  }
+
+  &.submenu-scale {
+
+    li {
+      &.mega-menu {
+
+        ul {
+          @extend %mega-submenu-scale-transform-origin;
+        }
+
+        &.submenu-right {
+          ul {
+            @extend %mega-submenu-scale-transform-origin;
+          }
+        }
+      }
+    }
+
+    .mega-menu-container {
+      li {
+        > ul {
+          @include transform-prefix("scale", "(1)");
+        }
+      }
+    }
+  }
+
+  ul {
+    li {
+      &.mega-menu {
+        position: inherit;
+        font-size: initial;
+      }
+    }
+  }
+
+  li {
+
+    &.mega-menu {
+
+      > ul {
+        width: 100%;
+        padding: $mega-menu-ul-padding-lg;
+      }
+
+      &:hover {
+        .mega-menu-container {
+          li {
+            > ul {
+              visibility: visible;
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      &.submenu-right {
+        > ul {
+          ul {
+            left: inherit !important;
+          }
+        }
+      }
+    }
+  }
+
+  &.submenu-top-border {
+    .mega-menu-container {
+      li {
+        ul {
+          @extend %mega-menu-container-style;
+        }
+      }
+    }
+  }
+
+  &.submenu-list-border {
+    .mega-menu-container {
+
+      li {
+        ul {
+          @extend %mega-menu-container-style;
+        }
+      }
+
+      ul {
+
+        li {
+
+          &::after {
+            @extend %mega-menu-element-hide;
+          }
+
+          a {
+            @extend %mega-menu-element-padding-inherit;
+          }
+
+          &:hover,
+          &:first-child,
+          &:first-child:hover,
+          &:last-child,
+          &:last-child:hover {
+            a {
+              @extend %mega-menu-element-padding-inherit;
+            }
+          }
+        }
+
+        &.mega-menu-list {
+          li {
+
+            a {
+              @extend %mega-menu-list-style;
+
+              &:hover {
+                @extend %mega-menu-list-hover-pl;
+              }
+            }
+
+            &:hover {
+              a {
+                @extend %mega-menu-list-style;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.menu-caret {
+    .mega-menu-container {
+      li {
+        &.dropdown_menu {
+          > a {
+            > span {
+              @extend %mega-menu-element-hide;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+%mega-submenu-flip-transform-style {
+  transform-style: unset;
+  perspective: none;
+}
+
+%mega-submenu-scale-transform-origin {
+  transform-origin: 50% 0;
+}
+
+%mega-menu-container-style {
+  position: relative;
+  top: 0 !important;
+  left: inherit;
+  width: 100%;
+  padding: 0;
+  border-top: none;
+  box-shadow: inherit;
+}
+
+%mega-menu-element-hide {
+  display: none;
+}
+
+%mega-menu-element-padding-inherit {
+  padding: inherit !important;
+}
+
+%mega-menu-list-style {
+  padding: $mega-menu-list-padding-lg !important;
+  color: $mega-menu-list-color-lg;
+}
+
+%mega-menu-list-hover-pl {
+  padding-left: $mega-menu-list-hover-pl-lg !important;
+}
+
+.header-dark {
+  .navik-menu {
+    .mega-menu-container {
+      ul {
+        &.mega-menu-list {
+          li {
+            a {
+              color: $mega-menu-list-color-dark;
+
+              &:hover {
+                color: $mega-menu-list-color-dark-hover;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

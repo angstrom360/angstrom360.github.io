@@ -1,0 +1,35 @@
+@mixin overlay-fixed-burger($z-index) {
+  position: fixed;
+  top: $overlay-burger-menu-top;
+  right: $overlay-burger-menu-right-sm;
+  z-index: $z-index;
+  display: block;
+  flex-direction: inherit;
+  justify-content: inherit;
+  width: $overlay-burger-menu-width;
+  height: $overlay-burger-menu-height;
+  padding: $overlay-burger-menu-padding;
+  background: $overlay-burger-menu-bg-color;
+  @include transition-prefix("all", $transition-duration-base, $transition-timing-base);
+}
+
+@mixin overlay-fixed-burger-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: $overlay-burger-menu-wrap-height;
+  @include transition-prefix("transform", $burger-menu-transition-duration, $burger-menu-transition-timing-base);
+}
+
+@mixin overlay-fixed-burger-line-color {
+  background-color: $overlay-burger-menu-line-color;
+}
+
+@mixin overlay-fixed-burger-open {
+  @include transform-prefix("rotate", "(0)");
+}
+
+@mixin overlay-fixed-burger-wrap-open {
+  @include transform-prefix("rotate", $burger-menu-open-transform-rotate);
+}
