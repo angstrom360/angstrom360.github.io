@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Slick &amp; clean CSS3 Forms Pack</title>
+	<meta name="description" content="Slick &amp; clean CSS3 Forms Pack" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Forms stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/slick_rft.css" media="screen" />
+	<!-- / Forms stylesheet -->
+	<link rel="stylesheet" type="text/css" href="demo/demo.css" media="screen" />
+	<!--[if IE 9]>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/placeholder.js"></script>
+	<![endif]-->
+	<script type="text/javascript">''</script>
+</head>
+<body>
+<div id="page-2">
+
+	<!-- Start Demo page title -->
+	<div class="demo">
+	Slick &amp; Clean
+	<h1>&#x25C2; CSS3 LOGIN AND REGISTRATION FORM IN TABS &#x25B8;</h1>
+	</div>
+	<!-- End demo page title -->
+
+	<!-- *************************** -->
+	<!-- START COPYING FROM HERE     -->
+	<!-- *************************** -->
+
+	<section id="slick">
+		<!-- Register input and label -->
+		<input id="register" type="radio" class="register-selector" name="slick-forms" checked="checked" />
+		<label for="register" class="tabs entypo-pencil"></label>
+		<!-- Login input and label -->
+		<input id="login" type="radio" class="login-selector" name="slick-forms" />
+		<label for="login" class="tabs entypo-home"></label>
+		<!-- Reset input and label -->
+		<input id="reset" type="radio" class="reset-selector" name="slick-forms" />
+		<label for="reset" class="tabs entypo-archive"></label>
+		<!-- White divider for hiding the shadow -->
+		<div class="clrfx merge"></div>
+		<!-- Social buttons -->
+		<div class="sb">
+			<a href="#" class="fb entypo-thumbs-up"><span class="slick-tip right">Login with Facebook</span></a>
+			<a href="#" class="gc entypo-google-circles"><span class="slick-tip right">Login with Google</span></a>
+			<a href="#" class="tw entypo-twitter"><span class="slick-tip right">Login with Twitter</span></a>
+		</div> 
+		<!-- Forms wrapper -->
+		<div class="forms">
+			<!-- Register form -->
+			<div class="register-form">
+				<!-- Title -->
+				<div class="title">Registration</div> 
+				<!-- Intro text -->
+				<p class="intro"><b>Welcome to our awesome site.</b> To register an account you can use your favorite social network or our form below. Enjoy!</p>
+				<!-- Form fields -->
+				<form action="" name="register" id="register" method="post">
+					<!-- Username input -->
+					<div class="field">
+						<input name="username" placeholder="Username" type="text" id="username" required />
+						<span class="entypo-user icon"></span>
+						<span class="slick-tip left">Choose your username</span>
+					</div>
+					<!-- Email input -->
+					<div class="field">
+						<input name="email" placeholder="Email" type="email" id="email" required />
+						<span class="entypo-mail icon"></span>
+						<span class="slick-tip left">Enter your email</span>
+					</div>
+					<!-- Password input -->
+					<div class="field">
+						<input name="password" placeholder="Password" type="password" id="password" required />
+						<span class="entypo-lock icon"></span>
+						<span class="slick-tip left">Enter your password</span>
+					</div>
+					<!-- Password repeat input -->
+					<div class="field">
+						<input name="password-repeat" placeholder="Password repeat" type="password" id="password-repeat" required />
+						<span class="entypo-lock icon"></span>
+						<span class="slick-tip left">Repeat your password</span>
+					</div>
+					<div class="clrfx mt-20 mb-30 bt"><span class="inner-title">Quick options</span></div>
+					<!-- Sliding checkbox 1 -->
+					<div class="field">
+						<p class="ratings w-75 mr-5"><span class="entypo-eye"></span>Make your profile public?</p>
+						<div class="slide-chk w-20">
+							<input type="checkbox" id="profile-visibility" name="profile-visibility" />
+							<label for="profile-visibility"></label>
+						</div>
+					</div>
+					<!-- Sliding checkbox 2 -->
+					<div class="field">
+						<p class="ratings w-75 mr-5"><span class="entypo-link"></span>Allow others to contact you?</p>
+						<div class="slide-chk w-20">
+							<input type="checkbox" id="others-contact" name="others-contact" />
+							<label for="others-contact"></label>
+						</div>
+					</div>
+					<!-- Sliding checkbox 3 -->
+					<div class="field">
+						<p class="ratings w-75 mr-5"><span class="entypo-paper-plane"></span>Signup for weekly newsletter?</p>
+						<div class="slide-chk w-20">
+							<input type="checkbox" id="newsletter-signup" name="newsletter-signup" />
+							<label for="newsletter-signup"></label>
+						</div>
+					</div>
+					<div class="clrfx mt-10 mb-30 bt"></div>
+					<!-- Terms agree button -->
+					<div class="w-47 mr-5 mt-5">
+						<input type="checkbox" id="terms-agree" name="terms-agree" checked="checked" />
+						<label for="terms-agree" class="tick"><span>I agree with <a href="#terms-popup">Terms &amp; Conditions</a></span></label>
+					</div>
+					<!-- Send button -->
+					<input type="submit" value="Register" class="send" form="register" name="send" />
+				</form>
+				<!-- / Form fields -->
+			</div>
+			<!-- / Register form -->
+			<!-- Login form -->
+			<div class="login-form">
+				<!-- Title -->
+				<div class="title">User login</div> 
+				<!-- Intro text -->
+				<p class="intro"><b>Hi there.</b> Login with your favorite social network or registration account to access our user area and great community!</p>
+				<!-- Form fields -->
+				<form action="" name="login" id="login" method="post">
+					<!-- Username input -->
+					<div class="field">
+						<input name="username" placeholder="Username" type="text" id="username" required />
+						<span class="entypo-user icon"></span>
+						<span class="slick-tip left">Enter your username</span>
+					</div>
+					<!-- Password input -->
+					<div class="field">
+						<input name="password" placeholder="Password" type="password" id="password" required />
+						<span class="entypo-lock icon"></span>
+						<span class="slick-tip left">Enter valid password</span>
+					</div>
+					<div class="clrfx mt-10"></div>
+					<!-- Signed in button -->
+					<div class="w-47 mr-5 mt-5">
+						<input type="checkbox" id="signed-in" name="signed-in" checked="checked" />
+						<label for="signed-in" class="tick"><span>Keep me signed in</span></label>
+					</div>
+					<!-- Send button -->
+					<input type="submit" value="Login" class="send" form="login" name="send" />
+				</form>
+				<!-- / Form fields -->
+			</div>
+			<!-- / Login form -->
+			<!-- Reset form -->
+			<div class="reset-form">
+				<!-- Title -->
+				<div class="title">Account reset</div> 
+				<!-- Intro text -->
+				<p class="intro">Forgot your username or lost your password? <b>No worries,</b> simply enter your username or email and we'll send you new login details.</p>
+				<!-- Form fields -->
+				<form action="" name="reset" id="reset" method="post">
+					<!-- Username input -->
+					<div class="field">
+						<input name="username" placeholder="Username" type="text" id="username" />
+						<span class="entypo-user icon"></span>
+						<span class="slick-tip left">Enter your username</span>
+					</div>
+					<div class="clrfx mt-10 mb-30 bt"><span class="inner-title">Or provide us</span></div>
+					<!-- Email input -->
+					<div class="field">
+						<input name="email" placeholder="Your email" type="email" id="email" />
+						<span class="entypo-mail icon"></span>
+						<span class="slick-tip left">Enter your email</span>
+					</div>
+					<div class="clrfx mt-10"></div>
+					<div class="w-47 mt-10">
+						<p class="small"><span class="entypo-clock"></span>Check your email in about 10 minutes.</p>
+					</div>
+					<!-- Send button -->
+					<input type="submit" value="Reset" class="send" form="reset" name="send" />
+				</form>
+				<!-- / Form fields -->
+			</div>
+			<!-- / Reset form -->
+		</div>
+		<!-- / Forms wrapper -->
+		<!-- Terms and conditions -->
+		<div id="terms-popup" class="terms-window">
+			<a href="#close" class="close-overlay"></a>
+			<div>
+				<a href="#close" class="close entypo-cancel-circled"></a>
+				<div class="title">Terms &amp; Conditions</div>
+				<p class="intro"><b>1. Lorem ipsum</b><br />
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.<br />
+				Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.	Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+				<p class="intro"><b>2. Dolor commodo</b><br />
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.	Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+				<p class="intro"><b>3. Sit amet</b><br />
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.<br />
+				Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+			</div>
+		</div>
+		<!-- / Terms and conditions -->
+	</section>
+
+	<!-- *************************** -->
+	<!-- END COPYING HERE            -->
+	<!-- *************************** -->
+
+</div>
+</body>
+</html>

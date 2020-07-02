@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Slick &amp; clean CSS3 Forms Pack</title>
+	<meta name="description" content="Slick &amp; clean CSS3 Forms Pack" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Forms stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/slick_sf.css" media="screen" />
+	<!-- / Forms stylesheet -->
+	<link rel="stylesheet" type="text/css" href="demo/demo.css" media="screen" />
+	<!--[if IE 9]>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/placeholder.js"></script>
+	<![endif]-->
+	<script type="text/javascript">''</script>
+</head>
+<body>
+<div id="page-3">
+
+	<!-- Start Demo page title -->
+	<div class="demo">
+	Slick &amp; Clean
+	<h1>&#x25C2; CSS3 SEARCH FORM &#x25B8;</h1>
+	</div>
+	<!-- End demo page title -->
+
+	<!-- *************************** -->
+	<!-- START COPYING FROM HERE     -->
+	<!-- *************************** -->
+
+	<section id="slick">
+		<!-- Social buttons -->
+		<div class="sb">
+			<a href="#" class="fb entypo-thumbs-up"><span class="slick-tip right">Like us on Facebook</span></a>
+			<a href="#" class="gc entypo-google-circles"><span class="slick-tip right">Follow us on Google</span></a>
+			<a href="#" class="tw entypo-twitter"><span class="slick-tip right">Tweet with us</span></a>
+		</div> 
+		<!-- Search form -->
+		<div class="search-form">
+			<!-- Title -->
+			<div class="title">Search the site</div> 
+			<!-- Intro text -->
+			<p class="intro"><b>Can't find some article or favorite post?</b> Use our search form and you'll get results in no time.</p>
+			<!-- Form fields -->
+			<form name="search" id="search">
+				<!-- Search input -->
+				<div class="field">
+					<input name="search-input" placeholder="Enter your search terms" type="search" id="search-input" required />
+					<span class="entypo-search icon"></span>
+					<span class="slick-tip left">Enter your search term</span>
+				</div>
+				<!-- Fine text -->
+				<p class="small">If non of the categories are selected the form will search entire website.</p>
+				<div class="clrfx mt-20 mb-30 bt"><span class="inner-title">More options</span></div>
+				<!-- Option 1 -->
+				<div class="w-100 mt-10">
+					<!-- Keywords input -->
+					<div class="w-47 mr-5">
+						<div class="field">
+							<input class="no-icon" name="keywords" placeholder="Keywords and tags input" type="text" id="keywords" />
+							<span class="slick-tip icon-off">Enter your keywords or tags</span>
+						</div>
+					</div>
+					<!-- Exact match option -->
+					<div class="w-47">
+						<div class="field">
+							<p class="ratings w-47 mt-10 mr-5"><span class="entypo-info-circled"></span>Exact matching?</p>
+							<div class="slide-chk right mt-8">
+								<input type="checkbox" id="match" name="match" />
+								<label for="match"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Option 2 -->
+				<div class="w-100">
+					<!-- Category select input -->
+					<div class="w-47 mr-5">
+						<div class="field">
+							<select name="category" id="category" class="grayed no-icon">
+								<option value="" default="default" selected="selected" disabled="disabled">Select category</option>
+								<optgroup label="Category 1">
+									<option value="option1">Option 1</option>
+									<option value="option2">Option 2</option>
+								</optgroup>
+	  							<optgroup label="Category 2">
+									<option value="option3">Option 3</option>
+									<option value="option4">Option 4</option>
+								</optgroup>
+							</select>
+							<div id="arrow-select"></div>
+							<svg id="arrow-select-svg"></svg>
+							<span class="slick-tip icon-off">Select category</span>
+						</div>
+					</div>
+					<!-- Subcategories option -->
+					<div class="w-47">
+						<div class="field">
+							<p class="ratings w-47 mt-10"><span class="entypo-info-circled"></span>Subcategories?</p>
+							<div class="slide-chk right mt-8">
+								<input type="checkbox" id="subcategories" name="subcategories" />
+								<label for="subcategories"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Option 3 -->
+				<div class="w-100">
+					<!-- Sorting select input -->
+					<div class="w-47 mr-5">
+						<!-- Sort select -->
+						<div class="field">
+							<select name="sorting" id="sorting" class="grayed no-icon">
+								<option value="" default="default" selected="selected" disabled="disabled">Sort by</option>
+								<option value="Date">Date</option>
+								<option value="Rating">Rating</option>
+								<option value="Comments">Comments</option>
+								<option value="Popularity">Popularity</option>
+							</select>
+							<div id="arrow-select"></div>
+							<svg id="arrow-select-svg"></svg>
+							<span class="slick-tip icon-off">Results sorting</span>
+						</div>
+					</div>
+					<!-- Arhive option -->
+					<div class="w-47">
+						<div class="field">
+							<p class="ratings w-47 mt-10"><span class="entypo-info-circled"></span>Archived posts?</p>
+							<div class="slide-chk right mt-8">
+								<input type="checkbox" id="archive" name="archive" />
+								<label for="archive"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clrfx mb-20"></div>
+				<!-- Remember button -->
+				<div class="w-47 mt-5 mr-5">
+					<input type="checkbox" id="remember-queries" name="remember-queries" checked="checked" />
+					<label for="remember-queries" class="tick"><span>Remember my search queries</span></label>
+				</div>
+				<!-- Search button -->
+				<input type="submit" value="Search" class="send" form="search" name="send" />
+			</form>
+			<!-- / Form fields -->
+		</div>
+		<!-- / Search form -->
+	</section>
+
+	<!-- *************************** -->
+	<!-- END COPYING HERE            -->
+	<!-- *************************** -->
+
+</div>
+</body>
+</html>

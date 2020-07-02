@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Slick &amp; clean CSS3 Forms Pack</title>
+	<meta name="description" content="Slick &amp; clean CSS3 Forms Pack" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Forms stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/slick_cofp.css" media="screen" />
+	<!-- / Forms stylesheet -->
+	<link rel="stylesheet" type="text/css" href="demo/demo.css" media="screen" />
+	<!--[if IE 9]>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/placeholder.js"></script>
+	<![endif]-->
+	<script type="text/javascript">''</script>
+</head>
+<body>
+<div id="page-3">
+
+	<!-- Start Demo page title -->
+	<div class="demo">
+	Slick &amp; Clean
+	<h1>&#x25C2; CSS3 CHECKOUT FORM IN POPUP &#x25B8;</h1>
+	</div>
+	<!-- End demo page title -->
+
+	<!-- Link, which triggers the forms popup -->
+	<a href="#slick-popup" class="popup-button">Click me</a>
+
+	<!-- *************************** -->
+	<!-- START COPYING FROM HERE     -->
+	<!-- *************************** -->
+
+	<div id="slick-popup">
+		<a href="#close" class="close-overlay"></a>
+		<section id="slick">
+			<!-- Social buttons -->
+			<div class="sb">
+				<a href="#" class="fb entypo-thumbs-up"><span class="slick-tip right">Like us on Facebook</span></a>
+				<a href="#" class="gc entypo-google-circles"><span class="slick-tip right">Follow us on Circles</span></a>
+				<a href="#" class="tw entypo-twitter"><span class="slick-tip right">Follow us on Twitter</span></a>
+				<a href="#" class="entypo-cancel close-top"><span class="slick-tip right">Close window</span></a>
+			</div> 
+			<!-- Checkout form -->
+			<div class="checkout-form">
+				<!-- Title -->
+				<div class="title">Checkout form</div> 
+				<!-- Intro text -->
+				<p class="intro"><b>Just a few simple steps away.</b> Fill out the checkout form and your order will be on the way in no time.</p>
+				<!-- Form fields -->
+				<form action="" name="checkout" id="checkout" method="post">
+					<div class="clrfx mt-10 mb-30 bt"><span class="inner-title">Billing details</span></div>
+					<!-- Left block -->
+					<div class="w-47 mr-6">
+						<!-- First name input -->
+						<div class="field">
+							<input name="first-name" placeholder="First name" type="text" id="first-name" required />
+							<span class="entypo-vcard icon"></span>
+							<span class="slick-tip left">First name</span>
+						</div>
+						<!-- Email input -->
+						<div class="field">
+							<input name="email" placeholder="Your email" type="email" id="email" required />
+							<span class="entypo-mail icon"></span>
+							<span class="slick-tip left">Your email</span>
+						</div>
+						<!-- Company input -->
+						<div class="field">
+							<input name="company" placeholder="Company (optional)" type="text" id="company" />
+							<span class="entypo-suitcase icon"></span>
+							<span class="slick-tip left">Company name</span>
+						</div>
+						<!-- Address input -->
+						<div class="field">
+							<input name="address" placeholder="Billing address" type="text" id="address" required />
+							<span class="entypo-address icon"></span>
+							<span class="slick-tip left">Billing address</span>
+						</div>
+						<!-- City input -->
+						<div class="field">
+							<input name="city" placeholder="City" type="text" id="city" required />
+							<span class="entypo-home icon"></span>
+							<span class="slick-tip left">City name</span>
+						</div>
+					</div>
+					<!-- Right block -->
+					<div class="w-47">
+						<!-- Last name input -->
+						<div class="field">
+							<input name="last-name" placeholder="Last name" type="text" id="last-name" required />
+							<span class="entypo-vcard icon"></span>
+							<span class="slick-tip left">Last name</span>
+						</div>
+						<!-- Contact phone input -->
+						<div class="field">
+							<input name="phone" placeholder="Contact phone" type="tel" id="phone" />
+							<span class="entypo-mobile icon"></span>
+							<span class="slick-tip left">Contact phone</span>
+						</div>
+						<!-- Vat input -->
+						<div class="field">
+							<input name="vat" placeholder="Company ID" type="text" id="vat" />
+							<span class="entypo-tag icon"></span>
+							<span class="slick-tip left">Company ID number</span>
+						</div>
+						<!-- Postal code input -->
+						<div class="field">
+							<input name="postal" placeholder="Postal code" type="text" id="postal" required />
+							<span class="entypo-right-circled icon"></span>
+							<span class="slick-tip left">Postal code</span>
+						</div>
+						<!-- Subject input -->
+						<div class="field">
+							<select name="country" id="country" class="grayed" onClick="this.className=this.options[this.selectedIndex].className">
+								<option value="" disabled="disabled" selected="selected" class="disabled">Country</option>
+								<option value="AL">Albania</option>
+								<option value="DZ">Algeria</option>
+								<option value="AD">Andorra</option>
+								<option value="AO">Angola</option>
+								<option value="AI">Anguilla</option>
+								<option value="AG">Antigua and Barbuda</option>
+								<option value="AR">Argentina</option>
+								<option value="AM">Armenia</option>
+								<option value="AW">Aruba</option>
+								<option value="AU">Australia</option>
+								<option value="AT">Austria</option>
+								<option value="AZ">Azerbaijan Republic</option>
+								<option value="BS">Bahamas</option>
+								<option value="BH">Bahrain</option>
+								<option value="BB">Barbados</option>
+								<option value="BE">Belgium</option>
+								<option value="BZ">Belize</option>
+								<option value="BJ">Benin</option>
+								<option value="BM">Bermuda</option>
+								<option value="BT">Bhutan</option>
+								<option value="BO">Bolivia</option>
+								<option value="BA">Bosnia and Herzegovina</option>
+								<option value="BW">Botswana</option>
+								<option value="BR">Brazil</option>
+								<option value="BN">Brunei</option>
+								<option value="BG">Bulgaria</option>
+								<option value="BF">Burkina Faso</option>
+								<option value="BI">Burundi</option>
+								<option value="KH">Cambodia</option>
+								<option value="CA">Canada</option>
+								<option value="CV">Cape Verde</option>
+								<option value="KY">Cayman Islands</option>
+								<option value="TD">Chad</option>
+								<option value="CL">Chile</option>
+								<option value="C2">China Worldwide</option>
+								<option value="CO">Colombia</option>
+								<option value="KM">Comoros</option>
+								<option value="CK">Cook Islands</option>
+								<option value="CR">Costa Rica</option>
+								<option value="HR">Croatia</option>
+								<option value="CY">Cyprus</option>
+								<option value="CZ">Czech Republic</option>
+								<option value="CD">Democratic Republic of the Congo</option>
+								<option value="DK">Denmark</option>
+								<option value="DJ">Djibouti</option>
+								<option value="DM">Dominica</option>
+								<option value="DO">Dominican Republic</option>
+								<option value="EC">Ecuador</option>
+								<option value="EG">Egypt</option>
+								<option value="SV">El Salvador</option>
+								<option value="ER">Eritrea</option>
+								<option value="EE">Estonia</option>
+								<option value="ET">Ethiopia</option>
+								<option value="FK">Falkland Islands</option>
+								<option value="FO">Faroe Islands</option>
+								<option value="FJ">Fiji</option>
+								<option value="FI">Finland</option>
+								<option value="FR">France</option>
+								<option value="GF">French Guiana</option>
+								<option value="PF">French Polynesia</option>
+								<option value="GA">Gabon Republic</option>
+								<option value="GM">Gambia</option>
+								<option value="GE">Georgia</option>
+								<option value="DE">Germany</option>
+								<option value="GI">Gibraltar</option>
+								<option value="GR">Greece</option>
+								<option value="GL">Greenland</option>
+								<option value="GD">Grenada</option>
+								<option value="GP">Guadeloupe</option>
+								<option value="GT">Guatemala</option>
+								<option value="GN">Guinea</option>
+								<option value="GW">Guinea Bissau</option>
+								<option value="GY">Guyana</option>
+								<option value="HN">Honduras</option>
+								<option value="HK">Hong Kong</option>
+								<option value="HU">Hungary</option>
+								<option value="IS">Iceland</option>
+								<option value="IN">India</option>
+								<option value="ID">Indonesia</option>
+								<option value="IE">Ireland</option>
+								<option value="IL">Israel</option>
+								<option value="IT">Italy</option>
+								<option value="JM">Jamaica</option>
+								<option value="JP">Japan</option>
+								<option value="JO">Jordan</option>
+								<option value="KZ">Kazakhstan</option>
+								<option value="KE">Kenya</option>
+								<option value="KI">Kiribati</option>
+								<option value="KW">Kuwait</option>
+								<option value="KG">Kyrgyzstan</option>
+								<option value="LA">Laos</option>
+								<option value="LV">Latvia</option>
+								<option value="LS">Lesotho</option>
+								<option value="LI">Liechtenstein</option>
+								<option value="LT">Lithuania</option>
+								<option value="LU">Luxembourg</option>
+								<option value="MG">Madagascar</option>
+								<option value="MW">Malawi</option>
+								<option value="MY">Malaysia</option>
+								<option value="MV">Maldives</option>
+								<option value="ML">Mali</option>
+								<option value="MT">Malta</option>
+								<option value="MH">Marshall Islands</option>
+								<option value="MQ">Martinique</option>
+								<option value="MR">Mauritania</option>
+								<option value="MU">Mauritius</option>
+								<option value="YT">Mayotte</option>
+								<option value="MX">Mexico</option>
+								<option value="FM">Micronesia</option>
+								<option value="MN">Mongolia</option>
+								<option value="MS">Montserrat</option>
+								<option value="MA">Morocco</option>
+								<option value="MZ">Mozambique</option>
+								<option value="NA">Namibia</option>
+								<option value="NR">Nauru</option>
+								<option value="NP">Nepal</option>
+								<option value="NL">Netherlands</option>
+								<option value="AN">Netherlands Antilles</option>
+								<option value="NC">New Caledonia</option>
+								<option value="NZ">New Zealand</option>
+								<option value="NI">Nicaragua</option>
+								<option value="NE">Niger</option>
+								<option value="NU">Niue</option>
+								<option value="NF">Norfolk Island</option>
+								<option value="NO">Norway</option>
+								<option value="OM">Oman</option>
+								<option value="PW">Palau</option>
+								<option value="PA">Panama</option>
+								<option value="PG">Papua New Guinea</option>
+								<option value="PE">Peru</option>
+								<option value="PH">Philippines</option>
+								<option value="PN">Pitcairn Islands</option>
+								<option value="PL">Poland</option>
+								<option value="PT">Portugal</option>
+								<option value="QA">Qatar</option>
+								<option value="CG">Republic of the Congo</option>
+								<option value="RE">Reunion</option>
+								<option value="RO">Romania</option>
+								<option value="RU">Russia</option>
+								<option value="RW">Rwanda</option>
+								<option value="KN">Saint Kitts and Nevis Anguilla</option>
+								<option value="PM">Saint Pierre and Miquelon</option>
+								<option value="VC">Saint Vincent and Grenadines</option>
+								<option value="WS">Samoa</option>
+								<option value="SM">San Marino</option>
+								<option value="ST">São Tomé and Príncipe</option>
+								<option value="SA">Saudi Arabia</option>
+								<option value="SN">Senegal</option>
+								<option value="RS">Serbia</option>
+								<option value="SC">Seychelles</option>
+								<option value="SL">Sierra Leone</option>
+								<option value="SG">Singapore</option>
+								<option value="SK">Slovakia</option>
+								<option value="SI">Slovenia</option>
+								<option value="SB">Solomon Islands</option>
+								<option value="SO">Somalia</option>
+								<option value="ZA">South Africa</option>
+								<option value="KR">South Korea</option>
+								<option value="ES">Spain</option>
+								<option value="LK">Sri Lanka</option>
+								<option value="SH">St. Helena</option>
+								<option value="LC">St. Lucia</option>
+								<option value="SR">Suriname</option>
+								<option value="SJ">Svalbard and Jan Mayen Islands</option>
+								<option value="SZ">Swaziland</option>
+								<option value="SE">Sweden</option>
+								<option value="CH">Switzerland</option>
+								<option value="TW">Taiwan</option>
+								<option value="TJ">Tajikistan</option>
+								<option value="TZ">Tanzania</option>
+								<option value="TH">Thailand</option>
+								<option value="TG">Togo</option>
+								<option value="TO">Tonga</option>
+								<option value="TT">Trinidad and Tobago</option>
+								<option value="TN">Tunisia</option>
+								<option value="TR">Turkey</option>
+								<option value="TM">Turkmenistan</option>
+								<option value="TC">Turks and Caicos Islands</option>
+								<option value="TV">Tuvalu</option>
+								<option value="UG">Uganda</option>
+								<option value="UA">Ukraine</option>
+								<option value="AE">United Arab Emirates</option>
+								<option value="GB">United Kingdom</option>
+								<option value="US">United States</option>
+								<option value="UY">Uruguay</option>
+								<option value="VU">Vanuatu</option>
+								<option value="VA">Vatican City State</option>
+								<option value="VE">Venezuela</option>
+								<option value="VN">Vietnam</option>
+								<option value="VG">Virgin Islands (British)</option>
+								<option value="WF">Wallis and Futuna Islands</option>
+								<option value="YE">Yemen</option>
+								<option value="ZM">Zambia</option>
+							</select>
+							<div id="arrow-select"></div>
+							<svg id="arrow-select-svg"></svg>
+							<span class="entypo-globe icon"></span>
+							<span class="slick-tip left">Choose country</span>
+						</div>
+					</div>
+					<div class="clrfx mt-20 mb-30 bt"><span class="inner-title">Payment type</span></div>
+					<!-- Payment options -->
+					<div class="w-20 mt-10 mr-5">
+						<!-- Payment option 1 -->
+						<div class="w-100 mb-10">
+							<input type="radio" id="quotation" name="payment-tipe" />
+							<label for="quotation" class="tick"><span>By quotation</span></label>
+						</div>
+						<!-- Payment option 2 -->
+						<div class="w-100 mb-10">
+							<input type="radio" id="mastercard" name="payment-tipe" />
+							<label for="mastercard" class="tick"><span>MasterCard</span></label>
+						</div>
+						<!-- Payment option 3 -->
+						<div class="w-100 mb-10">
+							<input type="radio" id="visa" name="payment-tipe" />
+							<label for="visa" class="tick"><span>Visa Electron</span></label>
+						</div>
+						<!-- Payment option 4 -->
+						<div class="w-100 mb-10">
+							<input type="radio" id="checkout-2" name="payment-tipe" />
+							<label for="checkout-2" class="tick"><span>2Checkout</span></label>
+						</div>
+						<!-- Payment option 5 -->
+						<div class="w-100">
+							<input type="radio" id="paypal" name="payment-tipe" />
+							<label for="paypal" class="tick"><span>Paypal</span></label>
+						</div>
+					</div>
+					<div class="w-75 right">
+						<!-- Credit card holders name input -->
+						<div class="field">
+							<input name="cc-holder-name" placeholder="Credit card holder" type="text" id="cc-holder-name" class="no-icon" />
+							<span class="slick-tip left">Credit card holder name</span>
+						</div>
+						<!-- Credit card number input -->
+						<div class="field">
+							<input name="cc-number" placeholder="Credit card number" type="text" id="cc-number" class="no-icon" />
+							<span class="slick-tip left">Credit card number</span>
+						</div>
+						<!-- Credit card validation input -->
+						<div class="w-47 mr-6">
+							<div class="field">
+								<select name="cc-validation" id="cc-validation" class="grayed no-icon">
+									<option value="" disabled="disabled" selected="selected" class="disabled">Validation date</option>
+									<option value="Jan-2014">2014 - January</option>
+									<option value="Feb-2014">2014 - February</option>
+									<option value="Mar-2014">2014 - March</option>
+									<option value="Apr-2014">2014 - April</option>
+									<option value="May-2014">2014 - May</option>
+									<option value="Jun-2014">2014 - June</option>
+									<option value="Jul-2014">2014 - July</option>
+									<option value="Aug-2014">2014 - August</option>
+									<option value="Sep-2014">2014 - September</option>
+									<option value="Oct-2014">2014 - October</option>
+									<option value="nov-2014">2014 - November</option>
+									<option value="Dec-2014">2014 - December</option>
+									<option value="Jan-2015">2015 - January</option>
+									<option value="Feb-2015">2015 - February</option>
+									<option value="Mar-2015">2015 - March</option>
+									<option value="Apr-2015">2015 - April</option>
+									<option value="May-2015">2015 - May</option>
+									<option value="Jun-2015">2015 - June</option>
+									<option value="Jul-2015">2015 - July</option>
+									<option value="Aug-2015">2015 - August</option>
+									<option value="Sep-2015">2015 - September</option>
+									<option value="Oct-2015">2015 - October</option>
+									<option value="nov-2015">2015 - November</option>
+									<option value="Dec-2015">2015 - December</option>
+								</select>
+								<div id="arrow-select"></div>
+								<svg id="arrow-select-svg"></svg>
+								<span class="slick-tip left">Credit card validation date</span>
+							</div>
+						</div>
+						<div class="w-47">
+							<!-- Credit card security code input -->
+							<div class="field">
+								<input name="cc-security" placeholder="Security number" type="text" id="cc-security" maxlength="4" class="no-icon" />
+								<span class="slick-tip left">4 digits security number</span>
+							</div>
+						</div>
+					</div>
+					<div class="clrfx mt-20 mb-30 bt"><span class="inner-title">Order info</span></div>
+					<!-- Price table -->
+					<div class="table">
+						<!-- Titles -->
+						<div class="row heading">
+							<div class="cell w-4 mr-4">Qty</div>
+							<div class="cell w-30 mr-4">Article</div>
+							<div class="cell w-16 mr-4">Options</div>
+							<div class="cell w-16 mr-4 last">Price per unit</div>
+							<div class="cell w-16 last">Total</div>
+						</div>
+						<!-- Item 1 -->
+						<div class="row items">
+							<a href="" class="entypo-cancel-circled delete"></a>
+							<div class="cell w-4 mr-4 qty grey">1</div>
+							<div class="cell w-30 mr-4 name">Men's suit / size 56</div>
+							<div class="cell w-16 mr-4 options grey">Tailored black</div>
+							<div class="cell w-16 mr-4 price-u grey last">&#x24; 450,-</div>
+							<div class="cell w-16 price-t last">&#x24; 450,-</div>
+						</div>
+						<!-- Item 2 -->
+						<div class="row items">
+							<a href="" class="entypo-cancel-circled delete"></a>
+							<div class="cell w-4 mr-4 qty grey">1</div>
+							<div class="cell w-30 mr-4 name">Woman's dress / size 36</div>
+							<div class="cell w-16 mr-4 options grey">Tailored red</div>
+							<div class="cell w-16 mr-4 price-u grey last">&#x24; 850,-</div>
+							<div class="cell w-16 price-t last">&#x24; 850,-</div>
+						</div>
+						<!-- Item 3 -->
+						<div class="row items last">
+							<a href="" class="entypo-cancel-circled delete"></a>
+							<div class="cell w-4 mr-4 qty grey">2</div>
+							<div class="cell w-30 mr-4 name">Men and woman's shoes</div>
+							<div class="cell w-16 mr-4 options grey">Light gloss shine</div>
+							<div class="cell w-16 mr-4 price-u grey last">&#x24; 270,-</div>
+							<div class="cell w-16 price-t last">&#x24; 540,-</div>
+						</div>
+						<!-- Sum -->
+						<div class="row sum mb-10">
+							<div class="cell w-47"><span class="entypo-basket"></span>Total:</div>
+							<div class="cell w-47 last">&#x24; 1.840,-</div>
+						</div>
+					</div>
+					<div class="clrfx mt-30 mb-30 bt"><span class="inner-title">Almost done</span></div>
+					<!-- Fast delivery option -->
+					<div class="field">
+						<p class="ratings w-75 mr-5"><span class="entypo-info-circled"></span>Fast delivery? Only 1 &euro; additional cost</p>
+						<div class="slide-chk right">
+							<input type="checkbox" id="fast-delivery" name="fast-delivery" />
+							<label for="fast-delivery"></label>
+						</div>
+					</div>
+					<!-- Newsletter signup option -->
+					<div class="field">
+						<p class="ratings w-75 mr-5"><span class="entypo-info-circled"></span>Signup for our weekly newsletter?</p>
+						<div class="slide-chk right">
+							<input type="checkbox" id="newsletter-signup" name="newsletter-signup" />
+							<label for="newsletter-signup"></label>
+						</div>
+					</div>
+					<!-- Message input -->
+					<div class="field mt-10">
+						<textarea name="message" placeholder="Additional message" id="message" class="message"></textarea>
+						<span class="entypo-comment icon"></span>
+						<span class="slick-tip left">Additional message</span>
+					</div>
+					<div class="clrfx mt-10 mb-30 bt"></div>
+					<!-- Terms agree button -->
+					<div class="w-47 mr-5 mt-5">
+						<input type="checkbox" id="terms-agree" name="terms-agree" checked="checked" />
+						<label for="terms-agree" class="tick"><span>I agree with <a href="#">Terms &amp; Conditions</a></span></label>
+					</div>
+					<!-- Send button -->
+					<input type="submit" value="Checkout" class="send" form="checkout" name="send" />
+				</form>
+				<!-- / Form fields -->
+			</div>
+			<!-- / Register form -->
+		</section>
+	</div>
+
+	<!-- *************************** -->
+	<!-- END COPYING HERE            -->
+	<!-- *************************** -->
+
+</div>
+</body>
+</html>

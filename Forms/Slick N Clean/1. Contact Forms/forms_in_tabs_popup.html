@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Slick &amp; clean CSS3 Forms Pack</title>
+	<meta name="description" content="Slick &amp; clean CSS3 Forms Pack" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Forms stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/slick_fitp.css" media="screen" />
+	<!-- / Forms stylesheet -->
+	<link rel="stylesheet" type="text/css" href="demo/demo.css" media="screen" />
+	<!-- Google maps scripts -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="js/gmaps.js"></script>
+	<!-- / Google maps scripts -->
+	<!--[if IE 9]>
+		<script type="text/javascript" src="js/placeholder.js"></script>
+	<![endif]-->
+</head>
+<body>
+<div id="page">
+
+	<!-- Start Demo page title -->
+	<div class="demo">
+	Slick &amp; Clean
+	<h1>&#x25C2; CSS3 CONTACT AND FEEDBACK FORM + QUESTIONNAIRE IN POPUP &#x25B8;</h1>
+	</div>
+	<!-- End demo page title -->
+
+	<!-- Link, which triggers the forms popup -->
+	<a href="#slick-popup" class="popup-button">Click me</a>
+
+	<!-- *************************** -->
+	<!-- START COPYING FROM HERE     -->
+	<!-- *************************** -->
+
+	<div id="slick-popup">
+		<a href="#close" class="close-overlay"></a>
+		<section id="slick">
+			<!-- Contact input and label -->
+			<input id="contact" type="radio" class="contact-selector" name="slick-forms" checked="checked" />
+			<label for="contact" class="tabs entypo-comment"></label>
+			<!-- Feedback input and label -->
+			<input id="feedback" type="radio" class="feedback-selector" name="slick-forms" />
+			<label for="feedback" class="tabs entypo-paper-plane"></label>
+			<!-- Questionnaire input and label -->
+			<input id="questionnaire" type="radio" class="questionnaire-selector" name="slick-forms" />
+			<label for="questionnaire" class="tabs entypo-pencil"></label>
+			<!-- White divider for hiding the shadow -->
+			<div class="clrfx merge"></div>
+			<!-- Social buttons -->
+			<div class="sb">
+				<a href="#" class="fb entypo-thumbs-up"><span class="slick-tip right">Like us on Facebook</span></a>
+				<a href="#" class="gc entypo-google-circles"><span class="slick-tip right">Find us in Circles</span></a>
+				<a href="#" class="tw entypo-twitter"><span class="slick-tip right">Follow us on Twitter</span></a>
+				<a href="#" class="entypo-cancel close-top"><span class="slick-tip right">Close window</span></a>
+			</div>
+			<!-- Forms wrapper -->
+			<div class="forms">
+				<!-- Contact form -->
+				<div class="contact-form">
+					<!-- Title -->
+					<div class="title">Hey there</div> 
+					<!-- Intro text -->
+					<p class="intro"><b>We'd like to hear from you.</b> Send us your message or just say hy with our contact form or directly via phone, we love to chat.</p>
+					<!-- Left block -->
+					<div class="w-47 mr-6">
+						<!-- Form fields -->
+						<form action="" name="contact" id="contact" method="post">
+							<!-- Name input -->
+							<div class="field">
+								<input name="name" placeholder="Your name" type="text" id="name" required />
+								<span class="entypo-user icon"></span>
+								<span class="slick-tip left">Enter your name</span>
+							</div>
+							<!-- Email input -->
+							<div class="field">
+								<input name="email" placeholder="your@domain.com" type="email" id="email" required />
+								<span class="entypo-mail icon"></span>
+								<span class="slick-tip left">Enter valid email</span>
+							</div>
+							<!-- Phone input -->
+							<div class="field">
+								<input name="phone" placeholder="+44 00 123" type="tel" id="phone" />
+								<span class="entypo-mobile icon"></span>
+								<span class="slick-tip left">Contact phone</span>
+							</div>
+							<!-- Subject input -->
+							<div class="field">
+								<select name="subject" id="subject" class="grayed" onClick="this.className=this.options[this.selectedIndex].className">
+									<option value="" disabled="disabled" selected="selected" class="disabled">Subject</option>
+									<option value="Presales question">1. Presales question</option>
+									<option value="Warranty and support">2. Warranty and support</option>
+									<option value="Other">3. Other</option>
+								</select>
+								<div id="arrow-select"></div>
+								<svg id="arrow-select-svg"></svg>
+								<span class="entypo-book icon"></span>
+								<span class="slick-tip left">Choose subject</span>
+							</div>
+							<!-- Message input -->
+							<div class="field">
+								<textarea name="message" placeholder="Message" id="message" class="message" required></textarea>
+								<span class="entypo-comment icon"></span>
+								<span class="slick-tip left">Your message</span>
+							</div>
+							<!-- Message copy button -->
+							<div class="w-47 mr-5">
+								<input type="checkbox" id="send-copy" name="send-copy" checked="checked" />
+								<label for="send-copy" class="tick"><span>Send me a copy of this message</span></label>
+							</div>
+							<!-- Send button -->
+							<input type="submit" value="Send" class="send" form="contact" name="send" />
+						</form>
+						<!-- / Form fields -->
+					</div>
+					<!-- Right block -->
+					<div class="w-47">
+						<!-- Google maps -->
+						<div id="map-canvas" class="map"></div>
+					</div>
+				</div>
+				<!-- / Contact form -->            
+				<!-- Feedback form -->            
+				<div class="feedback-form">            
+					<!-- Title -->
+					<div class="title">We love feeback</div> 
+					<!-- Intro text -->
+					<p class="intro"><b>Good support is the king.</b> Send us your feedback or suggestions so we can make better experience for you.</p>
+					<!-- Form fields -->
+					<form action="" name="feedback" id="feedback" method="post">
+						<!-- Left block -->
+						<div class="w-47 mr-6">
+							<!-- Name input -->
+							<div class="field">
+								<input name="name" placeholder="Your name" type="text" id="name" required />
+								<span class="entypo-user icon"></span>
+								<span class="slick-tip left">Enter your name</span>
+							</div>
+							<!-- Email input -->
+							<div class="field">
+								<input name="email" placeholder="Contact email" type="email" id="email" required />
+								<span class="entypo-mail icon"></span>
+								<span class="slick-tip left">Enter your email</span>
+							</div>
+							<!-- Subject input -->
+							<div class="field">
+								<select name="subject" id="subject" class="grayed" onClick="this.className=this.options[this.selectedIndex].className">
+									<option value="" disabled="disabled" selected="selected" class="disabled">Subject</option>
+									<option value="Positive feedback">1. Positive feedback</option>
+									<option value="Negative feedback">2. Negative feedback</option>
+									<option value="Suggestions">3. Suggestions</option>
+								</select>
+								<div id="arrow-select"></div>
+								<svg id="arrow-select-svg"></svg>
+								<span class="entypo-book icon"></span>
+								<span class="slick-tip left">Choose subject</span>
+							</div>
+							<!-- Message input -->
+							<div class="field">
+								<textarea name="message" placeholder="Feedback" id="message" required></textarea>
+								<span class="entypo-comment icon"></span>
+								<span class="slick-tip left">Your feedback</span>
+							</div>
+							<!-- Terms and Conditions link -->
+							<div class="terms">
+							We respect your privacy. Your information won’t be disclosed - <a href="#">Terms and Conditions</a>.
+							</div>
+						</div>
+						<!-- Right block -->
+						<div class="w-47">
+							<div class="clrfx mt-10"></div>
+							<!-- Stars rating 1 -->
+							<div class="field">
+								<p class="ratings"><span class="entypo-briefcase"></span>Our services &amp; customer care</p>
+								<fieldset class="stars" id="service-rating">
+									<!-- 5 stars -->
+									<input type="radio" id="service-5" name="service-rating" value="5" />
+									<label for="service-5" ><span class="slick-tip rate">Awesome</span></label>
+									<!-- 4 stars -->
+									<input type="radio" id="service-4" name="service-rating" value="4" />
+									<label for="service-4" ><span class="slick-tip rate">Pretty satisfied</span></label>
+									<!-- 3 stars -->
+									<input type="radio" id="service-3" name="service-rating" value="3" checked="checked" />
+									<label for="service-3" ><span class="slick-tip rate">Not best, not worst</span></label>
+									<!-- 2 stars -->
+									<input type="radio" id="service-2" name="service-rating" value="2" />
+									<label for="service-2" ><span class="slick-tip rate">Room for improvement</span></label>
+									<!-- 1 star -->
+									<input type="radio" id="service-1" name="service-rating" value="1" />
+									<label for="service-1" ><span class="slick-tip rate">Not soo good</span></label>
+								</fieldset>
+							</div>
+							<div class="clrfx mt-10"></div>
+							<!-- Stars rating 2 -->
+							<div class="field">
+								<p class="ratings"><span class="entypo-chat"></span>After sale's support &amp; help</p>
+								<fieldset class="stars" id="support-rating">
+									<!-- 5 stars -->
+									<input type="radio" id="support-5" name="support-rating" value="5" />
+									<label for="support-5" ><span class="slick-tip rate">Awesome</span></label>
+									<!-- 4 stars -->
+									<input type="radio" id="support-4" name="support-rating" value="4" />
+									<label for="support-4" ><span class="slick-tip rate">Pretty satisfied</span></label>
+									<!-- 3 stars -->
+									<input type="radio" id="support-3" name="support-rating" value="3" checked="checked" />
+									<label for="support-3" ><span class="slick-tip rate">Not best, not worst</span></label>
+									<!-- 2 stars -->
+									<input type="radio" id="support-2" name="support-rating" value="2" />
+									<label for="support-2" ><span class="slick-tip rate">Room for improvement</span></label>
+									<!-- 1 star -->
+									<input type="radio" id="support-1" name="support-rating" value="1" />
+									<label for="support-1" ><span class="slick-tip rate">Not soo good</span></label>
+								</fieldset>
+							</div>
+							<div class="clrfx mt-10"></div>
+							<!-- Stars rating 3 -->
+							<div class="field">
+								<p class="ratings"><span class="entypo-users"></span>Our team &amp; staff valuation</p>
+								<fieldset class="stars" id="team-rating">
+									<!-- 5 stars -->
+									<input type="radio" id="team-5" name="team-rating" value="5" />
+									<label for="team-5" ><span class="slick-tip rate">Awesome</span></label>
+									<!-- 4 stars -->
+									<input type="radio" id="team-4" name="team-rating" value="4" />
+									<label for="team-4" ><span class="slick-tip rate">Pretty satisfied</span></label>
+									<!-- 3 stars -->
+									<input type="radio" id="team-3" name="team-rating" value="3" checked="checked" />
+									<label for="team-3" ><span class="slick-tip rate">Not best, not worst</span></label>
+									<!-- 2 stars -->
+									<input type="radio" id="team-2" name="team-rating" value="2" />
+									<label for="team-2" ><span class="slick-tip rate">Room for improvement</span></label>
+									<!-- 1 star -->
+									<input type="radio" id="team-1" name="team-rating" value="1" />
+									<label for="team-1" ><span class="slick-tip rate">Not soo good</span></label>
+								</fieldset>
+							</div>
+							<div class="clrfx mt-10 mb-20 bt"></div>
+							<!-- Block checboxes -->
+							<div class="field">
+								<p class="ratings"><span class="entypo-info-circled"></span>Please provide us your age</p>
+								<fieldset class="blocks" id="age">
+									<!-- 18 - 25 -->
+									<input type="radio" id="age-1" name="age" value="18 - 25" />
+									<label for="age-1">18 - 25</label>
+									<!-- 25 - 35 -->
+									<input type="radio" id="age-2" name="age" value="25 - 35" />
+									<label for="age-2">25 - 35</label>
+									<!-- 35 - 45 -->
+									<input type="radio" id="age-3" name="age" value="35 - 45" />
+									<label for="age-3">35 - 45</label>
+									<!-- 45 - 60 -->
+									<input type="radio" id="age-4" name="age" value="45 - 60" />
+									<label for="age-4">45 - 60</label>
+									<!-- 65 - 75 -->
+									<input type="radio" id="age-5" name="age" value="60 - 75" />
+									<label for="age-5">60 - 75</label>
+									<!-- 75 - 90 -->
+									<input type="radio" id="age-6" name="age" value="75 - 90" />
+									<label for="age-6">75 - 90</label>
+								</fieldset>
+							</div>
+							<!-- Tick checboxes -->
+							<div class="field">
+								<p class="ratings"><span class="entypo-link"></span>How can we improve your satisfaction?</p>
+								<div class="clrfx mt-20"></div>
+								<!-- Option 1 -->
+								<div class="w-30 mr-5">
+									<input type="checkbox" id="new-services" name="new-services" />
+									<label for="new-services" class="tick"><span>New services</span></label>
+								</div>
+								<!-- Option 2 -->
+								<div class="w-30 mr-5">
+									<input type="checkbox" id="better-support" name="better-support" />
+									<label for="better-support" class="tick"><span>Better support</span></label>
+								</div>
+								<!-- Option 3 -->
+								<div class="w-30">
+									<input type="checkbox" id="faster-response" name="faster-response" />
+									<label for="faster-response" class="tick"><span>Faster response</span></label>
+								</div>
+							</div>
+							<input type="submit" value="Send" class="send" form="feedback" name="send" />
+						</div>
+					</form>
+					<!-- / Form fields -->
+				</div>
+				<!-- / Feedback form -->
+				<!-- Questionnaire form -->
+				<div class="questionnaire-form">            
+					<!-- Title -->
+					<div class="title">Project Questionnaire</div> 
+					<!-- Intro text -->
+					<p class="intro"><b>Hi there.</b> Need detailed project offer? No worries, just fill out our basic project Questionnaire and we’ll get back at you soon.</p>
+					<!-- Form fields -->
+					<form action="" name="questionnaire" id="questionnaire" method="post">
+						<!-- Left block -->
+						<div class="w-47 mr-6">
+							<!-- Subject input -->
+							<div class="field">
+								<select name="subject" id="subject" class="grayed" onClick="this.className=this.options[this.selectedIndex].className">
+									<option value="" disabled="disabled" selected="selected" class="disabled">Subject</option>
+									<option value="Website design">1. Website design</option>
+									<option value="Graphic design">2. Graphic design</option>
+									<option value="App development">3. App development</option>
+								</select>
+								<div id="arrow-select"></div>
+								<svg id="arrow-select-svg"></svg>
+								<span class="entypo-book icon"></span>
+								<span class="slick-tip left">Choose subject</span>
+							</div>
+							<!-- Name input -->
+							<div class="field">
+								<input name="name" placeholder="Your name" type="text" id="name" required />
+								<span class="entypo-user icon"></span>
+								<span class="slick-tip left">Enter your name</span>
+							</div>
+							<!-- Company input -->
+							<div class="field">
+								<input name="company" placeholder="Company" type="text" id="company" />
+								<span class="entypo-briefcase icon"></span>
+								<span class="slick-tip left">Your company</span>
+							</div>
+							<!-- Website input -->
+							<div class="field">
+								<input name="website" placeholder="http://" type="text" id="website" />
+								<span class="entypo-monitor icon"></span>
+								<span class="slick-tip left">Your website</span>
+							</div>
+							<!-- Phone input -->
+							<div class="field">
+								<input name="phone" placeholder="+44 00 123" type="tel" id="phone" required />
+								<span class="entypo-mobile icon"></span>
+								<span class="slick-tip left">Enter your phone</span>
+							</div>
+							<!-- Email input -->
+							<div class="field">
+								<input name="email" placeholder="Contact email" type="email" id="email" required />
+								<span class="entypo-mail icon"></span>
+								<span class="slick-tip left">Enter your email</span>
+							</div>
+						</div>
+						<!-- Right block -->
+						<div class="w-47">
+							<!-- Subject input -->
+							<div class="field">
+								<select name="service" id="service" class="grayed" onClick="this.className=this.options[this.selectedIndex].className">
+									<option value="" disabled="disabled" selected="selected" class="disabled">Service</option>
+									<option value="Website design">1. Website design</option>
+									<option value="Graphic design">2. Graphic design</option>
+									<option value="App development">3. App development</option>
+								</select>
+								<div id="arrow-select"></div>
+								<svg id="arrow-select-svg"></svg>
+								<span class="entypo-cog icon"></span>
+								<span class="slick-tip left">Choose service</span>
+							</div>
+							<!-- Budget input -->
+							<div class="field">
+								<input name="budget" placeholder="Estimated budget" type="text" id="budget" required />
+								<span class="entypo-gauge icon"></span>
+								<span class="slick-tip left">Provide us your budget</span>
+							</div>
+							<!-- Timeframe input -->
+							<div class="field">
+								<input name="timeframe" placeholder="Estimated timeframe" type="text" id="timeframe" required />
+								<span class="entypo-calendar icon"></span>
+								<span class="slick-tip left">Estimated timeframe</span>
+							</div>
+							<!-- Upload input -->
+							<div class="field">
+								<label class="upload" for="uploads">
+									<div class="btn">
+										<input type="file" id="uploads" accept="image/*" multiple onchange="this.parentNode.nextSibling.value = this.value" /><span class="entypo-upload"></span></div><input type="text" class="read-only" readonly="readonly" placeholder="Upload project file...">
+								</label>
+							</div>
+							<!-- Overview input -->
+							<div class="field">
+								<textarea name="overview" placeholder="Project overview" id="overview" class="project" required></textarea>
+								<span class="entypo-comment icon"></span>
+								<span class="slick-tip left">Describe your project</span>
+							</div>
+							<div class="w-47 mt-5">
+								<label class="reset" for="reset">
+									<span class="entypo-arrows-ccw"></span>Reset form
+								</label>
+								<input type="reset" id="reset" value="">
+							</div>
+							<!-- Send button -->
+							<input type="submit" value="Send" class="send" form="questionnaire" name="send" />
+						</div>
+					</form>
+					<!-- / Form fields -->
+				</div>
+				<!-- / Questionnaire form -->
+			</div>
+			<!-- / Forms wrapper -->
+		</section>
+	</div>
+
+	<!-- *************************** -->
+	<!-- END COPYING HERE            -->
+	<!-- *************************** -->
+
+</div>
+</body>
+</html>

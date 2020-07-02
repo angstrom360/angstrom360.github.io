@@ -1,0 +1,255 @@
+/***********************
+    Demo page styles
+************************/
+
+body {
+	width:100%;
+	height:100%;
+	background:url("bg.jpg") 0 0 repeat;
+	margin:0;
+	padding:0;
+}
+#page,
+#page-2,
+#page-3 {
+	margin:50px auto 0 auto;
+	position: relative;
+}
+#page {
+	width: 1000px;
+}
+#page-2 {
+	width: 480px;
+}
+#page-3 {
+	width: 640px;
+}
+.demo {
+	font-family: 'Lobster', cursive;
+	padding: 0 0 50px 0;
+	text-align: center;
+	color: #222;
+	font-size: 40px;
+	width: auto;
+	position: relative;
+	margin: 0 auto;
+	text-shadow: 1px 1px #797979;
+}
+.demo h1 {
+	font-family: 'Lato', Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-shadow: none;
+	color: #bbb;
+	letter-spacing: 1px;
+	font-weight: normal;
+}
+a.popup-button {
+	display: block;
+	width: 100px;
+	font-family: 'Lato', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	background: #222;
+	padding: 20px;
+	color: #fff;
+	margin: 50px auto;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+}
+a.popup-button:hover {
+	background: #fff;
+	color: #222;
+}
+.description {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	font-family: 'Lato', Arial, Helvetica, sans-serif;
+	color: #fff;
+}
+.description * {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.description .block {
+	width: 30%;
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 16px;
+	float: left;
+}
+.description .block.mr-5 {
+	margin-right: 5%;
+}
+.description .block.mb-40 {
+	margin-bottom: 40px;
+}
+.description .block span {
+	display: block;
+	font-size: 54px;
+	margin-bottom: 10px;
+}
+.description .block p {
+	font-size: 12px;
+	line-height: 16px;
+	display: block;
+	color: #bbb;
+	padding: 0 20px;
+	text-transform: none;
+}
+#links {
+	display: block;
+	float: left;
+	margin: 30px 0 0 0;
+	padding: 50px 0 80px 0;
+	width: 100%;
+	font-family: 'Lato', Arial, Helvetica, sans-serif;
+	background: #fff;
+	box-shadow: 0 0 20px #333;
+}
+#links * {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#links .links-wrap {
+	width: 1000px;
+	margin: 0 auto
+}
+#links .title-1 {
+	font-size: 24px;
+	color: #ff2424;
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+#links .title-1 span {
+	padding-right: 16px;
+	font-size: 30px;
+}
+#links .title-2 {
+	font-size: 14px;
+	color: #bbb;
+	display: block;
+	width: 100%;
+	text-align: left;
+	float: left;
+	margin: 30px 0 10px 0;
+	text-transform: uppercase;
+	padding: 0 20px 10px 20px;
+	border-bottom: solid 1px #f0f0f0;
+}
+#links a {
+	text-decoration: none;
+	color: #333;
+	font-size: 11px;
+	padding: 14px;
+	display: inline-block;
+	float: left;
+	width: 25%;
+}
+#links a:hover,
+#links a:hover span {
+	background: #ff2424;
+	color: #fff;
+}
+#links a span {
+	color: #999;
+	padding-right: 10px;
+	font-size: 10px;
+	display: inline-block;
+}
+#links a.buy {
+	background: #ff2424;
+	color: #fff;
+	padding: 16px;
+	font-size: 18px;
+	text-align: center;
+	text-transform: uppercase;
+	float: none;
+	width: 240px;
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+#links a.buy:hover {
+	background: #333;
+}
+#links span.price {
+	font-size: 24px;
+	font-family: 'Lobster', cursive;
+	color: #999;
+	text-transform: none;
+	padding-top: 6px;
+	display: block;
+	text-align: center;
+}
+#links span.price span {
+	font-size: 50px;
+	vertical-align: middle;
+	padding-left: 6px;
+	color: #555;
+}
+.clrfx-buy {
+	width: 100%;
+	display: block;
+	content: "";
+	margin: 30px 0;
+	float: left;
+}
+a.go-back {
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin: 0 auto;
+	width: 100px;
+	font-family: 'Lato', Arial, Helvetica, sans-serif;
+	float: none;
+	display: block;
+}
+a.go-back span {
+	padding-right: 6px;
+}
+
+
+@media screen and (max-width:1024px) {
+	#page,
+	#links .links-wrap {
+		width: 100%;
+	}
+	#links a {
+		width: 33%;
+	}
+}
+
+@media screen and (max-width:640px) {
+	.description .block {
+		width: 50%;
+	}
+	.description .block.mr-5,
+	.description .block.mb-40 {
+		margin: 0;
+	}
+	#links a {
+		width: 50%;
+	}
+	#page-3 {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:480px) {
+	.description .block {
+		width: 100%;
+	}
+	#links a,
+	#page-2 {
+		width: 100%;
+	}
+}

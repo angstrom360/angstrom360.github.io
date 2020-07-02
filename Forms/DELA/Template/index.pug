@@ -1,0 +1,145 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+        title Forms
+        link(rel="shortcut icon" href="styles/favicon.ico")
+        link(href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet")
+        link(rel="stylesheet" href="styles/demo.css")
+        link(rel="stylesheet" href="styles/dela-template.css")
+
+    body
+        #page-container
+            .all-presets-container
+                - for (var i = 1; i <= 2; i++)
+                    div(class="presets-container-"+i)
+
+                        // Form 1 Begin
+                        .preset-container
+                            form(class="dela-preset-"+i+"-1" action="?" method="get")
+                                p.form__title Login
+                                input(type="email" name="email" placeholder="E-mail" required autocomplete="email")
+                                input(type="password" name="password" placeholder="Password" required)
+                                label.form__checkbox Remember me
+                                    input(type="checkbox" name="remember" value="1") 
+                                    span
+                                input(type="submit" name="submit" value="Login")
+                                span.form__rorgot-password
+                                    a(href="javascript:void(0)") Forgot your Password?
+                        // Form 1 End
+                
+
+                        // Form 2 Begin
+                        .preset-container
+                            form(class="dela-preset-"+i+"-2" action="?" method="get")
+                                p.form__title Registration
+                                input(type="text" name="name" placeholder="Name" required autocomplete="name")
+                                input(type="email" name="email" placeholder="E-mail" required autocomplete="email")
+                                input(type="password" name="password" id="pass-"+i placeholder="Password" required)
+                                input(type="password" name="repeat" placeholder="Repeat Password" oninput="this.setCustomValidity(this.value != document.getElementById('pass-'+"+i+").value ? 'Passwords are not the same.' : '')" required)
+                                label.form__checkbox I agree to the Privacy Policy
+                                    input(type="checkbox" name="policy" value="1" required)
+                                    span
+                                input(type="submit" name="submit" value="Registration")
+                        // Form 2 End
+                
+
+                        // Form 3 Begin
+                        .preset-container
+                            form(class="dela-preset-"+i+"-3" action="?" method="get")
+                                p.form__title Call Back
+                                input(type="text" name="name" placeholder="Name" required autocomplete="name")
+                                input(type="tel" name="tel" placeholder="Phone Number" pattern="[0-9]{10}" oninput="setCustomValidity(''); checkValidity(); setCustomValidity(validity.valid ? '' :'Phone format must be 1234567890.')" required autocomplete="tel")
+                                .form__time-container Time
+                                    .form__time
+                                        input(type="number" name="hours" placeholder="00" min="0" max="23" step="1" required)
+                                        span :
+                                        input(type="number" name="minutes" placeholder="00" min="0" max="59" step="1" required)
+                                input(type="submit" name="submit" value="Call Back")
+                                span.form__note In the timeout field specify the time convenient for you
+                        // Form 3 End
+                
+
+                        // Form 4 Begin
+                        .preset-container
+                            form(class="dela-preset-"+i+"-4" action="?" method="get")
+                                p.form__title Checkout
+                                input(type="text" name="ccname" placeholder="Cardholder Name" list="cardholders-"+i required autocomplete="cc-name")
+                                datalist(id="cardholders-"+i)
+                                    option(value="Visa")
+                                    option(value="Mastercard")
+                                    option(value="American Express")
+                                input(type="text" name="cardnumber" placeholder="Card Number" pattern="[0-9]{16}" oninput="setCustomValidity(''); checkValidity(); setCustomValidity(validity.valid ? '' :'Card number format must be 1234123412341234.')" required autocomplete="cc-number")
+                                .form__card-data-cvc
+                                    label.form__card-date
+                                        span 00 / 00
+                                        input(type="date" name="date" oninput="let v = this.value; this.previousElementSibling.innerHTML = v[5]+v[6]+' / '+v[8]+v[9]; this.parentNode.classList.add('valid');" required autocomplete="cc-exp")
+                                    label.form__card-cvc
+                                        input(type="text" name="cvc" placeholder="CVC" pattern="[0-9]{3}" oninput="setCustomValidity(''); checkValidity(); setCustomValidity(validity.valid ? '' :'CVC format must be 123.')" required autocomplete="cc-csc")
+                                input(type="submit" name="submit" value="Pay Now")
+                        // Form 4 End
+                
+
+                        // Form 5 Begin
+                        .preset-container
+                            form(class="dela-preset-"+i+"-5" action="?" method="get")
+                                p.form__title Book Visit
+                                input(type="text" name="name" placeholder="Name" required autocomplete="name")
+                                input(type="tel" name="tel" placeholder="Phone Number" pattern="[0-9]{10}" oninput="setCustomValidity(''); checkValidity(); setCustomValidity(validity.valid ? '' :'Phone format must be 1234567890.');" required autocomplete="tel")
+                                label.form__select
+                                    select(name="service" required)
+                                        option(selected disabled value="") Choose Service
+                                        option(value="Massage") Massage
+                                        option(value="Spa") Spa
+                                        option(value="Tipping") Tipping
+                                label.form__select
+                                    select(name="specialist" required)
+                                        option(selected disabled value="") Choose Specialist
+                                        option(value="Beginner") Beginner
+                                        option(value="Professional") Professional
+                                        option(value="V.I.P") V.I.P
+                                .form__book-container
+                                    label.form__book-date
+                                        span Date
+                                        input(type="date" name="date" oninput="let v = this.value; this.previousElementSibling.innerHTML = v[5]+v[6]+' / '+v[8]+v[9]; this.parentNode.classList.add('valid');"  required)
+                                    label.form__book-time
+                                        span Time
+                                        input(type="time" name="time" onmouseout="if(!this.value) this.previousElementSibling.innerHTML='Time'; else{this.parentNode.classList.add('form__book-time-input');}" required)
+                                input(type="submit" name="submit" value="Book Now")
+                        // Form 5 End
+                
+
+                        // Form 6 Begin
+                        .preset-container
+                            form(class="dela-preset-"+i+"-6" action="?" method="get")
+                                p.form__title Support Request
+                                .form-content
+                                    input(type="text" name="name" placeholder="Name" required autocomplete="name")
+                                    label.form__select
+                                        select(name="category" required)
+                                            option(selected disabled value="") Choose Category
+                                            option(value="Sales") Sales
+                                            option(value=" Server") Server
+                                            option(value="VPN") VPN
+                                    label.form__select
+                                        select(name="theme" required)
+                                            option(selected disabled value="") Choose Theme
+                                            option(value="Lunch Problems") Lunch Problems
+                                            option(value="Bugs") Bugs
+                                            option(value="Access Problems") Access Problems
+                                    textarea(name="message" placeholder="Message" required)
+                                    .form__book
+                                        p How to contact you?
+                                        input(class="form__radio-button-email" checked="checked" id="tab1-"+i type="radio" name="radio")
+                                        input(class="form__radio-button-tel" id="tab2-"+i type="radio" name="radio")
+                                        nav
+                                            label(class="form__label-email" for="tab1-"+i onclick="document.getElementById('btel"+i+"').toggleAttribute('disabled'); document.getElementById('bem"+i+"').toggleAttribute('disabled')") Email
+                                                span
+                                            label(class="form__label-tel" for="tab2-"+i onclick="document.getElementById('btel"+i+"').toggleAttribute('disabled'); document.getElementById('bem"+i+"').toggleAttribute('disabled')") Phone
+                                                span
+                                        section
+                                            input(class="form__input-email" id="bem"+i type="email" name="email" placeholder="Write your email" required autocomplete="email")
+                                            input(class="form__input-tel" id="btel"+i type="tel" name="tel" placeholder="Write your phone" pattern="[0-9]{10}" oninput="setCustomValidity(''); checkValidity(); setCustomValidity(validity.valid ? '' :'Phone format must be 1234567890.');" required disabled autocomplete="tel")
+                                    input(type="submit" name="submit" value="Send Request")
+                        // Form 6 End

@@ -1,0 +1,62 @@
+**********************************************************
+
+RELEASE NOTES & CHANGELOG - Slick & Clean Forms Pack
+
+**********************************************************
+
+--------------------
+  24.1.2014
+--------------------
+- Icons are now self hosted for better performance
+- Fixed minor bug on popups (Chrome bug)
+- Documentation update
+
+
+--------------------
+  6.1.2014
+--------------------
+- Added Search form
+- Documentation update
+
+
+--------------------
+  4.1.2014
+--------------------
+- All forms are now responsive
+- Added Checkout Form
+- Added Comment Form
+- Design update on all forms
+- Code optimization
+- Documentation update
+
+
+--------------------
+  19.6.2013
+--------------------
+- Added new feature: closing popup window by clicking on the overlay
+- Updated placeholders fallback for IE9
+- fixed minor Google Chrome box-shadow bug
+- Updated documentation
+
+
+--------------------
+  20.5.2013
+--------------------
+- Added new items: Contact, Feedback and Questionnaire Forms
+- Added validation fields for Registration Forms pack
+- Updated documentation
+- Minor CSS fixes
+
+
+--------------------
+  8.5.2013
+--------------------
+- Added Login and Registration form in tabs with popup
+- Updated documentation
+
+
+--------------------
+  5.5.2013
+--------------------
+
+- Release of the forms

@@ -1,0 +1,951 @@
+// Color Arrays
+$gradientsFrom: ( 1: #b76cd2, 2: #40cded)
+$gradientsTo: ( 1:  #4c3bb3, 2: #135cc8)
+$colors: (1: #735bc1, 2: #2d9ddd)
+$borderColors: (1: rgba(115, 91, 193, .2), 2:  rgba(45, 157, 221, .2) )
+$pulseColorsFrom: (1: rgba(104, 58, 206, .4), 2:  rgba(45, 157, 221, .4) )
+$pulseColorsTo: (1: rgba(104, 58, 206, 0), 2:  rgba(45, 157, 221, .0) )
+
+
+// Presets Loop
+@for $i from 1 through 2
+	$gradientFrom: map-get($gradientsFrom, $i)
+	$gradientTo: map-get($gradientsTo, $i)
+	$color: map-get($colors, $i)
+	$borderColor: map-get($borderColors, $i)
+	$pulseColorFrom: map-get($pulseColorsFrom, $i)
+	$pulseColorTo: map-get($pulseColorsTo, $i)
+
+
+	/* Style #{$i} Preset 1 Begin */
+	.dela-preset-#{$i}-1 
+		font-size: 16px
+		width: 14.4em
+		min-width: 11em
+		padding: 9.5em 3.68em 7.7em 3.68em
+		box-shadow: 0 0 1em rgba(0, 0, 0, .2)
+		font-family: Roboto
+		background: url(images/background-1-#{$i}.svg)
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+
+		.form__title
+			color: #fff
+			margin: 0
+			font-size: 2.375em
+			font-weight: 400
+			text-align: center
+			margin-bottom: .89em
+
+		input[type="email"],
+		input[type="password"],
+		input[type="text"]
+			color: #fff
+			font-family: Roboto
+			font-size: 1em
+			font-weight: 200
+			width: 100%
+			background: none
+			border: none
+			padding: .7em 0
+			border-bottom: .063em solid rgba(255,255,255,.2)
+			margin-bottom: 1.3em
+			border-radius: 0
+
+		input[type="email"]:valid,
+		input[type="password"]:valid,
+		input[type="text"]:valid
+			border-bottom: .063em solid #53da69
+			border-radius: 0
+
+		::-webkit-input-placeholder
+			color: #fff
+			
+		::-moz-placeholder
+			color: #fff
+
+		.form__checkbox
+			display: inline-block
+			font-size: .875em
+			margin-top: .5em
+			font-weight: 200
+			cursor: pointer
+			color: #fff
+			overflow: hidden
+			position: relative
+			padding-left: 2em
+
+			input
+				font-size: .7em
+				opacity: 0
+				width: 1.2em
+				height: 1.2em
+				position: absolute
+				top: .2em
+				left: 0
+				margin: 0
+				border-radius: 0
+
+			span
+				font-size: .7em
+				width: 1.2em
+				height: 1.2em
+				border: .063em solid rgba(255,255,255,.2)
+				display: flex
+				justify-content: center
+				align-items: center
+				position: absolute
+				top: .2em
+				left: 0
+
+			input:checked + span:before 
+				content: ""
+				display: block
+				width: 0.3em
+				height: 0.8em
+				border-right: .063em solid #fff
+				border-bottom: .063em solid #fff
+				transform: rotate(40deg)
+
+
+			input + span:before 
+				content: ""
+		
+		input[type="submit"]
+			margin: 0 auto
+			padding: 0
+			display: block
+			color: #fff
+			font-family: Roboto
+			font-size: 1em
+			font-weight: 200
+			width: 10.25em
+			min-height: 2.71em
+			background: none
+			border: .063em solid #fff
+			border-radius: .6em
+			cursor: pointer
+			margin-top: 2.1em
+			-webkit-appearance: none
+
+		input[type="submit"]:hover
+			background: #fff
+			color: $color
+			transition: .3s
+
+		.form__rorgot-password
+			display: block
+			margin-top: 1.5em
+			text-align: center
+			padding: 0 2em
+
+			a
+				display: inline-block
+				text-align: center
+				text-decoration: none
+				color: #fff
+				font-weight: 200
+				font-size: .75em
+				border-bottom: .1em solid rgba(255,255,255,0)
+
+			a:hover
+				border-bottom: .1em solid rgba(255,255,255,.5)
+				transition: .3s
+	/* Style #{$i} Preset 1 End */
+
+
+	/* Style #{$i} Preset 2 Begin */
+	.dela-preset-#{$i}-2
+		position: relative
+		font-size: 16px
+		width: 14.4em
+		min-width: 11em
+		padding: 5.6em 3.68em 6.1em 3.68em
+		box-shadow: 0 0 1em rgba(0, 0, 0, .2)
+		font-family: Roboto
+		background: linear-gradient(to top, $gradientFrom 0, $gradientTo 100%)
+
+		.form__title
+			color: #fff
+			margin: 0
+			font-size: 2.38em
+			font-weight: 400
+			text-align: center
+			margin-bottom: .89em
+
+		input[type="email"],
+		input[type="password"],
+		input[type="text"]
+			color: #fff
+			font-family: Roboto
+			font-size: 1em
+			font-weight: 200
+			width: 100%
+			background: none
+			border: none
+			padding: .8em 0
+			border-bottom: .063em solid rgba(255,255,255,.2)
+			margin-bottom: 1.1em
+			border-radius: 0
+
+		input[type="email"]:valid,
+		input[type="password"]:valid,
+		input[type="text"]:valid
+			border-bottom: .063em solid #53da69
+			border-radius: 0
+
+		::-webkit-input-placeholder
+			color: #fff
+			
+		::-moz-placeholder
+			color: #fff
+
+		.form__checkbox
+			display: inline-block
+			font-size: .875em
+			margin-top: .7em
+			font-weight: 200
+			cursor: pointer
+			color: #fff
+			overflow: hidden
+			position: relative
+			padding-left: 11%
+
+			span
+				font-size: .7em
+				width: 1.2em
+				height: 1.2em
+				border: .063em solid rgba(255,255,255,.2)
+				display: flex
+				justify-content: center
+				align-items: center
+				position: absolute
+				top: .2em
+				left: 0
+				z-index: 1
+
+			input
+				font-size: .7em
+				opacity: 0
+				width: 1.2em
+				height: 1.2em
+				position: absolute
+				top: .2em
+				left: 0
+				margin: 0
+				border-radius: 0
+
+
+			input:checked + span:before 
+				content: ""
+				display: block
+				width: 0.3em
+				height: 0.8em
+				border-right: .063em solid #fff
+				border-bottom: .063em solid #fff
+				transform: rotate(40deg)
+
+			input + span:before 
+				content: ""
+
+		input[type="submit"]
+			margin: 0 auto
+			display: block
+			color: #fff
+			font-family: Roboto
+			font-size: 1em
+			font-weight: 200
+			width: 10.25em
+			min-height: 2.71em
+			background: none
+			border: .063em solid #fff
+			border-radius: .6em
+			cursor: pointer
+			margin-top: 2.1em
+			-webkit-appearance: none
+
+		input[type="submit"]:hover
+			background: #fff
+			color: $color
+			transition: .3s
+	/* Style #{$i} Preset 2 End */
+
+
+	/* Style #{$i} Preset 3 Begin */
+	.dela-preset-#{$i}-3 
+		font-size: 16px
+		width: 14.4em
+		min-width: 11em
+		padding: 9.5em 3.68em 5.6em 3.68em
+		box-shadow: 0 0 1em rgba(0, 0, 0, .2)
+		font-family: Roboto
+		background: url(images/background-3-#{$i}.svg)
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+
+		.form__title
+			color: $color
+			margin: 0
+			font-size: 2.38em
+			font-weight: 400
+			text-align: center
+			margin-bottom: .89em
+
+		input[type="tel"],
+		input[type="number"],
+		input[type="text"]
+			color: $color
+			font-family: Roboto
+			font-size: 1em
+			font-weight: 300
+			width: 100%
+			background: none
+			border: none
+			padding: .75em 0
+			border-bottom: .063em solid $borderColor
+			margin-bottom: 1.1em
+			border-radius: 0
+
+		input[type="tel"]:valid,
+		input[type="number"]:valid,
+		input[type="text"]:valid
+			border-bottom: .063em solid #53da69
+			border-radius: 0
+
+		::-webkit-input-placeholder
+			color: $color
+			
+		::-moz-placeholder
+			color: $color
+
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button 
+			-webkit-appearance: none
+			margin: 0
+
+		input[type="number"] 
+			-moz-appearance: textfield
+
+		.form__time-container
+			font-size: 1em
+			font-weight: 300
+			color: $color
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+			.form__time
+				display: flex
+				align-items: center
+
+				input
+					margin: 0
+					width: 3em
+					text-align: center
+					padding: 0.5em 0
+						
+				span 
+					display: inline-block
+					margin: 0 .93em
+
+		input[type="submit"]
+			margin: 0 auto
+			display: block
+			color: $color
+			font-family: Roboto
+			font-size: 1em
+			font-weight: 300
+			width: 10.25em
+			min-height: 2.71em
+			background: none
+			border: .063em solid $color
+			border-radius: .6em
+			cursor: pointer
+			margin-top: 2.6em
+			-webkit-appearance: none
+			box-shadow: 0 0 0 rgba(104, 58, 206, 1)
+			animation: pulse-#{$i} 2s infinite
+
+		input[type="submit"]:hover
+			background: $color
+			color: #fff
+			transition: .3s
+
+		.form__note 
+			display: block
+			text-align: center
+			color: $color
+			font-weight: 300
+			font-size: .75em
+			margin: 0 auto
+			margin-top: 2.3em
+			line-height: 1.5
+			padding: 0 3em
+
+	@keyframes pulse-#{$i}
+		0%, 100%
+			box-shadow: 0 0 0 0 $pulseColorFrom
+		70%
+			box-shadow: 0 0 0 .625em $pulseColorTo
+	/* Style #{$i} Preset 3 End */
+
+
+	/* Style #{$i} Preset 4 Begin */
+	.dela-preset-#{$i}-4
+		font-size: 16px
+		width: 14.4em
+		min-width: 11em
+		padding: 3.7em 3.68em 4.2em 3.68em
+		box-shadow: 0 0 1em rgba(0, 0, 0, .2)
+		font-family: Roboto
+		background: linear-gradient(-45deg,  $gradientFrom  0,  $gradientTo 100%)
+		background-size: 400% 400%
+		animation: gradient 2s ease infinite
+
+		.form__title
+			display: block
+			color: #fff
+			margin: 0
+			font-size: 2.38em
+			font-weight: 400
+			text-align: center
+			margin-bottom: .8em
+
+		.form__title:before
+			display: inline-block
+			content: ""
+			width: 5em
+			height: 4em
+			background: url(images/moon.svg)
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: center
+			margin-bottom: 0.3em
+
+		input[type="date"],
+		input[type="text"]
+			color: #fff
+			font-family: Roboto
+			font-size: 1em
+			font-weight: 200
+			width: 100%
+			background: none
+			border: none
+			padding: .8em 0
+			border-bottom: .063em solid rgba(255,255,255,.2)
+			margin-bottom: 1.2em
+			border-radius: 0
+
+		input[type="date"]:valid,
+		input[type="text"]:valid
+			border-bottom: .063em solid #53da69
+			border-radius: 0
+
+		::-webkit-input-placeholder
+			color: #fff
+			
+		::-moz-placeholder
+			color: #fff
+
+		::-webkit-outer-spin-button,
+		::-webkit-inner-spin-button 
+			-webkit-appearance: none
+			margin: 0
+
+		input[type="text"]::-webkit-calendar-picker-indicator 
+			position: absolute
+			left: -10em
+
+		.form__card-data-cvc
+			display: flex
+			align-items: flex-start
+
+			.valid
+				border-bottom: .063em solid #53da69
+
+			label
+				display: block
+				color: #fff
+				margin: 0
+				font-weight: 300
+				width: 5em
+				position: relative
+				z-index: 1
+				border-bottom: .063em solid rgba(255,255,255,.2)
+
+				input
+					margin: 0
+					padding: 0
+					border: none
+					text-align: center
+					width: 100%
+
+			.form__card-date	
+
+				span
+					display: block
+					width: 4em
+					cursor: text
+					text-align: center
+					font-size: 1em
+					padding: .6em 0
+
+				input
+					position: absolute
+					left: 0
+					top: 0
+					opacity: 0
+					font-size: 10em
+					height: 100%
+					z-index: 1
+					cursor: pointer
+					border: none
+
+				::-webkit-calendar-picker-indicator 
+					cursor: pointer
+					width: 100%
+					height: 100%
+					position: absolute
+					left: 0
+					top: 0
+					background: none
+					opacity: 0
+
+			.form__card-cvc
+				margin-left: 2em
+				padding: 0
+
+				input
+					padding: .6em 0
+
+		input[type="submit"]
+			margin: 0 auto
+			display: block
+			color: $color
+			font-family: Roboto
+			font-size: 1em
+			font-weight: 400
+			width: 10.25em
+			min-height: 2.71em
+			background: #fff
+			border: .063em solid #fff
+			border-radius: .6em
+			cursor: pointer
+			margin-top: 2.4em
+			-webkit-appearance: none
+
+		input[type="submit"]:hover
+			background: transparent
+			color: #fff
+			transition: .3s
+
+	@keyframes gradient 
+		0%, 100% 
+			background-position: 0% 50%
+		50% 
+			background-position: 100% 50%
+	/* Style #{$i} Preset 4 End */
+
+
+	/* Style #{$i} Preset 5 Begin */
+	.dela-preset-#{$i}-5 
+		font-size: 16px
+		width: 14.4em
+		min-width: 11em
+		padding: 2.6em 3.68em 8.1em 3.68em
+		box-shadow: 0 0 1em rgba(0, 0, 0, .2)
+		border-radius: .19em
+		font-family: Roboto
+		overflow: hidden
+		background: url(images/background-5-#{$i}.svg)
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+
+		.form__title
+			color: $color
+			margin: 0
+			font-size: 2.38em
+			font-weight: 400
+			text-align: center
+			margin-bottom: .87em
+
+		input[type="tel"],
+		input[type="time"],
+		input[type="text"]
+			color: $color
+			font-family: Roboto
+			font-size: 1em
+			font-weight: 300
+			width: 100%
+			background: none
+			border: none
+			padding: .8em 0
+			border-bottom: .063em solid $borderColor
+			margin-bottom: 1.1em
+			border-radius: 0
+
+		input[type="tel"]:valid,
+		input[type="time"]:valid,
+		input[type="text"]:valid
+			border-bottom: .063em solid #53da69
+			border-radius: 0
+
+		::-webkit-input-placeholder
+			color: $color
+			
+		::-moz-placeholder
+			color: $color
+
+		::-webkit-calendar-picker-indicator
+			cursor: pointer
+			width: 100%
+			height: 100%
+			position: absolute
+			left: 0
+			top: 0
+
+		::-webkit-outer-spin-button,
+		::-webkit-inner-spin-button 
+			-webkit-appearance: none
+			margin: 0
+
+		.form__select
+			display: block
+			margin-bottom: 1.1em
+			position: relative
+
+			select 
+				-webkit-appearance: none
+				-moz-appearance: none
+				text-indent: .01px
+				text-overflow: ''
+				-ms-appearance: none
+				appearance: none!important
+				color: $color
+				font-family: Roboto
+				font-size: 1em
+				font-weight: 300
+				width: 100%
+				background: none
+				border: none
+				padding: .8em 0
+				border-bottom: .063em solid $borderColor
+				cursor: pointer
+				position: relative
+				z-index: 1
+				border-radius: 0
+
+			select::-ms-expand 
+				display: none
+
+		.form__select:after
+			display: block
+			content: ""
+			width: .45em
+			height: .45em
+			border-bottom: .063em solid $color
+			border-left: .063em solid $color
+			position: absolute
+			right: 0.6em
+			top: 1em
+			transform: rotate(-45deg)
+			cursor: pointer
+			z-index: 1
+
+		.form__book-container
+			display: flex
+			margin-bottom: 2.4em
+			padding-top: 0.2em
+			justify-content: space-between
+
+			.valid
+				border-bottom: .063em solid #53da69
+
+			label
+				color: $color
+				margin: 0
+				font-size: 1em
+				font-weight: 300
+				width: 6.25em
+				border: none
+				background: none
+				border-bottom: .063em solid $borderColor
+				position: relative
+				z-index: 1
+
+				input
+					margin: 0
+					padding: 0
+					width: 100%
+					height: 100%
+					border: none
+					position: absolute
+					left: 0
+					top: 0
+					opacity: 0
+					z-index: 1
+					color: $color
+					cursor: pointer
+
+			.form__book-date
+
+				input
+					font-size: 10em
+
+				span
+					display: block
+					width: 5em
+					cursor: text
+					padding: .6em 0
+
+			.form__book-time
+
+				span
+					display: block
+					padding: .6em 0.1em
+
+			.form__book-time:hover
+				span
+					opacity: 0
+
+				input
+					opacity: 1
+
+			.form__book-time-input
+
+				span
+					display: none
+
+				input
+					opacity: 1
+
+			.form__book-time:after
+				display: block
+				content: ""
+				width: 1em
+				height: 1em
+				background: #fff
+				position: absolute
+				right: 0.05em
+				top: 0.7em
+				z-index: 1
+
+		input[type="submit"]
+			margin: 0 auto
+			display: block
+			color: $color
+			font-family: Roboto
+			font-size: 1em
+			font-weight: 300
+			width: 10.25em
+			min-height: 2.71em
+			background: none
+			border: .063em solid $color
+			border-radius: .6em
+			cursor: pointer
+			-webkit-appearance: none
+			animation: 1s scale infinite
+
+		input[type="submit"]:hover
+			background: $color
+			color: #fff
+			transition: .3s
+
+	@keyframes scale
+		0%, 100%
+			transform: scale(1)
+		50%
+			transform: scale(1.03)
+	/* Style #{$i} Preset 5 End */
+
+
+	/* Style #{$i} Preset 6 Begin */
+	.dela-preset-#{$i}-6 
+		font-size: 16px
+		width: 21.76em
+		min-width: 11em
+		padding: 2.6em 0 2.9em 0
+		box-shadow: 0 0 1em rgba(0, 0, 0, .2)
+		border-radius: .19em
+		font-family: Roboto
+		background: #fdfbfe
+
+		.form__title
+			color: $color
+			margin: 0
+			font-size: 2.38em
+			font-weight: 400
+			text-align: center
+			margin-bottom: .89em
+			padding: 0 .8em
+
+		.form-content
+			padding: 0 3.68em
+
+			input[type="tel"],
+			input[type="time"],
+			input[type="text"],
+			input[type="email"],
+			textarea
+				color: $color
+				font-family: Roboto
+				font-size: 1em
+				font-weight: 300
+				width: 100%
+				background: none
+				border: none
+				padding: .8em 0
+				border-bottom: .063em solid $borderColor
+				margin-bottom: 1.1em
+				border-radius: 0
+
+			textarea
+				height: 1.19em
+				min-height: 1.19em
+				resize: none
+				border-radius: 0
+				max-height: 10em
+
+			textarea:hover,
+			textarea:focus
+				resize: vertical
+				border-radius: 0
+
+			input[type="tel"]:valid,
+			input[type="time"]:valid,
+			input[type="text"]:valid,
+			input[type="email"]:valid,
+			textarea:valid
+				border-bottom: .063em solid #53da69
+				border-radius: 0
+
+			::-webkit-input-placeholder,
+			::-webkit-textarea-placeholder
+				color: $color
+				
+			::-moz-placeholder
+				color: $color
+
+			.form__select
+				display: block
+				margin-bottom: 1em
+				position: relative
+
+				select 
+					-webkit-appearance: none
+					-moz-appearance: none
+					text-indent: .01px
+					text-overflow: ''
+					-ms-appearance: none
+					appearance: none!important
+					color: $color
+					font-family: Roboto
+					font-size: 1em
+					font-weight: 300
+					width: 100%
+					background: none
+					border: none
+					padding: .8em 0
+					border-bottom: .063em solid $borderColor
+					cursor: pointer
+					position: relative
+					z-index: 1
+					border-radius: 0
+
+				select::-ms-expand 
+					display: none
+
+			.form__select:after
+				display: block
+				content: ""
+				width: .45em
+				height: .45em
+				border-bottom: .063em solid $color
+				border-left: .063em solid $color
+				position: absolute
+				right: 0.8em
+				top: 0.9em
+				transform: rotate(-45deg)
+				cursor: pointer
+
+			.form__book
+				p 
+					display: block
+					margin: 0
+					color: $color
+					font-size: 1em
+					font-weight: 300
+					margin-bottom: 1.2em
+					margin-top: .6em
+
+				input[type="radio"]
+					display: none
+
+				section
+					margin-top: 0.7em
+
+					input 
+						margin-bottom: 0
+
+					input:disabled
+						display: none
+
+				.form__radio-button-email:checked ~ nav .form__label-email span:after,
+				.form__radio-button-tel:checked ~ nav .form__label-tel span:after
+					content: ""
+					display: block
+					width: 0.2em
+					height: 0.6em
+					border-right: .07em solid  $color
+					border-bottom: .07em solid $color
+					transform: rotate(40deg)
+
+				nav
+					display: flex
+
+					label
+						font-size: .875em
+						font-weight: 300
+						cursor: pointer
+						color: $color
+						display: flex
+						flex-direction: row-reverse
+						align-items: center
+
+						span 
+							display: flex
+							align-items: center
+							justify-content: center
+							width: .8em
+							height: .8em
+							border: .063em solid $borderColor
+							margin-right: 1.3em
+							overflow: hidden
+
+					.form__label-tel
+						margin-left: 4.8em
+
+			input[type="submit"]
+				margin: 0 auto
+				display: block
+				color: #fff
+				font-family: Roboto
+				font-size: 1em
+				font-weight: 200
+				width: 100%
+				min-height: 2.71em
+				background: linear-gradient(to top, $gradientTo 0, $gradientFrom 100%)
+				border: .063em solid $color
+				border-radius: .6em
+				cursor: pointer
+				margin-top: 2.5em
+				-webkit-appearance: none
+
+			input[type="submit"]:hover
+				background: #fff
+				color: $color
+				transition: .3s
+	/* Style #{$i} Preset 6 End */

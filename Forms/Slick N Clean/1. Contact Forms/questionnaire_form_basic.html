@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Slick &amp; clean CSS3 Forms Pack</title>
+	<meta name="description" content="Slick &amp; clean CSS3 Forms Pack" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Forms stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/slick_qfb.css" media="screen" />
+	<!-- / Forms stylesheet -->
+	<link rel="stylesheet" type="text/css" href="demo/demo.css" media="screen" />
+	<!--[if IE 9]>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/placeholder.js"></script>
+	<![endif]-->
+	<script type="text/javascript">''</script>
+</head>
+<body>
+<div id="page">
+
+	<!-- Start Demo page title -->
+	<div class="demo">
+	Slick &amp; Clean
+	<h1>&#x25C2; CSS3 QUESTIONNAIRE FORM BASIC &#x25B8;</h1>
+	</div>
+	<!-- End demo page title -->
+
+	<!-- *************************** -->
+	<!-- START COPYING FROM HERE     -->
+	<!-- *************************** -->
+
+	<section id="slick">
+		<!-- Social buttons -->
+		<div class="sb">
+			<a href="#" class="fb entypo-thumbs-up"><span class="slick-tip right">Like us on Facebook</span></a>
+			<a href="#" class="gc entypo-google-circles"><span class="slick-tip right">Find us in Circles</span></a>
+			<a href="#" class="tw entypo-twitter"><span class="slick-tip right">Follow us on Twitter</span></a>
+		</div>
+		<!-- Questionnaire form -->
+		<div class="questionnaire-form">            
+			<!-- Title -->
+			<div class="title">Project Questionnaire</div> 
+			<!-- Intro text -->
+			<p class="intro"><b>Hi there.</b> Need detailed project offer? No worries, just fill out our basic project Questionnaire and we’ll get back at you soon.</p>
+			<!-- Form fields -->
+			<form action="" name="questionnaire" id="questionnaire" method="post">
+				<!-- Left block -->
+				<div class="w-47 mr-6">
+					<!-- Subject input -->
+					<div class="field">
+						<select name="subject" id="subject" class="grayed" onClick="this.className=this.options[this.selectedIndex].className">
+							<option value="" disabled="disabled" selected="selected" class="disabled">Subject</option>
+							<option value="Website design">1. Website design</option>
+							<option value="Graphic design">2. Graphic design</option>
+							<option value="App development">3. App development</option>
+						</select>
+						<div id="arrow-select"></div>
+						<svg id="arrow-select-svg"></svg>
+						<span class="entypo-book icon"></span>
+						<span class="slick-tip left">Choose subject</span>
+					</div>
+					<!-- Name input -->
+					<div class="field">
+						<input name="name" placeholder="Your name" type="text" id="name" required />
+						<span class="entypo-user icon"></span>
+						<span class="slick-tip left">Enter your name</span>
+					</div>
+					<!-- Company input -->
+					<div class="field">
+						<input name="company" placeholder="Company" type="text" id="company" />
+						<span class="entypo-briefcase icon"></span>
+						<span class="slick-tip left">Your company</span>
+					</div>
+					<!-- Website input -->
+					<div class="field">
+						<input name="website" placeholder="http://" type="text" id="website" />
+						<span class="entypo-monitor icon"></span>
+						<span class="slick-tip left">Your website</span>
+					</div>
+					<!-- Phone input -->
+					<div class="field">
+						<input name="phone" placeholder="+44 00 123" type="tel" id="phone" required />
+						<span class="entypo-mobile icon"></span>
+						<span class="slick-tip left">Enter your phone</span>
+					</div>
+					<!-- Email input -->
+					<div class="field">
+						<input name="email" placeholder="Contact email" type="email" id="email" required />
+						<span class="entypo-mail icon"></span>
+						<span class="slick-tip left">Enter your email</span>
+					</div>
+				</div>
+				<!-- Right block -->
+				<div class="w-47">
+					<!-- Subject input -->
+					<div class="field">
+						<select name="service" id="service" class="grayed" onClick="this.className=this.options[this.selectedIndex].className">
+							<option value="" disabled="disabled" selected="selected" class="disabled">Service</option>
+							<option value="Website design">1. Website design</option>
+							<option value="Graphic design">2. Graphic design</option>
+							<option value="App development">3. App development</option>
+						</select>
+						<div id="arrow-select"></div>
+						<svg id="arrow-select-svg"></svg>
+						<span class="entypo-cog icon"></span>
+						<span class="slick-tip left">Choose service</span>
+					</div>
+					<!-- Budget input -->
+					<div class="field">
+						<input name="budget" placeholder="Estimated budget" type="text" id="budget" required />
+						<span class="entypo-gauge icon"></span>
+						<span class="slick-tip left">Provide us your budget</span>
+					</div>
+					<!-- Timeframe input -->
+					<div class="field">
+						<input name="timeframe" placeholder="Estimated timeframe" type="text" id="timeframe" required />
+						<span class="entypo-calendar icon"></span>
+						<span class="slick-tip left">Estimated timeframe</span>
+					</div>
+					<!-- Upload input -->
+					<div class="field">
+						<label class="upload" for="uploads">
+							<div class="btn">
+								<input type="file" id="uploads" accept="image/*" multiple onchange="this.parentNode.nextSibling.value = this.value" /><span class="entypo-upload"></span></div><input type="text" class="read-only" readonly="readonly" placeholder="Upload project file...">
+						</label>
+					</div>
+					<!-- Overview input -->
+					<div class="field">
+						<textarea name="overview" placeholder="Project overview" id="overview" class="project" required></textarea>
+						<span class="entypo-comment icon"></span>
+						<span class="slick-tip left">Describe your project</span>
+					</div>
+					<div class="w-47 mt-5">
+						<label class="reset" for="reset">
+							<span class="entypo-arrows-ccw"></span>Reset form
+						</label>
+						<input type="reset" id="reset" value="">
+					</div>
+					<!-- Send button -->
+					<input type="submit" value="Send" class="send" form="questionnaire" name="send" />
+				</div>
+			</form>
+			<!-- / Form fields -->
+		</div>
+		<!-- / Questionnaire form -->
+	</section>
+
+	<!-- *************************** -->
+	<!-- END COPYING HERE            -->
+	<!-- *************************** -->
+
+</div>
+</body>
+</html>

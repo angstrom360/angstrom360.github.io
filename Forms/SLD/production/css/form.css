@@ -1,0 +1,1683 @@
+@charset "UTF-8";
+
+/**
+	*
+	* ---------------------------------------------------------
+	*
+	* Template : SLD Form bootstrap 3
+	* Author : sodedar1984  
+	* Email: sodedar10@meta.ua or sldedar1984@gmail.com
+	
+	* ---------------------------------------------------------
+	*
+*/
+
+/*--------------------------------------
+    Modal style
+----------------------------------------*/
+
+.modal {
+	overflow-y: auto;
+}
+
+.modal-backdrop {
+	opacity: 0.85!important;
+}
+
+.modal-form.modal-open .modal {
+	padding-right: 0!important;
+}
+
+.modal-form .modal-content {
+	background: #202641;
+	border: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	outline: 0;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.modal-form .modal-header {
+	border: none;
+	padding: 0;
+	margin: 0;
+	height: 0;
+}
+
+.modal-form .modal-body {
+	padding: 0;
+}
+
+.modal-form .modal-header .close {
+	padding: 2px 8px;
+	outline: none;
+}
+
+.modal-form .modal-header .close {
+	color: rgba(255, 255, 255, 0.302);
+	text-shadow: none;
+	opacity: 1;
+	font-size: 32px;
+	font-weight: 400;
+	position: relative;
+	z-index: 1;
+	top: 15px;
+	left: -15px;
+}
+
+.modal-form .modal-header .close:hover,
+.modal-form .modal-header .close:focus {
+	color: #FD6347;
+}
+
+
+
+/* modal info */
+
+.modal-info {}
+
+.modal-info .modal-body {
+	padding: 40px;
+	font-size: 13px;
+	line-height: 1.75;
+}
+
+.modal-info .modal-body h3,
+.modal-info .modal-body h4 {
+	margin-bottom: 24px;
+}
+
+.modal-info .modal-body h4 {
+	margin-top: 40px;
+}
+
+.modal-info .modal-body li {
+	margin-bottom: 16px;
+}
+
+
+
+
+/*--------------------------------------
+   Form style
+----------------------------------------*/
+
+.form-default {
+	padding: 25px;
+	background: #202641;
+	color: rgba(255, 255, 255, 0.5);
+	text-align: center;
+	max-width: 440px;
+}
+
+.form-default .form-group {
+    position: relative;
+}
+
+.form-lg {
+	max-width: 800px;
+}
+
+.form-default .row{
+	margin-left: -5px;
+	margin-right: -5px;
+}
+.form-default .row [class*=col-]{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.form-default .form-logo {
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 8px;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.form-default .form-title {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	font-weight: 300;
+	color: #fff;
+}
+
+.form-default .form-title + p {
+	margin: -15px 0 25px;
+}
+
+
+.form-default .form-text-success {
+	text-align: center;
+}
+
+.form-default .form-text-success-title {
+	text-align: center;
+	margin-bottom: 25px;
+	font-weight: 300;
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.302);
+}
+
+
+.form-default label{
+	font-weight: 400;
+}
+
+
+
+/* form style link */
+
+.form-default .form-link {
+	color: #29CB9A;
+	text-decoration: underline;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	font-weight: 300;
+	margin: 8px 0 16px;
+}
+
+.form-default .form-link:hover,
+.form-default .form-link:focus,
+.form-default .form-link:active {
+	text-decoration: none;
+	color: #29CB9A;
+}
+
+@media screen and (max-width: 576px) {
+
+	.form-default .form-link {
+		margin-bottom: 24px;
+		margin-top: 0;
+		display: block;
+		text-align: left;
+	}
+
+}
+
+
+/* input style */
+
+.form-default .form-control,
+.form-default .form-control.datepicker {
+	height: 46px;	
+}
+.form-default textarea.form-control{
+	height: 100px;
+}
+
+.form-default .form-control {
+	border-color: rgba(255, 255, 255, 0.302);
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	background: transparent;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: #fff;
+	font-size: 14px;
+}
+
+.form-default .form-control:focus {
+	background: transparent;
+	color: rgba(255, 255, 255, 1);
+	border-color: #29CB9A;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+
+/* select style */
+
+.form-default select.form-control {
+	height: 46px!important;
+	color: rgba(255, 255, 255, 0.302);
+	
+}
+
+.form-default select.form-control option {
+	color: rgba(0, 0, 0, .7);
+}
+
+.form-default .form-control.error{
+    outline: 0;
+    border-color: #FD6347;
+    position: relative;
+    z-index: 10;
+}
+.form-default label.error {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+	font-weight: 400;
+    color: #FD6347;
+}
+.form-default .form-control.valid{
+    border-color: #228B22;
+}
+
+
+/* input radio, checkbox style */
+
+.form-default .form-check {
+	padding: 0;
+	margin: 8px 0 24px;
+	text-align: left;
+}
+
+.form-default .form-check .form-check-input {	
+	visibility: hidden;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+}
+
+.form-default .form-check .form-check-input ~ .form-check-label {
+	font-size: 14px;
+	font-weight: 300;
+	display: block;
+	padding-left: 30px;
+	position: relative;
+	color: rgba(255, 255, 255, 0.302);
+}
+.form-default .form-check .form-check-input + .error{
+	display: none!important;
+}
+
+.form-default .form-check input[type="checkbox"] ~ .form-check-label:before,
+.form-default .form-check input[type="radio"] ~ .form-check-label:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.302);
+}
+
+.form-default .form-check input[type="checkbox"] ~ .form-check-label:after,
+.form-default .form-check input[type="radio"] ~ .form-check-label:after {
+	content: '\f00c';
+	font-family: 'FontAwesome';
+	position: absolute;
+	top: 0;
+	left: -.5px;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: #29CB9A;
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition: -webkit-transform .3s linear;
+	transition: -webkit-transform .3s linear;
+	-o-transition: transform .3s linear;
+	-o-transition: -o-transform .3s linear;
+	-moz-transition: transform .3s linear, -moz-transform .3s linear;
+	transition: transform .3s linear;
+	transition: transform .3s linear, -webkit-transform .3s linear, -moz-transform .3s linear, -o-transform .3s linear;
+	transition: transform .3s linear, -webkit-transform .3s linear;
+}
+
+.form-default .form-check input[type="radio"] ~ .form-check-label:after {
+	content: '\f111';
+}
+
+.form-default .form-check input[type="radio"] ~ .form-check-label:before {
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.form-default .form-check input[type="checkbox"]:checked ~ .form-check-label,
+.form-default .form-check input[type="radio"]:checked ~ .form-check-label,
+.form-default .form-check input[type="checkbox"]:checked ~ .form-check-label a,
+.form-default .form-check input[type="radio"]:checked ~ .form-check-label a {
+	color: #29CB9A;
+}
+
+.form-default .form-check input[type="checkbox"]:checked ~ .form-check-label:before,
+.form-default .form-check input[type="radio"]:checked ~ .form-check-label:before {
+	border-color: #29CB9A;
+}
+
+.form-default .form-check input[type="checkbox"]:checked ~ .form-check-label:after,
+.form-default .form-check input[type="radio"]:checked ~ .form-check-label:after {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+
+.form-default .form-check input[type="checkbox"].error ~ .form-check-label:before,
+.form-default .form-check input[type="radio"].error ~ .form-check-label:before {	
+	border-color: #FD6347;
+}
+.form-default .form-check .form-check-input.error  ~ .form-check-label {
+    color: #FD6347;
+}
+
+.form-default .form-check input[type="checkbox"].valid ~ .form-check-label:before,
+.form-default .form-check input[type="radio"].valid ~ .form-check-label:before {	
+	border-color: #228B22;
+}
+.form-default .form-check input[type="checkbox"].valid ~ .form-check-label:after,
+.form-default .form-check input[type="radio"].valid ~ .form-check-label:after,
+.form-default .form-check .form-check-input.valid:checked  ~ .form-check-label {
+	color: #228B22;
+}
+
+
+
+.form-default .form-check a {
+	color: rgba(255, 255, 255, .302);
+	text-decoration: underline;
+}
+
+.form-default .form-check a:hover,
+.form-default .form-check a:focus,
+.form-default .form-check a:active {
+	color: rgba(255, 255, 255, .7);
+}
+
+@media screen and (max-width: 576px) {
+
+	.form-default .form-check {
+		margin-bottom: 16px;
+	}
+
+}
+
+
+
+/* input radio, checkbox style for card type */
+
+.form-default .form-card-type {
+	margin: 16px 0;
+}
+
+.form-default .form-card-type-title {
+	font-size: 16px;
+	font-weight: 300;
+	text-align: left;
+}
+
+.form-default .card-type-list {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -moz-box;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	-moz-box-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	-moz-box-pack: justify;
+	justify-content: space-between;
+	padding: 0;
+}
+
+.form-default .card-type-list > li {
+	margin: 8px 0 4px;
+	list-style: none;
+}
+
+.form-default .card-type-label {
+	display: block;
+}
+
+.form-default .card-type-label input {
+	display: none;
+}
+
+.form-default .card-type-label input + span {
+	display: block;
+	border: 1px solid rgba(255, 255, 255, 0.302);
+	font-size: 32px;
+	padding: 0 4px;
+}
+
+.form-default .card-type-label input:checked + span {
+	color: #29CB9A;
+	border-color: #29CB9A;
+}
+
+
+
+/* button submit style */
+
+.form-default .btn-submit {
+	width: 100%;
+	font-size: 15px;
+	color: #fff;
+	background: #29CB9A;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	padding: 12px;
+	margin-bottom: 24px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.form-default .btn-submit:hover,
+.form-default .btn-submit:focus,
+.form-default .btn-submit:active {
+	background: #00A372;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+
+
+/* social networks */
+
+.form-default .form-social-networks {
+	margin: 16px 0;
+}
+
+.form-default .form-social-networks-title {
+	font-size: 12px;
+	font-weight: 300;
+	text-align: center;
+}
+
+.form-default .social-networks-list {
+	padding: 0;
+	text-align: center;
+}
+
+.form-default .social-networks-list > li {
+	display: inline-block;
+	vertical-align: top;
+	margin: 8px;
+}
+
+.form-default .social-networks-list > li > a {
+	text-decoration: none;
+	display: block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.302);
+	border: 1px solid rgba(255, 255, 255, 0.302);
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transition: color .3s linear, border-color .3s linear;
+	-o-transition: color .3s linear, border-color .3s linear;
+	-moz-transition: color .3s linear, border-color .3s linear;
+	transition: color .3s linear, border-color .3s linear;
+}
+
+.form-default .social-networks-list > li > a:hover,
+.form-default .social-networks-list > li > a:focus,
+.form-default .social-networks-list > li > a:active {
+	text-decoration: none;
+	color: #29CB9A;
+	border-color: #29CB9A;
+}
+
+@media screen and (max-width: 576px) {
+
+	.form-default .social-networks-list > li {
+		margin-left: 4px;
+		margin-right: 4px;
+	}
+
+}
+
+
+
+/* form rating */
+
+.rating {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	-ms-flex-direction: row-reverse;
+	-webkit-flex-direction: row-reverse;
+	-moz-box-orient: horizontal;
+	-moz-box-direction: reverse;
+	flex-direction: row-reverse;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	-moz-box-pack: center;
+	justify-content: center;
+	padding: .5rem;
+}
+
+.rating input {
+	display: none;
+}
+
+.rating [for*=star] {
+	font-size: 0;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	cursor: pointer;
+}
+
+.rating [for*=star]:hover {
+	opacity: .7;
+}
+
+.rating [for*=star]:before {
+	content: '\f005';
+	font-family: 'FontAwesome';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 26px;
+}
+
+.rating input:checked ~ [for*=star] {
+	color: #29CB9A;
+	opacity: 1;
+}
+
+
+
+.form-default .badge {
+	border: 1px solid rgba(255, 255, 255, .302);
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	margin-left: 8px;
+	vertical-align: middle;
+	color: rgba(0, 0, 0, .75);
+	background: rgba(255, 255, 255, .5);
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.form-default .badge:hover {
+	border-color: rgba(255, 255, 255, 1);
+	background: rgba(255, 255, 255, 1);
+}
+
+
+
+/* tooltip, popover */
+
+.tooltip-inner,
+.popover,
+.popover * {
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+.popover{
+	color: #555;
+}
+.tooltip-inner {
+	font-size: 14px;
+}
+
+
+
+
+/* form-search-inline */
+
+.form-search-inline {}
+
+.form-search-inline .form-group {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+}
+
+.form-search-inline .form-control {
+	padding-right: 56px;
+}
+
+.form-search-inline .btn-submit {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 46px;
+	height: 100%;
+	margin: 0;
+}
+
+
+
+
+/* form theme-danger */
+
+.form-default.theme-danger {}
+
+.form-default.theme-danger .form-control:focus {
+	border-color: #E84945;
+}
+
+.form-default.theme-danger .form-check input[type="checkbox"]:checked + .form-check-label,
+.form-default.theme-danger .form-check input[type="radio"]:checked + .form-check-label,
+.form-default.theme-danger .form-check input[type="checkbox"] + .form-check-label:after,
+.form-default.theme-danger .form-check input[type="radio"] + .form-check-label:after,
+.form-default.theme-danger .form-check input[type="checkbox"]:checked + .form-check-label a,
+.form-default.theme-danger .form-check input[type="radio"]:checked + .form-check-label a {
+	color: #E84945;
+}
+
+.form-default.theme-danger .form-check input[type="checkbox"]:checked + .form-check-label:before,
+.form-default.theme-danger .form-check input[type="radio"]:checked + .form-check-label:before {
+	border-color: #E84945;
+}
+
+.form-default.theme-danger .form-link,
+.form-default.theme-danger .form-link:hover,
+.form-default.theme-danger .form-link:focus,
+.form-default.theme-danger .form-link:active {
+	color: #E84945;
+}
+
+.form-default.theme-danger .card-type-label input:checked + span {
+	color: #E84945;
+	border-color: #E84945;
+}
+
+.form-default.theme-danger .btn-submit {
+	background: #E84945;
+}
+
+.form-default.theme-danger .btn-submit:hover,
+.form-default.theme-danger .btn-submit:focus,
+.form-default.theme-danger .btn-submit:active {
+	background: #E72926;
+}
+
+.form-default.theme-danger .social-networks-list > li > a:hover,
+.form-default.theme-danger .social-networks-list > li > a:focus,
+.form-default.theme-danger .social-networks-list > li > a:active {
+	color: #E72926;
+	border-color: #E72926;
+}
+
+.form-default.theme-danger .rating input:checked ~ [for*=star] {
+	color: #E72926;
+}
+
+
+
+/* form theme-golden */
+
+.form-default.theme-golden {}
+
+.form-default.theme-golden .form-control:focus {
+	border-color: #B8860B;
+}
+
+.form-default.theme-golden .form-check input[type="checkbox"]:checked + .form-check-label,
+.form-default.theme-golden .form-check input[type="radio"]:checked + .form-check-label,
+.form-default.theme-golden .form-check input[type="checkbox"] + .form-check-label:after,
+.form-default.theme-golden .form-check input[type="radio"] + .form-check-label:after,
+.form-default.theme-golden .form-check input[type="checkbox"]:checked + .form-check-label a,
+.form-default.theme-golden .form-check input[type="radio"]:checked + .form-check-label a {
+	color: #B8860B;
+}
+
+.form-default.theme-golden .form-check input[type="checkbox"]:checked + .form-check-label:before,
+.form-default.theme-golden .form-check input[type="radio"]:checked + .form-check-label:before {
+	border-color: #B8860B;
+}
+
+.form-default.theme-golden .form-link,
+.form-default.theme-golden .form-link:hover,
+.form-default.theme-golden .form-link:focus,
+.form-default.theme-golden .form-link:active {
+	color: #B8860B;
+}
+
+.form-default.theme-golden .card-type-label input:checked + span {
+	color: #B8860B;
+	border-color: #B8860B;
+}
+
+.form-default.theme-golden .btn-submit {
+	background: #B8860B;
+}
+
+.form-default.theme-golden .btn-submit:hover,
+.form-default.theme-golden .btn-submit:focus,
+.form-default.theme-golden .btn-submit:active {
+	background: #DEA81F;
+}
+
+.form-default.theme-golden .social-networks-list > li > a:hover,
+.form-default.theme-golden .social-networks-list > li > a:focus,
+.form-default.theme-golden .social-networks-list > li > a:active {
+	color: #B8860B;
+	border-color: #B8860B;
+}
+
+.form-default.theme-golden .rating input:checked ~ [for*=star] {
+	color: #B8860B;
+}
+
+
+
+/* form theme-blue */
+
+.form-default.theme-blue {}
+
+.form-default.theme-blue .form-control:focus {
+	border-color: #00CED1;
+}
+
+.form-default.theme-blue .form-check input[type="checkbox"]:checked + .form-check-label,
+.form-default.theme-blue .form-check input[type="radio"]:checked + .form-check-label,
+.form-default.theme-blue .form-check input[type="checkbox"] + .form-check-label:after,
+.form-default.theme-blue .form-check input[type="radio"] + .form-check-label:after,
+.form-default.theme-blue .form-check input[type="checkbox"]:checked + .form-check-label a,
+.form-default.theme-blue .form-check input[type="radio"]:checked + .form-check-label a {
+	color: #00CED1;
+}
+
+.form-default.theme-blue .form-check input[type="checkbox"]:checked + .form-check-label:before,
+.form-default.theme-blue .form-check input[type="radio"]:checked + .form-check-label:before {
+	border-color: #00CED1;
+}
+
+.form-default.theme-blue .form-link,
+.form-default.theme-blue .form-link:hover,
+.form-default.theme-blue .form-link:focus,
+.form-default.theme-blue .form-link:active {
+	color: #00CED1;
+}
+
+.form-default.theme-blue .card-type-label input:checked + span {
+	color: #00CED1;
+	border-color: #00CED1;
+}
+
+.form-default.theme-blue .btn-submit {
+	background: #00CED1;
+}
+
+.form-default.theme-blue .btn-submit:hover,
+.form-default.theme-blue .btn-submit:focus,
+.form-default.theme-blue .btn-submit:active {
+	background: #00BEC1;
+}
+
+.form-default.theme-blue .social-networks-list > li > a:hover,
+.form-default.theme-blue .social-networks-list > li > a:focus,
+.form-default.theme-blue .social-networks-list > li > a:active {
+	color: #00CED1;
+	border-color: #00CED1;
+}
+
+.form-default.theme-blue .rating input:checked ~ [for*=star] {
+	color: #00CED1;
+}
+
+
+/* form theme-violet */
+
+.form-default.theme-violet {}
+
+.form-default.theme-violet .form-control:focus {
+	border-color: #BA55D3;
+}
+
+.form-default.theme-violet .form-check input[type="checkbox"]:checked + .form-check-label,
+.form-default.theme-violet .form-check input[type="radio"]:checked + .form-check-label,
+.form-default.theme-violet .form-check input[type="checkbox"] + .form-check-label:after,
+.form-default.theme-violet .form-check input[type="radio"] + .form-check-label:after,
+.form-default.theme-violet .form-check input[type="checkbox"]:checked + .form-check-label a,
+.form-default.theme-violet .form-check input[type="radio"]:checked + .form-check-label a {
+	color: #BA55D3;
+}
+
+.form-default.theme-violet .form-check input[type="checkbox"]:checked + .form-check-label:before,
+.form-default.theme-violet .form-check input[type="radio"]:checked + .form-check-label:before {
+	border-color: #BA55D3;
+}
+
+.form-default.theme-violet .form-link,
+.form-default.theme-violet .form-link:hover,
+.form-default.theme-violet .form-link:focus,
+.form-default.theme-violet .form-link:active {
+	color: #BA55D3;
+}
+
+.form-default.theme-violet .card-type-label input:checked + span {
+	color: #BA55D3;
+	border-color: #BA55D3;
+}
+
+.form-default.theme-violet .btn-submit {
+	background: #BA55D3;
+}
+
+.form-default.theme-violet .btn-submit:hover,
+.form-default.theme-violet .btn-submit:focus,
+.form-default.theme-violet .btn-submit:active {
+	background: #F31FF3;
+}
+
+.form-default.theme-violet .social-networks-list > li > a:hover,
+.form-default.theme-violet .social-networks-list > li > a:focus,
+.form-default.theme-violet .social-networks-list > li > a:active {
+	color: #BA55D3;
+	border-color: #BA55D3;
+}
+
+.form-default.theme-violet .rating input:checked ~ [for*=star] {
+	color: #BA55D3;
+}
+
+
+
+/* form theme-silver */
+
+.form-default.theme-silver {}
+
+.form-default.theme-silver .form-control:focus {
+	border-color: #C0C0C0;
+}
+
+.form-default.theme-silver .form-check input[type="checkbox"]:checked + .form-check-label,
+.form-default.theme-silver .form-check input[type="radio"]:checked + .form-check-label,
+.form-default.theme-silver .form-check input[type="checkbox"] + .form-check-label:after,
+.form-default.theme-silver .form-check input[type="radio"] + .form-check-label:after,
+.form-default.theme-silver .form-check input[type="checkbox"]:checked + .form-check-label a,
+.form-default.theme-silver .form-check input[type="radio"]:checked + .form-check-label a {
+	color: #C0C0C0;
+}
+
+.form-default.theme-silver .form-check input[type="checkbox"]:checked + .form-check-label:before,
+.form-default.theme-silver .form-check input[type="radio"]:checked + .form-check-label:before {
+	border-color: #C0C0C0;
+}
+
+.form-default.theme-silver .form-link,
+.form-default.theme-silver .form-link:hover,
+.form-default.theme-silver .form-link:focus,
+.form-default.theme-silver .form-link:active {
+	color: #C0C0C0;
+}
+
+.form-default.theme-silver .card-type-label input:checked + span {
+	color: #C0C0C0;
+	border-color: #C0C0C0;
+}
+
+.form-default.theme-silver .btn-submit {
+	background: #ACACAC;
+}
+
+.form-default.theme-silver .btn-submit:hover,
+.form-default.theme-silver .btn-submit:focus,
+.form-default.theme-silver .btn-submit:active {
+	background: #C0C0C0;
+}
+
+.form-default.theme-silver .social-networks-list > li > a:hover,
+.form-default.theme-silver .social-networks-list > li > a:focus,
+.form-default.theme-silver .social-networks-list > li > a:active {
+	color: #C0C0C0;
+	border-color: #C0C0C0;
+}
+
+.form-default.theme-silver .rating input:checked ~ [for*=star] {
+	color: #C0C0C0;
+}
+
+
+
+/* form theme-orange */
+
+.form-default.theme-orange {}
+
+.form-default.theme-orange .form-control:focus {
+	border-color: #FFA500;
+}
+
+.form-default.theme-orange .form-check input[type="checkbox"]:checked + .form-check-label,
+.form-default.theme-orange .form-check input[type="radio"]:checked + .form-check-label,
+.form-default.theme-orange .form-check input[type="checkbox"] + .form-check-label:after,
+.form-default.theme-orange .form-check input[type="radio"] + .form-check-label:after,
+.form-default.theme-orange .form-check input[type="checkbox"]:checked + .form-check-label a,
+.form-default.theme-orange .form-check input[type="radio"]:checked + .form-check-label a {
+	color: #FFA500;
+}
+
+.form-default.theme-orange .form-check input[type="checkbox"]:checked + .form-check-label:before,
+.form-default.theme-orange .form-check input[type="radio"]:checked + .form-check-label:before {
+	border-color: #FFA500;
+}
+
+.form-default.theme-orange .form-link,
+.form-default.theme-orange .form-link:hover,
+.form-default.theme-orange .form-link:focus,
+.form-default.theme-orange .form-link:active {
+	color: #FFA500;
+}
+
+.form-default.theme-orange .card-type-label input:checked + span {
+	color: #FFA500;
+	border-color: #FFA500;
+}
+
+.form-default.theme-orange .btn-submit {
+	background: #FFA500;
+}
+
+.form-default.theme-orange .btn-submit:hover,
+.form-default.theme-orange .btn-submit:focus,
+.form-default.theme-orange .btn-submit:active {
+	background: #ED9A00;
+}
+
+.form-default.theme-orange .social-networks-list > li > a:hover,
+.form-default.theme-orange .social-networks-list > li > a:focus,
+.form-default.theme-orange .social-networks-list > li > a:active {
+	color: #FFA500;
+	border-color: #FFA500;
+}
+
+.form-default.theme-orange .rating input:checked ~ [for*=star] {
+	color: #FFA500;
+}
+
+
+
+/* form theme-peru */
+
+.form-default.theme-peru {}
+
+.form-default.theme-peru .form-control:focus {
+	border-color: #CD853F;
+}
+
+.form-default.theme-peru .form-check input[type="checkbox"]:checked + .form-check-label,
+.form-default.theme-peru .form-check input[type="radio"]:checked + .form-check-label,
+.form-default.theme-peru .form-check input[type="checkbox"] + .form-check-label:after,
+.form-default.theme-peru .form-check input[type="radio"] + .form-check-label:after,
+.form-default.theme-peru .form-check input[type="checkbox"]:checked + .form-check-label a,
+.form-default.theme-peru .form-check input[type="radio"]:checked + .form-check-label a {
+	color: #CD853F;
+}
+
+.form-default.theme-peru .form-check input[type="checkbox"]:checked + .form-check-label:before,
+.form-default.theme-peru .form-check input[type="radio"]:checked + .form-check-label:before {
+	border-color: #CD853F;
+}
+
+.form-default.theme-peru .form-link,
+.form-default.theme-peru .form-link:hover,
+.form-default.theme-peru .form-link:focus,
+.form-default.theme-peru .form-link:active {
+	color: #CD853F;
+}
+
+.form-default.theme-peru .card-type-label input:checked + span {
+	color: #CD853F;
+	border-color: #CD853F;
+}
+
+.form-default.theme-peru .btn-submit {
+	background: #CD853F;
+}
+
+.form-default.theme-peru .btn-submit:hover,
+.form-default.theme-peru .btn-submit:focus,
+.form-default.theme-peru .btn-submit:active {
+	background: #CD853F;
+}
+
+.form-default.theme-peru .social-networks-list > li > a:hover,
+.form-default.theme-peru .social-networks-list > li > a:focus,
+.form-default.theme-peru .social-networks-list > li > a:active {
+	color: #CD853F;
+	border-color: #CD853F;
+}
+
+.form-default.theme-peru .rating input:checked ~ [for*=star] {
+	color: #CD853F;
+}
+
+
+/* form theme-sandybrown */
+
+.form-default.theme-sandybrown {}
+
+.form-default.theme-sandybrown .form-control:focus {
+	border-color: #F4A460;
+}
+
+.form-default.theme-sandybrown .form-check input[type="checkbox"]:checked + .form-check-label,
+.form-default.theme-sandybrown .form-check input[type="radio"]:checked + .form-check-label,
+.form-default.theme-sandybrown .form-check input[type="checkbox"] + .form-check-label:after,
+.form-default.theme-sandybrown .form-check input[type="radio"] + .form-check-label:after,
+.form-default.theme-sandybrown .form-check input[type="checkbox"]:checked + .form-check-label a,
+.form-default.theme-sandybrown .form-check input[type="radio"]:checked + .form-check-label a {
+	color: #F4A460;
+}
+
+.form-default.theme-sandybrown .form-check input[type="checkbox"]:checked + .form-check-label:before,
+.form-default.theme-sandybrown .form-check input[type="radio"]:checked + .form-check-label:before {
+	border-color: #F4A460;
+}
+
+.form-default.theme-sandybrown .form-link,
+.form-default.theme-sandybrown .form-link:hover,
+.form-default.theme-sandybrown .form-link:focus,
+.form-default.theme-sandybrown .form-link:active {
+	color: #F4A460;
+}
+
+.form-default.theme-sandybrown .card-type-label input:checked + span {
+	color: #F4A460;
+	border-color: #F4A460;
+}
+
+.form-default.theme-sandybrown .btn-submit {
+	background: #F4A460;
+}
+
+.form-default.theme-sandybrown .btn-submit:hover,
+.form-default.theme-sandybrown .btn-submit:focus,
+.form-default.theme-sandybrown .btn-submit:active {
+	background: #F4A460;
+}
+
+.form-default.theme-sandybrown .social-networks-list > li > a:hover,
+.form-default.theme-sandybrown .social-networks-list > li > a:focus,
+.form-default.theme-sandybrown .social-networks-list > li > a:active {
+	color: #F4A460;
+	border-color: #F4A460;
+}
+
+.form-default.theme-sandybrown .rating input:checked ~ [for*=star] {
+	color: #F4A460;
+}
+
+
+/* form theme-forestgreen */
+
+.form-default.theme-forestgreen {}
+
+.form-default.theme-forestgreen .form-control:focus {
+	border-color: #228B22;
+}
+
+.form-default.theme-forestgreen .form-check input[type="checkbox"]:checked + .form-check-label,
+.form-default.theme-forestgreen .form-check input[type="radio"]:checked + .form-check-label,
+.form-default.theme-forestgreen .form-check input[type="checkbox"] + .form-check-label:after,
+.form-default.theme-forestgreen .form-check input[type="radio"] + .form-check-label:after,
+.form-default.theme-forestgreen .form-check input[type="checkbox"]:checked + .form-check-label a,
+.form-default.theme-forestgreen .form-check input[type="radio"]:checked + .form-check-label a {
+	color: #228B22;
+}
+
+.form-default.theme-forestgreen .form-check input[type="checkbox"]:checked + .form-check-label:before,
+.form-default.theme-forestgreen .form-check input[type="radio"]:checked + .form-check-label:before {
+	border-color: #228B22;
+}
+
+.form-default.theme-forestgreen .form-link,
+.form-default.theme-forestgreen .form-link:hover,
+.form-default.theme-forestgreen .form-link:focus,
+.form-default.theme-forestgreen .form-link:active {
+	color: #228B22;
+}
+
+.form-default.theme-forestgreen .card-type-label input:checked + span {
+	color: #228B22;
+	border-color: #228B22;
+}
+
+.form-default.theme-forestgreen .btn-submit {
+	background: #228B22;
+}
+
+.form-default.theme-forestgreen .btn-submit:hover,
+.form-default.theme-forestgreen .btn-submit:focus,
+.form-default.theme-forestgreen .btn-submit:active {
+	background: #228B22;
+}
+
+.form-default.theme-forestgreen .social-networks-list > li > a:hover,
+.form-default.theme-forestgreen .social-networks-list > li > a:focus,
+.form-default.theme-forestgreen .social-networks-list > li > a:active {
+	color: #228B22;
+	border-color: #228B22;
+}
+
+.form-default.theme-forestgreen .rating input:checked ~ [for*=star] {
+	color: #228B22;
+}
+
+
+/* form theme-steelblue */
+
+.form-default.theme-steelblue {}
+
+.form-default.theme-steelblue .form-control:focus {
+	border-color: #4682B4;
+}
+
+.form-default.theme-steelblue .form-check input[type="checkbox"]:checked + .form-check-label,
+.form-default.theme-steelblue .form-check input[type="radio"]:checked + .form-check-label,
+.form-default.theme-steelblue .form-check input[type="checkbox"] + .form-check-label:after,
+.form-default.theme-steelblue .form-check input[type="radio"] + .form-check-label:after,
+.form-default.theme-steelblue .form-check input[type="checkbox"]:checked + .form-check-label a,
+.form-default.theme-steelblue .form-check input[type="radio"]:checked + .form-check-label a {
+	color: #4682B4;
+}
+
+.form-default.theme-steelblue .form-check input[type="checkbox"]:checked + .form-check-label:before,
+.form-default.theme-steelblue .form-check input[type="radio"]:checked + .form-check-label:before {
+	border-color: #4682B4;
+}
+
+.form-default.theme-steelblue .form-link,
+.form-default.theme-steelblue .form-link:hover,
+.form-default.theme-steelblue .form-link:focus,
+.form-default.theme-steelblue .form-link:active {
+	color: #4682B4;
+}
+
+.form-default.theme-steelblue .card-type-label input:checked + span {
+	color: #4682B4;
+	border-color: #4682B4;
+}
+
+.form-default.theme-steelblue .btn-submit {
+	background: #4682B4;
+}
+
+.form-default.theme-steelblue .btn-submit:hover,
+.form-default.theme-steelblue .btn-submit:focus,
+.form-default.theme-steelblue .btn-submit:active {
+	background: #4682B4;
+}
+
+.form-default.theme-steelblue .social-networks-list > li > a:hover,
+.form-default.theme-steelblue .social-networks-list > li > a:focus,
+.form-default.theme-steelblue .social-networks-list > li > a:active {
+	color: #4682B4;
+	border-color: #4682B4;
+}
+
+.form-default.theme-steelblue .rating input:checked ~ [for*=star] {
+	color: #4682B4;
+}
+
+
+
+/* form theme-rosybrown */
+
+.form-default.theme-rosybrown {}
+
+.form-default.theme-rosybrown .form-control:focus {
+	border-color: #BC8F8F;
+}
+
+.form-default.theme-rosybrown .form-check input[type="checkbox"]:checked + .form-check-label,
+.form-default.theme-rosybrown .form-check input[type="radio"]:checked + .form-check-label,
+.form-default.theme-rosybrown .form-check input[type="checkbox"] + .form-check-label:after,
+.form-default.theme-rosybrown .form-check input[type="radio"] + .form-check-label:after,
+.form-default.theme-rosybrown .form-check input[type="checkbox"]:checked + .form-check-label a,
+.form-default.theme-rosybrown .form-check input[type="radio"]:checked + .form-check-label a {
+	color: #BC8F8F;
+}
+
+.form-default.theme-rosybrown .form-check input[type="checkbox"]:checked + .form-check-label:before,
+.form-default.theme-rosybrown .form-check input[type="radio"]:checked + .form-check-label:before {
+	border-color: #BC8F8F;
+}
+
+.form-default.theme-rosybrown .form-link,
+.form-default.theme-rosybrown .form-link:hover,
+.form-default.theme-rosybrown .form-link:focus,
+.form-default.theme-rosybrown .form-link:active {
+	color: #BC8F8F;
+}
+
+.form-default.theme-rosybrown .card-type-label input:checked + span {
+	color: #BC8F8F;
+	border-color: #BC8F8F;
+}
+
+.form-default.theme-rosybrown .btn-submit {
+	background: #BC8F8F;
+}
+
+.form-default.theme-rosybrown .btn-submit:hover,
+.form-default.theme-rosybrown .btn-submit:focus,
+.form-default.theme-rosybrown .btn-submit:active {
+	background: #BC8F8F;
+}
+
+.form-default.theme-rosybrown .social-networks-list > li > a:hover,
+.form-default.theme-rosybrown .social-networks-list > li > a:focus,
+.form-default.theme-rosybrown .social-networks-list > li > a:active {
+	color: #BC8F8F;
+	border-color: #BC8F8F;
+}
+
+.form-default.theme-rosybrown .rating input:checked ~ [for*=star] {
+	color: #BC8F8F;
+}
+
+
+/* form theme-violetred */
+
+.form-default.theme-violetred {}
+
+.form-default.theme-violetred .form-control:focus {
+	border-color: #DB7093;
+}
+
+.form-default.theme-violetred .form-check input[type="checkbox"]:checked + .form-check-label,
+.form-default.theme-violetred .form-check input[type="radio"]:checked + .form-check-label,
+.form-default.theme-violetred .form-check input[type="checkbox"] + .form-check-label:after,
+.form-default.theme-violetred .form-check input[type="radio"] + .form-check-label:after,
+.form-default.theme-violetred .form-check input[type="checkbox"]:checked + .form-check-label a,
+.form-default.theme-violetred .form-check input[type="radio"]:checked + .form-check-label a {
+	color: #DB7093;
+}
+
+.form-default.theme-violetred .form-check input[type="checkbox"]:checked + .form-check-label:before,
+.form-default.theme-violetred .form-check input[type="radio"]:checked + .form-check-label:before {
+	border-color: #DB7093;
+}
+
+.form-default.theme-violetred .form-link,
+.form-default.theme-violetred .form-link:hover,
+.form-default.theme-violetred .form-link:focus,
+.form-default.theme-violetred .form-link:active {
+	color: #DB7093;
+}
+
+.form-default.theme-violetred .card-type-label input:checked + span {
+	color: #DB7093;
+	border-color: #DB7093;
+}
+
+.form-default.theme-violetred .btn-submit {
+	background: #DB7093;
+}
+
+.form-default.theme-violetred .btn-submit:hover,
+.form-default.theme-violetred .btn-submit:focus,
+.form-default.theme-violetred .btn-submit:active {
+	background: #DB7093;
+}
+
+.form-default.theme-violetred .social-networks-list > li > a:hover,
+.form-default.theme-violetred .social-networks-list > li > a:focus,
+.form-default.theme-violetred .social-networks-list > li > a:active {
+	color: #DB7093;
+	border-color: #DB7093;
+}
+
+.form-default.theme-violetred .rating input:checked ~ [for*=star] {
+	color: #DB7093;
+}
+
+
+
+/* form theme-lightsalmon */
+
+.form-default.theme-lightsalmon {}
+
+.form-default.theme-lightsalmon .form-control:focus {
+	border-color: #FFA07A;
+}
+
+.form-default.theme-lightsalmon .form-check input[type="checkbox"]:checked + .form-check-label,
+.form-default.theme-lightsalmon .form-check input[type="radio"]:checked + .form-check-label,
+.form-default.theme-lightsalmon .form-check input[type="checkbox"] + .form-check-label:after,
+.form-default.theme-lightsalmon .form-check input[type="radio"] + .form-check-label:after,
+.form-default.theme-lightsalmon .form-check input[type="checkbox"]:checked + .form-check-label a,
+.form-default.theme-lightsalmon .form-check input[type="radio"]:checked + .form-check-label a {
+	color: #FFA07A;
+}
+
+.form-default.theme-lightsalmon .form-check input[type="checkbox"]:checked + .form-check-label:before,
+.form-default.theme-lightsalmon .form-check input[type="radio"]:checked + .form-check-label:before {
+	border-color: #FFA07A;
+}
+
+.form-default.theme-lightsalmon .form-link,
+.form-default.theme-lightsalmon .form-link:hover,
+.form-default.theme-lightsalmon .form-link:focus,
+.form-default.theme-lightsalmon .form-link:active {
+	color: #FFA07A;
+}
+
+.form-default.theme-lightsalmon .card-type-label input:checked + span {
+	color: #FFA07A;
+	border-color: #FFA07A;
+}
+
+.form-default.theme-lightsalmon .btn-submit {
+	background: #FFA07A;
+}
+
+.form-default.theme-lightsalmon .btn-submit:hover,
+.form-default.theme-lightsalmon .btn-submit:focus,
+.form-default.theme-lightsalmon .btn-submit:active {
+	background: #FFA07A;
+}
+
+.form-default.theme-lightsalmon .social-networks-list > li > a:hover,
+.form-default.theme-lightsalmon .social-networks-list > li > a:focus,
+.form-default.theme-lightsalmon .social-networks-list > li > a:active {
+	color: #FFA07A;
+	border-color: #FFA07A;
+}
+
+.form-default.theme-lightsalmon .rating input:checked ~ [for*=star] {
+	color: #FFA07A;
+}
+
+
+/* form theme-lightsteelblue */
+
+.form-default.theme-lightsteelblue {}
+
+.form-default.theme-lightsteelblue .form-control:focus {
+	border-color: #B0C4DE;
+}
+
+.form-default.theme-lightsteelblue .form-check input[type="checkbox"]:checked + .form-check-label,
+.form-default.theme-lightsteelblue .form-check input[type="radio"]:checked + .form-check-label,
+.form-default.theme-lightsteelblue .form-check input[type="checkbox"] + .form-check-label:after,
+.form-default.theme-lightsteelblue .form-check input[type="radio"] + .form-check-label:after,
+.form-default.theme-lightsteelblue .form-check input[type="checkbox"]:checked + .form-check-label a,
+.form-default.theme-lightsteelblue .form-check input[type="radio"]:checked + .form-check-label a {
+	color: #B0C4DE;
+}
+
+.form-default.theme-lightsteelblue .form-check input[type="checkbox"]:checked + .form-check-label:before,
+.form-default.theme-lightsteelblue .form-check input[type="radio"]:checked + .form-check-label:before {
+	border-color: #B0C4DE;
+}
+
+.form-default.theme-lightsteelblue .form-link,
+.form-default.theme-lightsteelblue .form-link:hover,
+.form-default.theme-lightsteelblue .form-link:focus,
+.form-default.theme-lightsteelblue .form-link:active {
+	color: #B0C4DE;
+}
+
+.form-default.theme-lightsteelblue .card-type-label input:checked + span {
+	color: #B0C4DE;
+	border-color: #B0C4DE;
+}
+
+.form-default.theme-lightsteelblue .btn-submit {
+	background: #B0C4DE;
+}
+
+.form-default.theme-lightsteelblue .btn-submit:hover,
+.form-default.theme-lightsteelblue .btn-submit:focus,
+.form-default.theme-lightsteelblue .btn-submit:active {
+	background: #B0C4DE;
+}
+
+.form-default.theme-lightsteelblue .social-networks-list > li > a:hover,
+.form-default.theme-lightsteelblue .social-networks-list > li > a:focus,
+.form-default.theme-lightsteelblue .social-networks-list > li > a:active {
+	color: #B0C4DE;
+	border-color: #B0C4DE;
+}
+
+.form-default.theme-lightsteelblue .rating input:checked ~ [for*=star] {
+	color: #B0C4DE;
+}
+
+
+/* form theme-darkcyan */
+
+.form-default.theme-darkcyan {}
+
+.form-default.theme-darkcyan .form-control:focus {
+	border-color: #008B8B;
+}
+
+.form-default.theme-darkcyan .form-check input[type="checkbox"]:checked + .form-check-label,
+.form-default.theme-darkcyan .form-check input[type="radio"]:checked + .form-check-label,
+.form-default.theme-darkcyan .form-check input[type="checkbox"] + .form-check-label:after,
+.form-default.theme-darkcyan .form-check input[type="radio"] + .form-check-label:after,
+.form-default.theme-darkcyan .form-check input[type="checkbox"]:checked + .form-check-label a,
+.form-default.theme-darkcyan .form-check input[type="radio"]:checked + .form-check-label a {
+	color: #008B8B;
+}
+
+.form-default.theme-darkcyan .form-check input[type="checkbox"]:checked + .form-check-label:before,
+.form-default.theme-darkcyan .form-check input[type="radio"]:checked + .form-check-label:before {
+	border-color: #008B8B;
+}
+
+.form-default.theme-darkcyan .form-link,
+.form-default.theme-darkcyan .form-link:hover,
+.form-default.theme-darkcyan .form-link:focus,
+.form-default.theme-darkcyan .form-link:active {
+	color: #008B8B;
+}
+
+.form-default.theme-darkcyan .card-type-label input:checked + span {
+	color: #008B8B;
+	border-color: #008B8B;
+}
+
+.form-default.theme-darkcyan .btn-submit {
+	background: #008B8B;
+}
+
+.form-default.theme-darkcyan .btn-submit:hover,
+.form-default.theme-darkcyan .btn-submit:focus,
+.form-default.theme-darkcyan .btn-submit:active {
+	background: #008B8B;
+}
+
+.form-default.theme-darkcyan .social-networks-list > li > a:hover,
+.form-default.theme-darkcyan .social-networks-list > li > a:focus,
+.form-default.theme-darkcyan .social-networks-list > li > a:active {
+	color: #008B8B;
+	border-color: #008B8B;
+}
+
+.form-default.theme-darkcyan .rating input:checked ~ [for*=star] {
+	color: #008B8B;
+}
+
+
+/* form theme-coral */
+
+.form-default.theme-coral {}
+
+.form-default.theme-coral .form-control:focus {
+	border-color: #FF7F50;
+}
+
+.form-default.theme-coral .form-check input[type="checkbox"]:checked + .form-check-label,
+.form-default.theme-coral .form-check input[type="radio"]:checked + .form-check-label,
+.form-default.theme-coral .form-check input[type="checkbox"] + .form-check-label:after,
+.form-default.theme-coral .form-check input[type="radio"] + .form-check-label:after,
+.form-default.theme-coral .form-check input[type="checkbox"]:checked + .form-check-label a,
+.form-default.theme-coral .form-check input[type="radio"]:checked + .form-check-label a {
+	color: #FF7F50;
+}
+
+.form-default.theme-coral .form-check input[type="checkbox"]:checked + .form-check-label:before,
+.form-default.theme-coral .form-check input[type="radio"]:checked + .form-check-label:before {
+	border-color: #FF7F50;
+}
+
+.form-default.theme-coral .form-link,
+.form-default.theme-coral .form-link:hover,
+.form-default.theme-coral .form-link:focus,
+.form-default.theme-coral .form-link:active {
+	color: #FF7F50;
+}
+
+.form-default.theme-coral .card-type-label input:checked + span {
+	color: #FF7F50;
+	border-color: #FF7F50;
+}
+
+.form-default.theme-coral .btn-submit {
+	background: #FF7F50;
+}
+
+.form-default.theme-coral .btn-submit:hover,
+.form-default.theme-coral .btn-submit:focus,
+.form-default.theme-coral .btn-submit:active {
+	background: #FF7F50;
+}
+
+.form-default.theme-coral .social-networks-list > li > a:hover,
+.form-default.theme-coral .social-networks-list > li > a:focus,
+.form-default.theme-coral .social-networks-list > li > a:active {
+	color: #FF7F50;
+	border-color: #FF7F50;
+}
+
+.form-default.theme-coral .rating input:checked ~ [for*=star] {
+	color: #FF7F50;
+}
+
+
+/* datapicker style */
+
+.datepicker {
+	padding: 10px;
+}
+
+.datepicker,
+.datepicker td,
+.datepicker th,
+.datepicker table tr td span {
+	-webkit-border-radius: 0!important;
+	border-radius: 0!important;
+}
+
+.datepicker table tr td span.active:hover,
+.datepicker table tr td span.active:hover:hover,
+.datepicker table tr td span.active.disabled:hover,
+.datepicker table tr td span.active.disabled:hover:hover,
+.datepicker table tr td span.active:active,
+.datepicker table tr td span.active:hover:active,
+.datepicker table tr td span.active.disabled:active,
+.datepicker table tr td span.active.disabled:hover:active,
+.datepicker table tr td span.active.active,
+.datepicker table tr td span.active:hover.active,
+.datepicker table tr td span.active.disabled.active,
+.datepicker table tr td span.active.disabled:hover.active,
+.datepicker table tr td span.active.disabled,
+.datepicker table tr td span.active:hover.disabled,
+.datepicker table tr td span.active.disabled.disabled,
+.datepicker table tr td span.active.disabled:hover.disabled,
+.datepicker table tr td span.active[disabled],
+.datepicker table tr td span.active:hover[disabled],
+.datepicker table tr td span.active.disabled[disabled],
+.datepicker table tr td span.active.disabled:hover[disabled] {
+	background: #29CB9A;
+}
+
+
+
+/* btn-over-18 */
+
+.btn-over-18 {
+	background: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	border-color: #FD6347;
+	color: #FD6347;
+	padding: 12px;
+	font-size: 14px;
+	opacity: .7;
+	-webkit-transition: opacity .3s linear;
+	-o-transition: opacity .3s linear;
+	-moz-transition: opacity .3s linear;
+	transition: opacity .3s linear;
+}
+
+.btn-over-18:hover,
+.btn-over-18:focus,
+.btn-over-18:active {
+	opacity: 1;
+	color: #FD6347;
+}
+
+@media screen and (max-width: 576px) {
+
+	.btn-over-18 {
+		width: 100%;
+	}
+
+}
+
+
+
+
+/* @media screen */
+
+@media screen and (min-width: 576px) {
+
+	.modal-form .modal-dialog {
+		max-width: 440px;
+	}
+	.modal-form-lg .modal-dialog {
+		max-width: 800px;
+		width: auto;
+	}
+
+}
+
+@media screen and (max-width: 576px) {
+
+	.modal-info .modal-body {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+}

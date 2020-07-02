@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+/**
+	*
+	* ---------------------------------------------------------
+	*
+	* Template : SLD Form bootstrap 3
+	* Author : sodedar10  
+	* Email: sodedar10@meta.ua or sldedar1984@gmail.com
+	
+	* ---------------------------------------------------------
+	*
+*/
+
+/*--------------------------------------
+    FORM THEME GRAY
+----------------------------------------*/
+
+.modal-form .modal-content {
+    background: #fff;   
+}
+.modal-form .modal-header .close{
+	color: rgba(0, 0, 0, .302);
+}
+.modal-form .form-default{
+	border: none;
+}
+
+.form-default {
+    background: #fff;  
+	border: 1px solid #ddd;
+}
+.form-default,
+.form-default .form-logo,
+.form-default .form-text-success-title,
+.form-default .form-title{
+	color: rgba(0, 0, 0, .95);
+}
+.form-default .form-logo{
+	color: rgba(0, 0, 0, .75);
+}
+
+.form-default .form-control{
+    background: #eee;
+	border-color: #eee;
+	color: #000!important;
+}
+.form-default select.form-control{
+	color: rgba(0, 0, 0, .6)!important;
+}
+
+.form-check-label{
+	opacity: 1;
+}
+.form-default .form-check .form-check-input + .form-check-label{
+   color: rgba(0, 0, 0, 1);
+}
+.form-default .form-check input[type="checkbox"] + .form-check-label:before, 
+.form-default .form-check input[type="radio"] + .form-check-label:before{    
+    border-color: #ddd;
+}
+.form-default .social-networks-list > li > a {   
+    color: rgba(0, 0, 0, .302);
+    border-color: #ddd;
+}
+.form-default .card-type-label input + span {
+	border-color: rgba(0, 0, 0, .302);
+	color: rgba(0, 0, 0, .302);
+}
+
+
+.form-default .form-check a{
+	color: rgba(0, 0, 0, 1);
+}
+.form-default .form-check a:hover,
+.form-default .form-check a:focus,
+.form-default .form-check a:active{
+	color: rgba(0, 0, 0, 1);
+}
+
+.form-default .badge{
+	border-color: #ddd;	
+	color: rgba(0,0,0,.5);
+	background: none;
+	transition: all .3s ease;
+}
+.form-default .badge:hover{
+	border-color: rgba(0,0,0,.75);
+	background: none;
+}
+
+
+.modal-info .modal-body{
+	color: rgba(0, 0, 0, .6);
+}
+
+
+.rating {
+  color: #ddd;
+}
+
+/*--------------------------------------
+    FORM THEME GRAY
+----------------------------------------*/
