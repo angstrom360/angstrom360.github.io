@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<title>Creative Two Colors Button</title>
+	
+		<!-- style sheets -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/form.css" />
+		<link rel="stylesheet" type="text/css" href="css/dropdown.css" />
+	
+		<!-- js files -->
+		<!-- color picker -->
+		<script type="text/javascript" src="jscolor/jscolor.js"></script>
+		<!-- jQuery framework -->
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<!-- jQueriy easing plugin-->
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<!-- lhpTwoColorButton plugin -->
+		<script type="text/javascript" src="js/jquery.lhpTwoColorButton.min.js"></script>
+		<!-- lhpTwoColorButton plugin -->
+		<script type="text/javascript" src="js/jquery.lhpMenuTwoColorButton.min.js"></script>
+		<!-- preview main js code -->
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<p>The animated button & menu jQuery plugin allows you to easily replace &lt;a&gt; links<br/>with animated buttons and grouping buttons into a menu.</p>
+				Features:
+				<ol>
+					<li>Buttons of any size.</li>
+					<li>Any background color, hover color and font.</li>
+					<li>Allows you to create animated buttons with images.</li>
+					<li>Create buttons with rounded corners (not supported in IE 7 and IE 8).</li>
+					<li>Transition easing for animation.</li>
+					<li>The button can be "selected" and "toggled".</li>
+					<li>16 different button animation effects.</li>
+					<li>You can determine the size of the animated elements.</li>
+					<li>Button autosize.</li>
+					<li>Fully customizable - unlimited number of button's appearence combinations.</li>
+					<li>Buttons can be used in forms.</li>
+					<li>Buttons can be combined into a menu.</li>
+					<li>Package contains a plugin for building custom menus.</li>
+					<li>Package contains a code for drop down menu.</li>
+					<li>Cross-browser compatible – Animated Button is compatible with IE, CHROME, FIREFOX, OPERA, SAFARI.</li>
+				</ol><br/>
+				<ul id="menu">
+					<li><a href="#firstSample" title="Single Button">Single Button</a></li>
+					<li><a href="#secondSample" title="Simple menu">Simple menu</a></li>
+					<li><a href="#thridSample" title="Simple menu 2">Simple menu 2</a></li>
+					<li><a href="#fifthSample" title="Drop down menu"><span class="important">NEW!</span> - Drop down menu</a></li>
+					<li><a href="#fourthSample" title="Form button">Form button</a></li>
+				</ul>
+				
+			</div>
+			<br class="floatClr" />
+			<div id="firstSample" class="sample">
+				<a href="#header" class="topBtt" title="top">top</a>
+				<h1>Example - Customize Single Button</h1>
+				<p>This is an example of using the plugin for a single button on your website. jQuery plugin lhpTwoColorButton lets you create several button instances. All you need to do is to include the necessary JavaScript files in the &lt;head&gt; section (details in the docs), adjust the settings to fit your needs and activate the plugin (for chosen elements) by pasting the JavaScript code below.</p>
+				<br/><br/>
+				<a href="http://www.google.pl" target="_blank" class="customizeMe" title="Customize Me">Customize Me</a>
+				<div class="customizeMeForm"> 
+					<div class="tipContainer"></div>
+					<form action="./">
+						<div class="cell oneThridCell topCell">
+							<span class="tip" data-txt="Text label."></span>
+							<label for="cm_btt_label">label</label>
+							<div class="inner">
+								<input type="text" class="input_text label" name="cm_btt_label" id="cm_btt_label"/>
+							</div> 
+						</div>
+						
+						<div class="cell twoThridCell topCell lastCell ">
+							<span class="tip" data-txt="Text label font-size and font-family."></span>
+							<label for="cm_btt_labelStyle">label font</label>
+							<div class="inner">
+								<input type="text" class="input_text labelStyle" name="cm_btt_labelStyle" id="cm_btt_labelStyle"/> 
+							</div> 
+						</div>
+						
+						<div class="cell oneThridCell">
+							<span class="tip" data-txt="Defines animation type."></span>
+							<label for="cm_btt_effect">effect</label>
+							<div class="inner">
+								<select class="select_option" name="cm_btt_effect" id="cm_btt_effect">
+									<option>fx1</option>
+									<option>fx2</option>
+									<option>fx3</option>
+									<option>fx4</option>
+									<option>fx5</option>
+									<option>fx6</option>
+									<option>fx7</option>
+									<option>fx8</option>
+									<option>fx9</option>
+									<option>fx10</option>
+									<option>fx11</option>
+									<option>fx12</option>
+									<option>fx13</option>
+									<option>fx14</option>
+									<option>fx15</option>
+									<option>fx16</option>
+								</select> 
+							</div> 
+						</div>
+						
+						<div class="cell oneThridCell">
+							<span class="tip" data-txt="Defines particle width used in animation.<br/>IMPORTANT: To increase animation speed, do not add too many particles."></span>
+							<label for="cm_btt_particleWidth">particle width</label>
+							<div class="inner">
+								<select class="select_option" name="cm_btt_particleWidth" id="cm_btt_particleWidth">
+									<option>20</option>
+									<option>25</option>
+									<option>50</option>
+								</select>
+							</div> 
+						</div>
+						
+						<div class="cell oneThridCell lastCell">
+							<span class="tip" data-txt="Defines particle height used in animation.<br/>IMPORTANT: To increase animation speed, do not add too many particles."></span>
+							<label for="cm_btt_particleHeight">particle height</label>
+							<div class="inner">
+								<select class="select_option" name="cm_btt_particleHeight" id="cm_btt_particleHeight">
+									<option>20</option>
+									<option>25</option>
+									<option>50</option>
+								</select>
+							</div> 
+						</div>
+						
+						<div class="cell oneThridCell">
+							<span class="tip" data-txt="Defines the text color after hovering over the button."></span>
+							<label for="cm_btt_labelActiveColor">label active color</label>
+							<div class="inner">
+								<input type="text" class="input_text color" name="cm_btt_labelActiveColor" id="cm_btt_labelActiveColor"/>
+							</div> 
+						</div>
+						
+						<div class="cell oneThridCell">
+							<span class="tip" data-txt="Defines the text color.<br/>If this setting is not present a css color for 'a' will be used."></span>
+							<label for="cm_btt_labelInactiveColor">label inactive color</label>
+							<div class="inner">
+								<input type="text" class="input_text color" name="cm_btt_labelInactiveColor" id="cm_btt_labelInactiveColor"/>
+							</div> 
+						</div>
+						
+						<div class="cell oneThridCell lastCell">
+							<span class="tip" data-txt="Defines the background color.<br/>If this setting is not present a css background color for 'a' will be used."></span>
+							<label for="cm_btt_particleHeight">background color</label>
+							<div class="inner">
+								<input type="text" class="input_text color" name="cm_btt_background-color" id="cm_btt_background-color"/> 
+							</div> 
+						</div>
+						
+						<div class="cell oneThridCell">
+							<span class="tip" data-txt="Defines first particle layer color.<br/>After hovering over the button, this will be the color of the background."></span>
+							<label for="cm_btt_particleColorOne">particle color one</label>
+							<div class="inner">
+								<input type="text" class="input_text color" name="cm_btt_particleColorOne" id="cm_btt_particleColorOne"/>
+							</div> 
+						</div>
+						
+						<div class="cell oneThridCell">
+							<span class="tip" data-txt="Defines second particle layer color."></span>
+							<label for="cm_btt_particleColorTwo">particle color two</label>
+							<div class="inner">
+								<input type="text" class="input_text color" name="cm_btt_particleColorTwo" id="cm_btt_particleColorTwo"/>
+							</div> 
+						</div>
+						
+						<div class="cell oneThridCell">
+							<span class="tip" data-txt="Defines border radius.<br/>IMPORTANT: Not supported by IE7, IE8."></span>
+							<label for="cm_btt_border-radius">border radius</label>
+							<div class="inner">
+								<input type="text" class="input_text borderRadius" name="cm_btt_border-radius" id="cm_btt_border-radius"/>
+							</div> 
+						</div>
+						
+						<div class="cell oneThridCell lastCell">
+							<span class="tip" data-txt="Defines the button's behavior and the state."></span>
+							<label for="cm_btt_toggleType">toggle / selected</label>
+							<div class="inner">
+								<select class="select_option toggle" name="cm_btt_toggleType" id="cm_btt_toggleType">
+									<option>none</option>
+									<option>toggle/selected</option>
+									<option>toggle/unselected</option>
+								</select> 
+							</div> 
+						</div>
+					</form>
+				</div>     
+				<br class="floatClr" />
+				<br/>javascript code:<br/><br/>
+				<pre></pre>
+				<hr/>
+			</div>
+			<div id="secondSample" class="sample">
+				<a href="#header" class="topBtt" title="top">top</a>
+				<h1>Example - Menu with Two Color Buttons</h1>
+				<p>This is an example of using the plugin for building a menu on your website. jQuery plugin lhpMenuTwoColorButton lets you create several menu instances. All you need to do is to include the necessary JavaScript files in the &lt;head&gt; section (details in the docs), adjust the settings to fit your needs and activate the plugin.</p>
+				<span class="isClicked">NOTHING CLICKED</span>
+				<ul>
+					<li><a href="#" title="CodeCanyon"><img title="CodeCanyon" src="gfx/cc-logo-cc.png" width="186" height="45" alt="CodeCanyon"/></a></li>
+					<li><a href="#" title="ActiveDen"><img title="ActiveDen" src="gfx/cc-logo-ad.png" width="186" height="45" alt="ActiveDen"/></a></li>
+					<li><a href="#" title="AudioJungle"><img title="AudioJungle" src="gfx/cc-logo-aj.png" width="186" height="45" alt="AudioJungle"/></a></li>
+					<li><a href="#" title="ThemeForest"><img title="ThemeForest" src="gfx/cc-logo-tf.png" width="186" height="45" alt="ThemeForest"/></a></li>
+				</ul>
+				<br/><a href="#" class="sourceCode">show source code</a><br/><br/>
+				<pre>var sampleMenuWithBttStt = {
+	'effect' : 'fx1',
+	'particleWidth' : '35',
+	'particleHeight' : '35',
+	'labelActiveColor' : '#303030',
+	'labelInactiveColor' : '#f0f0f0',
+	'particleColorOne' : '#ffc600',
+	'particleColorTwo' : '#00c6ff',
+	'background-color' : '#303030',
+	'border-radius' : '0',
+	'width' : '210',
+	'height' : '105',
+	'oneButtonAlwaysActive' : false,
+	'buttonSelected' : 'none'
+};
+$('#secondSample ul a').lhpMenuTwoColorButton(sampleMenuWithBttStt);
+$('#secondSample ul a').click(function() {
+	//user code
+});</pre>
+				<hr/>
+			</div>
+			<div id="thridSample" class="sample">
+				<a href="#header" class="topBtt" title="top">top</a>
+				<h1>Example - Menu with Two Color Button <span>(one button always active)</span></h1>
+				<p>This is an example of using the lhpMenuTwoColorButton plugin for building a menu on your website. In this example one of the menu buttons is always active.</p>
+				<span class="isClicked">NOTHING CLICKED</span>
+				<ul>
+					<li><a href="#" title="CodeCanyon"><img title="CodeCanyon" src="gfx/cc-logo-cc.png" width="186" height="45" alt="CodeCanyon"/></a></li>
+					<li><a href="#" title="ActiveDen"><img title="ActiveDen" src="gfx/cc-logo-ad.png" width="186" height="45" alt="ActiveDen"/></a></li>
+					<li><a href="#" title="AudioJungle"><img title="AudioJungle" src="gfx/cc-logo-aj.png" width="186" height="45" alt="AudioJungle"/></a></li>
+					<li><a href="#" title="ThemeForest"><img title="ThemeForest" src="gfx/cc-logo-tf.png" width="186" height="45" alt="ThemeForest"/></a></li>
+				</ul>
+				<br/><a href="#" class="sourceCode">show source code</a><br/><br/>
+				<pre>var sampleMenuWithBttSttOneActive = {
+	'effect' : 'fx1',
+	'particleWidth' : '35',
+	'particleHeight' : '35',
+	'labelActiveColor' : '#303030',
+	'labelInactiveColor' : '#f0f0f0',
+	'particleColorOne' : '#ffc600',
+	'particleColorTwo' : '#00c6ff',
+	'background-color' : '#303030',
+	'border-radius' : '0',
+	'width' : '210',
+	'height' : '105',
+	'oneButtonAlwaysActive' : true,
+	'buttonSelected' : $('#thridSample ul a[title="CodeCanyon"]') //jQuery selector or button index (example '0')
+};
+$('#thridSample ul a').lhpMenuTwoColorButton(sampleMenuWithBttSttOneActive);
+$('#thridSample ul a').click(function() {
+	//user code
+});</pre>
+				<hr/>
+			</div>
+			
+			<div id="fifthSample" class="sample">
+				<a href="#header" class="topBtt" title="top">top</a>
+				<h1>Example - Drop down menu</h1>
+				<p>The example shows the usage of the lhpTwoColorButton plugin in drop-down menu.</p>
+				<div>
+					<ul id="navigation">
+						<li><a href="#">Menu 1</a>
+							<ul class="subnav">
+								<li><a href="#">Submenu 1</a></li>
+								<li><a href="#">Submenu 2</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Menu 2</a>
+							<ul class="subnav">
+								<li>
+									<a href="#">Submenu 1</a>
+									<ul class="subnav level2">
+										<li><a href="#">Submenu 1 1</a></li>
+										<li><a href="#">Submenu 1 2</a></li>
+										<li><a href="#">Submenu 1 3</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Submenu 2</a>
+									<ul class="subnav level2">
+										<li><a href="#">Submenu 2 1</a></li>
+										<li><a href="#">Submenu 2 2</a></li>
+										<li><a href="#">Submenu 2 3</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Submenu 3</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Menu 3</a>
+							<ul class="subnav">
+								<li><a href="#">Submenu 1</a></li>
+								<li><a href="#">Submenu 2</a></li>
+							</ul>      	
+						</li>
+						<li><a href="#">Menu 4</a></li>
+					</ul>
+				</div>
+				<br class="floatClr" />
+				<a href="#" class="sourceCode">show source code</a><br/><br/>
+				<pre>
+----------javascript----------
+var dropDownStt = {
+	'effect' : 'fx3',
+	'particleWidth' : '15',
+	'particleHeight' : '15',
+	'labelActiveColor' : '#f0f0f0',
+	'labelInactiveColor' : '#303030',
+	'particleColorOne' : '#303030',
+	'particleColorTwo' : '#ffc600',
+	'background-color' : '#00c6ff',
+	'width' : '180',
+	'height' : '30'
+};
+
+$('ul#navigation').css('display', 'block');
+
+$('#navigation a').lhpTwoColorButton(dropDownStt);
+
+$('ul#navigation li').hover(function() {
+	$(this).children('.subnav').stop(true, true).slideDown('slow');
+}, function() {
+	$(this).children('.subnav').stop(true, true).slideUp('fast');
+});
+
+$('ul#navigation li ul.subnav').css('display', 'none');
+
+----------html----------
+&lt;ul id="navigation"&gt;
+	&lt;li&gt;&lt;a href="#"&gt;Menu 1&lt;/a&gt;
+		&lt;ul class="subnav"&gt;
+			&lt;li&gt;&lt;a href="#"&gt;Submenu 1&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#"&gt;Submenu 2&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;Menu 2&lt;/a&gt;
+		&lt;ul class="subnav"&gt;
+			&lt;li&gt;
+				&lt;a href="#"&gt;Submenu 1&lt;/a&gt;
+				&lt;ul class="subnav level2"&gt;
+					&lt;li&gt;&lt;a href="#"&gt;Submenu 1 1&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="#"&gt;Submenu 1 2&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="#"&gt;Submenu 1 3&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a href="#"&gt;Submenu 2&lt;/a&gt;
+				&lt;ul class="subnav level2"&gt;
+					&lt;li&gt;&lt;a href="#"&gt;Submenu 2 1&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="#"&gt;Submenu 2 2&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="#"&gt;Submenu 2 3&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#"&gt;Submenu 3&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;Menu 3&lt;/a&gt;
+		&lt;ul class="subnav"&gt;
+			&lt;li&gt;&lt;a href="#"&gt;Submenu 1&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#"&gt;Submenu 2&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;      	
+	&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;Menu 4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+				<hr/>
+			</div>
+			
+			<div id="fourthSample" class="sample">
+				<a href="#header" class="topBtt" title="top">top</a>
+				<h1>Example - From with Two Color Button</h1>
+				<p>The example shows the usage of the lhpTwoColorButton plugin in forms. The 'source code' section shows an easy way to replace the default 'submit' form button with an animated button.</p>
+				<form action="http://www.google.com" method="get">
+					<div class='wrapper'>
+						<label for="q">GOOGLE</label>
+						<input class="input_text" type="text" name="q" id="q"/>
+						<input type="submit" value="Search" />
+					</div>
+				</form>
+				<a href="#" class="sourceCode">show source code</a><br/><br/>
+				<pre>var sampleFormStt = {
+	'effect' : 'fx4',
+	'particleWidth' : '20',
+	'particleHeight' : '20',
+	'labelActiveColor' : '#111111',
+	'labelInactiveColor' : '#666666',
+	'particleColorOne' : '#666666',
+	'particleColorTwo' : '#d8d8d8',
+	'background-color' : '#f4f4f4',
+	'border-radius' : '10',
+	'width' : '160',
+	'height' : '40',
+	'selected' : false,
+	'toggle' : false
+};
+$('#fourthSample input[type="submit"]').each(function () {
+	var $this = $(this);
+	$this.css('display', 'none');
+	$('&lt;a href="#"&gt;&lt;/a&gt;').text($this.attr('value')).insertBefore($this).lhpTwoColorButton(sampleFormStt)
+	.click(function(event) {
+		event.preventDefault();
+		$this.click();
+	});
+});</pre>
+				<hr/>
+			</div>
+			
+
+		</div>
+	</body>
+</html>

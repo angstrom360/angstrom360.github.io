@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<title>Demo Menu</title>
+		
+		<style type="text/css" media="screen">
+			ul {list-style: none; padding:0;}
+			ul li {list-style:none; float:left; margin:0 1px 1px 0;}
+		</style>
+
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.lhpTwoColorButton.min.js"></script>
+		<script type="text/javascript" src="js/jquery.lhpMenuTwoColorButton.min.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var settings = {
+					'effect' : 'fx14',
+					'particleWidth' : '50',
+					'particleHeight' : '50',
+					'labelActiveColor' : '#f0f0f0',
+					'labelInactiveColor' : '#303030',
+					'particleColorOne' : '#303030',
+					'particleColorTwo' : '#ffc600',
+					'background-color' : '#00c6ff',
+					'border-radius' : '44',
+					'width' : '200',
+					'height' : '100',
+					'selected' : false,
+					'toggle' : true
+				};
+				// menu example
+				$('ul#myMenu a').lhpMenuTwoColorButton(settings);
+			});
+			</script>
+	</head>
+	<body>
+		<ul id="myMenu" >
+			<li><a href="#" title="button 1">button 1</a></li>
+			<li><a href="#" title="button 2">button 2</a></li>
+			<li><a href="#" title="button 3">button 3</a></li>
+		</ul>
+	</body>
+</html>

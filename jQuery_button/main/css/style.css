@@ -1,0 +1,24 @@
+body{
+	overflow:hidden;
+}
+
+div{
+	position:absolute;
+	left:200px;
+	top:50px;
+}
+
+a{
+	font-size:10px;
+	font-family:Arial;
+	text-decoration:none;
+}
+
+a strong{
+	font-size:14px;
+}
+
+p#zero  a {
+	color:#ff0000;
+	background:#229999;
+}

@@ -1,0 +1,41 @@
+ul#navigation {
+	display: none;
+	list-style-type: none;
+	background: #a5a5a5;
+	height: 30px;
+	font-size: 12px;
+	line-height: 30px;
+	margin:0;
+}
+
+ul#navigation li {
+	float: left;
+	width: 180px;
+	text-align: center;
+	position: relative;
+}
+
+ul#navigation li ul.subnav {
+	width: 180px;
+	clear: both;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	list-style-type: none;
+	padding: 0;
+	margin:0;
+	background: #656565;
+}
+
+ul#navigation li ul.level2 {
+	left: 180px;
+	top: 0;
+}
+
+ul#navigation li ul.subnav li {
+	clear: both;
+	display: block;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+}

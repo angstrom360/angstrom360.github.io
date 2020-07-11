@@ -1,0 +1,337 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>jQuery Animated Button & Menu Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+		pre { background:#e7e7e7}
+		th, td { border: 1px solid #CCCCCC; padding: 5px 10px; }
+		td { font-size: 11px; }
+		.important { color:#ff0000; font-weight:bold }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;jQuery Animated Button & Menu Documentation by &ldquo;lhp&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;jQuery Animated Button & Menu&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 15/05/2012<br>
+					By: lhp<br>
+					Email: <a href="mailto:youremail@yourdomain.com">jaroslaw_z@interia.pl</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://codecanyon.net/user/lhp">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#description">Description</a></li>
+			<li><a href="#simpleUse">Single-button plugin usage</a></li>
+			<li><a href="#menuUse">Multi-button plugin usage (menu)</a></li>
+			
+		</ol>
+		
+		<hr>
+		
+		<h3 id="description"><strong>A) Description</strong> - <a href="#toc">top</a></h3>
+		
+		<p>The animated button & menu jQuery plugin allows you to easily replace &lt;a&gt; links with animated buttons and grouping buttons into a menu.</p>
+		<p>Features:
+			<ul>
+				<li>Buttons of any size.</li>
+				<li>Any background color, hover color and font.</li>
+				<li>Allows you to create animated buttons with images.</li>
+				<li>Create buttons with rounded corners (not supported in IE 7 and IE 8).</li>
+				<li>Transition easing for animation.</li>
+				<li>The button can be "selected" and "toggled".</li>
+				<li>16 different button animation effects.</li>
+				<li>You can determine the size of the animated elements.</li>
+				<li>Button autosize.</li>
+				<li>Fully customizable - unlimited number of button's appearence combinations.</li>
+				<li>Buttons can be used in forms.</li>
+				<li>Buttons can be combined into a menu.</li>
+				<li>Package contains a plugin for building custom menus.</li>
+				<li>Cross-browser compatible – Animated Button is compatible with IE, CHROME, FIREFOX, OPERA, SAFARI.</li>
+			</ul>
+		</p>
+		<hr>
+			
+		<h3 id="simpleUse"><strong>B) Single-button plugin usage.</strong> - <a href="#toc">top</a></h3>
+		<h4><b>Installation & Setup</b></h4>
+		<ul>
+			<li><b>STEP 1 - INCLUDE THE SCRIPT</b><br/><br/>
+			Embed the JavaScript files in the &lt;head&gt; section of your HTML document, set the src="js-path/" to your JavaScript file directory. The jQuery Easing Plugin is required for easing effects.
+			<pre>
+&lt;script type="text/javascript" src="js-path/jquery-1.7.2.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js-path/jquery.easing.1.3.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js-path/jquery.lhpTwoColorButton.min.js"&gt;&lt;/script&gt;</pre>
+			</li>
+			<li><b>STEP 2 - ACTIVATE THE PLUGIN</b><br/><br/>
+			As you can see on the example page, you can create several button instances on a single page.<br />
+			Simply place the code below in the &lt;head&gt; section of your HTML document, after the code embeding the scripts from step 1.<br />
+			Repeat this step for the next button.<br/><br/>
+			<i>javascript code</i>:
+			<pre>&lt;script type="text/javascript"&gt;
+$(document).ready(function() {
+	var settings = {
+		'effect' : 'fx14',
+		'particleWidth' : '50',
+		'particleHeight' : '50',
+		'labelActiveColor' : '#f0f0f0',
+		'labelInactiveColor' : '#303030',
+		'particleColorOne' : '#303030',
+		'particleColorTwo' : '#ffc600',
+		'background-color' : '#00c6ff',
+		'border-radius' : '44',
+		'width' : '200',
+		'height' : '100',
+		'selected' : false,
+		'toggle' : false
+	};
+	// single button example
+	$('a#myButton').lhpTwoColorButton(settings);
+});
+&lt;/script&gt;</pre>
+<i>html code</i>:
+<pre>&lt;a id="myButton" href="#" title="button"&gt;button&lt;/a&gt;</pre>
+			</li>
+			<li><b>CUSTOMIZATION SETTINGS</b>
+				<table width="100%" cellspacing="0" cellpadding="0">
+					<tbody>
+						<tr>
+							<th>Parameter</th>
+							<th>Default & Accepted Values</th>
+							<th>Description</th>
+						</tr>
+						<tr>
+							<td>effect</td>
+							<td><b>string</b><br/>default: <i>'fx1'</i><br/>accepted: <i>'fx1', 'fx2'... 'fx16'</i></td>
+							<td>Defines animation type.</td>
+						</tr>
+						<tr>
+							<td>particleWidth</td>
+							<td><b>string, number</b><br/>default: <i>15</i><br/>accepted: <i>integer values</i></td>
+							<td>Defines particle width used in animation.<br/><span class="important">IMPORTANT: To increase animation speed, do not add too many particles.</span></td>
+						</tr>
+						<tr>
+							<td>particleHeight</td>
+							<td><b>string, number</b><br/>default: <i>15</i><br/>accepted: <i>integer values</i></td>
+							<td>Defines particle height used in animation.<br/><span class="important">IMPORTANT: To increase animation speed, do not add too many particles.</span></td>
+						</tr>
+						<tr>
+							<td>labelActiveColor</td>
+							<td><b>string</b><br/>default: <i>#ffffff</i><br/>accepted: <i>color values</i></td>
+							<td>Defines the text color after hovering over the button.</td>
+						</tr>
+						<tr>
+							<td>labelInactiveColor</td>
+							<td><b>string</b><br/>default: <i>css color</i><br/>accepted: <i>color values</i></td>
+							<td>Defines the text color. If this setting is not present a css color for &lt;a&gt; will be used.</td>
+						</tr>
+						<tr>
+							<td>particleColorOne</td>
+							<td><b>string</b><br/>default: <i>#006699</i><br/>accepted: <i>color values</i></td>
+							<td>Defines first particle layer color. After hovering over the button, this will be the color of the background.</td>
+						</tr>
+						<tr>
+							<td>particleColorTwo</td>
+							<td><b>string</b><br/>default: <i>#0099cc</i><br/>accepted: <i>color values</i></td>
+							<td>Defines second particle layer color.</td>
+						</tr>
+						<tr>
+							<td>background-color</td>
+							<td><b>string</b><br/>default: <i>css background-color</i><br/>accepted: <i>color values</i></td>
+							<td>Defines the background color. If this setting is not present a css background color for &lt;a&gt; will be used.</td>
+						</tr>
+						<tr>
+							<td>border-radius</td>
+							<td><b>string, number</b><br/>default: <i>0</i><br/>accepted: <i>integer values</i></td>
+							<td>Defines border radius.<br/><span class="important">IMPORTANT: Not supported by IE7, IE8.</span></td>
+						</tr>
+						<tr>
+							<td>width</td>
+							<td><b>string, number</b><br/>default: <i>current width</i><br/>accepted: <i>integer values</i></td>
+							<td>Defines button width. If this setting is not present the button will set width to fit the &lt;a&gt;.</td>
+						</tr>
+						<tr>
+							<td>height</td>
+							<td><b>string, number</b><br/>default: <i>current height</i><br/>accepted: <i>integer values</i></td>
+							<td>Defines button height. If this setting is not present the button will set height to fit the &lt;a&gt;.</td>
+						</tr>
+						<tr>
+							<td>selected</td>
+							<td><b>boolean</b><br/>default: <i>false</i><br/>accepted: <i>true or false</i></td>
+							<td>Defines the state of the button - if true, the button is pressed (on). Setting this value to true will automatically set the toggle value to true.</td>
+						</tr>
+						<tr>
+							<td>toggle</td>
+							<td><b>boolean</b><br/>default: <i>false</i><br/>accepted: <i>true or false</i></td>
+							<td>Defines the button's behavior - if true, the button remains pressed (on), after click, the next click unpresses the button.</td>
+						</tr>
+					</tbody>
+				</table>
+				</li>
+				<li><b>lhpTwoColorButton JQUERY PLUGIN METHODS</b>
+				<table width="100%" cellspacing="0" cellpadding="0">
+					<tbody>
+						<tr>
+							<th>Method name</th>
+							<th>Example use</th>
+							<th>Description</th>
+						</tr>
+						<tr>
+							<td>destroy</td>
+							<td>$('a').lhpTwoColorButton('destroy')</td>
+							<td>Destructor. Removes the button from the page. Restores the original appearance and functionality of the &lt;a&gt; element. Allows to efficiently clean the memory.</td>
+						</tr>
+						<tr>
+							<td>select</td>
+							<td>$('a').lhpTwoColorButton('select')</td>
+							<td>Presses the button. This method works only if the toggle setting is set to true.</td>
+						</tr>
+						<tr>
+							<td>unselect</td>
+							<td>$('a').lhpTwoColorButton('unselect')</td>
+							<td>Unpresses the button. This method works only if the toggle setting is set to true.</td>
+						</tr>
+						<tr>
+							<td>disabled</td>
+							<td>$('a').lhpTwoColorButton('disabled')</td>
+							<td>Renders the button not to react to mouse events.</td>
+						</tr>
+						<tr>
+							<td>enabled</td>
+							<td>$('a').lhpTwoColorButton('enabled')</td>
+							<td>Renders the button to react to mouse events.</td>
+						</tr>
+						<tr>
+							<td>isSelect</td>
+							<td>$('a').lhpTwoColorButton('isSelect')</td>
+							<td>Checks the button's state. Returns true if the button is pressed.</td>
+						</tr>
+					</tbody>
+				</table>
+			</li>
+		</ul>
+		<hr>
+			
+		<h3 id="menuUse"><strong>C) Multi-button plugin usage (menu).</strong> - <a href="#toc">top</a></h3>
+		<h4><b>Installation & Setup</b></h4>
+		<ul>
+			<li><b>STEP 1 - INCLUDE THE SCRIPT</b><br/><br/>
+			Embed the JavaScript files in the &lt;head&gt; section of your HTML document, set the src="js-path/" to your JavaScript file directory. The jQuery Easing Plugin is required for easing effects.
+			<pre>
+&lt;script type="text/javascript" src="js-path/jquery-1.7.2.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js-path/jquery.easing.1.3.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js-path/jquery.lhpTwoColorButton.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js-path/jquery.lhpMenuTwoColorButton.min.js"&gt;&lt;/script&gt;</pre>
+			</li>
+			<li><b>STEP 2 - ACTIVATE THE PLUGIN</b><br/><br/>
+			You can create several menu (grouped buttons) instances on a single page.<br/>
+			Simply place the code below in the &lt;head&gt; section of your HTML document, after the code embeding the scripts from step 1.<br />
+			Next, choose the elements you want to convert to an animated menu and set the necessary options.<br/>
+			Repeat this step for the next menu.<br/><br/>
+			<i>javascript code</i>:
+			<pre>&lt;script type="text/javascript"&gt;
+$(document).ready(function() {
+	var settings = {
+		'effect' : 'fx14',
+		'particleWidth' : '50',
+		'particleHeight' : '50',
+		'labelActiveColor' : '#f0f0f0',
+		'labelInactiveColor' : '#303030',
+		'particleColorOne' : '#303030',
+		'particleColorTwo' : '#ffc600',
+		'background-color' : '#00c6ff',
+		'border-radius' : '44',
+		'width' : '200',
+		'height' : '100',
+		'selected' : false,
+		'toggle' : true
+	};
+	// menu example
+	$('ul#myMenu a').lhpMenuTwoColorButton(settings);
+});
+&lt;/script&gt;</pre>
+<i>html code</i>:
+<pre>&lt;ul id="myMenu" &gt;
+	&lt;li&gt;&lt;a href="#" title="button 1"&gt;button 1&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#" title="button 2"&gt;button 2&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#" title="button 3"&gt;button 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+			</li>
+			<li><b>CUSTOMIZATION SETTINGS</b>
+				<table width="100%" cellspacing="0" cellpadding="0">
+					<tbody>
+						<tr>
+							<th>Parameter</th>
+							<th>Default & Accepted Values</th>
+							<th>Description</th>
+						</tr>
+						<tr>
+							<td>effect, particleWidth, particleHeight, labelActiveColor, labelInactiveColor, particleColorOne, particleColorTwo, background-color, border-radius, width, height</td>
+							<td></td>
+							<td>See: Single-button plugin usage, CUSTOMIZATION SETTINGS.</td>
+						</tr>
+						<tr>
+							<td>oneButtonAlwaysActive</td>
+							<td><b>boolean</b><br/>default: <i>false</i><br/>accepted: <i>true or false</i></td>
+							<td>Defines the menu behavior. By default, clicking a menu element will change it's state (on / off). If this parameter is set to true, the pressed button will be unpressed only when a different button (from the same menu) will be pressed.</td>
+						</tr>
+						<tr>
+							<td>buttonSelected</td>
+							<td><b>jQuery selector, number or string</b></td>
+							<td>Presses the selected button. You can use a jQuery selector or the button's index ('0', '1',&hellip;).</td>
+						</tr>
+					</tbody>
+				</table>
+				</li>
+				<li><b>lhpTwoColorButton JQUERY PLUGIN METHODS</b>
+				<table width="100%" cellspacing="0" cellpadding="0">
+					<tbody>
+						<tr>
+							<th>Method name</th>
+							<th>Example use</th>
+							<th>Description</th>
+						</tr>
+						<tr>
+							<td>destroy</td>
+							<td>$('a').lhpMenuTwoColorButton('destroy')</td>
+							<td>Destructor. Removes the menu from the page. Restores the original appearance and functionality of the &lt;a&gt; elements. Allows to efficiently clean the memory.</td>
+						</tr>
+					</tbody>
+				</table>
+			</li>
+		</ul>
+		<hr>
+			
+		
+		<p class="append-bottom alt large"><strong>lhp</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
