@@ -1,0 +1,131 @@
+/*Random Theme color*/
+.jag-faq-theme9.jag-faq-random-colors .jag-flip-faq-wraper:nth-child(odd) .front,
+.jag-faq-theme9.jag-faq-random-colors .jag-flip-faq-wraper:nth-child(odd) .back{
+	background: #ea3566;
+}
+.jag-faq-theme9.jag-faq-random-colors .jag-flip-faq-wraper:nth-child(5n) .front,
+.jag-faq-theme9.jag-faq-random-colors .jag-flip-faq-wraper:nth-child(5n) .back,
+.jag-faq-theme9.jag-faq-random-colors .jag-flip-faq-wraper:nth-child(5n+2) .front,
+.jag-faq-theme9.jag-faq-random-colors .jag-flip-faq-wraper:nth-child(5n+2) .back{
+	background: #ea4e00;
+}
+.jag-faq-theme9.jag-faq-random-colors .jag-flip-faq-wraper:nth-child(6n+2) .jag-front,
+.jag-faq-theme9.jag-faq-random-colors .jag-flip-faq-wraper:nth-child(6n+2) .jag-back{
+	background: #00aac4;
+}
+/*Default Theme color*/
+.jag-faq-theme9 .jag-flip-faq-wraper .front,
+.jag-faq-theme9 .jag-flip-faq-wraper .back{
+	background: #f90;
+}
+/*Theme orange*/
+.jag-faq-theme9.jag-faq-theme-orange .jag-flip-faq-wraper .front,
+.jag-faq-theme9.jag-faq-theme-orange .jag-flip-faq-wraper .back{
+	background: #ea4e00;
+}
+/*Theme dark red*/
+.jag-faq-theme9.jag-faq-theme-darkred .jag-flip-faq-wraper .front,
+.jag-faq-theme9.jag-faq-theme-darkred .jag-flip-faq-wraper .back{
+	background: #c40000;
+}
+/*Theme pink*/
+.jag-faq-theme9.jag-faq-theme-pink .jag-flip-faq-wraper .front,
+.jag-faq-theme9.jag-faq-theme-pink .jag-flip-faq-wraper .back{
+	background: #f90f90;
+}
+/*Theme Blue*/
+.jag-faq-theme9.jag-faq-theme-blue .jag-flip-faq-wraper .front,
+.jag-faq-theme9.jag-faq-theme-blue .jag-flip-faq-wraper .back{
+	background: #00aac4;
+}
+.jag-faq-theme9.jag-faq-bg-img .jag-flip-faq-wraper .front{
+	background-size: cover !important;
+	background-position: center center !important;
+	background-image: url('../images/bg2.jpg') !important;
+}
+.jag-faq-theme9 .jag-flip-faq-wraper .front,
+.jag-faq-theme9 .jag-flip-faq-wraper .back{
+	padding: 20px !important;
+	border-radius: 10px;
+}
+.jag-faq-theme9 .front .jag-faq-question-number{
+	color: #ffffff;
+	font-size: 70px;
+	line-height: 100px;
+	display: block;
+	text-align: center;
+	padding-top:40px;
+}
+.jag-faq-theme9 .front .jag-faq-question{
+	color: #ffffff;
+	font-size: 24px;
+	text-align: center;
+	line-height: 30px;
+}
+.jag-faq-theme9 .back .jag-faq-question{
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ffffff;
+}
+.jag-faq-theme9 .back .jag-faq-answer{
+	color: #ffffff;
+	font-size: 14px;
+	text-align: left;
+	line-height: 20px;
+}
+.jag-faq-theme9 .jag-flip-faq-wraper .back{
+	padding-bottom: 80px !important;
+}
+.jag-faq-theme9 .jag-flip-faq .front,
+.jag-faq-theme9 .jag-flip-faq .back{
+	min-height: 300px;
+}
+.jag-faq-theme9 .jag-flip-faq-wraper{
+	padding: 10px;
+}
+.jag-faq-theme9 .jag-readmore{
+	text-align: center;
+    margin-top: 20px;
+	position: absolute;
+	width: 100%;
+	bottom: 20px;
+	left: 0;
+}
+.jag-faq-theme9 .jag-readmore-link{
+	display: inline-block;
+    line-height: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    padding: 1px 10px;
+	text-decoration: none;
+}
+.jag-faq-theme9 .jag-readmore-link:hover,
+.jag-faq-theme9 .jag-readmore-link:focus{
+	text-decoration: none;
+	color: #ffffff;
+	outline: none;
+}
+.jag-faq-readmore{
+	text-align: center;
+	margin-top: 20px;
+}
+.jag-faq-readmore a{
+	color: #ffffff;
+	font-size: 14px;
+	border-radius: 5px;
+	padding: 8px 15px;
+	border: 2px solid #ffffff;
+	display: inline-block;
+	text-transform: uppercase;
+}
+.jag-faq-readmore a:hover,
+.jag-faq-readmore a:focus,
+.jag-faq-readmore a:active{
+	outline: none;
+	text-decoration: none;
+}

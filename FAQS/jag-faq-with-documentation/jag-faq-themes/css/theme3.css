@@ -1,0 +1,54 @@
+/********************************
+* FAQ THEME 3
+********************************/
+.jag-faq-theme3 .jag-faq-title{
+	position: relative;
+	color: #fff;
+	padding: 10px 15px;
+	font-size: 15px;
+	display: block;
+	line-height: 20px;
+	cursor: pointer;
+	border-radius: 50px;
+}
+.jag-faq-theme3 .jag-faq-title i{
+	margin-right: 5px;
+	font-size: 15px;
+	color: #fff;
+	line-height: 20px;
+}
+.jag-faq-theme3 .panel-body img,
+.jag-faq-theme3 .panel-body iframe,
+.jag-faq-theme3 .panel-body video{
+	margin: 10px;
+}
+/*Random Theme color*/
+.jag-faq-theme3.jag-faq-random-colors .jag-faq-wrapper:nth-child(3n+2) .jag-faq-title{
+	background: #ea3566;
+}
+.jag-faq-theme3.jag-faq-random-colors .jag-faq-wrapper:nth-child(4n+3) .jag-faq-title{
+	background: #ea4e00;
+}
+.jag-faq-theme3.jag-faq-random-colors .jag-faq-wrapper:nth-child(5n+4)  .jag-faq-title{
+	background: #00aac4;
+}
+/*Default Theme color*/
+.jag-faq-theme3 .jag-faq-title{
+	background: #ff0044;
+}
+/*Theme orange*/
+.jag-faq-theme3.jag-faq-theme-orange .jag-faq-title{
+	background: #ea4e00;
+}
+/*Theme dark red*/
+.jag-faq-theme3.jag-faq-theme-darkred .jag-faq-title{
+	background: #c40000;
+}
+/*Theme pink*/
+.jag-faq-theme3.jag-faq-theme-pink .jag-faq-title{
+	background: #f90f90;
+}
+/*Theme blue*/
+.jag-faq-theme3.jag-faq-theme-blue .jag-faq-title{
+	background: #00aac4;
+}
