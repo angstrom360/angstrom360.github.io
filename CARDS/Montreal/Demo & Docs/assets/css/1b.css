@@ -1,0 +1,17 @@
+/* This is a partial file for demo purposes only */
+
+.c4-turin{--text-color:#ffffff;--primary-color:#f5af19;--secondary-color:#f12711;--padding:40px;--transition-duration:600ms;--border-margin:15px;--border-width:15px;--border-color:#ffffff;--border-radius:3px;--overlay-opacity:0.8;display:inline-flex;position:relative;box-sizing:border-box;overflow:hidden;margin:0;padding:0;color:#ffffff;color:var(--text-color);border-radius:3px;border-radius:var(--border-radius);}
+.c4-turin:before,.c4-turin:after,.c4-turin *,.c4-turin *:before,.c4-turin *:after{box-sizing:border-box;transition:all 600ms ease;transition:all var(--transition-duration) ease;}
+.c4-turin:before,.c4-turin:after{position:absolute;content:'';visibility:hidden;opacity:0;z-index:3;}
+.c4-turin:before{top:0;left:0;right:0;bottom:0;box-shadow:0 0 0 9999px #f5af19;box-shadow:0 0 0 9999px var(--primary-color);border:15px solid #f5af19;border:var(--border-margin) solid var(--primary-color);border-image-slice:1!important;}
+.c4-turin:after{top:calc(15px + 15px);top:calc(var(--border-margin) + var(--border-width));left:calc(15px + 15px);left:calc(var(--border-margin) + var(--border-width));right:calc(15px + 15px);right:calc(var(--border-margin) + var(--border-width));bottom:calc(15px + 15px);bottom:calc(var(--border-margin) + var(--border-width));background-color:#f5af19;background-color:var(--primary-color);}
+.c4-turin figcaption{position:absolute;top:0;left:0;right:0;bottom:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px;padding:var(--padding);width:100%;z-index:10;}
+.c4-turin img{object-fit:cover;max-width:100%;width:100%;height:100%;}
+.c4-turin h3{margin-top:0;color:#ffffff;color:var(--text-color);}
+.c4-turin h3:last-child{margin-bottom:0;}
+.c4-turin:hover:before,.c4-turin:hover:after,.c4-turin:focus:before,.c4-turin:focus:after,:focus > .c4-turin:before,:focus > .c4-turin:after{visibility:visible;opacity:0.8;opacity:var(--overlay-opacity);}
+.c4-turin:hover:before,.c4-turin:focus:before,:focus > .c4-turin:before{top:0;left:0;right:0;bottom:0;}
+.c4-turin:hover:after,.c4-turin:focus:after,:focus > .c4-turin:after{top:calc(15px + 15px);top:calc(var(--border-margin) + var(--border-width));left:calc(15px + 15px);left:calc(var(--border-margin) + var(--border-width));right:calc(15px + 15px);right:calc(var(--border-margin) + var(--border-width));bottom:calc(15px + 15px);bottom:calc(var(--border-margin) + var(--border-width));}
+.c4-turin figcaption > *{opacity:0;}
+.c4-turin:hover figcaption > *,.c4-turin:focus figcaption > *,:focus > .c4-turin figcaption > *{opacity:1;}
+.c4-turin:hover{cursor:pointer;}

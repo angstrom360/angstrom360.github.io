@@ -1,0 +1,81 @@
+@charset "utf-8";
+/*----------------- CARD STYLE 4 ----------------------------------------------------------------------------*/
+.card-4 img{
+	transition:all 0.25s ease-in-out;
+
+}
+
+.card-4::before{
+	position:absolute;
+	content:"";
+	width:150px;
+	left:-250px;
+	height:25px;
+	background-color:#0b8dcb;
+	transform:skew(30deg);
+	box-shadow:-50px 10px 0px 10px rgba(0,0,0,0.5);
+	z-index:4;
+	transition:all 0.25s ease-in-out;
+	
+}
+.card-4::after{
+	position:absolute;
+	content:"";
+	right:-300px;
+	bottom:20px;
+	padding:30px;
+	width:250px;
+	background-color:#0b8dcb;
+	opacity:0.9;
+	transform:skew(30deg);
+	box-shadow:-25px 40px 0px 20px rgba(0,0,0,0.5);
+	transition:all 0.25s ease-in-out;
+	transition-delay:0.2s;
+}
+.card-4 .card-name{
+	top:calc(40%);
+	left:0px;
+	right:0px;
+	text-align:center;
+	color:#FFF;
+	font-weight:bold;
+	font-size:21px;
+	padding:10px 0px;
+	background-color:rgba(0,0,0,0.2);
+	transform:scale(0,0);
+	transition:all 0.25s ease-in-out;
+	transition-delay:0.2s;
+}
+.card-4 .card-icons{
+	bottom:40px;
+	right:20px;
+	z-index:7;
+	transform:scale(0,0);
+	transition:all 0.25s ease-in-out;
+	transition-delay:0.4s;
+
+}
+.card-4 .card-icons .fa{
+	margin:0px 10px;
+	color:#fff;
+}
+
+.card-4:hover img{
+	filter:blur(2px) brightness(70%);
+	transform:scale(1.1,1.1);
+}
+.card-4:hover::before{
+	left:-20px;	
+}
+.card-4:hover::after{
+	right:-50px;
+}
+.card-4:hover .card-name{
+	transform:scale(1,1);
+}
+.card-4:hover .card-icons{
+	transform:scale(1,1);	
+}
+
+
+

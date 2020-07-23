@@ -1,0 +1,105 @@
+@charset "utf-8";
+/*----------------- CARD STYLE 10 ----------------------------------------------------------------------------*/
+.card-10 img{
+	transition:all 0.25s ease-in-out;
+	z-index:1;
+}
+
+.card-10::before{
+	content:"";
+	position:absolute;
+	background-color:#de2431;
+	opacity:0.3;
+	left:-250px;
+	top:0px;
+	width:250px;
+	bottom:0px;
+	z-index:1;
+	transform:skew(0deg);
+	transition:all 0.25s ease-in-out;
+}
+
+
+.card-10::after{
+	content:"";
+	position:absolute;
+	height:100px;
+	left:0px;
+	right:0px;
+	bottom:-100px;
+	z-index:2;
+	background-color:#FFF;
+	transition:all 0.25s ease-in-out;
+}
+
+
+.card-10 .card-name{
+	color:#000;
+	bottom:20px;
+	left:20px;
+	z-index:5;
+	font-weight:bold;
+	font-size:20px;
+	transition:all 0.25s ease-in-out;
+	transition-delay:0.2s;
+	transform:scale(1,0);
+	
+}
+.card-10 .card-name span{
+	color:#de2431;
+}
+
+.card-10 .card-icons{
+	bottom:80px;
+	right:-300px;
+	z-index:5;
+	transition:all 0.25s ease-in-out;
+	transition-delay:0.3s;
+}
+.card-10 .card-icons .fa{
+	margin:0px 5px;
+	color:#FFF;
+}
+
+.card-10 .card-icons::before{
+	position:absolute;
+	content:"";
+	top:-25px;
+	left:-50px;
+	right:-100px;
+	bottom:-25px;
+	background-color:#de2431;
+	z-index:-1;
+	transform:skew(-40deg);
+}
+.card-10 .card-icons::after{
+	position:absolute;
+	content:"";
+	left:-100px;
+	top:0px;
+	bottom:-25px;
+	background-color:#961728;
+	width:100px;
+	transform:skew(40deg);
+	z-index:-2;
+	box-shadow:inset 0px 0px 30px rgba(0,0,0,0.2);
+}
+
+.card-10:hover img{
+	filter:brightness(70%);
+}
+.card-10:hover::before{
+	left:-250px;
+	transform:skew(-30deg);
+}
+.card-10:hover::after{
+	bottom:0px;
+}
+.card-10:hover .card-name{
+	transform:scale(1,1);
+}
+.card-10:hover .card-icons{
+	right:20px;
+}
+
+

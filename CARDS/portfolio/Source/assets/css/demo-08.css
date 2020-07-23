@@ -1,0 +1,89 @@
+@charset "utf-8";
+/*----------------- CARD STYLE 8 ----------------------------------------------------------------------------*/
+.card-8 img{
+	transition:all 0.25s ease-in-out;
+	z-index:1;
+}
+
+.card-8::before{
+	content:"";
+	position:absolute;
+	background-color:#231f20;
+	top:-150px;
+	left:-10px;
+	right:-50px;
+	height:90px;
+	transform:rotate(10deg) skew(-10deg);
+	border-right:100px solid #cdd51f;
+	z-index:2;
+	transition:all 0.25s ease-in-out;
+}
+.card-8::after{
+	content:"";
+	position:absolute;
+	bottom:-150px;
+	height:80px;
+	background-color:#FFF;
+	left:-15px;
+	right:-15px;
+	transform:rotate(10deg);
+	z-index:2;
+	transition:all 0.25s ease-in-out;
+}
+.card-8 .card-name{
+	right:75px;
+	top:-50px;
+	color:#FFF;
+	font-weight:bold;
+	font-size:18px;
+	z-index:5;
+	transition:all 0.25s ease-in-out;
+	transition-delay:0.2s;
+	
+}
+
+.card-8 .card-icons{
+	bottom:-150px;
+	left:5px;
+	z-index:4;
+	background-color:#cdd51f;
+	color:#231f20;
+	padding:10px 25px;
+	transform:rotate(10deg);
+	transition:all 0.25s ease-in-out;
+	transition-delay:0.3s;
+}
+
+.card-8 .card-icons .fa{
+	margin-right:5px;
+}
+.card-8 .card-icons::after{
+	content:"";
+	position:absolute;
+	right:-15px;
+	top:5px;
+	border:15px solid transparent;
+	border-right-color:rgba(0,0,0,0.5);
+	z-index:1;
+	transform:rotate(-45deg);
+}
+
+
+.card-8:hover img{
+	transform:rotate(10deg) scale(1.2,1.2);
+	filter:brightness(50%);
+}
+.card-8:hover::before{
+	top:-20px;
+}
+.card-8:hover::after{
+	bottom:-50px;
+}
+.card-8:hover .card-name{
+	top:10px;
+}
+.card-8:hover .card-icons{
+	bottom:25px;
+}
+
+

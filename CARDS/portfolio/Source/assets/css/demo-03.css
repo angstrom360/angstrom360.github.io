@@ -1,0 +1,104 @@
+@charset "utf-8";
+/*----------------- CARD STYLE 3 ----------------------------------------------------------------------------*/
+.card-3 img{
+	transition:all 0.25s ease-in-out;
+	z-index:0;
+
+}
+
+.card-3::before{
+	content:"";
+	position:absolute;
+	width:10px;
+	background-color:rgba(255,255,255,1);
+	border-right:30px solid #e29f1a;
+	top:0px;
+	bottom:calc(50%);
+	transform:skew(-25deg);
+	left:-300px;
+	width:200px;
+	box-shadow:10px -20px 0px 20px rgba(0,0,0,0.5);
+	transition:all 0.25s ease-in-out;
+
+}
+.card-3::after{
+	content:"";
+	position:absolute;
+	background-color:rgba(255,255,255,1);
+	width:10px;
+	border-right:30px solid #e29f1a;
+	bottom:0px;
+	top:calc(50%);
+	transform:skew(25deg);
+	left:-300px;
+	width:200px;
+	box-shadow:10px 20px 0px 20px rgba(0,0,0,0.5);
+	transition:all 0.25s ease-in-out;
+
+}
+
+.card-3 .card-name{
+	bottom:0px;
+	right:-200px;
+	left:calc(100%);
+	padding:25px;
+	background-color:#001219;
+	color:#e29f1a;
+	font-weight:bold;
+	text-align:right;
+	transition:all 0.25s ease-in-out;
+	transition-delay:0.2s;
+}
+
+.card-3 .card-name:before{
+	content:"";
+	position:absolute;
+	height:100%;
+	width:50px;
+	background-color:#001219;
+	left:20px;
+	top:0px;
+	transform:skew(-30deg);
+	transition:all 0.25s ease-in-out;
+	transition-delay:0.2s;
+
+}
+.card-3 .card-icons{
+	top:10px;
+	left:-30px;
+	transition:all 0.25s ease-in-out;
+	transition-delay:0.4s;
+	
+}
+.card-3 .card-icons .fa{
+	display:block;
+	padding:5px;
+	width:24px;
+	text-align:center;
+	z-index:5;
+}
+.card-3 .card-icons .fa:hover{
+	color:#e29f1a;
+}
+
+
+
+.card-3:hover img{
+	margin-left:50px;	
+}
+
+.card-3:hover::before,.card-3:hover::after{
+	left:-100px;
+}
+.card-3:hover .card-name{
+	left:0px;
+	right:0px;
+}
+.card-3:hover .card-name:before{
+	left:-20px;
+}
+.card-3:hover .card-icons{
+	left:10px;
+}
+
+

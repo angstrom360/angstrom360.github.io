@@ -1,0 +1,123 @@
+@charset "utf-8";
+/*----------------- CARD STYLE 1 ----------------------------------------------------------------------------*/
+.card-1 img{
+	transition:all 0.25s ease-in-out;
+}
+.card-1 .card-name{
+	top:-100px;
+	right:0px;
+	position:absolute;
+	color:#FFF;
+	font-size:17px;
+	font-weight:bold;
+	padding:30px 50px;
+	z-index:100;
+	transition:all ease-in-out 0.25s;
+
+}
+.card-1 .card-name::before{
+	content:"";
+	position:absolute;
+	width:300px;
+	height:300px;
+	background-color:#002643;
+	transform:rotate(-3deg) skew(55deg);
+	left:-700px;
+	top:-200px;
+	z-index:-1;
+	box-shadow:-35px -10px 0px 10px rgba(0,0,0,0.1);
+	transition:all ease-in-out 0.25s;
+	transition-delay:0.2s;
+}
+.card-1 .card-name::after{
+	content:"";
+	position:absolute;
+	width:300px;
+	height:100px;
+	background-color:#9ad75e;
+	left:-200px;
+	top:-150px;
+	z-index:-2;
+	transform:rotate(-20deg);
+	box-shadow:10px 0px 0px 10px rgba(0,0,0,0.1);
+	transition:all ease-in-out 0.25s;
+	transition-delay:0.4s;
+}
+
+
+.card-1 .card-icons{
+	position:absolute;
+	bottom:-100px;
+	left:0px;
+	color:#FFF;
+	padding:10px 20px;
+	z-index:2;
+	transition:all ease-in-out 0.25s;
+
+}
+.card-1 .card-icons .fa{
+	margin:0px 5px;
+}
+
+.card-1 .card-icons::before{
+	content:"";
+	position:absolute;
+	width:250px;
+	height:200px;
+	background-color:#032a47;
+	z-index:-1;
+	transform:rotate(15deg) skew(-25deg);
+	top:100px;
+	left:-40px;
+	box-shadow:-30px 20px 0px 10px rgba(0,0,0,0.1);
+	transition:all ease-in-out 0.25s;
+	transition-delay:0.2s;
+	
+}
+
+.card-1 .card-icons::after{
+	content:"";
+	position:absolute;
+	width:350px;
+	height:200px;
+	background-color:#0093a7;
+	z-index:-2;
+	top:100px;
+	left:0px;
+	border-top:10px solid rgba(255,255,255,1);
+	transform:rotate(-10deg);
+	transition:all ease-in-out 0.25s;
+	transition-delay:0.4s;
+}
+.card-1 .card-icons .fa:hover{
+	color:#9ad75e;
+}
+
+.card-1:hover img{
+	filter:brightness(75%);
+	transform:scale(1.1,1.1) rotate(-5deg);
+}
+.card-1:hover .card-name{
+	top:10px;
+}
+.card-1:hover .card-name::before{
+	left:-150px;
+}
+.card-1:hover .card-name::after{
+	top:-50px;
+}
+
+.card-1:hover .card-icons{
+	bottom:0px;
+}
+
+.card-1:hover .card-icons::before{
+	top:-10px;
+}
+
+.card-1:hover .card-icons::after{
+	top:0px;
+	transform:rotate(-15deg)
+}
+
+

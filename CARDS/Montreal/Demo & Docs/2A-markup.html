@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74783723-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-74783723-3');
+  </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  
+  <title>The Markup - Montreal</title>
+  
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/just-the-docs.css">
+  <link rel="stylesheet" href="assets/css/montreal.css">
+  <link rel="stylesheet" href="assets/css/docs.css">
+  <!-- <link rel="stylesheet" href="assets/css/2a.css"> -->
+  
+  <script type="text/javascript" src="assets/js/vendor/lunr.min.js"></script>
+  <script type="text/javascript" src="assets/js/just-the-docs.js"></script>
+  <script src="https://kit.fontawesome.com/4a3936ac41.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>The Markup | Montreal</title>
+<meta name="generator" content="Jekyll v3.8.6" />
+<meta property="og:title" content="The Markup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="News Feed CSS LIbrary" />
+<meta property="og:description" content="News Feed CSS LIbrary" />
+<link rel="canonical" href="2A-markup.html" />
+<meta property="og:url" content="http://localhost:4000/2A-markup.html" />
+<meta property="og:site_name" content="Montreal" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://localhost:4000/2A-markup.html","headline":"The Markup","description":"News Feed CSS LIbrary","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="getting-started.html" class="site-title fs-6 lh-tight">Montreal<span>News Feed CSS LIbrary</span></a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+  <ul class="navigation-list">
+    <li class="navigation-list-item">
+      <a href="1A-introduction.html" class="navigation-list-link">Introduction</a>
+    </li>
+    <li class="navigation-list-item">
+      <a href="1B-demo.html" class="navigation-list-link">Demo</a>
+    </li>
+    <li class="navigation-list-item">
+      <a href="1C-getting-started.html" class="navigation-list-link">Getting Started</a>
+    </li>
+    <li class="navigation-list-item active">
+      <a href="2A-markup.html" class="navigation-list-link active">The Markup</a>
+    </li>
+    <li class="navigation-list-item">
+      <a href="2B-layout.html" class="navigation-list-link">Layout</a>
+    </li>
+    <li class="navigation-list-item">
+      <a href="2C-curve-options.html" class="navigation-list-link">Curve Options</a>
+    </li>
+    <li class="navigation-list-item">
+      <a href="2D-custom-properties.html" class="navigation-list-link">Custom Properties</a>
+    </li>
+    <li class="navigation-list-item">
+      <a href="2E-utility-classes.html" class="navigation-list-link">Utility Classes</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+    </div>
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="page-header">
+        <div class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search Montreal" aria-label="Search Montreal" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+
+<h2 id="the-markup">The Markup</h2>
+<p>The following details the markup used to create a instance of a Montreal news card along with some of the additional elements that are supported.</p>
+
+<p>A basic card can be created with the following HTML markup…</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-image"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://source.unsplash.com/FaPxZ88yZrw/400x300"</span> <span class="na">alt=</span><span class="s">"Sample Image"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.<span class="nt">&lt;/p&gt;</span>   
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+<p><br /></p>
+
+<div class="c4-montreal" style="max-width: 320px;">
+  <div class="c4-montreal-image">
+    <img src="assets/images/image01.jpg" alt="Sample Image" />
+  </div>
+  <div class="c4-montreal-content">
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>      
+  </div>
+</div>
+
+<p><br /></p>
+
+<h2 id="hover-icon">Hover icon</h2>
+<p>To add an icon on hover of the card, add your icon code (eg. SVG) just before the <code class="highlighter-rouge">img</code> tag wrapped in the following..</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-hover-icon"</span><span class="nt">&gt;</span>
+  // Your icon code
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p>Hover icon example using SVG..</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-image"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-hover-icon"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;svg</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span> <span class="na">viewBox=</span><span class="s">"0 0 448 512"</span><span class="nt">&gt;&lt;path</span> <span class="na">d=</span><span class="s">"M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"</span><span class="nt">&gt;&lt;/path&gt;&lt;/svg&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://source.unsplash.com/FaPxZ88yZrw/400x300"</span> <span class="na">alt=</span><span class="s">"Sample Image"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.<span class="nt">&lt;/p&gt;</span>   
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<div class="c4-montreal" style="max-width: 320px;">
+  <div class="c4-montreal-image">
+    <div class="c4-montreal-hover-icon">
+      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+    </div>
+    <img src="assets/images/image01.jpg" alt="Sample Image" />
+  </div>
+  <div class="c4-montreal-content">
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>   
+  </div>
+</div>
+
+<p><br /></p>
+
+<p>Hover icon example using Font Awesome..</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-image"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-hover-icon"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-link"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://source.unsplash.com/FaPxZ88yZrw/400x300"</span> <span class="na">alt=</span><span class="s">"Sample Image"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.<span class="nt">&lt;/p&gt;</span>   
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p><br /></p>
+<div class="c4-montreal" style="max-width: 320px;">
+  <div class="c4-montreal-image">
+    <div class="c4-montreal-hover-icon">
+      <i class="fa fa-link" aria-hidden="true"></i>
+    </div>
+    <img src="assets/images/image01.jpg" alt="Sample Image" />
+  </div>
+  <div class="c4-montreal-content">
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>   
+  </div>
+</div>
+
+<p><br /></p>
+
+<h2 id="date-block">Date block</h2>
+<p>Use the following markup to create a date block. Date blocks use the primary color for the top half and the secondary color for the bottom.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-date"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-date-top"</span><span class="nt">&gt;</span>
+    10
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-date-bottom"</span><span class="nt">&gt;</span>
+    Jan
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+<p><br /></p>
+
+<p>If placed within the <code class="highlighter-rouge">.c4-montreal-image</code> div, the date block will display over the image in the opposite corner to the ‘curve’ detail.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-image"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-date"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-date-top"</span><span class="nt">&gt;</span>
+        10
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-date-bottom"</span><span class="nt">&gt;</span>
+        Jan
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://source.unsplash.com/FaPxZ88yZrw/400x300"</span> <span class="na">alt=</span><span class="s">"Sample Image"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.<span class="nt">&lt;/p&gt;</span>   
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p><br /></p>
+<div class="c4-montreal" style="max-width: 320px;">
+  <div class="c4-montreal-image">
+    <div class="c4-montreal-date">
+      <div class="c4-montreal-date-top">
+        10
+      </div>
+      <div class="c4-montreal-date-bottom">
+        Jan
+      </div>
+    </div>
+    <img src="assets/images/image01.jpg" alt="Sample Image" />
+  </div>
+  <div class="c4-montreal-content">
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>   
+  </div>
+</div>
+
+<p><br /></p>
+
+<p>Using the following markup you can place the date block inline with your caption header..</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-header"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-header-col"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-date"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-date-top"</span><span class="nt">&gt;</span>
+        10
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-date-bottom"</span><span class="nt">&gt;</span>
+        Jan
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-header-col"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>Sample News Title<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+<p><br /></p>
+
+<p>Working example..</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-image"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://source.unsplash.com/FaPxZ88yZrw/400x300"</span> <span class="na">alt=</span><span class="s">"Sample Image"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-header"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-header-col"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-date"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-date-top"</span><span class="nt">&gt;</span>
+            10
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-date-bottom"</span><span class="nt">&gt;</span>
+            Jan
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-header-col"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h2&gt;</span>Sample News Title<span class="nt">&lt;/h2&gt;</span>
+        <span class="nt">&lt;h3</span> <span class="na">style=</span><span class="s">"c4-color-primary"</span><span class="nt">&gt;</span>Quisque volutpat<span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.<span class="nt">&lt;/p&gt;</span>   
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p><br /></p>
+<div class="c4-montreal" style="max-width: 320px;">
+  <div class="c4-montreal-image">
+    <img src="assets/images/image01.jpg" alt="Sample Image" />
+  </div>
+  <div class="c4-montreal-content">
+    <div class="c4-montreal-header">
+      <div class="c4-montreal-header-col">
+        <div class="c4-montreal-date">
+          <div class="c4-montreal-date-top">
+            10
+          </div>
+          <div class="c4-montreal-date-bottom">
+            Jan
+          </div>
+        </div>
+      </div>
+      <div class="c4-montreal-header-col">
+        <h2>Sample News Title</h2>
+        <h4 style="c4-color-primary">Quisque volutpat</h4>
+      </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>   
+  </div>
+</div>
+
+<h2 id="meta-info">Meta Info</h2>
+<p>Add meta information to your card content with the following markup.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c4-montreal-meta"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;</span>
+    // Meta item
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>
+    // Meta item
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>
+    // Meta item
+  <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<p>An example using SVG icons, adding a <code class="highlighter-rouge">c4-inline-svg</code> class to the SVG tag..</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-image"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://source.unsplash.com/FaPxZ88yZrw/400x300"</span> <span class="na">alt=</span><span class="s">"Sample Image"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>Sample News Title<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c4-montreal-meta"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"c4-inline-svg c4-color-primary"</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span> <span class="na">viewBox=</span><span class="s">"0 0 576 512"</span><span class="nt">&gt;&lt;path</span> <span class="na">d=</span><span class="s">"M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"</span><span class="nt">&gt;&lt;/path&gt;&lt;/svg&gt;</span>
+         378 Hits
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"c4-inline-svg c4-color-primary"</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span> <span class="na">viewBox=</span><span class="s">"0 0 448 512"</span><span class="nt">&gt;&lt;path</span> <span class="na">fill=</span><span class="s">"currentColor"</span> <span class="na">d=</span><span class="s">"M352 320c-22.608 0-43.387 7.819-59.79 20.895l-102.486-64.054a96.551 96.551 0 0 0 0-41.683l102.486-64.054C308.613 184.181 329.392 192 352 192c53.019 0 96-42.981 96-96S405.019 0 352 0s-96 42.981-96 96c0 7.158.79 14.13 2.276 20.841L155.79 180.895C139.387 167.819 118.608 160 96 160c-53.019 0-96 42.981-96 96s42.981 96 96 96c22.608 0 43.387-7.819 59.79-20.895l102.486 64.054A96.301 96.301 0 0 0 256 416c0 53.019 42.981 96 96 96s96-42.981 96-96-42.981-96-96-96z"</span><span class="nt">&gt;&lt;/path&gt;&lt;/svg&gt;</span>
+         28 Shares
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.<span class="nt">&lt;/p&gt;</span>   
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p><br /></p>
+<div class="c4-montreal" style="max-width: 320px;">
+  <div class="c4-montreal-image">
+    <img src="assets/images/image01.jpg" alt="Sample Image" />
+  </div>
+  <div class="c4-montreal-content">
+    <h2>Sample News Title</h2>
+    <ul class="c4-montreal-meta">
+      <li>
+        <svg class="c4-inline-svg c4-color-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"></path></svg>
+         378 Hits
+      </li>
+      <li>
+        <svg class="c4-inline-svg c4-color-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M352 320c-22.608 0-43.387 7.819-59.79 20.895l-102.486-64.054a96.551 96.551 0 0 0 0-41.683l102.486-64.054C308.613 184.181 329.392 192 352 192c53.019 0 96-42.981 96-96S405.019 0 352 0s-96 42.981-96 96c0 7.158.79 14.13 2.276 20.841L155.79 180.895C139.387 167.819 118.608 160 96 160c-53.019 0-96 42.981-96 96s42.981 96 96 96c22.608 0 43.387-7.819 59.79-20.895l102.486 64.054A96.301 96.301 0 0 0 256 416c0 53.019 42.981 96 96 96s96-42.981 96-96-42.981-96-96-96z"></path></svg>
+         28 Shares
+      </li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>   
+  </div>
+</div>
+
+<p><br /></p>
+
+<p>An example using Fontawesome icons..</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-image"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://source.unsplash.com/FaPxZ88yZrw/400x300"</span> <span class="na">alt=</span><span class="s">"Sample Image"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>Sample News Title<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"c4-montreal-meta"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-eye c4-color-primary"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> 378 Hits
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-share-alt c4-color-primary"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;</span> 28 Shares
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.<span class="nt">&lt;/p&gt;</span>   
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p><br /></p>
+<div class="c4-montreal" style="max-width: 320px;">
+  <div class="c4-montreal-image">
+    <img src="assets/images/image01.jpg" alt="Sample Image" />
+  </div>
+  <div class="c4-montreal-content">
+    <h2>Sample News Title</h2>
+    <ul class="c4-montreal-meta">
+      <li>
+        <i class="fa fa-eye c4-color-primary" aria-hidden="true"></i> 378 Hits
+      </li>
+      <li>
+        <i class="fa fa-share-alt c4-color-primary" aria-hidden="true"></i> 28 Shares
+      </li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>   
+  </div>
+</div>
+
+<h2 id="card-footer">Card footer</h2>
+<p>A card footer is created with the following markup using the <code class="highlighter-rouge">c4-montreal-footer</code> class. This div is added as a first child of the outside <code class="highlighter-rouge">.c4-montreal</code> div.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-footer"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<p>Working example..</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-image"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://source.unsplash.com/FaPxZ88yZrw/400x300"</span> <span class="na">alt=</span><span class="s">"Sample Image"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>Sample News Title<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.<span class="nt">&lt;/p&gt;</span>   
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-footer"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Some footer text<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p><br /></p>
+<div class="c4-montreal c4-shadow" style="max-width: 320px;">
+  <div class="c4-montreal-image">
+    <img src="assets/images/image01.jpg" alt="Sample Image" />
+  </div>
+  <div class="c4-montreal-content">
+    <h2>Sample News Title</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>   
+  </div>
+  <div class="c4-montreal-footer">
+    <p>Some footer text</p>
+  </div>
+</div>
+
+<p><br /></p>
+
+<h2 id="linking-a-card">Linking a card</h2>
+<p>To link your card use the following markup as the last child of the outside wrapper of the card.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"c4-montreal-link"</span><span class="nt">&gt;&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<p>Working example..</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-image"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://source.unsplash.com/FaPxZ88yZrw/400x300"</span> <span class="na">alt=</span><span class="s">"Sample Image"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c4-montreal-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>Sample News Title<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.<span class="nt">&lt;/p&gt;</span>   
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://dribbble.com/"</span> <span class="na">class=</span><span class="s">"c4-montreal-link"</span><span class="nt">&gt;&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p><br /></p>
+<div class="c4-montreal c4-shadow" style="max-width: 320px;">
+  <div class="c4-montreal-image">
+    <img src="assets/images/image01.jpg" alt="Sample Image" />
+  </div>
+  <div class="c4-montreal-content">
+    <h2>Sample News Title</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>   
+  </div>
+  <a href="https://dribbble.com/" class="c4-montreal-link"></a>
+</div>
+
+<p><br /></p>
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

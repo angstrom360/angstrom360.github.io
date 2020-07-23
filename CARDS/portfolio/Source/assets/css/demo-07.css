@@ -1,0 +1,95 @@
+@charset "utf-8";
+/*----------------- CARD STYLE 7 ----------------------------------------------------------------------------*/
+.card-7 img{
+	transition:all 0.25s ease-in-out;
+	z-index:1;
+}
+
+.card-7::before{
+	content:"";
+	position:absolute;
+	bottom:-100px;
+	left:0px;
+	right:0px;
+	height:100px;
+	 background: linear-gradient(30deg, #49515c, #232c35);
+	z-index:2;
+	transition:all 0.25s ease-in-out;
+}
+.card-7::after{
+	content:"";
+	position:absolute;
+	height:25px;
+	background-color:#e85a23;
+	bottom:90px;
+	left:calc(150%);
+	right:-100px;
+	z-index:3;
+	transform:skew(-45deg);
+	box-shadow:-10px  10px 0px 5px rgba(0,0,0,0.2);
+	transition:all 0.25s ease-in-out;
+	transition-delay:0.1s;
+}
+
+
+.card-7 .card-name{
+	bottom:40px;
+	left:-300px;
+	z-index:3;
+	color:#FFF;
+	font-weight:bold;
+	transition:all 0.25s ease-in-out;
+	transition-delay:0.2s;
+}
+.card-7 .card-name::before{
+	content:"";
+	position:absolute;
+	left:-50px;
+	bottom:-10px;
+	right:-30px;
+	top:-10px;
+	background-color:rgba(0,0,0,0.2);
+	z-index:1;
+	transform:skew(-45deg);
+}
+
+.card-7 .card-icons{
+	bottom:-30px;
+	right:10px;
+	z-index:3;
+	transition:all 0.25s ease-in-out;
+	transition-delay:0.3s;
+}
+
+.card-7 .card-icons .fa{
+	padding:5px;
+	background-color:rgba(255,255,255,0.2);
+	color:#e85a23;
+	color:#FFF;
+	width:24px;
+	text-align:center;
+	margin-left:5px;
+	border-radius:50%;
+}
+
+
+.card-7:hover img{
+	filter:brightness(80%);
+	margin-bottom:50px;
+	margin-top:-50px;
+}
+
+.card-7:hover::before{
+	bottom:0px;
+}
+.card-7:hover::after{
+	left:calc(50%);
+}
+.card-7:hover .card-name{
+	left:20px;
+}
+.card-7:hover .card-icons{
+	bottom:10px;
+}
+
+

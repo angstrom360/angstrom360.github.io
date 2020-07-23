@@ -1,0 +1,79 @@
+@charset "utf-8";
+/*----------------- CARD STYLE 5 ----------------------------------------------------------------------------*/
+.card-5 img{
+	transition:all 0.25s ease-in-out;
+
+}
+.card-5::before{
+	content:"";
+	position:absolute;
+	top:calc(150%);
+	left:-200px;
+	right:-200px;
+	bottom:-100px;
+	background-color:#263751;
+	transform:rotate(30deg);
+	box-shadow:10px  -10px 0px  10px rgba(0,0,0,0.2);
+	transition:all 0.25s ease-in-out;
+}
+.card-5::after{
+	content:"";
+	position:absolute;
+	background-color:#fccc3a;
+	height:calc(50%);
+	bottom:0px;
+	left:calc(150%);
+	right:-100px;
+	transform:rotate(-30deg) skew(30deg);
+	transition:all 0.25s ease-in-out;
+	transition-delay:0.2s;
+	
+}
+
+.card-5 .card-name{
+	left:-200px;
+	bottom:50px;
+	color:#FFF;
+	font-size:17px;
+	font-weight:bold;
+	transition:all 0.25s ease-in-out;
+	transition-delay:0.2s;
+}
+
+.card-5 .card-name span{
+	color:#fccc3a;
+}
+
+.card-5 .card-icons{
+	bottom:20px;
+	left:-200px;
+	color:#FFF;
+	transition:all 0.25s ease-in-out;
+	transition-delay:0.4s;
+}
+.card-5 .card-icons .fa{
+	margin-right:10px;
+}
+.card-5 .card-icons .fa:hover{
+	color:#fccc3a;
+}
+
+
+
+.card-5:hover img{
+	
+}
+.card-5:hover::before{
+	top:calc(75%);
+}
+.card-5:hover::after{
+	left:calc(85%);
+}
+.card-5:hover .card-name{
+	left:20px;
+}
+.card-5:hover .card-icons{
+	left:20px;
+}
+
+
