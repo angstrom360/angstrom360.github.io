@@ -823,7 +823,7 @@ section.about_sec>div {
     padding-top: 25px
 }
 
-.about_sec .what-we-do-item {
+.about_sec .what-we-do-item-apple {
     box-shadow: 0 10px 29.7px .3px rgba(225, 225, 225, 0.64);
     padding: 45px 20px 75px;
     position: relative;
@@ -836,6 +836,49 @@ section.about_sec>div {
     background-color: #fff;
     z-index: 5
 }
+
+.about_sec .what-we-do-item-alexa {
+    box-shadow: 0 10px 29.7px .3px rgba(225, 225, 225, 0.64);
+    padding: 45px 20px 75px;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+    background-color: red;
+    z-index: 5
+}
+
+.about_sec .what-we-do-item-google {
+    box-shadow: 0 10px 29.7px .3px rgba(225, 225, 225, 0.64);
+    padding: 45px 20px 75px;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+    background-color: blue;
+    z-index: 5
+}
+
+.about_sec .what-we-do-item-cortana {
+    box-shadow: 0 10px 29.7px .3px rgba(225, 225, 225, 0.64);
+    padding: 45px 20px 75px;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+    background-color: greenyellow;
+    z-index: 5
+}
+
 
 .about_sec .what-we-do-item>i {
     font-size: 23px;
