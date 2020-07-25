@@ -837,6 +837,7 @@ section.about_sec>div {
     -o-transition: all .3s ease-out 0s;
     transition: all .3s ease-out 0s;
     background-color: #f0a9ae;
+    border-radius: 25px;
     z-index: 5
 }
 
@@ -851,6 +852,7 @@ section.about_sec>div {
     -o-transition: all .3s ease-out 0s;
     transition: all .3s ease-out 0s;
     background-color: #f0a9ae;
+    border-radius: 25px;
     z-index: 5
 }
 
@@ -865,6 +867,7 @@ section.about_sec>div {
     -o-transition: all .3s ease-out 0s;
     transition: all .3s ease-out 0s;
     background-color: #f0a9ae;
+    border-radius: 25px;
     z-index: 5
 }
 
@@ -879,6 +882,7 @@ section.about_sec>div {
     -o-transition: all .3s ease-out 0s;
     transition: all .3s ease-out 0s;
     background-color: #f0a9ae;
+    border-radius: 25px;
     z-index: 5
 }
 
