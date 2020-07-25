@@ -373,7 +373,10 @@ q {
     color: #222;
 }
 .btn:hover,
-.about_sec .what-we-do-item:hover,
+.about_sec .what-we-do-item-apple:hover,
+.about_sec .what-we-do-item-alexa:hover,
+.about_sec .what-we-do-item-google:hover,
+.about_sec .what-we-do-item-cortana:hover,
 .service_item:hover,
 .pricing_item:hover,
 .dots_bottom ul.slick-dots li.slick-active button,
@@ -847,7 +850,7 @@ section.about_sec>div {
     -ms-transition: all .3s ease-out 0s;
     -o-transition: all .3s ease-out 0s;
     transition: all .3s ease-out 0s;
-    background-color: red;
+    background-color: #fff;
     z-index: 5
 }
 
@@ -861,7 +864,7 @@ section.about_sec>div {
     -ms-transition: all .3s ease-out 0s;
     -o-transition: all .3s ease-out 0s;
     transition: all .3s ease-out 0s;
-    background-color: blue;
+    background-color: #fff;
     z-index: 5
 }
 
@@ -875,12 +878,12 @@ section.about_sec>div {
     -ms-transition: all .3s ease-out 0s;
     -o-transition: all .3s ease-out 0s;
     transition: all .3s ease-out 0s;
-    background-color: greenyellow;
+    background-color: #fff;
     z-index: 5
 }
 
 
-.about_sec .what-we-do-item>i {
+.about_sec .what-we-do-item-apple>i {
     font-size: 23px;
     height: 65px;
     width: 65px;
@@ -899,7 +902,7 @@ section.about_sec>div {
     transition: all .3s ease-out 0s
 }
 
-.about_sec .what-we-do-item .title {
+.about_sec .what-we-do-item-apple .title {
     font-size: 22px;
     color: #232323;
     -webkit-transition: all .3s ease-out 0s;
@@ -910,12 +913,12 @@ section.about_sec>div {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .about_sec .what-we-do-item .title {
+    .about_sec .what-we-do-item-apple .title {
         font-size: 18px
     }
 }
 
-.about_sec .what-we-do-item p {
+.about_sec .what-we-do-item-apple p {
     color: #616161;
     font-size: 15px;
     padding-top: 10px;
@@ -925,7 +928,7 @@ section.about_sec>div {
     -o-transition: all .3s ease-out 0s;
     transition: all .3s ease-out 0s
 }
-.about_sec .what-we-do-item a {
+.about_sec .what-we-do-item-apple a {
     height: 45px;
     width: 45px;
     text-align: center;
@@ -946,23 +949,23 @@ section.about_sec>div {
     border-radius: 50%;
 }
 
-.about_sec .what-we-do-item:hover .title {
+.about_sec .what-we-do-item-apple:hover .title {
     color: #fff
 }
 
-.about_sec .what-we-do-item:hover p {
+.about_sec .what-we-do-item-apple:hover p {
     color: #fff
 }
 
-.about_sec .what-we-do-item:hover a {
+.about_sec .what-we-do-item-apple:hover a {
     background: #fff
 }
 
-.about_sec .what-we-do-item:hover a i {
+.about_sec .what-we-do-item-apple:hover a i {
     color: #41baeb
 }
 
-.about_sec .what-we-do-item::before {
+.about_sec .what-we-do-item-apple::before {
     position: absolute;
     content: "";
     top: 0;
@@ -971,6 +974,284 @@ section.about_sec>div {
     width: 100%;
     z-index: -1
 }
+
+.about_sec .what-we-do-item-alexa>i {
+    font-size: 23px;
+    height: 65px;
+    width: 65px;
+    display: inline-block;
+    text-align: center;
+    padding: 22px 0;
+    border-radius: 50px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 0 25px;
+    background: #fff;
+    color: #41baeb;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s
+}
+
+.about_sec .what-we-do-item-alexa .title {
+    font-size: 22px;
+    color: #232323;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .about_sec .what-we-do-item-alexa .title {
+        font-size: 18px
+    }
+}
+
+.about_sec .what-we-do-item-alexa p {
+    color: #616161;
+    font-size: 15px;
+    padding-top: 10px;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s
+}
+.about_sec .what-we-do-item-alexa a {
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    background: #41baeb;
+    color: #fff;
+    font-size: 14px;
+    right: 0;
+    bottom: 30px;
+    position: absolute;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+    left: 0;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.about_sec .what-we-do-item-alexa:hover .title {
+    color: #fff
+}
+
+.about_sec .what-we-do-item-alexa:hover p {
+    color: #fff
+}
+
+.about_sec .what-we-do-item-alexa:hover a {
+    background: #fff
+}
+
+.about_sec .what-we-do-item-alexa:hover a i {
+    color: #41baeb
+}
+
+.about_sec .what-we-do-item-alexa::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1
+}
+
+.about_sec .what-we-do-item-google>i {
+    font-size: 23px;
+    height: 65px;
+    width: 65px;
+    display: inline-block;
+    text-align: center;
+    padding: 22px 0;
+    border-radius: 50px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 0 25px;
+    background: #fff;
+    color: #41baeb;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s
+}
+
+.about_sec .what-we-do-item-google .title {
+    font-size: 22px;
+    color: #232323;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .about_sec .what-we-do-item-google .title {
+        font-size: 18px
+    }
+}
+
+.about_sec .what-we-do-item-google p {
+    color: #616161;
+    font-size: 15px;
+    padding-top: 10px;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s
+}
+.about_sec .what-we-do-item-google a {
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    background: #41baeb;
+    color: #fff;
+    font-size: 14px;
+    right: 0;
+    bottom: 30px;
+    position: absolute;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+    left: 0;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.about_sec .what-we-do-item-google:hover .title {
+    color: #fff
+}
+
+.about_sec .what-we-do-item-google:hover p {
+    color: #fff
+}
+
+.about_sec .what-we-do-item-google:hover a {
+    background: #fff
+}
+
+.about_sec .what-we-do-item-google:hover a i {
+    color: #41baeb
+}
+
+.about_sec .what-we-do-item-google::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1
+}
+
+.about_sec .what-we-do-item-cortana>i {
+    font-size: 23px;
+    height: 65px;
+    width: 65px;
+    display: inline-block;
+    text-align: center;
+    padding: 22px 0;
+    border-radius: 50px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 0 25px;
+    background: #fff;
+    color: #41baeb;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s
+}
+
+.about_sec .what-we-do-item-cortana .title {
+    font-size: 22px;
+    color: #232323;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .about_sec .what-we-do-item-cortana .title {
+        font-size: 18px
+    }
+}
+
+.about_sec .what-we-do-item-cortana p {
+    color: #616161;
+    font-size: 15px;
+    padding-top: 10px;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s
+}
+.about_sec .what-we-do-item-cortana a {
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    background: #41baeb;
+    color: #fff;
+    font-size: 14px;
+    right: 0;
+    bottom: 30px;
+    position: absolute;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+    left: 0;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.about_sec .what-we-do-item-cortana:hover .title {
+    color: #fff
+}
+
+.about_sec .what-we-do-item-cortana:hover p {
+    color: #fff
+}
+
+.about_sec .what-we-do-item-cortana:hover a {
+    background: #fff
+}
+
+.about_sec .what-we-do-item-cortana:hover a i {
+    color: #41baeb
+}
+
+.about_sec .what-we-do-item-cortana::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1
+}
+
+
 
 .about_sec .what-we-are-shape-1 {
     position: absolute;
@@ -1978,9 +2259,15 @@ a.close_menu {
 .blue_gradient,
 #blue_gradient,
 .tempate-two .b_slide:after,
-.tempate-two .about_sec .what-we-do-item:hover,
+.tempate-two .about_sec .what-we-do-item-apple:hover,
+.tempate-two .about_sec .what-we-do-item-alexa:hover,
+.tempate-two .about_sec .what-we-do-item-google:hover,
+.tempate-two .about_sec .what-we-do-item-cortana:hover,
 .tempate-two .service_item:hover,
-.tempate-two .about_sec .what-we-do-item a,
+.tempate-two .about_sec .what-we-do-item-apple a,
+.tempate-two .about_sec .what-we-do-item-alexa a,
+.tempate-two .about_sec .what-we-do-item-google a,
+.tempate-two .about_sec .what-we-do-item-cortana a,
 .tempate-two .counter_sec:after,
 .tempate-two .dots_bottom ul.slick-dots li.slick-active button,
 .tempate-two ul.tabs_list li a.active,
