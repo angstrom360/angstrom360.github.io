@@ -829,6 +829,7 @@ section.about_sec>div {
 .about_sec .what-we-do-item-apple {
     box-shadow: 0 10px 29.7px .3px rgba(225, 225, 225, 0.64);
     padding: 45px 20px 75px;
+    border-radius: 25px;
     position: relative;
     overflow: hidden;
     -webkit-transition: all .3s ease-out 0s;
@@ -836,9 +837,10 @@ section.about_sec>div {
     -ms-transition: all .3s ease-out 0s;
     -o-transition: all .3s ease-out 0s;
     transition: all .3s ease-out 0s;
-    background-color: #f0a9ae;
+    background-color: #fff;
     border-radius: 25px;
     z-index: 5
+    
 }
 
 .about_sec .what-we-do-item-alexa {
@@ -851,7 +853,7 @@ section.about_sec>div {
     -ms-transition: all .3s ease-out 0s;
     -o-transition: all .3s ease-out 0s;
     transition: all .3s ease-out 0s;
-    background-color: #f0a9ae;
+    background-color: #fff;
     border-radius: 25px;
     z-index: 5
 }
@@ -866,7 +868,7 @@ section.about_sec>div {
     -ms-transition: all .3s ease-out 0s;
     -o-transition: all .3s ease-out 0s;
     transition: all .3s ease-out 0s;
-    background-color: #f0a9ae;
+    background-color: #fff;
     border-radius: 25px;
     z-index: 5
 }
@@ -881,7 +883,7 @@ section.about_sec>div {
     -ms-transition: all .3s ease-out 0s;
     -o-transition: all .3s ease-out 0s;
     transition: all .3s ease-out 0s;
-    background-color: #f0a9ae;
+    background-color: #fff;
     border-radius: 25px;
     z-index: 5
 }
