@@ -1,0 +1,324 @@
+/**
+	*
+	* ---------------------------------------------------------
+	*
+	* Template : TESTIMONIALS
+	* Version  : 1.0
+	* Author   : sodedar1984  
+	* Email    : sodedar10@meta.ua or sldedar1984@gmail.com
+	
+	* ---------------------------------------------------------
+	*
+*/
+
+
+/*-----------------------------------
+    Basic Style 
+--------------------------------------*/
+
+html,
+body {  
+  overflow-x: hidden;
+}
+
+body{
+	font-size: 15px;
+	line-height: 1.7;
+	font-family: 'Lato', tahoma, sans-serif;
+	background: #fff;
+	color: #222;	
+	padding-top: 50px;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Poppins', cursive;
+	font-weight: 700;
+}
+
+a{
+	color: #11242C;
+}
+
+
+
+.container{
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 45px 20px;
+}
+
+
+.wrapper{}
+
+
+/* vertical center style */
+
+.b-table{
+	display: table;
+	width: 100%;
+	height: 50vh;
+}
+.b-table-cell{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+/* title style */
+
+h1{
+	font-size: 70px;
+	color: #222;
+	margin-bottom: 25px;
+	font-weight: 800;
+	text-align: center;	
+}
+
+@media screen and (max-width: 992px) {
+
+	h1{
+		font-size: 50px;
+	}
+
+}
+@media screen and (max-width: 767px) {
+
+	h1{
+		font-size: 40px;
+	}
+
+}
+@media screen and (max-width: 576px) {
+
+	h1{
+		font-size: 30px;
+	}
+
+}
+@media screen and (max-width: 359px) {
+
+	h1{
+		font-size: 26px;
+	}
+
+}
+
+
+
+
+
+
+
+/*-----------------------------------
+    Navabr Style 
+--------------------------------------*/
+
+.navbar{}
+
+.navbar .container{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.navbar .navbar-brand{
+	font-weight: 800;
+	font-family: 'Poppins', cursive;
+}
+
+
+
+
+
+/*--------------------------------------
+    Header
+----------------------------------------*/
+
+.header{
+	position: relative;
+	min-height: 50vh;
+	background: #000;
+}
+.header .container{
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+
+.header h1,
+.header h2{
+	color: #fff;
+	text-align: center;
+}
+
+
+
+
+
+
+
+/*--------------------------------------
+    Content
+----------------------------------------*/
+
+.section{
+	background: #fff;
+}
+.section-light-gray{
+	background: #f7f7f7;
+}
+.section-dark{
+	background: #222222;
+}
+.section-dark .section-title{
+	color: #fff;
+}
+
+.section-title{
+	font-size: 35px;
+	margin-bottom: 55px;
+}
+
+@media screen and (max-width: 576px) {
+
+	.section-title{
+		font-size: 30px;
+	}
+
+}
+
+.features{
+	max-width: 600px;
+	margin: 25px auto;		
+}
+
+
+/*--------------------------------------
+    Footer
+----------------------------------------*/
+
+.footer{
+	background: #f7f7f7;
+	color: #777;
+	border-top: 1px solid rgba(0,0,0,.1);
+	text-align: center;	
+}
+
+
+
+/*--------------------------------------
+    Documentation
+----------------------------------------*/
+
+.doc{}
+
+.doc__item{}
+
+.doc__title{	
+	font-size: 28px;
+}
+.doc__subtitle{
+	font-weight: 500;
+}
+.code-inline{
+	display: inline!important;
+}
+
+pre{
+	background: none!important;
+	padding: 0!important;
+	border: none!important;
+}
+
+
+
+/*--------------------------------------
+    buttons Color Theme
+----------------------------------------*/
+
+.buttonsController{
+	width: 200px;
+	padding: 20px;
+	position: fixed; top: 50%; left: -200px;
+	z-index: 1999;
+	background: #fff;	
+	transform: translateY(-50%);
+	border: 1px solid #29CB9A;
+	transition: left .3s linear;
+}
+.buttonsController.open{
+	left: 0;
+}
+
+.buttonsController h3{
+	margin: 0 0 10px;
+	font-size: 18px;
+}
+
+.buttonsController > button{
+	font-size: 0;
+	width: 24px;
+	height: 24px;	
+	margin: 5px;
+	border: none;
+	padding: 0;
+	outline: none;
+}
+.buttonsController > button:hover{
+	opacity: .7;
+}
+.buttonsController > button.current{
+	box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ccc;
+	opacity: 1;
+}
+
+.cog-colors{	
+	position: absolute; top: -1px; left: 100%;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	background: #29CB9A;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;	
+	text-decoration: none;
+}
+.cog-colors:hover,
+.cog-colors:focus,
+.cog-colors:active{
+	text-decoration: none;
+	background: #29CB9A;
+	color: #fff;
+}
+.cog-colors:before{
+	content: '\f013';
+	font-family: fontawesome;	
+	font-weight: normal;
+	display: block;		
+	animation: animCog 2s linear infinite;	
+}
+
+@keyframes animCog{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.buttonsController.open .cog-colors:before{
+	content: '\f00d';
+	animation: animCog 0s linear infinite;	
+}
+
+
+
+
+.demo-item{
+	background: #f7f7f7;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	padding: 20px;
+	font-size: 18px;
+	font-weight: 600;
+	margin: 15px auto;
+}

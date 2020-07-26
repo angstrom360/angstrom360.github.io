@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+/**
+	*
+	* ---------------------------------------------------------
+	*
+	* Template : TESTIMONIALS
+	* Version  : 1.0
+	* Author   : sodedar1984  
+	* Email    : sodedar10@meta.ua or sldedar1984@gmail.com
+	
+	* ---------------------------------------------------------
+	*
+*/
+
+
+
+/*--------------------------------------
+	TESTIMONIALS STYLE 5 BEGIN
+----------------------------------------*/
+
+.testimonial{
+	display: table;
+	width: 100%;
+	margin-bottom: 50px;	
+}
+.testimonial__item{
+	display: table-cell;
+	vertical-align: middle;
+}
+.testimonial__pict{
+	max-width: 383px;
+	width: 240px;
+	position: relative;
+}
+
+.testimonial__ava{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+}
+.testimonial__ava:before{
+	content: '';
+	position: absolute; top: 5px; left: 5px;
+	right: 5px; bottom: 5px;
+	border: 1px solid rgba(255,255,255,.5);
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+	opacity: 0;
+	-webkit-transition: opacity .3s linear;
+	-o-transition: opacity .3s linear;
+	transition: opacity .3s linear;
+}
+.testimonial:hover .testimonial__ava:before{
+	opacity: 1;
+}
+
+.testimonial__ava > img{
+	max-width: 383px;
+	width: auto;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+}
+
+.testimonial__content{
+	position: relative;
+	z-index: 9;
+}
+.testimonial__content-inner{
+	position: relative; left: -20px;
+	margin-top: 25px;
+	line-height: 1.5;
+	background: #F0F0F0;
+	padding: 30px 25px 30px 35px;
+	width: -webkit-calc(100% + 20px);
+	width: calc(100% + 20px);
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;	
+}
+.testimonial__title{
+	font-size: 24px;
+	line-height: 1;
+	margin: 0 0 15px;
+	font-weight: 400;
+	font-family: 'Futura PT Medium', 'Futura PT Bold', 'Segoe UI', Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+}
+
+.testimonial__content-text{
+	position: relative;
+}
+
+.testimonial__content-text:before,
+.testimonial__content-text:after{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 70px;
+	font-weight: 700;
+	font-family: Arial, sans-serif;
+	line-height: 0.1;
+	position: absolute;
+	opacity: .1;
+}
+
+.testimonial__content-text:before{
+	content: '\201c';
+	top: 10px; left: -25px;
+	margin: 0;
+}
+.testimonial__content-text:after{
+	content: '\201d';
+	bottom: -25px; right: 0;
+	margin: 0;
+}
+.testimonial__content-text *{
+	position: relative;
+	z-index: 9;
+}
+
+
+
+.testimonial--even{}
+
+.testimonial--even .testimonial__content-inner{
+	left: 0; right: -20px;
+	padding-left: 25px;
+	padding-right: 35px;
+}
+.testimonial--even .testimonial__content{
+	text-align: right;
+}
+.testimonial--even .testimonial__content-text:before{
+	left: -15px;
+}
+
+
+.testimonials--light  .testimonial__content-inner,
+testimonials-carousel-one--light  .testimonial__content-inner{
+	background: #fff;
+}
+
+testimonials-carousel-one .testimonial{
+	margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 767px) {
+	
+	.testimonial,
+	.testimonial--even{		
+		text-align: center;		
+	}
+	
+	.testimonial__pict{
+	    display: table-caption;
+		caption-side: top;
+		max-width: 240px;
+		width: auto!important;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.testimonial__content-inner,
+	.testimonial--even .testimonial__content-inner{
+		left: 0;
+		margin-top: 15px;
+		width: 100%;
+		padding: 25px;
+	}
+	.testimonial--even .testimonial__content{
+		text-align: center;
+	}
+		
+}
+/*--------------------------------------
+	TESTIMONIALS STYLE 5 END
+----------------------------------------*/

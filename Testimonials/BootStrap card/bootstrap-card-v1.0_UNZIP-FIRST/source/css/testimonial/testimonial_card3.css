@@ -1,0 +1,55 @@
+.sch-testimonial-card-3 {
+    width: 100%;
+    float: left;
+    box-shadow: 0 1px 6px 0 rgba(104, 104, 104, 0.2), 0 1px 22px 0 rgba(165, 165, 165, 0.2);
+    position: relative;
+	font-family: 'Roboto', sans-serif;
+}
+.sch-testimonial-card-3 .sch-thanks {
+    background-image: linear-gradient(to right bottom, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Gelasio', serif;
+}
+.sch-testimonial-card-3 .sch-thanks h4 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+}
+.sch-testimonial-card-3 .sch-content {
+    padding: 20px;
+    text-align: center;
+}
+.sch-testimonial-card-3 .sch-content-text {
+    font-size: 14px;
+}
+.sch-testimonial-card-3 .sch-content-this {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Gelasio', serif;
+}
+.sch-testimonial-card-3 .sch-content-thanks,
+.sch-testimonial-card-3 .sch-fr {
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+}
+.sch-testimonial-card-3 .sch-name {
+    font-family: 'Gelasio', serif;
+}
+.sch-testimonial-card-3 .sch-content-img {
+    margin: 20px 0;
+}
+.sch-testimonial-card-3 .sch-content-img img {
+    border-radius: 10px;
+	width:100%;
+}
+@media only screen and (max-width:479px) {
+    .sch-testimonial-card-3 .sch-thanks {
+        font-size: 20px;
+    }
+    .sch-testimonial-card-3 .sch-content-this {
+        font-size: 16px;
+    }
+}

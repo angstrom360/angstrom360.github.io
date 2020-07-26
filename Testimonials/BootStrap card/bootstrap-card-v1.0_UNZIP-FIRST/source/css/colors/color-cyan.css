@@ -1,0 +1,178 @@
+/*Blog cards*/
+.sch-blog-card-1 .sch-blog-card-content,
+.sch-blog-card-1 .sch-blog-card-action,
+.sch-blog-card-2 .sch-blog-card-content,
+.sch-blog-card-2 .sch-post,.sch-blog-card-2 .sch-blog-card-img a,
+.sch-blog-card-3 .sch-blog-card-content,
+.sch-blog-card-3 .sch-blog-card-read,
+.sch-blog-card-4{
+    background: #51eaea;
+}
+.sch-blog-card-1 .sch-blog-card-meta a,
+.sch-blog-card-1 .sch-blog-card-author-content a,
+.sch-blog-card-1 .sch-blog-card-article a,
+.sch-blog-card-2 .sch-blog-title a,
+.sch-blog-card-2 .sch-blog-card-img a,
+.sch-blog-card-2 .sch-post .sch-name,.sch-blog-card-2 .sch-post,
+.sch-blog-card-3 .sch-blog-title a,
+.sch-blog-card-3 .sch-blog-card-read a,
+.sch-blog-card-4 .sch-blog-card-social a i,
+.sch-blog-card-4 .sch-blog-title{
+    color:#ef4339;
+}
+.sch-blog-card-1 .sch-blog-card-meta time,
+.sch-blog-card-1 .sch-blog-card-article p,
+.sch-blog-card-1 .sch-blog-card-author-content,
+.sch-blog-card-3 .sch-post,
+.sch-blog-card-3 .sch-blog-tag a{
+    color: #333;
+}
+
+/*Profile cards*/
+.sch-profile-card-1,
+.sch-profile-card-3 .sch-profile-card-second,
+.sch-profile-card-4 .sch-profile-card-first .sch-profile-card-info,
+.sch-profile-card-2 .sch-profile-card-2-content,
+.sch-profile-card-4 .sch-profile-card-second{
+    background: #51eaea;
+}
+.sch-profile-card-1 .sch-profile-name,
+.sch-profile-card-1 .sch-profile-city,
+.sch-profile-card-1 .sch-skill-title,
+.sch-profile-card-3 .sch-profile-card-item.sch-profile-card-second .sch-profile-name,
+.sch-profile-card-3 .sch-profile-card-item.sch-profile-card-second .sch-profile-job,
+.sch-profile-card-3 .sch-profile-card-item.sch-profile-card-second .sch-profile-follow .sch-profile-number,
+.sch-profile-card-4 .sch-profile-card-first .sch-profile-card-name,
+.sch-profile-card-4 .sch-profile-card-first .sch-profile-card-job,
+.sch-profile-card-4 .sch-profile-card-first .sch-profile-card-follow-number,
+.sch-profile-card-4 .sch-profile-card-second .sch-profile-card-name,
+.sch-profile-card-4 .sch-profile-card-second .sch-profile-card-job,
+.sch-profile-card-3 .sch-profile-card-first .sch-profile-name,
+.sch-profile-card-3 .sch-profile-card-first .sch-profile-job,
+.sch-profile-card-2 .sch-profile-card-name,
+.sch-profile-card-2 .sch-profile-card-obj,
+.sch-profile-card-2 .sch-pro-item i,
+.sch-profile-card-2 .sch-detail-number{
+	color:#ef4339;
+}
+.sch-profile-card-1 .sch-profile-img,
+.sch-profile-card-4 .sch-profile-card-first .sch-img {
+    border: 1px solid #ef4339;
+}
+.sch-profile-card-1 .sch-profile-message a, .sch-profile-card-1 .sch-profile-following a,
+.sch-profile-card-1 .sch-object {
+	background:#ff9d76;
+}
+.sch-profile-card-1 .sch-tag a {
+    border: 1px solid #ef4339;
+	color:#ef4339;
+}
+.sch-profile-card-3 .sch-profile-card-item.sch-profile-card-second i,
+.sch-profile-card-4 .sch-profile-card-first .sch-icon i,
+.sch-profile-card-3 .sch-profile-card-first .sch-mask i{
+	color:#ff9d76;
+}
+.sch-profile-card-3 .sch-profile-card-item.sch-profile-card-second .sch-profile-button a,
+.sch-profile-card-4 .sch-profile-card-second .sch-profile-card-button a{
+	background:#ff9d76;
+}
+.sch-profile-card-4 .sch-profile-card-first {
+    background: #51eaea url(../../images/bg4.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+}
+.sch-profile-card-3 .sch-profile-card-first .sch-mask {
+    background: rgba(81, 234, 234,0.5);
+}
+
+/*Product cards*/
+.sch-products-card-1,
+.sch-products-card-2,
+.sch-products-card-1 .sch-product-card-left,
+.sch-products-card-2 .sch-products-card-2-left,
+.sch-products-card-2 .sch-products-card-2-right,
+.sch-products-card-3 .sch-products-card-3-left,
+.sch-products-card-3 .sch-products-card-3-right,
+.sch-products-card-4 .sch-product-card-second{
+	background: #51eaea;
+}
+.sch-products-card-1 .sch-product-card-name, 
+.sch-products-card-1 .sch-product-card-price,
+.sch-products-card-1 .sch-color h3,
+.sch-products-card-1 .sch-quantity h3,
+.sch-products-card-2 .sch-products-card-2-right .sch-product-card-icon a,
+.sch-products-card-2 .sch-products-card-2-left .sch-product-card-icon a,
+.sch-products-card-2 .sch-products-card-2-left .sch-product-card-name,
+.sch-products-card-2 .sch-products-card-2-left .sch-product-card-brand,
+.sch-products-card-2 .sch-products-card-2-left .sch-product-card-text strong a,
+.sch-products-card-2 .sch-products-card-2-right .sch-product-card-name,
+.sch-products-card-2 .sch-products-card-2-right .sch-product-card-size-item,
+.sch-products-card-3-left-name, 
+.sch-products-card-3-right-name,
+.sch-products-card-3-left-brand, 
+.sch-products-card-3-right-brand,
+.sch-products-card-4 .sch-product-card-first .sch-product-name,
+.sch-products-card-4 .sch-product-card-second .sch-product-name,
+.sch-products-card-4 .sch-product-size h5, 
+.sch-products-card-4 .sch-product-quantity h5{
+	color:#ef4339;
+}
+.sch-products-card-2 .sch-products-card-2-right .sch-product-card-size-item{
+	border: 1px solid #ef4339;
+}
+.sch-products-card-2 .sch-products-card-2-right .sch-product-card-size-item:hover{
+	border: 1px solid transparent;
+	background:#ef4339;
+	color:#fff;
+}
+.sch-products-card-3-right-img:hover::before,
+.sch-products-card-4 .sch-product-card-item.sch-product-card-first::before {
+    background: rgba(81, 234, 234,0.5);
+}
+.sch-products-card-1 .sch-product-button a,
+.sch-products-card-2 .sch-products-card-2-right .sch-product-card-button a,
+.sch-products-card-4 .dp-numberPicker-sub,
+.sch-products-card-4 .dp-numberPicker-add,
+.sch-products-card-4 .sch-product-button a::before {
+    background: #ff9d76;
+}
+.sch-products-card-2 .sch-products-card-2-right .sch-product-card-star,
+.sch-products-card-3-left-price, 
+.sch-products-card-3-right-price{
+    color: #ff9d76;
+}
+.sch-products-card-1 .nav-tabs > li.active > a,.sch-products-card-1 .sch-product-card-brand{
+	color: #333;
+}
+
+/*Testimonial cards*/
+.sch-testimonial-card-1 .sch-testimonial .sch-description,
+.sch-testimonial-card-2,
+.sch-testimonial-card-3 .sch-content,
+.sch-testimonial-card-4 {
+    background: #51eaea;
+}
+.sch-testimonial-card-2 .sch-testi-card-name,
+.sch-testimonial-card-3 .sch-content-this,
+.sch-testimonial-card-4 .sch-content-testi,
+.sch-testimonial-card-4 .sch-content-name,
+.sch-testimonial-card-4 .sch-content-date{
+	color:#ef4339;
+}
+.sch-testimonial-card-1 .sch-social i {
+    color: #ef4339;
+    border: 1px solid #ef4339;
+}
+.sch-testimonial-card-2 .sch-icon i {
+    color: #ef4339;
+}
+.sch-testimonial-card-2 .sch-icon a::after {
+    box-shadow: 1px 2px rgba(239, 67, 57,1);
+}
+.sch-testimonial-card-1 .sch-testimonial .fa.fa-quote-left, 
+.sch-testimonial-card-1 .sch-testimonial .sch-job, .sch-testimonial-card-1 .sch-name,
+.sch-testimonial-card-3 .sch-thanks,
+.sch-testimonial-card-4 .sch-right i {
+    background-image: linear-gradient(to right bottom, #51eaea, #4fb6cd, #58859f, #4f5868,#333333);
+}

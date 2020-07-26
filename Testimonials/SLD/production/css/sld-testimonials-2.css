@@ -1,0 +1,515 @@
+@charset "UTF-8";
+
+/**
+	*
+	* ---------------------------------------------------------
+	*
+	* Template : TESTIMONIALS
+	* Version  : 1.0
+	* Author   : sodedar1984  
+	* Email    : sodedar10@meta.ua or sldedar1984@gmail.com
+	
+	* ---------------------------------------------------------
+	*
+*/
+
+
+
+/*--------------------------------------
+	TESTIMONIALS STYLE 2 BEGIN
+----------------------------------------*/
+
+.testimonial{	
+	padding-top: 75px;
+	margin-bottom: 30px;
+	-webkit-transition: -webkit-transform .5s ease;
+	transition: -webkit-transform .5s ease;
+	-o-transition: transform .5s ease;
+	transition: transform .5s ease;
+	transition: transform .5s ease, -webkit-transform .5s ease;
+}
+.testimonial__inner{
+	position: relative;	
+	background: #8FB74A;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+}
+
+.testimonial__head{
+	text-align: center;
+}
+.testimonial__head,
+.testimonial__body,
+.testimonial__foot{
+	padding: 15px 30px;	
+	color: #fff;
+}	
+
+.testimonial__ava,
+.testimonial__ava-img{
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;	
+}
+.testimonial__ava{
+	width: 140px;
+	height: 140px;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	padding: 3px;
+	margin: -80px auto 0 auto;
+	-webkit-transition: background .5s ease;
+	-o-transition: background .5s ease;
+	transition: background .5s ease;
+}
+.testimonial__ava:before{
+	content: '';
+	position: absolute; top: 0; left: 0; bottom: 0; right: 0;	
+	background: #8FB74A;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+}
+
+.testimonial__ava-img{	
+	display: block;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	max-width: 100%;
+	max-height: 100%;
+	width: 100%;		
+	position: relative;
+	z-index: 1;
+}	
+.testimonial:hover{
+	-webkit-transform: translateY(-5px);
+	    -ms-transform: translateY(-5px);
+	        transform: translateY(-5px);
+}
+
+
+
+/* avatar rhombus style */
+
+.testimonial--rhombus {}
+
+.testimonial--rhombus .testimonial__ava{
+	margin-top: -83px;	
+	padding: 5px;
+}
+.testimonial--rhombus .testimonial__ava, 
+.testimonial--rhombus .testimonial__ava:before,
+.testimonial--rhombus .testimonial__ava-img {
+    -webkit-border-radius: 0;
+            border-radius: 0;
+	-webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+	.testimonial--rhombus .testimonial__ava{
+		padding: 4px;
+	}
+}
+
+
+/* avatar octagon style */
+
+.testimonial--octagon {}
+
+.testimonial--octagon .testimonial__ava{
+	margin-top: -83px;	
+	padding: 3px;
+}
+.testimonial--octagon .testimonial__ava, 
+.testimonial--octagon .testimonial__ava:before,
+.testimonial--octagon .testimonial__ava-img {
+    -webkit-border-radius: 0;
+            border-radius: 0;
+	-webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+
+/* avatar bevel-corners style */
+
+.testimonial--bevel-corners {}
+
+.testimonial--bevel-corners .testimonial__ava{
+	margin-top: -83px;	
+	padding: 3px;
+}
+.testimonial--bevel-corners .testimonial__ava, 
+.testimonial--bevel-corners .testimonial__ava:before,
+.testimonial--bevel-corners .testimonial__ava-img {
+    -webkit-border-radius: 0;
+            border-radius: 0;
+	-webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+	clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+
+
+/* avatar bevel-right style */
+
+.testimonial--bevel-right {}
+
+.testimonial--bevel-right .testimonial__ava{
+	margin-top: -83px;	
+	padding: 3px;
+}
+.testimonial--bevel-right .testimonial__ava, 
+.testimonial--bevel-right .testimonial__ava:before,
+.testimonial--bevel-right .testimonial__ava-img {
+    -webkit-border-radius: 0;
+            border-radius: 0;
+	-webkit-clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+}
+
+
+/* avatar star style */
+
+.testimonial--star {}
+
+.testimonial--star .testimonial__ava{
+	margin-top: -83px;	
+	padding: 5px;
+}
+.testimonial--star .testimonial__ava, 
+.testimonial--star .testimonial__ava:before,
+.testimonial--star .testimonial__ava-img {
+    -webkit-border-radius: 0;
+            border-radius: 0;
+	-webkit-clip-path: polygon(50% 0%, 67% 26%, 98% 35%, 79% 60%, 83% 91%, 50% 78%, 19% 91%, 23% 58%, 2% 35%, 31% 28%);
+	clip-path: polygon(50% 0%, 67% 26%, 98% 35%, 79% 60%, 83% 91%, 50% 78%, 19% 91%, 23% 58%, 2% 35%, 31% 28%);
+}
+
+
+
+.testimonial__name,
+.testimonial__prof{
+	color: #fff;
+}	
+
+
+
+/* rating style */
+
+.testimonial__rating {
+	text-align: center;
+	padding: 5px;
+	color: #ddd;
+	font-size: 20px;
+}
+.testimonial__rating--1{}
+.testimonial__rating--1 .fa:nth-of-type(1){
+	color: #FAB220;
+}
+.testimonial__rating--2{}
+.testimonial__rating--2 .fa:nth-of-type(1),
+.testimonial__rating--2 .fa:nth-of-type(2){
+	color: #FAB220;
+}
+.testimonial__rating--3{}
+.testimonial__rating--3 .fa:nth-of-type(1),
+.testimonial__rating--3 .fa:nth-of-type(2),
+.testimonial__rating--3 .fa:nth-of-type(3){
+	color: #FAB220;
+}
+.testimonial__rating--4{}
+.testimonial__rating--4 .fa:nth-of-type(1),
+.testimonial__rating--4 .fa:nth-of-type(2),
+.testimonial__rating--4 .fa:nth-of-type(3),
+.testimonial__rating--4 .fa:nth-of-type(4){
+	color: #FAB220;
+}
+.testimonial__rating--5{}
+.testimonial__rating--5 .fa:nth-of-type(1),
+.testimonial__rating--5 .fa:nth-of-type(2),
+.testimonial__rating--5 .fa:nth-of-type(3),
+.testimonial__rating--5 .fa:nth-of-type(4),
+.testimonial__rating--5 .fa:nth-of-type(5){
+	color: #FAB220;
+}
+
+
+
+/* testimonials-light style */
+
+.testimonials--light .testimonial__body,
+.testimonials-carousel--light  .testimonial__body{
+	color: #fff;
+}
+
+
+
+/* carousel style */
+
+[class*=testimonials-carousel] .owl-nav.disabled+.owl-dots,
+[class*=testimonials-carousel] .owl-dots{
+    margin-top: 0;
+}	
+[class*=testimonials-carousel] .owl-dots .owl-dot.active span, 
+[class*=testimonials-carousel] .owl-dots .owl-dot:hover span {
+    background: #8FB74A;
+}	
+
+
+
+
+
+/* theme-seagreen */
+
+.testimonial.theme-seagreen{}
+.testimonial.theme-seagreen .testimonial__inner,
+.testimonial.theme-seagreen .testimonial__ava:before,
+[class*=testimonials-carousel].theme-seagreen .owl-dots .owl-dot.active span, 
+[class*=testimonials-carousel].theme-seagreen .owl-dots .owl-dot:hover span {
+    background: #34BFA3;
+}		
+
+
+
+/* theme-tomato */
+
+.testimonial.theme-tomato{}	
+.testimonial.theme-tomato .testimonial__inner,
+.testimonial.theme-tomato .testimonial__ava:before,
+[class*=testimonials-carousel].theme-tomato .owl-dots .owl-dot.active span, 
+[class*=testimonials-carousel].theme-tomato .owl-dots .owl-dot:hover span {
+    background: #FD6347;
+}
+
+
+/* theme-darkgolden */
+
+.testimonial.theme-darkgolden{}	
+.testimonial.theme-darkgolden .testimonial__inner,
+.testimonial.theme-darkgolden .testimonial__ava:before,
+[class*=testimonials-carousel].theme-darkgolden .owl-dots .owl-dot.active span, 
+[class*=testimonials-carousel].theme-darkgolden .owl-dots .owl-dot:hover span {
+    background: #B8860B;
+}
+
+
+/* theme-cadetblue */
+
+.testimonial.theme-cadetblue{}	
+.testimonial.theme-cadetblue .testimonial__inner,
+.testimonial.theme-cadetblue .testimonial__ava:before,
+[class*=testimonials-carousel].theme-cadetblue .owl-dots .owl-dot.active span, 
+[class*=testimonials-carousel].theme-cadetblue .owl-dots .owl-dot:hover span {
+    background: #5F9EA0;
+}
+
+
+/* theme-palevioletred */
+
+.testimonial.theme-palevioletred{}	
+.testimonial.theme-palevioletred .testimonial__inner,
+.testimonial.theme-palevioletred .testimonial__ava:before,
+[class*=testimonials-carousel].theme-palevioletred .owl-dots .owl-dot.active span, 
+[class*=testimonials-carousel].theme-palevioletred .owl-dots .owl-dot:hover span {
+    background: #DB7093;
+}
+
+
+
+/* theme-gradient-1 */
+
+.testimonial.theme-gradient-1{}	
+.testimonial.theme-gradient-1 .testimonial__inner,
+.testimonial.theme-gradient-1 .testimonial__ava:before,
+[class*=testimonials-carousel].theme-gradient-1 .owl-dots .owl-dot.active span, 
+[class*=testimonials-carousel].theme-gradient-1 .owl-dots .owl-dot:hover span {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(44,143,228,1)),to(rgba(251,85,85,1)));
+    background: -webkit-linear-gradient(left, rgba(44,143,228,1) 0%,rgba(251,85,85,1) 100%);
+    background: -o-linear-gradient(left, rgba(44,143,228,1) 0%,rgba(251,85,85,1) 100%);
+    background: linear-gradient(to right, rgba(44,143,228,1) 0%,rgba(251,85,85,1) 100%);
+}	
+
+
+
+/* theme-gradient-2 */
+
+.testimonial.theme-gradient-2{}	
+.testimonial.theme-gradient-2 .testimonial__inner,
+.testimonial.theme-gradient-2 .testimonial__ava:before,
+[class*=testimonials-carousel].theme-gradient-2 .owl-dots .owl-dot.active span, 
+[class*=testimonials-carousel].theme-gradient-2 .owl-dots .owl-dot:hover span {
+    background: -webkit-gradient(linear,left top, right top,from(#2c90e4),to(#a754e2));
+    background: -webkit-linear-gradient(left,#2c90e4 0%,#a754e2 100%);
+    background: -o-linear-gradient(left,#2c90e4 0%,#a754e2 100%);
+    background: linear-gradient(90deg,#2c90e4 0%,#a754e2 100%);
+}	
+
+
+
+
+/* theme-gradient-3 */
+
+.testimonial.theme-gradient-3{}	
+.testimonial.theme-gradient-3 .testimonial__inner,
+.testimonial.theme-gradient-3 .testimonial__ava:before,
+[class*=testimonials-carousel].theme-gradient-3 .owl-dots .owl-dot.active span, 
+[class*=testimonials-carousel].theme-gradient-3 .owl-dots .owl-dot:hover span {
+    background: -webkit-linear-gradient(315deg, #36a3f7 30%, #ffb822 100%);
+    background: -o-linear-gradient(315deg, #36a3f7 30%, #ffb822 100%);
+    background: linear-gradient(135deg, #36a3f7 30%, #ffb822 100%);
+}	
+
+
+
+/* theme-gradient-4 */
+
+.testimonial.theme-gradient-4{}	
+.testimonial.theme-gradient-4 .testimonial__inner,
+.testimonial.theme-gradient-4 .testimonial__ava:before,
+[class*=testimonials-carousel].theme-gradient-4 .owl-dots .owl-dot.active span, 
+[class*=testimonials-carousel].theme-gradient-4 .owl-dots .owl-dot:hover span {
+    background: -webkit-linear-gradient(315deg, rgba(48,232,191,1) 0%,rgba(255,130,53,1) 100%);
+    background: -o-linear-gradient(315deg, rgba(48,232,191,1) 0%,rgba(255,130,53,1) 100%);
+    background: linear-gradient(135deg, rgba(48,232,191,1) 0%,rgba(255,130,53,1) 100%);
+}	
+
+
+
+/* theme-gradient-5 */
+
+.testimonial.theme-gradient-5{}	
+.testimonial.theme-gradient-5 .testimonial__inner,
+.testimonial.theme-gradient-5 .testimonial__ava:before,
+[class*=testimonials-carousel].theme-gradient-5 .owl-dots .owl-dot.active span, 
+[class*=testimonials-carousel].theme-gradient-5 .owl-dots .owl-dot:hover span {
+    background: -webkit-gradient(linear, left top, right top, from(#fc354c), to(#0abfbc));
+    background: -webkit-linear-gradient(left, #fc354c, #0abfbc);
+    background: -o-linear-gradient(left, #fc354c, #0abfbc);
+    background: linear-gradient(to right, #fc354c, #0abfbc);
+}	
+
+
+
+/* theme-gradient-6 */
+
+.testimonial.theme-gradient-6{}	
+.testimonial.theme-gradient-6 .testimonial__inner,
+.testimonial.theme-gradient-6 .testimonial__ava:before,
+[class*=testimonials-carousel].theme-gradient-6 .owl-dots .owl-dot.active span, 
+[class*=testimonials-carousel].theme-gradient-6 .owl-dots .owl-dot:hover span {
+    background: -webkit-radial-gradient(center, ellipse, rgba(128,0,128,1) 0%, rgba(0,0,0,1) 100%);
+    background: -o-radial-gradient(center, ellipse, rgba(128,0,128,1) 0%, rgba(0,0,0,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(128,0,128,1) 0%, rgba(0,0,0,1) 100%);
+}	
+
+
+/* theme-gradient-7 */
+
+.testimonial.theme-gradient-7{}	
+.testimonial.theme-gradient-7 .testimonial__inner,
+.testimonial.theme-gradient-7 .testimonial__ava:before,
+[class*=testimonials-carousel].theme-gradient-7 .owl-dots .owl-dot.active span, 
+[class*=testimonials-carousel].theme-gradient-7 .owl-dots .owl-dot:hover span {
+    background: -webkit-gradient(linear, left top, right bottom, from(#051937), color-stop(#004d7a), color-stop(#008793), color-stop(#00bf72), to(#a8eb12));
+    background: -webkit-linear-gradient(left top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background: -o-linear-gradient(left top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+
+/* theme-gradient-8 */
+
+.testimonial.theme-gradient-8{}	
+.testimonial.theme-gradient-8 .testimonial__inner,
+.testimonial.theme-gradient-8 .testimonial__ava:before,
+[class*=testimonials-carousel].theme-gradient-8 .owl-dots .owl-dot.active span, 
+[class*=testimonials-carousel].theme-gradient-8 .owl-dots .owl-dot:hover span {
+    background: -webkit-linear-gradient(110deg, #d558c8 0%, #24d292 100%);
+    background: -o-linear-gradient(110deg, #d558c8 0%, #24d292 100%);
+    background: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
+}
+
+
+
+/* theme-gradient-9 */
+
+.testimonial.theme-gradient-9{}	
+.testimonial.theme-gradient-9 .testimonial__inner,
+.testimonial.theme-gradient-9 .testimonial__ava:before,
+[class*=testimonials-carousel].theme-gradient-9 .owl-dots .owl-dot.active span, 
+[class*=testimonials-carousel].theme-gradient-9 .owl-dots .owl-dot:hover span {
+    background: -webkit-gradient(linear, left bottom, left top, from(#3f51b1), color-stop(13%, #5a55ae), color-stop(25%, #7b5fac), color-stop(38%, #8f6aae), color-stop(50%, #a86aa4), color-stop(62%, #cc6b8e), color-stop(75%, #f18271), color-stop(87%, #f3a469), to(#f7c978));
+    background: -webkit-linear-gradient(bottom, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+    background: -o-linear-gradient(bottom, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+    background: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+}
+
+
+
+/* theme-gradient-10 */
+
+.testimonial.theme-gradient-10{}	
+.testimonial.theme-gradient-10 .testimonial__inner,
+.testimonial.theme-gradient-10 .testimonial__ava:before,
+[class*=testimonials-carousel].theme-gradient-10 .owl-dots .owl-dot.active span, 
+[class*=testimonials-carousel].theme-gradient-10 .owl-dots .owl-dot:hover span {
+    background: -webkit-linear-gradient(75deg, #13547a 0%, #80d0c7 100%);
+    background: -o-linear-gradient(75deg, #13547a 0%, #80d0c7 100%);
+    background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+
+
+/* theme-gradient-11 */
+
+.testimonial.theme-gradient-11{}	
+.testimonial.theme-gradient-11 .testimonial__inner,
+.testimonial.theme-gradient-11 .testimonial__ava:before,
+[class*=testimonials-carousel].theme-gradient-11 .owl-dots .owl-dot.active span, 
+[class*=testimonials-carousel].theme-gradient-11 .owl-dots .owl-dot:hover span {
+    background: -webkit-linear-gradient(45deg, #874da2 0%, #c43a30 100%);
+    background: -o-linear-gradient(45deg, #874da2 0%, #c43a30 100%);
+    background: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
+}
+
+
+/* theme-gradient-12 */
+
+.testimonial.theme-gradient-12{}	
+.testimonial.theme-gradient-12 .testimonial__inner,
+.testimonial.theme-gradient-12 .testimonial__ava:before,
+[class*=testimonials-carousel].theme-gradient-12 .owl-dots .owl-dot.active span, 
+[class*=testimonials-carousel].theme-gradient-12 .owl-dots .owl-dot:hover span {
+    background: -webkit-linear-gradient(315deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+    background: -o-linear-gradient(315deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+    background: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+}
+
+
+
+/* theme-gradient-13 */
+
+.testimonial.theme-gradient-13{}	
+.testimonial.theme-gradient-13 .testimonial__inner,
+.testimonial.theme-gradient-13 .testimonial__ava:before,
+[class*=testimonials-carousel].theme-gradient-13 .owl-dots .owl-dot.active span, 
+[class*=testimonials-carousel].theme-gradient-13 .owl-dots .owl-dot:hover span {
+    background: -webkit-linear-gradient(315deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+    background: -o-linear-gradient(315deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+    background: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+}
+
+
+/* theme-gradient-14 */
+
+.testimonial.theme-gradient-14{}	
+.testimonial.theme-gradient-14 .testimonial__inner,
+.testimonial.theme-gradient-14 .testimonial__ava:before,
+[class*=testimonials-carousel].theme-gradient-14 .owl-dots .owl-dot.active span, 
+[class*=testimonials-carousel].theme-gradient-14 .owl-dots .owl-dot:hover span {
+    background: -webkit-radial-gradient(center, ellipse, rgba(174,188,191,1) 0%,rgba(10,8,9,1) 100%);
+    background: -o-radial-gradient(center, ellipse, rgba(174,188,191,1) 0%,rgba(10,8,9,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(174,188,191,1) 0%,rgba(10,8,9,1) 100%);
+}
+
+
+/*--------------------------------------
+	TESTIMONIALS STYLE 2 END
+----------------------------------------*/

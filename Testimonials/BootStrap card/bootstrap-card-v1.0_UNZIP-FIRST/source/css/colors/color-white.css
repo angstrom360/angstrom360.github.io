@@ -1,0 +1,16 @@
+.sch-blog-card-1 .sch-blog-card-content{
+    background: #fff;
+}
+.sch-blog-card-1 .sch-blog-card-action{
+    background: #fff;
+}
+.sch-blog-card-1 .sch-blog-card-meta a,.sch-blog-card-1 .sch-blog-card-author-content a,
+.sch-blog-card-1 .sch-blog-card-article a{
+    color:#444;
+}
+.sch-blog-card-1 .sch-blog-card-meta time,.sch-blog-card-1 .sch-blog-card-author-content {
+    color: #bbb;
+}
+.sch-blog-card-1 .sch-blog-card-article a,.sch-blog-card-1 .sch-blog-card-article p {
+    color: #000;
+}

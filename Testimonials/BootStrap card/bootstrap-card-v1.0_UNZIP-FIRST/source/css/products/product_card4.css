@@ -1,0 +1,369 @@
+.sch-products-card-4 {
+    margin: 0 auto;
+    height: 590px;
+    max-width: 100%;
+    position: relative;
+    transition: all 1s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+	font-family: 'Roboto', sans-serif;
+}
+.rotated {
+    transform: rotateY(-180deg);
+}
+.sch-products-card-4 .sch-product-card-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    position: relative;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    h2,
+    p {
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    }
+    h2 {
+        font-size: 3em;
+        margin: 0 auto;
+    }
+    hr {
+        width: 50%;
+        margin: 20px auto;
+    }
+    p {
+        margin: 0 auto;
+    }
+}
+.sch-products-card-4 .sch-product-card-first {
+    transform-style: preserve-3d;
+}
+.sch-products-card-4 .sch-product-card-second {
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+	border-radius: 10px;
+	text-align:center;
+}
+.sch-products-card-4 .sch-product-card-item.sch-product-card-first img {
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+}
+.sch-products-card-4 .sch-product-card-first .sch-product-name {
+    text-align: left;
+    color: #fff;
+    font-size: 25px;
+    position: absolute;
+    bottom: 75px;
+    left: 50px;
+    font-weight: bold;
+}
+.sch-products-card-4 .sch-product-card-first i {
+    background: rgba(0,0,0,0.4);
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	color:#fff;
+    line-height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+.sch-products-card-4 .sch-product-card-item.sch-product-card-second .fas.fa-long-arrow-alt-left {
+    background: rgba(0,0,0,0.4);
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	color:#fff;
+    line-height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+.sch-products-card-4 .sch-product-card-item.sch-product-card-second img {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+/* http://www.menucool.com/jquery-slider */
+.sch-products-card-4 .sch-product-card-item.sch-product-card-second #thumbnail-slider {
+    margin: 0 auto;
+    /*center-aligned*/
+    width: 100%;
+    max-width: 900px;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.sch-products-card-4 .sch-product-card-item.sch-product-card-second #thumbnail-slider div.inner {
+    /*the followings should not be changed */
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+.sch-products-card-4 .sch-product-card-item.sch-product-card-second #thumbnail-slider div.inner ul {
+    /*the followings should not be changed */
+    white-space: nowrap;
+    position: relative;
+    left: 0;
+    top: 0;
+    list-style: none;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+    float: left!important;
+    width: auto!important;
+    height: auto!important;
+}
+.sch-products-card-4 .sch-product-card-item.sch-product-card-second #thumbnail-slider ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: -30px;
+    margin-right: -30px;
+    /* Spacing between thumbs*/
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    /*Note: The scale down will increase the spacing between slides. You can set negative margins as did above to roll back the spacing. */
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    box-sizing: content-box;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    backface-visibility: hidden;
+    /*-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);*/
+}
+.sch-products-card-4 .sch-product-card-item.sch-product-card-second #thumbnail-slider ul li.active {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    /*Note: if scale is greater than 1, the margin-top and margin-bottom in the selector "#thumbnail-slider li" must be set with a sufficient value so the enlarged image will be shown within the margins.*/
+    background-color: transparent;
+    /*-webkit-filter: initial;
+	filter: initial;*/
+}
+
+.sch-products-card-4 .sch-product-card-item.sch-product-card-second #thumbnail-slider .thumb {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    position: absolute;
+    font-size: 0;
+    cursor: inherit;
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(255, 255, 255, 0.4)));
+    transition: all linear 0.4s;
+}
+/*-- Start 3D --*/
+.sch-products-card-4 .sch-product-card-item.sch-product-card-second #thumbnail-slider .thumb {
+    -webkit-transform: perspective(500px) translateX(1px) translateZ(-30px) rotateY(30deg);
+    transform: perspective(500px) translateX(1px) translateZ(-30px) rotateY(30deg);
+}
+.sch-products-card-4 .sch-product-card-item.sch-product-card-second #thumbnail-slider .active .thumb {
+    -webkit-transform: translateX(0px) translateZ(0px) rotateY(0deg);
+    transform: translateX(0px) translateZ(0px) rotateY(0deg);
+}
+.sch-products-card-4 .sch-product-card-item.sch-product-card-second #thumbnail-slider li.active ~ li .thumb {
+    -webkit-transform: perspective(500px) translateX(-1px) translateZ(-30px) rotateY(-30deg);
+    transform: perspective(500px) translateX(-1px) translateZ(-30px) rotateY(-30deg);
+}
+.sch-products-card-4 .sch-product-card-item.sch-product-card-second #thumbnail-slider-pause-play {
+    display: none;
+}
+/*.pause*/
+.sch-products-card-4 .sch-product-card-item.sch-product-card-second #thumbnail-slider-prev,
+.sch-products-card-4 .sch-product-card-item.sch-product-card-second #thumbnail-slider-next {
+    display: none;
+}
+.sch-products-card-4 .sch-product-card-second .sch-product-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.sch-products-card-4 .sch-product-card-item.sch-product-card-second .sch-product-price {
+    font-size: 16px;
+    font-weight: bold;
+}
+.sch-products-card-4 .dp-numberPicker,
+.sch-products-card-4 .dp-numberPicker-add,
+.sch-products-card-4 .dp-numberPicker-sub,
+.sch-products-card-4 .dp-numberPicker-input {
+	display: inline-block;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	height: 30px;
+	text-align: center;
+	line-height:30px;
+	vertical-align: top;
+	font-family: 'Roboto', serif;
+}
+.sch-products-card-4 .dp-numberPicker {
+	box-shadow: 0 0 5px rgba(255,255,255,0.5);
+	border-radius: 3px;
+	margin: 30px 0;
+}
+.sch-products-card-4 .dp-numberPicker-add,
+.sch-products-card-4 .dp-numberPicker-sub {
+	width: 30px;
+	font-size: 25px;
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	background-color: #00b0ad;
+	color: white;
+	font-weight: 700;
+	text-shadow: 1px 1px 1px rgba(50,50,50,0.5);
+}
+.sch-products-card-4 .dp-numberPicker-add {
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	box-shadow: inset 0px 1px 1px rgba(255,255,255,0.5),  inset -1px -1px 1px rgba(0,0,0,0.5);
+}
+.sch-products-card-4 .dp-numberPicker-sub {
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	box-shadow: inset 1px 1px 1px rgba(255,255,255,0.5),  inset 0px -1px 1px rgba(0,0,0,0.5);
+}
+.sch-products-card-4 .dp-numberPicker-sub.disabled, 
+.sch-products-card-4 .dp-numberPicker-add.disabled {
+	background-color: #2c6a81;
+}
+.sch-products-card-4 .dp-numberPicker-input {
+	width: 70px;
+	font-size: 18px;
+	background-color: #232425;
+	color: white;
+	border: 0;
+	box-shadow: inset 0px 1px 1px rgba(255,255,255,0.3),  inset 0px -1px 1px rgba(0,0,0,0.5);
+}
+.sch-products-card-4 .dp-numberPicker-input:disabled {
+	background-color: #232425;
+}
+.sch-products-card-4 .sch-product-size,
+.sch-products-card-4 .sch-product-quantity {
+    width: 50%;
+    float: left;
+}
+.sch-products-card-4 .sch-product-size h5,
+.sch-products-card-4 .sch-product-quantity h5 {
+    font-size: 14px;
+    font-weight: bold;
+}
+.sch-products-card-4 .sch-product-size ul {
+    padding: 0;
+}
+.sch-products-card-4 .sch-product-size li {
+    list-style: none;
+    padding: 5px;
+    border: 1px solid #aaa;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 40%;
+    float: left;
+}
+.sch-products-card-4 .sch-product-size li:hover{
+    font-weight:bold;
+}
+.sch-products-card-4 .sch-product-button a::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #00b0ad;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.sch-products-card-4 .sch-product-button {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+}
+.sch-products-card-4 .sch-product-button a {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: ;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    padding: 10px 20px;
+    text-decoration: none;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
+	color:#333;
+}
+.sch-products-card-4 .sch-product-button a:hover{
+	color:#fff;
+}
+.sch-products-card-4 .sch-product-button a:hover::before,
+.sch-products-card-4 .sch-product-button a:focus::before, 
+.sch-products-card-4 .sch-product-button a:active::before  {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+.sch-products-card-4 .sch-product-card-item.sch-product-card-first::before {
+    content: "";
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+	border-radius: 10px;
+}
+@media (min-width:640px) and (max-width:767px){
+	.sch-products-card-4 .sch-product-card-item.sch-product-card-second #thumbnail-slider ul li {
+		height: 240px !important;
+	}
+}
+@media (min-width:480px) and (max-width:639px){
+	.sch-products-card-4 .sch-product-card-item.sch-product-card-second #thumbnail-slider ul li {
+		height: 240px !important;
+	}
+}
+@media only screen and (max-width:479px){
+	.sch-products-card-4 .sch-product-card-item.sch-product-card-second #thumbnail-slider ul li {
+		height: 210px !important;
+		margin-bottom: 0;
+	}
+	.sch-products-card-4 .sch-product-size, .sch-products-card-4 .sch-product-quantity {
+		width: 100%;
+	}
+	.sch-products-card-4 .dp-numberPicker {
+		margin: 0;
+	}
+}

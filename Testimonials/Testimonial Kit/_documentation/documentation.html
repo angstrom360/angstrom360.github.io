@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="description" content="Testimonial-kit - Minimal testimonial showcase">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- \title -->
+	<title>Testimonial-kit - Minimal testimonial showcase</title>
+    <!-- \favicon -->
+	<link rel="icon" type="image/x-icon" href="img/favicon.svg">
+    <!-- \google-font -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,400i,500|Lora:400i&display=swap" rel="stylesheet">
+    <!-- \annoBar style -->
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css"><!-- for demo only -->
+    <link rel="stylesheet" href="css/demo.css"><!-- for demo only -->
+	<link rel="stylesheet" href="css/prismCustom.css"><!-- for demo only -->
+</head>
+<body class="demo-page">
+
+<div class="hero-wrap">
+    <div class="d-flex align-items-center justify-content-center h-100">
+        <div>
+            <h2>Documentation of</h2>
+            <h1>Testimonial-kit <br> Minimal testimonial showcase</h1>
+            <p>Build with CSS3 &amp; Bootstrap 4.x grid</p>
+        </div>
+    </div>
+</div>
+<!-- hero-wrap -->
+    
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+
+<br><br><br>
+<p class="uses-title">Initialize the <b>bootstrap-grid.min.css</b> <i>[If you already using bootstrap.css or bootstrap.min.css then you do not need to use it.]</i></p>
+<pre><code class="language-html">
+&lt;link href=&quot;css/bootstrap-grid.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+</code></pre>
+
+<br>
+<p class="uses-title">Initialize the <b>fontawesome.min.css</b> <i>[If you already using fontawesome icon family then you do not need to use it.]</i></p>
+<pre><code class="language-html">
+&lt;link href=&quot;css/fontawesome.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+</code></pre>
+
+<br>
+<p class="uses-title">Initialize the <b>testimonial-kit.css</b></p>
+<pre><code class="language-html">
+&lt;link href=&quot;css/testimonial-kit.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+</code></pre><br><br>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-7">
+            <h2 class="sec-header">HTML Structure</h2>
+                <!-- ============== \Start of Group01 ============== -->
+                <div class="pos-relative">
+                    <pre><code class="language-html">
+&lt;div class=&quot;container&quot;&gt;                            
+    &lt;div class=&quot;row&quot;&gt;                            
+        &lt;div class=&quot;col-lg-6 col-md-12&quot;&gt;                            
+            &lt;div class=&quot;test__kit test__kit__01&quot;&gt;
+                &lt;span class=&quot;test__kit__quote-icon fas fa-quote-right&quot;&gt;&lt;/span&gt;
+                &lt;!-- test__kit quote-icon --&gt;
+
+                &lt;img class=&quot;test__kit__user-img&quot; src=&quot;img/user__01.jpg&quot; alt=&quot;&quot;&gt;
+                &lt;!-- test__kit image --&gt;
+
+                &lt;div class=&quot;test__kit__user-info user-info__01 mt-15&quot;&gt;
+                    &lt;h3&gt;Berlin Fonollosa&lt;/h3&gt;
+                    &lt;span&gt;CEO, Creavite Inc.&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;!-- test__kit user info --&gt;
+
+                &lt;div class=&quot;test__kit__review review__01 mt-15&quot;&gt;
+                    &lt;p&gt;Clean and user friendly testimonial kit. Easy to...&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;!-- test__kit review --&gt;
+            &lt;/div&gt;
+            &lt;!-- .test__kit__01 --&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+            </div>
+            <div class="col-md-5">
+                <h2 class="sec-header">CSS Structure</h2>
+                    <!-- ============== \Start of Group01 ============== -->
+                    <div class="pos-relative">
+                        <pre><code class="language-css">
+/*===== Testimonial-kit style__01 ===== */
+.test__kit.test__kit__01 {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 80px;
+    border: 2px solid #ece9dd;
+}
+
+.test__kit__01 .test__kit__user-img {
+    max-width: 100px;
+    border-radius: 5px;
+    margin-top: -100px;
+    box-shadow: 0 .2rem 2.5rem -.05rem 
+                rgba(98, 96, 96, 0.1);
+    border: 2px solid #ece9dd;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.test__kit__review.review__01 {
+    font-size: 17px;
+}</code></pre>
+                    </div>
+            </div>
+            <div class="col-md-12">
+                <h2 class="sec-header">If you do not want to use full testimonial-kit.css, then you should  include this CSS code on your CSS file</h2>
+            </div>
+            <div class="col-md-6">
+                <p class="uses-title">Testimonial-kit basic settings CSS</b></p>
+                    <!-- ============== \Start of Group01 ============== -->
+                    <div class="pos-relative m-height">
+                        <pre><code class="language-css">
+/*===== Testimonial-kit basic settings ===== */
+.mt-5 {margin-top: 5px !important}
+.mb-5 {margin-bottom: 5px !important}
+.mt-10 {margin-top: 10px !important}
+.mb-10 {margin-bottom: 10px !important}
+.mt-15 {margin-top: 15px !important}
+.mb-15 {margin-bottom: 15px !important}
+.mt-20 {margin-top: 20px !important}
+.mb-20 {margin-bottom: 20px !important}
+.mt-25 {margin-top: 25px !important}
+.mb-25 {margin-bottom: 25px !important}
+.mt-30 {margin-top: 30px !important}
+.mb-30 {margin-bottom: 30px !important}
+
+.test__kit {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #212529;
+    position: relative;
+    z-index: 1;
+    margin-top: 30px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.test__kit__review {
+    font-family: 'Lora', serif;
+    letter-spacing: 0.01rem;
+    color: #212529;
+    font-style: italic;
+}
+
+.test__kit .test__kit__user-img {
+    max-width: 100px;
+}
+
+.test__kit h1,
+.test__kit h2,
+.test__kit h3,
+.test__kit h4,
+.test__kit h5,
+.test__kit h6,
+.test__kit p {
+    margin: 0;
+}
+
+.test__kit__user-info h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.test__kit__user-info span {
+    font-size: 14px;
+    color: #666;
+}
+
+.test__kit_review-rating {
+    margin-top: 15px;
+    line-height: 1;
+}
+
+.test__kit_review-rating span {
+    color: #ffbf36;
+    font-size: 14px;
+}
+
+.test__kit__quote-icon {
+    position: absolute;
+    right: 1.5rem;
+    top: -20px;
+    font-size: 4rem;
+    color: #ece9dd;
+    pointer-events: none;
+}</code></pre>
+                    </div>
+            </div>
+            <div class="col-md-6">
+                <p class="uses-title">Testimonial-kit basic settings -- Minified CSS</b></p>
+                    <!-- ============== \Start of Group01 ============== -->
+                    <div class="pos-relative">
+                        <pre><code class="language-css">
+/*===== Testimonial-kit basic settings ===== */
+.mt-5{margin-top:5px!important}.mb-5{margin-bottom:5px!important}.mt-10{margin-top:10px!important}.mb-10{margin-bottom:10px!important}.mt-15{margin-top:15px!important}.mb-15{margin-bottom:15px!important}.mt-20{margin-top:20px!important}.mb-20{margin-bottom:20px!important}.mt-25{margin-top:25px!important}.mb-25{margin-bottom:25px!important}.mt-30{margin-top:30px!important}.mb-30{margin-bottom:30px!important}.test__kit{font-family:'Work Sans',sans-serif;font-size:16px;line-height:1.6;color:#212529;position:relative;z-index:1;margin-top:30px;-webkit-transition:.3s;-moz-transition:.3s;-ms-transition:.3s;-o-transition:.3s;transition:.3s}.test__kit__review{font-family:'Lora',serif;letter-spacing:.01rem;color:#212529;font-style:italic}.test__kit .test__kit__user-img{max-width:100px}.test__kit h1,.test__kit h2,.test__kit h3,.test__kit h4,.test__kit h5,.test__kit h6,.test__kit p{margin:0}.test__kit__user-info h3{font-size:20px;font-weight:500;line-height:1.2}.test__kit__user-info span{font-size:14px;color:#666}.test__kit_review-rating{margin-top:15px;line-height:1}.test__kit_review-rating span{color:#ffbf36;font-size:14px}.test__kit__quote-icon{position:absolute;right:1.5rem;top:-20px;font-size:4rem;color:#ece9dd;pointer-events:none}</code></pre>
+                    </div>
+
+                    <br><br>
+                    <p>thank you so much for purchasing this plugin.</p>
+                    <p>After purchasing our product, if you face installation or customization problem so, please feel free to contact with us via Envato email. We will try to best support for you.</p>
+
+                    <a href="https://codecanyon.net/user/ixtheme" target="_blank">https://codecanyon.net/user/ixtheme</a>
+            </div>
+    </div>
+</div>
+    
+
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    
+
+    <!-- \All script -->
+    <script src="js/jquery.min.js"></script><!-- for jquery only -->
+    <script src="js/prismCustom.js"></script><!-- for demo only -->
+</body>
+</html>

@@ -1,0 +1,82 @@
+.sch-blog-card-2 {
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+	font-family: 'Roboto', sans-serif;
+}
+.sch-blog-card-2 .sch-blog-card-img {
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.sch-blog-card-2 .sch-blog-card-img img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.sch-blog-card-2 .sch-blog-card-img a {
+    background: #fff;
+    line-height: normal;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+.sch-blog-card-2 .sch-blog-card-content {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #fff;
+    text-align: center;
+}
+.sch-blog-card-2 .sch-blog-card-img-ad img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100%;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+}
+.sch-blog-card-2 .sch-blog-title a {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px 0;
+    display: inline-block;
+}
+.sch-blog-card-2 .sch-blog-text {
+    font-size: 16px;
+    color: #333;
+}
+.sch-blog-card-2 .sch-post {
+    background: #fff;
+    padding: 20px;
+    border-top: 1px solid #aaa;
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+}
+.sch-blog-card-2 .sch-post .sch-name {
+    padding-right: 30px;
+    position: relative;
+}
+.sch-blog-card-2 .sch-post .sch-name::after {
+    width: 5px;
+    height: 5px;
+    background: #aaa;
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 8px;
+}

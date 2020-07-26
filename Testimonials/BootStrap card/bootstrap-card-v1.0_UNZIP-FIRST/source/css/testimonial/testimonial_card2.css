@@ -1,0 +1,120 @@
+.sch-testimonial-card-2 {
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	position:relative;
+}
+.sch-testimonial-card-2 .sch-testi-card-img img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.sch-testimonial-card-2 .sch-testi-card-img {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+}
+.sch-testimonial-card-2 .sch-testi-card-name {
+    font-size: 35px;
+    font-style: italic;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.sch-testimonial-card-2 .sch-testi-card-job {
+    font-size: 18px;
+    font-style: italic;
+	font-family: 'Dancing Script', cursive;
+}
+.sch-testimonial-card-2::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f10d";
+    position: absolute;
+    z-index: -1;
+    left: 10px;
+    font-size: 30px;
+    color: rgba(0,0,0,0.3);
+    top: 70px;
+}
+.sch-testimonial-card-2 .sch-testi-card-text {
+    font-size: 18px;
+    color: #333;
+    font-family: 'Dancing Script', cursive;
+}
+.sch-testimonial-card-2 .sch-icon {
+    margin-top: 20px;
+}
+.sch-testimonial-card-2 .sch-icon a::after {
+    box-shadow: 1px 2px rgba(0,0,0,1);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+    -moz-transition: opacity 0.2s, -moz-transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s;
+}
+.sch-testimonial-card-2 .sch-icon a::after {
+    top: -8px;
+    left: -8px;
+    padding: 8px;
+    z-index: -1;
+    opacity: 0;
+}
+.sch-testimonial-card-2 .sch-icon a::after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.sch-testimonial-card-2 .sch-icon i {
+    color: #333;
+    font-size: 14px;
+    line-height: 40px;
+}
+.sch-testimonial-card-2 .sch-icon a {
+    box-shadow: 0 0 0 1px rgba(0,0,0,1);
+    -webkit-transition: background 0.2s, color 0.2s;
+    -moz-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;
+}
+.sch-testimonial-card-2 .sch-icon a {
+    display: inline-block;
+    font-size: 0px;
+    cursor: pointer;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: #333;
+}
+.sch-testimonial-card-2 .sch-icon a:hover::after {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+@media only screen and (max-width:479px){
+	.sch-testimonial-card-2 .sch-icon a {
+		width: 35px;
+		height: 35px;
+		margin:5px;
+	}
+}

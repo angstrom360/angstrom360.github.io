@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/**
+	*
+	* ---------------------------------------------------------
+	*
+	* Template : TESTIMONIALS
+	* Version  : 1.0
+	* Author   : sodedar1984  
+	* Email    : sodedar10@meta.ua or sldedar1984@gmail.com
+	
+	* ---------------------------------------------------------
+	*
+*/
+
+
+
+/*--------------------------------------
+	TESTIMONIALS STYLE 6 BEGIN
+----------------------------------------*/
+
+.testimonial{	
+	margin: 0 auto 50px auto;
+	max-width: 500px;
+	background: #f7f7f7;
+	-webkit-box-shadow: 0 1px 7px rgba(0,0,0,.15);
+	        box-shadow: 0 1px 7px rgba(0,0,0,.15);
+}
+.testimonial__item{
+	padding: 15px 25px;	
+}
+.testimonial__ava{
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+}
+.testimonial__ava:before{
+	content: '';
+	position: absolute; top: 0; left: 70%;
+	margin-left: -15px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 30px 30px 0 0;
+	border-color: #f7f7f7 transparent transparent transparent;
+	z-index: 9;
+}
+
+.testimonial__ava-img{
+	width: 100%;
+	-webkit-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);
+	-webkit-transition: -webkit-transform .3s ease;
+	transition: -webkit-transform .3s ease;
+	-o-transition: transform .3s ease;
+	transition: transform .3s ease;
+	transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+.testimonial__title{
+	margin-top: 0;
+}
+.testimonial__prof{
+	color: #95BB53;
+}
+
+.testimonial__content{
+	position: relative;
+}
+.testimonial__content:before{
+	content: '\f10d';
+	font-family: 'FontAwesome';
+	position: absolute; top: 25px; left: 15px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 75px;
+	text-align: center;
+	opacity: .1;
+}
+
+.testimonial__content-text{
+	position: relative;
+	z-index: 9;
+}
+
+
+.testimonials--light .testimonial,
+.testimonials-carousel--light .testimonial{
+	background: #fff;
+}
+.testimonials--light .testimonial__ava:before,
+.testimonials-carousel--light .testimonial__ava:before{	
+	border-top-color: #fff;
+}
+
+.testimonials--light .testimonial__content:before,
+.testimonials-carousel--light .testimonial__content:before{	
+	opacity: 1;
+	color: #f7f7f7;
+	z-index: 9;
+}
+
+
+.testimonial:hover .testimonial__ava-img{
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
+}
+
+
+[class*=testimonials-carousel] .testimonial{	
+	margin-bottom: 20px;
+}
+
+/*--------------------------------------
+	TESTIMONIALS STYLE 6 END
+----------------------------------------*/

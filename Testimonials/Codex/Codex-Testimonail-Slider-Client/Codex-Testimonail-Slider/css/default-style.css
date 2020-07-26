@@ -1,0 +1,296 @@
+
+
+/** body font ***/
+
+body{
+	font-family: Ubuntu;
+}
+
+
+
+
+/*** Hero banner ***/
+
+ 
+#footer-banner-area {
+    background:#070707;
+	border-top:2px solid #ff5252;
+}
+
+.hero-banner-table {
+    display: table;
+	width: 100%;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+
+.hero-banner-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding:70px 0;
+	color: #fff;
+}
+
+.hero-banner-table-cell h1 {
+	color: #ff5252;
+	text-transform: uppercase;
+}
+
+.hero-banner-table-cell h3 {
+    font-size: 22px;
+    line-height: 35px;
+}
+
+.hidetitles{
+    display: none;
+}
+
+
+ 
+#hero-banner-area {
+    background:#070707;
+	border-top:2px solid #ff5252;
+}
+
+.hero-banner-table {
+    display: table;
+	width: 100%;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+
+.hero-banner-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding:70px 0;
+	color: #fff;
+}
+
+.hero-banner-table-cell h1 {
+	color: #ff5252;
+	text-transform: uppercase;
+}
+
+.hero-banner-table-cell h3 {
+    font-size: 22px;
+    line-height: 35px;
+}
+.hero-banner-table-cell h1{
+	font-size:46px;
+	font-weight: 700;
+	line-height: 50px;
+	font-family: Ubuntu;
+}
+
+.demo-box-bg {
+    text-align: center;
+    padding: 45px 0;
+} 
+.demo-name.sections h3 {
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 22px;
+    padding: 0px;
+}
+
+.demo-name h3 {
+    color: #000;
+    font-weight: 300;
+    text-transform: capitalize;
+    font-size: 35px;
+    word-spacing: 10px;
+}
+
+
+.bg-1{
+	background: #ff5252;
+}
+.bg-5{
+	background: #49a2e7;
+}
+.bg-7{
+	background: #19d3ca;
+}
+.bg-14{
+	background: #f1c40f;
+}
+.bg-17{
+	background: #017467;
+}
+
+.demo-title {
+    text-align: center;
+    padding: 120px 0;
+}
+.domo-box-bottom{
+	margin-bottom: 130px;
+}
+.demo-title p {
+    font-size: 18px;
+}
+
+
+ .demo-title h2{
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 50px;
+	font-family: Ubuntu;
+}
+.setion-bottom{
+    margin-bottom: 130px;
+}
+
+
+.slider-list button {
+    width: 19%;
+    float: left;
+    line-height: 45px;
+    border: 0px solid;
+    margin-bottom: 20px;
+    background: #000;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.slider-list-stage button {
+    width: 45%;
+    float: left;
+    line-height: 45px;
+    border: 0px solid;
+    margin-bottom: 20px;
+    background: #000;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+
+@media (max-width : 1024px) {
+ 
+.slider-list button {
+	width: 23%;
+}	
+.demo-title {
+	text-align: center;
+	padding: 60px 0;
+}
+ .setion-bottom {
+	margin-bottom: 60px;
+}   
+    
+    
+	
+}
+@media (max-width : 768px) {
+ 
+.hero-banner-table-cell h1 {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 50px;
+	font-family: Ubuntu;
+}	
+    
+.slider-list button {
+	width: 30%;
+}    
+    
+.demo-title {
+	text-align: center;
+	padding: 60px 0;
+}
+ .setion-bottom {
+	margin-bottom: 60px;
+}      
+ .demo-title h2 {
+	font-size: 28px;
+}   
+    
+    
+    
+    
+    
+    
+}
+@media (max-width : 767px){ 
+ .hero-banner-table-cell h1 {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 50px;
+	font-family: Ubuntu;
+}	
+.slider-list{
+    margin-left: 10%;
+}    
+.slider-list button {
+	width: 90%;
+}    
+    
+.demo-title {
+	text-align: center;
+	padding: 60px 0;
+}
+ .setion-bottom {
+	margin-bottom: 60px;
+}      
+ .demo-title h2 {
+	font-size: 28px;
+}   
+       
+    
+    
+    
+    
+	
+}
+
+
+@media (max-width : 479px) {
+
+ .hero-banner-table-cell h1 {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 50px;
+	font-family: Ubuntu;
+}	
+.slider-list{
+    margin-left: 10%;
+}    
+.slider-list button {
+	width: 90%;
+}    
+    
+.demo-title {
+	text-align: center;
+	padding: 60px 0;
+}
+ .setion-bottom {
+	margin-bottom: 60px;
+}      
+ .demo-title h2 {
+	font-size: 28px;
+}   
+       
+    
+    
+    
+    
+    
+	
+}
+
+
+
+
+

@@ -1,0 +1,121 @@
+.sch-profile-card-1 {
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    position: relative;
+	padding: 20px;
+	font-family: 'Roboto', sans-serif;
+	background:#fff;
+}
+.sch-profile-card-1 .sch-object {
+    background: #333;
+    position: absolute;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 10px;
+    top: 20px;
+    left: 20px;
+	color:#fff;
+}
+.sch-profile-card-1 .sch-profile-img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border: 1px solid rgb(33, 147, 176);
+    border-radius: 100%;
+}
+.sch-profile-card-1 .sch-profile-img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border: 1px solid rgb(33, 147, 176);
+    border-radius: 100%;
+}
+.sch-profile-card-1 .sch-profile-img img {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-top: 10px;
+}
+.sch-profile-card-1 .sch-profile-name {
+    font-size: 20px;
+    color: #333;
+    padding-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.sch-profile-card-1 .sch-profile-city {
+    font-size: 14px;
+    color: #333;
+    padding: 10px 0;
+    font-weight: bold;
+}
+.sch-profile-card-1 .sch-profile-text {
+    font-size: 16px;
+    color: #333;
+    padding: 0 60px;
+    margin-bottom: 30px;
+}
+.sch-profile-card-1 .sch-profile-button {
+    display: inline-block;
+}
+.sch-profile-card-1 .sch-profile-button span {
+    padding: 10px;
+    display: inline-block;
+}
+.sch-profile-card-1 .sch-profile-message a,
+.sch-profile-card-1 .sch-profile-following a {
+    width: 100px;
+    height: 50px;
+    border: 1px solid #fff;
+	color: #fff;
+	display: inline-block;
+	line-height: 50px;
+	text-decoration: none;
+	background:#333;
+    border-radius: 5px;
+    float: left;
+	cursor:pointer;
+}
+.sch-profile-card-1 .sch-profile-message a:hover, .sch-profile-card-1 .sch-profile-following a:hover {
+    background: #fff;
+	color:#333;
+	border: 1px solid #333;
+}
+.sch-profile-card-1 .sch-profile-skill {
+    text-align: left;
+	padding: 20px;
+}
+.sch-profile-card-1 .sch-skill-title {
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.sch-profile-card-1 .sch-tag a{
+    margin-right: 10px;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+	color: #333;
+	text-decoration: none;
+}
+@media only screen and (max-width:479px) {
+    .sch-profile-card-1 .sch-profile-text {
+		padding: 0;
+	}
+	.sch-profile-card-1 .sch-profile-button span {
+		padding: 0;
+	}
+	.sch-profile-card-3 .sch-profile-card-first .sch-profile-name,
+	.sch-profile-card-3 .sch-profile-card-first .sch-profile-job	{
+		left: 20px;
+	}
+	.sch-profile-card-3 .sch-profile-card-item.sch-profile-card-second .sch-profile-text {
+		margin-bottom: 5px;
+	}
+	.sch-profile-card-2 .sch-detail-name {
+		margin: 5px;
+	}
+}

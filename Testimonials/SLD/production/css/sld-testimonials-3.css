@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+/**
+	*
+	* ---------------------------------------------------------
+	*
+	* Template : TESTIMONIALS
+	* Version  : 1.0
+	* Author   : sodedar1984  
+	* Email    : sodedar10@meta.ua or sldedar1984@gmail.com
+	
+	* ---------------------------------------------------------
+	*
+*/
+
+
+
+/*--------------------------------------
+	TESTIMONIALS STYLE 3 BEGIN
+----------------------------------------*/
+
+.testimonial{	
+	margin-bottom: 50px;
+}
+
+.testimonial{}
+
+.testimonial__ava{	
+	text-align: center;
+	margin-bottom: 20px;
+}
+.testimonial__ava-img{
+	margin: 0 auto;
+	width: 100%;	
+	-webkit-border-radius: 50%;	
+	        border-radius: 50%;
+	max-width: 220px;
+	max-height: 220px;
+	border: 3px solid #F0F0F0;
+}
+
+.testimonial__content{
+	padding-left: 25px;
+}
+
+.testimonial__content-head{
+	margin-bottom: 15px;
+}
+
+.testimonial__content-body{
+	background: #F0F0F0;
+	padding: 20px 25px;
+	position: relative;
+}
+.testimonial__content-body:before{
+	content: '';
+	position: absolute; top: 0; right: 100%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 30px 30px 0;
+	border-color: transparent #EBEBEB transparent transparent;
+}
+
+.testimonial__name{
+	margin-top: 0;
+}
+
+.testimonial__time{
+	float: right;
+	font-size: 13px;
+}
+.testimonial__time .fa{
+	margin-right: 5px;
+}
+
+.testimonial .embed-responsive {
+    margin: 15px 0 10px;
+}
+
+
+/* testimonial-even */
+
+.testimonial-even{}
+
+.testimonial-even .testimonial__name,
+.testimonial-even .testimonial__prof{
+	text-align: right;
+}
+
+.testimonial-even .testimonial__time{
+	float: left;
+}
+.testimonial-even  .testimonial__content{
+	padding-left: 0;
+	padding-right: 25px;
+}
+.testimonial-even .testimonial__content-body:before{
+	top: 0; right: auto; left: 100%;
+	border-width: 30px 30px 0 0;
+	border-color: #EBEBEB transparent transparent transparent;
+}
+
+
+/* testimonials--light */
+
+.testimonials--light{}
+
+.testimonials-carousel--light .testimonial__content-head,
+.testimonials--light .testimonial__content-head{
+	color: #fff;
+}
+.testimonials-carousel-one{}
+
+.testimonials-carousel-one .testimonial {
+	margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 767px) {
+	
+	.testimonial__content,
+	.testimonial-even  .testimonial__content{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.testimonial__content-body:before,
+	.testimonial-even .testimonial__content-body:before{
+		top: auto; right: auto; bottom: 100%; left: 50%;
+		border-width: 0 15px 30px 15px;
+		border-color: transparent transparent #F0F0F0 transparent;
+		margin-left: -15px;
+	}
+	
+	.testimonial-even .testimonial__name,
+	.testimonial-even .testimonial__prof{
+		text-align: left;
+	}
+
+	.testimonial-even .testimonial__time{
+		float: right;
+	}
+
+}
+
+/*--------------------------------------
+	TESTIMONIALS STYLE 3 END
+----------------------------------------*/

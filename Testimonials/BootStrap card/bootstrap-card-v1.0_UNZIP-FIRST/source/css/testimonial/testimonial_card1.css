@@ -1,0 +1,110 @@
+.sch-testimonial-card-1 {
+    width: 100%;
+    float: left;
+    box-shadow: 0 1px 6px 0 rgba(104, 104, 104, 0.2), 0 1px 22px 0 rgba(165, 165, 165, 0.2);
+    position: relative;
+	font-family: 'Roboto', sans-serif;
+}
+.sch-testimonial-card-1 .sch-job {
+    position: absolute;
+    left: 60px;
+    top: 0;
+    color: #fff;
+    padding: 10px 20px;
+}
+.sch-testimonial-card-1 .fa.fa-quote-left {
+    padding: 20px;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+.sch-testimonial-card-1 .sch-description {
+    padding: 20px;
+}
+.sch-testimonial-card-1 .sch-description p {
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 30px;
+	line-height: 1.5;
+}
+.sch-testimonial-card-1 .sch-img {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sch-testimonial-card-1:hover img {
+    transform: rotate3d(0, 1, 0, 180deg);
+	transition: transform 0.5s ease-in-out;
+}
+.sch-testimonial-card-1 .sch-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid #333;	
+}
+.sch-testimonial-card-1:last-child {
+    margin-right: 0;
+}
+.sch-testimonial-card-1 .sch-name {
+    padding: 20px;
+     background-image: linear-gradient(to right top, #ffffff, #c7c7c7, #929292, #606060, #333333);
+	position: relative;
+}
+.sch-testimonial-card-1 .sch-name h3 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: normal;
+    padding: 0;
+	margin-bottom: 0;
+    font-style: italic;
+}
+.sch-testimonial-card-1 .sch-name .sch-start {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+	color:#fff;
+}
+.sch-testimonial-card-1 .sch-info {
+    color: #222;
+}
+.sch-testimonial-card-1 .fa.fa-quote-left,.sch-testimonial-card-1 .sch-name h3 {
+    color: #fff;
+	margin-top: 0;
+}
+.sch-testimonial-card-1 .sch-testimonial .sch-description {
+    background-color: #fff;
+}
+.sch-testimonial-card-1 .sch-testimonial:hover .sch-img img {
+    border: 5px solid #fff;
+}
+.sch-testimonial-card-1 .sch-testimonial .fa.fa-quote-left,
+.sch-testimonial-card-1 .sch-testimonial .sch-job,
+.sch-testimonial-card-1 .sch-name  {
+      background-image: linear-gradient(to right bottom, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000);
+}
+.sch-testimonial-card-1 .sch-social {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.sch-testimonial-card-1 .sch-social i {
+    color: #333;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid;
+	border-radius:5px;
+}
+.sch-testimonial-card-1 .sch-social a{
+    margin-right: 10px;
+}
+.sch-testimonial-card-1 .sch-social a:last-child {
+	margin-right:0;
+}

@@ -1,0 +1,786 @@
+/*
+	Template Name: Codex Testimonail Slider
+	Author: Codex Expert 
+	Description: Responsive Testimonail Slider
+	Version: 1.0
+*/
+
+
+/* Table of Content
+==================================================
+
+- Client Testimonail Slider 1
+- Client Testimonail Slider 2
+- Client Testimonail Slider 3
+- Client Testimonail Slider 4
+- Client Testimonail Slider 5
+- Client Testimonail Slider 6
+  
+
+*/
+  
+
+
+/*******************************
+Client Testimonail Slider 1
+*******************************/
+
+.center-slider-1 .authour_details h2 {
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+
+.center-slider-1 .authour_details h3 {
+    text-align: center;
+    font-size: 16px;
+    color: red;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.center-slider-1 .thumb_box_center p {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 41px;
+    line-height: 22px;
+} 
+ 
+ 
+ 
+
+.center-slider-1 .owl-nav button span {
+    width: 60px;
+    background: #dc3545;
+    display: inline-block;
+    color: #fff;
+    margin-right: 5px;
+    border-radius: 50px;
+    height: 30px;
+    line-height: 25px;
+    font-size: 30px;
+	outline: none;
+}
+.center-slider-1  .owl-nav {
+    text-align: center;
+    margin-top: 20px;
+}
+ 
+
+
+.center-slider-1 button.owl-dot { 
+    outline: none !important;
+    display: none;
+}
+
+
+.center-slider-1 .owl-nav button {
+    outline: none !important;
+    display: none;
+}
+
+
+
+/*******************************
+Client Testimonail Slider 2
+*******************************/
+
+#wrapper_area_2 {
+    height: 410px;
+}
+
+.thumb-image-center-1 button.owl-dot.active span {
+    width: 80px;
+    height: 80px;
+	transition: all ease 500ms;
+ 
+}
+.thumb-image-center-1 .owl-dots button span {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    display: inline-block;
+    margin-top: 30px;
+    background-size: cover;
+	transition: all ease 500ms;
+	border-radius: 100%;
+}
+
+.thumb-image-center-1 .owl-dots button:nth-child(1) span {
+    background: url(./img/c2.png);
+    background-size: cover;
+	
+} 
+.thumb-image-center-1 .owl-dots button:nth-child(2) span {
+    background: url(./img/c1.png);
+    background-size: cover;
+
+}
+.thumb-image-center-1 .owl-dots button:nth-child(3) span {
+    background: url(./img/c3.png);
+    background-size: cover;
+
+}
+
+ 
+
+.thumb-image-center-1 .owl-dots {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.thumb-image-center-1 .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    display: block;
+}
+ 
+
+
+.thumb-image-center-1 button.owl-dot { 
+    outline: none !important;
+}
+
+
+.thumb-image-center-1 .owl-nav button {
+    outline: none !important;
+}
+
+.thumb-image-center-1 .owl-nav button span {
+    width: 30px;
+    height: 30px;
+    background: #000;
+    display: block;
+    color: #fff;
+    line-height: 25px;
+    font-size: 30px;
+ }
+
+.thumb-image-center-1 button.owl-prev {
+    position: absolute;
+    top: 24%;
+    left: -7%;
+}
+
+.thumb-image-center-1 button.owl-next {
+    position: absolute;
+    top: 24%;
+    right: -7%;
+}
+
+
+
+.thumb-image-center-1 .owl-item.active .box_display{
+	display:none;
+}
+
+.thumb-image-center-1 .owl-item.active.center .box_display{
+	display: block;
+}
+ 
+.thumb-image-center-1 .box_display i {
+    font-size: 55px;
+}
+
+.thumb-image-center-1 .box_display p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.thumb-image-center-1 .box_display {
+    text-align: center;
+}
+
+.thumb-image-center-1 .box_display h2 {
+   font-size: 26px;
+	font-weight: 900;
+	
+}
+
+.thumb-image-center-1 .box_display p {
+    font-size: 15px;
+    font-weight: 300;
+    padding-top: 20px;
+}
+
+/** Responsive style **/ 
+
+@media (max-width :767px){
+
+.thumb-image-center-1 .owl-dots {
+	display: inline-block;
+	text-align: center;
+	width: 14%;
+}
+}
+@media (max-width : 479px){
+
+.thumb-image-center-1 .owl-dots {
+	display: inline-block;
+	text-align: center;
+	width: 14%;
+}
+}
+
+/*******************************
+Client Testimonail Slider 3
+*******************************/
+
+.client-testimonail-slider-3 .demo-box-7 {
+    position: relative;
+	overflow: hidden;
+	   -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+    transition: all ease 500ms;
+}
+.client-testimonail-slider-3.domo-box-7{
+    background: #fff;  
+}
+.client-testimonail-slider-3 .demo-box-7 {
+    border-bottom: 5px solid #49a2e7;
+     transition: all ease 500ms;
+	
+}
+.client-testimonail-slider-3 .demo-box-7:hover {
+    border-bottom: 5px solid #000;
+     transition: all ease 500ms;
+}
+
+ 
+ 
+.client-testimonail-slider-3 .box-shadow{
+	-webkit-box-shadow: 1px 2px 10px rgba(0,0,0,.18);
+	        box-shadow: 1px 2px 10px rgba(0,0,0,.18);
+	-webkit-transition: all ease 500ms;
+	-o-transition: all ease 500ms;
+	transition: all ease 500ms;
+}
+.client-testimonail-slider-3 .box-shadow:hover {
+    -webkit-box-shadow: 1px 2px 10px rgba(0,0,0,.50);
+            box-shadow: 1px 2px 10px rgba(0,0,0,.50);
+    -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+    transition: all ease 500ms;
+}
+
+.client-testimonail-slider-3 .team-member-image-7 {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    height: 270px;
+}
+
+.client-testimonail-slider-3 .team-member-details-top-7 {
+    width: 50%;
+    float: right;
+    padding: 10px;
+}
+
+
+.client-testimonail-slider-3 .team-member-image-7 img {
+    width: 100%;
+	transform: scale(1);
+	transition: all ease 500ms;
+}
+.client-testimonail-slider-3 .demo-box-7:hover .team-member-image-7 img {
+	transform: scale(1.1);
+	transition: all ease 500ms;
+}
+.client-testimonail-slider-3 .team-member-image-7:before {
+    background: rgba(0,0,0,.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+	opacity: 0;
+	transition: all ease 500ms;
+	z-index: 1;
+}
+.client-testimonail-slider-3 .demo-box-7:hover .team-member-image-7:before {
+	 background: rgba(0,0,0,.4);
+	opacity: 1;
+	transition: all ease 500ms;
+}
+
+
+.client-testimonail-slider-3 .member-details-7{
+	padding: 0px 10px;	
+}
+.client-testimonail-slider-3 .member-details-7 h2 { 
+    line-height: 50px;
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+    transition: all ease 500ms;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.client-testimonail-slider-3 .demo-box-7:hover:before  .member-details-7 h2 { 
+	color: #fff;
+}
+
+
+.client-testimonail-slider-3 .member-details-7 h3 {
+    -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+    transition: all ease 500ms;
+    font-weight: 600;
+    font-size: 18px; 
+	color: #000;
+}
+ 
+ 
+.client-testimonail-slider-3member-details-7 p {
+    color: #000;
+    line-height: 22px;
+    font-weight: 300;
+    padding: 10px 0;
+}
+.client-testimonail-slider-3 .team-member-soical-7{
+	padding:0px 10px;
+}
+.client-testimonail-slider-3 .team-member-soical-7 i {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background: #49a2e7;
+    color: #fff;
+    font-size: 22px;
+    line-height: 40px;
+	 -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+    transition: all ease 500ms;
+    text-transform: capitalize;
+}
+
+
+.client-testimonail-slider-3 .demo-box-7:hover .team-member-soical-7 i {
+	 background: #000;
+	 -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+    transition: all ease 500ms;
+    text-transform: capitalize;
+}
+
+
+.client-testimonail-slider-3 .midel-tabel {
+    display: table;
+    height: 350px;
+}
+
+.client-testimonail-slider-3 .dispaly-tabel-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.client-testimonail-slider-3 .owl-nav button i {
+    width: 50px;
+    background: #49a2e7;
+    display: inline-block;
+    color: #fff;
+    font-size: 30px;
+    margin-right: 0px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 10px;
+}
+
+.client-testimonail-slider-3 .owl-nav button{
+    outline: none;
+}
+ 
+
+.client-testimonail-slider-3 .owl-nav {
+    margin-top: 40px;
+    text-align: center;
+}
+
+ 
+
+/*******************************
+Client Testimonail Slider 4
+*******************************/
+
+.client-testimonail-slider-4 .client-tesimonial-details-box .author-title {
+    width: 25%;
+    float: left;
+    margin-top: 115px;
+}
+
+.client-testimonail-slider-4 .client-tesimonial-details-box .single-client-box {
+    width: 33%;
+    float: left;
+    border: 5px solid #49a2e7;
+    overflow: hidden;
+
+}
+
+.client-testimonail-slider-4 .client-tesimonial-details-box .single-author-details {
+    width: 39%;
+    float: right;
+	margin-top: 70px;
+}
+
+.client-tesimonial-details-box {
+    overflow: hidden;
+    height: 308px;
+    width: 100%;
+    background: #fff; 
+    -webkit-box-shadow: 1px 2px 10px rgba(0,0,0,.18);
+	        box-shadow: 1px 2px 10px rgba(0,0,0,.18);
+	-webkit-transition: all ease 500ms;
+	-o-transition: all ease 500ms;
+	transition: all ease 500ms;
+}
+ 
+.client-tesimonial-details-box:before {
+    background: #49a2e7;
+    content: "";
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 2;
+}
+
+.client-tesimonial-details-box .midel-table {
+    display: table;
+    height: 308px;
+}
+
+.client-tesimonial-details-box .midel-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.client-tesimonial-details-box .client-main-box {
+    position: absolute;
+    z-index: 3;
+    padding: 0 20px;
+    height: 250px;
+    box-shadow: 0 0px 0px 2px #000;
+}
+
+.client-tesimonial-details-box .author-title h2 {
+    color: #fff;
+    font-weight: 900;
+}
+
+.client-tesimonial-details-box .author-title p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.client-tesimonial-details-box .midel-table {}
+
+.client-tesimonial-details-box .single-author-details p {
+    color: #fff;
+}
+
+.client-tesimonial-details-box .single-author-details i {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+.client-tesimonial-details-box .single-author-details {
+    padding-left: 20px;
+}
+
+.author-img:before {
+    background: rgba(73, 162, 231, 0.32);
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top:-100%;
+    left: 0;
+     transition: all ease 500ms; 
+}
+
+
+.client-tesimonial-details-box .client-main-box:hover .author-img:before {
+    top:0;
+    transition: all ease 500ms; 
+}
+
+
+
+.author-img{
+    overflow: hidden;
+     transform: scale(1);
+    transition: all ease 500ms;
+}
+
+.client-tesimonial-details-box .client-main-box:hover .author-img{
+     transform: scale(1.1);
+     transition: all ease 500ms;    
+}
+
+.client-testimonail-slider-4 .owl-nav button i {
+    width: 50px;
+    background: #49a2e7;
+    display: inline-block;
+    color: #fff;
+    font-size: 30px;
+    margin-right: 0px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 10px;
+}
+
+.client-testimonail-slider-4 .owl-nav button{
+    outline: none;
+}
+ 
+
+.client-testimonail-slider-4 .owl-nav {
+     text-align: center;
+    margin-left: -17%;
+    margin-top: 0%;
+}
+
+ 
+/*******************************
+Client Testimonail Slider 5
+*******************************/
+
+
+
+
+.client-testimonial-box-5 .client-image-5 {
+    width: 250px;
+    height: 250px;
+    float: left;
+      -webkit-box-shadow: 1px 2px 10px rgba(0,0,0,.18);
+    box-shadow: 1px 2px 10px rgba(0,0,0,.18);
+    -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+    overflow: hidden;
+}
+
+.client-testimonial-box-5 .client-image-5 img {
+    width: 100%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    transition: all ease 500ms;
+    transform: scale(1);
+    
+}
+
+.client-testimonial-box-5:hover  .client-image-5 img {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+     transform: scale(1.1);
+      transition: all ease 500ms;
+    
+}
+
+
+
+.client-testimonial-box-5 .client-testimonial-details {
+    width: 72%;
+    float: right;
+    overflow: hidden;
+    background: rgb(219, 219, 221);
+    height: 250px;
+    padding: 20px 30px;
+    margin-right: 7px;
+    border-left: 2px solid #000;
+    -webkit-box-shadow: 1px 2px 10px rgba(0,0,0,.18);
+    box-shadow: 1px 2px 10px rgba(0,0,0,.18);
+    -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+}
+
+.client-testimonial-box-5  .midel-tabel {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.client-testimonial-box-5  .midel-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+.client-testimonail-slider-5 .client-testimonial-details h2 {
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+.client-testimonail-slider-5 .client-testimonial-details h3 {
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.client-testimonail-slider-5 .client-testimonial-details p {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+
+.client-testimonail-slider-5 .owl-nav button i {
+    width: 50px;
+    background:rgb(219, 219, 221);
+    display: inline-block;
+    color: #000;
+    font-size: 30px;
+    margin-right: 0px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 10px;
+      -webkit-box-shadow: 1px 2px 10px rgba(0,0,0,.18);
+    box-shadow: 1px 2px 10px rgba(0,0,0,.18);
+    -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+}
+
+.client-testimonail-slider-5 .owl-nav button{
+    outline: none;
+}
+ 
+
+.client-testimonail-slider-5.owl-nav {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.client-testimonail-slider-5 .owl-nav {
+    text-align: center;
+    margin-top: 10px;
+    position: absolute;
+    right: -13%;
+    top: 45%;
+}
+
+.client-testimonail-slider-5 button.owl-prev {
+    position: absolute;
+    right: 60px;
+    top: -55px;
+}
+
+.client-testimonail-slider-5 button.owl-next {
+    position: absolute;
+    right: 59px;
+}
+ 
+/*******************************
+Client Testimonail Slider 6
+*******************************/
+
+.bottomsection{
+    margin: 150px 0;
+}
+
+
+.client-testimonial-slider-6 button.owl-dot {
+    outline: none;
+    z-index: 9999
+}
+
+.client-testimonial-slider-6 .owl-nav button  {
+    display: none;
+}
+
+.client-testimonial-slider-6 .owl-dots button span {
+    width: 120px;
+    height: 120px;
+    margin-right: 5px;
+    display: inline-block;
+    margin-top: 30px;
+    background-size: cover;
+	-webkit-transition: all ease 500ms;
+	-o-transition: all ease 500ms;
+	transition: all ease 500ms;
+	border-radius: 100%;
+        margin: 20px;
+-webkit-box-shadow: 0px 2px 25px 2px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 25px 2px rgba(0,0,0,0.75);
+    overflow: hidden;
+}
+
+.client-testimonial-slider-6 .owl-dots button span{
+    border: 2px solid #fff;
+}
+.client-testimonial-slider-6 .owl-dots button:nth-child(1) span {
+    background: url(./img/img-1.jpg);
+    background-size: cover;
+ 
+}
+.client-testimonial-slider-6 .owl-dots button:nth-child(2) span {
+    background: url(./img/img-2.jpg);
+    background-size: cover;
+ 
+}
+.client-testimonial-slider-6 .owl-dots button:nth-child(3) span {
+    background: url(./img/img-3.jpg);
+    background-size: cover;
+ 
+}
+.client-testimonial-box-6 {
+    background: #fff;
+    padding: 20px 10px;
+    margin: 40px;
+    -webkit-box-shadow: 0px 2px 25px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 25px 2px rgba(0,0,0,0.75);
+    overflow: hidden;
+}
+ 
+
+.client-testimonial-box-6 {
+    background: #fff;
+    padding: 20px 10px;
+    margin: 40px;
+    -webkit-box-shadow: 0px 2px 25px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 25px 2px rgba(0,0,0,0.75);
+    overflow: hidden;
+}
+
+.client-testimonial-box-6 h2 {
+    font-size: 22px;
+}
+
+.client-testimonial-box-6 h3 {
+    font-size: 18px;
+}
+
+.client-img {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 20px auto;
+    
+}
+
+.client-img img {
+    border-radius: 100%;
+}
+
+.social-list a {
+    color: #000;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.client-testimonial-box-6 {
+    text-align: center;
+}
+ 
+
+
+.client-testimonial-slider-6 .owl-dots{
+
+    margin: 0 auto;
+    text-align: center;
+
+}
+ 
