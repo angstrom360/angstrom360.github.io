@@ -110,17 +110,17 @@ Client Testimonail Slider 2
 }
 
 .thumb-image-center-1 .owl-dots button:nth-child(1) span {
-    background: url(./img/c2.png);
+    background: url(https://storage.googleapis.com/asset123/chris_head2.jpg);
     background-size: cover;
 	
 } 
 .thumb-image-center-1 .owl-dots button:nth-child(2) span {
-    background: url(./img/c1.png);
+    background: url(https://storage.googleapis.com/asset123/renduo1.jpg);
     background-size: cover;
 
 }
 .thumb-image-center-1 .owl-dots button:nth-child(3) span {
-    background: url(./img/c3.png);
+    background: url(https://storage.googleapis.com/asset123/matthias.jpg);
     background-size: cover;
 
 }
@@ -712,17 +712,17 @@ box-shadow: 0px 2px 25px 2px rgba(0,0,0,0.75);
     border: 2px solid #fff;
 }
 .client-testimonial-slider-6 .owl-dots button:nth-child(1) span {
-    background: url(./img/img-1.jpg);
+    background: url(https://storage.googleapis.com/asset123/chris_head2.jpg);
     background-size: cover;
  
 }
 .client-testimonial-slider-6 .owl-dots button:nth-child(2) span {
-    background: url(./img/img-2.jpg);
+    background: url(https://storage.googleapis.com/asset123/kent.jpg);
     background-size: cover;
  
 }
 .client-testimonial-slider-6 .owl-dots button:nth-child(3) span {
-    background: url(./img/img-3.jpg);
+    background: url(https://storage.googleapis.com/asset123/matthias.jpg);
     background-size: cover;
  
 }
