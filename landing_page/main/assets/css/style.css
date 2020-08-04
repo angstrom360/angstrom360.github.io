@@ -268,10 +268,8 @@ ol ul {
 }
 
 h1,
-h2,
 h3,
 h4,
-h5,
 h6 {
     line-height: 1.2;
     color: #34406c;
@@ -284,10 +282,10 @@ h1 {
     font-weight: 800;
 }
 
-h2 {
+/* h2 {
     font-size: 36px;
     font-weight: 800;
-}
+} */
 
 h3 {
     font-size: 24px;
@@ -299,10 +297,10 @@ h4 {
     font-weight: 700;
 }
 
-h5 {
+/* h5 {
     font-size: 18px;
     font-weight: 700;
-}
+} */
 
 h6 {
     font-size: 16px;
