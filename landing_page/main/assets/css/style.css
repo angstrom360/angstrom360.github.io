@@ -1608,12 +1608,14 @@ ul.tabs_list li a.active {
     font-size: 40px;
     line-height: 1.1;
     font-weight: 500;
+    color:#41baeb
 }
 
 .counter>span {
     display: block;
     font-size: 20px;
     margin: 20px 0 10px;
+    color:#41baeb
 }
 
 /*  10.0 News Style
